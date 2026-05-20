@@ -41,3 +41,7 @@
 - Gardien canin / chien héroïque
 - The Guardian Hound
 - Statut canonique à confirmer
+
+## Citations sources associées
+Voir :
+- `docs/sources/messages-originaux/08-lore-personnages.md`

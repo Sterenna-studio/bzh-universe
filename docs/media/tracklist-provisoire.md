@@ -13,3 +13,16 @@
 - covers ;
 - état mastering ;
 - crédits.
+
+## Catalogue étendu retrouvé
+- Spirit’s Rage
+- Void Echoes
+- Aligax: Digital Maiden (Remix)
+
+## Variantes anciennes de titre rencontrées dans les archives de conversation
+- Aligax: Lone Maiden / Digital Maiden
+- MutenRock: The Digital Commander / Dominator
+- Titan's Call / Titan: The Guardian Hound
+- Void Echoes / Cyber Shadows
+
+Ces variantes sont conservées comme **traces de travail**, pas comme canon définitif.

@@ -39,3 +39,7 @@ Dos évoqué :
 - bordure cyberpunk wavepunk ;
 - bordures dorées ;
 - vibe celtic vaporwave.
+
+## Citations sources associées
+Voir :
+- `docs/sources/messages-originaux/02-card-game.md`
