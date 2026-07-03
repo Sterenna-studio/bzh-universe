@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: Validate BZH Universe static site
+    name: Deploy BZH Universe to Nitro
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -30,3 +30,14 @@ jobs:
           echo "BZH Universe deploy" > deploy-test.txt
           echo "Commit: $GITHUB_SHA" >> deploy-test.txt
           echo "Date: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> deploy-test.txt
+
+      - name: Deploy to Nitro
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.OVH_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.OVH_HOST }}
+          REMOTE_USER: ${{ secrets.OVH_USER }}
+          SOURCE: ./
+          TARGET: ~/nitro/bzh-universe/
+          ARGS: -avz --delete
+          EXCLUDE: .git/,.github/,.env,.env.*
