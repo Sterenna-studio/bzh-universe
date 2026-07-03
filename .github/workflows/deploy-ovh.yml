@@ -1,0 +1,32 @@
+name: Deploy BZH Universe
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-bzh-universe-ovh
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Validate BZH Universe static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate static entrypoints
+        run: |
+          test -f index.html
+          test -f hub/index.html
+          test -f hub/styles.css
+          test -f docs/00-index.html
+          echo "BZH Universe static entrypoints OK"
+
+      - name: Add deployment marker
+        run: |
+          echo "BZH Universe deploy" > deploy-test.txt
+          echo "Commit: $GITHUB_SHA" >> deploy-test.txt
+          echo "Date: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> deploy-test.txt
