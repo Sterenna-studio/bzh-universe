@@ -78,4 +78,5 @@ Synthèse :
 - 1 657 fichiers copiés ;
 - 231 fichiers déjà présents dans le repo ;
 - 1 426 fichiers nouveaux ;
-- tri final différé pour les vidéos et gros fichiers, notamment `BZH_RESS\Montage\BZH ANTHEM 2.mp4` qui dépasse 100 Mo.
+- vidéos référencées uniquement par chemin et taille dans `archives/import-reports/2026-07-06-desktop-bzh-videos.csv` ;
+- tri final différé pour les gros fichiers, notamment `BZH_RESS\Montage\BZH ANTHEM 2.mp4` qui dépasse 100 Mo.

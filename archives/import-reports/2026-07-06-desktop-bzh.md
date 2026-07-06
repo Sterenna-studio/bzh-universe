@@ -14,6 +14,12 @@
 - Fichiers nouveaux : 1 426
 - Volume nouveau : 2 135,34 Mo
 
+## Politique videos
+- Les videos du lot ne doivent pas etre analysees en contenu.
+- Elles sont seulement referencees par chemin et taille dans `2026-07-06-desktop-bzh-videos.csv`.
+- L'index contient 160 videos au total, dont 156 nouvelles par rapport aux medias deja classes.
+- Aucune duree, miniature, transcription ou extraction de contenu video n'a ete calculee.
+
 ## Nouveaux fichiers par famille
 | Famille | Fichiers | Volume |
 | --- | ---: | ---: |
@@ -56,6 +62,7 @@
 ## Risques et decisions de tri
 - `BZH_RESS\Montage\BZH ANTHEM 2.mp4` fait 122,88 Mo : il depasse la limite GitHub standard de 100 Mo et ne doit pas etre commite en Git classique.
 - Git LFS est installe localement, mais le repo n'a pas encore de `.gitattributes` LFS.
+- Les videos restent reference-only : pas d'analyse de contenu, pas de promotion automatique dans la galerie.
 - Les fichiers `.téléchargement`, fichiers sans extension des exports web, `.db`, `.ini` et `.lnk` doivent rester hors assets finaux.
 - `LOL_TEAM_STATS` ressemble a une archive web/statistique : a conserver comme archive documentaire ou export web, pas comme media final de galerie.
 - `BZH_TCG_Images` est le lot prioritaire pour un tri TCG dedie.
@@ -65,5 +72,5 @@
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
 2. Traiter `BZH_TCG_Images` en premier, probablement vers `assets/cards/` ou `media/visual/cards/`.
 3. Traiter l'audio `BZH_RESS\Son\` vers `media/audio/` apres dedoublonnage des variantes.
-4. Traiter les videos en dernier, avec une decision explicite : Git LFS, archive externe, ou selection reduite.
+4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.

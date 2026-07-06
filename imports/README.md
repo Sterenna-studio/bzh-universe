@@ -17,6 +17,8 @@ Analyse courte :
 - 1 657 fichiers, 133 dossiers, 2 408,4 Mo ;
 - 231 fichiers deja presents dans `assets/`, `media/` ou `archives/` ;
 - 1 426 fichiers nouveaux, soit 2 135,34 Mo ;
+- 160 videos referencees uniquement par chemin et taille, sans analyse de contenu ;
 - un fichier video depasse 100 Mo et demande une decision Git LFS ou archive externe avant commit.
 
 Rapport detaille : `archives/import-reports/2026-07-06-desktop-bzh.md`.
+Index videos reference-only : `archives/import-reports/2026-07-06-desktop-bzh-videos.csv`.

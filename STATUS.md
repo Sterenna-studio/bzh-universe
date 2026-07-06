@@ -73,3 +73,4 @@
 - Rapport d'analyse ajouté dans `archives/import-reports/2026-07-06-desktop-bzh.md`
 - 231 doublons exacts détectés avec les médias et archives déjà classés
 - 1 426 fichiers nouveaux détectés, avec blocage volontaire avant commit du lot brut complet à cause d'un fichier vidéo de plus de 100 Mo
+- Vidéos du lot marquées en `reference-only` : chemins et tailles uniquement, sans analyse de contenu
