@@ -20,6 +20,8 @@
 ## Set initial
 - BZH01
 - IDs : `BZH01_<R><C><NNN>`
+- Données importées depuis Nitro : `data/tcg/BZH01.json`
+- Page wiki du set : [BZH01 — set de cartes TCG](cards.md)
 
 ## Cartes principales
 - The Cyber Assassin — Sniky
@@ -43,3 +45,7 @@ Dos évoqué :
 ## Citations sources associées
 Voir :
 - `docs/sources/messages-originaux/02-card-game.md`
+
+## Source live importée
+- Application : https://nitro.sterenna.fr/TCG/
+- Dataset : https://nitro.sterenna.fr/TCG/data/BZH01.json

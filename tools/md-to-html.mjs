@@ -174,54 +174,84 @@ function mdToHtml(md) {
   return { html: out, title: firstH1 };
 }
 
-const CSS = `
-:root{--bg:#070b14;--ink:#dcefff;--muted:#7fa8bd;--cyan:#00ffcc;--pink:#ff3df2;--border:rgba(0,255,204,.16)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(circle at 18% 0%,rgba(0,255,204,.06),transparent 40%),radial-gradient(circle at 90% 10%,rgba(255,61,242,.05),transparent 38%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;font-size:16px}
-.topbar{position:sticky;top:0;z-index:10;display:flex;gap:14px;align-items:center;padding:10px 20px;background:rgba(7,11,20,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);font-family:ui-monospace,"Share Tech Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.topbar a{color:var(--cyan);text-decoration:none;padding:4px 10px;border:1px solid var(--border);border-radius:999px;transition:.16s}
-.topbar a:hover{border-color:var(--cyan);box-shadow:0 0 16px rgba(0,255,204,.18)}
-.topbar .crumb{color:var(--muted);letter-spacing:.08em;text-transform:none;margin-left:auto;font-size:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-main{max-width:820px;margin:0 auto;padding:36px 22px 90px}
-h1,h2,h3,h4,h5,h6{font-family:"Exo 2",system-ui,sans-serif;line-height:1.25;margin:1.8em 0 .6em;color:#eafcff}
-h1{font-size:2rem;margin-top:.2em;background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
-h2{font-size:1.45rem;padding-bottom:.25em;border-bottom:1px solid var(--border)}
-h3{font-size:1.18rem;color:var(--cyan)}
-a{color:var(--cyan)}a:hover{color:#fff}
-p{margin:.85em 0}
-ul,ol{margin:.7em 0;padding-left:1.4em}li{margin:.28em 0}
-code{font-family:ui-monospace,"Share Tech Mono",monospace;background:rgba(0,255,204,.08);border:1px solid var(--border);border-radius:5px;padding:.1em .4em;font-size:.88em;color:#9affe9}
-pre{background:#060a12;border:1px solid var(--border);border-radius:12px;padding:16px;overflow:auto;box-shadow:inset 0 0 30px rgba(0,255,204,.04)}
-pre code{background:none;border:0;padding:0;color:#bfe9ff}
-blockquote{margin:1em 0;padding:.4em 1.1em;border-left:3px solid var(--pink);background:rgba(255,61,242,.06);border-radius:0 10px 10px 0;color:#f3d9ff}
-table{border-collapse:collapse;width:100%;margin:1.2em 0;font-size:.94em}
-th,td{border:1px solid var(--border);padding:8px 12px;text-align:left}
-th{background:rgba(0,255,204,.08);color:#eafcff;font-family:ui-monospace,monospace;letter-spacing:.04em}
-tr:nth-child(even) td{background:rgba(255,255,255,.018)}
-hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);margin:2.2em 0}
-footer{max-width:820px;margin:0 auto;padding:18px 22px 60px;color:var(--muted);font-size:11px;font-family:ui-monospace,monospace;letter-spacing:.1em;border-top:1px solid var(--border)}
-`;
+function readerControls() {
+  return `<div class="reader-controls" aria-label="Options de lecture">
+    <button class="reader-control" type="button" data-reader-action="font-down" title="Reduire la taille du texte">A-<span class="reader-control-label">Reduire la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="font-up" title="Augmenter la taille du texte">A+<span class="reader-control-label">Augmenter la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="dyslexic" aria-pressed="false">Dys<span class="reader-control-label">Activer OpenDyslexic</span></button>
+    <button class="reader-control" type="button" data-reader-action="theme" aria-pressed="false">☼<span class="reader-control-label">Changer de theme</span></button>
+  </div>`;
+}
 
-function page({ title, body, hubLink, indexLink, crumb }) {
+function sidebar(prefix) {
+  return `<aside class="wiki-sidebar" aria-label="Navigation wiki">
+    <section class="sidebar-section">
+      <p class="sidebar-title">Cartographie</p>
+      <a class="sidebar-link" href="${prefix}docs/00-index.html">Index documentaire</a>
+      <a class="sidebar-link" href="${prefix}docs/01-inventaire-source.html">Inventaire source</a>
+      <a class="sidebar-link" href="${prefix}docs/chronology/chronologie.html">Chronologie</a>
+      <a class="sidebar-link" href="${prefix}media/catalog/media-catalog.html">Catalogue medias</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Univers</p>
+      <a class="sidebar-link" href="${prefix}docs/universe/00-vision-globale.html">Vision globale</a>
+      <a class="sidebar-link" href="${prefix}docs/universe/personnages.html">Personnages</a>
+      <a class="sidebar-link" href="${prefix}docs/universe/lexique.html">Lexique</a>
+      <a class="sidebar-link" href="${prefix}docs/universe/le-code.html">Le Code</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Projets</p>
+      <a class="sidebar-link" href="${prefix}docs/projects/bzh-card-game/README.html">BZH Card Game</a>
+      <a class="sidebar-link" href="${prefix}docs/projects/bzh-card-game/cards.html">Cartes BZH01</a>
+      <a class="sidebar-link" href="${prefix}docs/projects/roguelite/README.html">Roguelite</a>
+      <a class="sidebar-link" href="${prefix}docs/projects/minitel-hub-3d/README.html">Minitel HUB 3D</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Sommaire</p>
+      <nav data-toc aria-label="Sommaire de la page"></nav>
+    </section>
+  </aside>`;
+}
+
+function topbar({ prefix, hubLink, indexLink }) {
+  return `<header class="wiki-topbar">
+    <a class="wiki-brand" href="${hubLink}">
+      <span class="wiki-brand-mark" aria-hidden="true"></span>
+      <span><span class="wiki-brand-kicker">Archive numerique</span><span class="wiki-brand-name">BZH Universe</span></span>
+    </a>
+    <nav class="wiki-toplinks" aria-label="Acces rapides">
+      <a class="wiki-pill" href="${indexLink}">Index</a>
+      <a class="wiki-pill" href="${prefix}docs/universe/personnages.html">Personnages</a>
+      <a class="wiki-pill" href="${prefix}docs/projects/bzh-card-game/README.html">TCG</a>
+      <a class="wiki-pill" href="${prefix}media/catalog/media-catalog.html">Medias</a>
+      <a class="wiki-pill" href="${prefix}docs/conversations/index.html">Conversations</a>
+    </nav>
+    ${readerControls()}
+  </header>`;
+}
+
+function page({ title, body, hubLink, indexLink, crumb, prefix }) {
   return `<!doctype html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)} - BZH Universe</title>
-<style>${CSS}</style>
+<link rel="stylesheet" href="${prefix}assets/site/wiki.css">
+<script defer src="${prefix}assets/site/wiki.js"></script>
 </head>
 <body>
-<nav class="topbar">
-  <a href="${hubLink}">HUB</a>
-  <a href="${indexLink}">Index</a>
-  <span class="crumb">${escapeHtml(crumb)}</span>
-</nav>
-<main>
+<a class="skip-link" href="#content">Aller au contenu</a>
+${topbar({ prefix, hubLink, indexLink })}
+<div class="wiki-layout">
+${sidebar(prefix)}
+<main class="wiki-page" id="content">
+<div class="breadcrumb">${escapeHtml(crumb)}</div>
 ${body}
 </main>
-<footer>BZH CHRONICLES - genere depuis Markdown - ne pas editer le .html, modifier le .md source</footer>
+</div>
+<footer class="wiki-footer">BZH CHRONICLES - genere depuis Markdown - ne pas editer le .html, modifier le .md source</footer>
 </body>
 </html>
 `;
@@ -244,6 +274,7 @@ for (const file of files) {
       hubLink: prefix + 'hub/index.html',
       indexLink: prefix + 'docs/00-index.html',
       crumb: relPath,
+      prefix,
     }),
     'utf8',
   );

@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  color: #00fff7;
+  font-family: "Orbitron", system-ui, sans-serif;
+}
+
+.container {
+  width: min(90%, 980px);
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 30px;
+  color: #ff2be6;
+  font-size: clamp(2rem, 6vw, 3rem);
+  text-shadow: 0 0 5px #ff2be6;
+}
+
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00fff7;
+}
+
+.description {
+  margin-top: 15px;
+  color: #d4d4d4;
+  font-size: 1.1rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  border: 0;
+  background: transparent;
+  color: #ff2be6;
+  cursor: pointer;
+  font: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.arrow:hover {
+  color: #00fff7;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+audio {
+  display: none;
+}

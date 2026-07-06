@@ -14,12 +14,21 @@
 - [Vision globale](universe/00-vision-globale.md)
 - [Lexique](universe/lexique.md)
 - [Personnages](universe/personnages.md)
+- [Dossier Aligax](universe/personnages/aligax-dossier.md)
+- [Dossier Dr. Sorn](universe/personnages/dr-sorn-dossier.md)
+- [Dossier Gabilone / Gabylon](universe/personnages/gabilone-dossier.md)
+- [Dossier MutenRock](universe/personnages/mutenrock-dossier.md)
+- [Dossier Sniky](universe/personnages/sniky-dossier.md)
+- [Dossier Spirit](universe/personnages/spirit-dossier.md)
+- [Dossier Spike](universe/personnages/spike-dossier.md)
+- [Dossier Titan](universe/personnages/titan-dossier.md)
 - [Équipe et dynamiques](universe/equipe-et-dynamiques.md)
 - [Le Code](universe/le-code.md)
 
 ## Projets
 - [Carte des projets](projects/00-carte-des-projets.md)
 - [BZH Card Game](projects/bzh-card-game/README.md)
+- [BZH01 — set de cartes TCG](projects/bzh-card-game/cards.md)
 - [Roguelite](projects/roguelite/README.md)
 - [Minitel HUB 3D](projects/minitel-hub-3d/README.md)
 

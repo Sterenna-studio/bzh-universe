@@ -1,0 +1,38 @@
+body {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+  background: #0d0d0d;
+  color: #f0f0f0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.legacy-shell {
+  display: grid;
+  gap: 2rem;
+}
+
+h1,
+h2 {
+  color: #00ffe0;
+  border-bottom: 2px solid #00ffe0;
+  padding-bottom: 0.3rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.year {
+  color: #ff4081;
+  font-weight: 700;
+}
+
+.platform {
+  color: #999;
+  font-style: italic;
+}
+
+.special {
+  color: #00bfff;
+}
