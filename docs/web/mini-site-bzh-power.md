@@ -51,3 +51,8 @@ web/legacy/
 - lecteur musique complet ;
 - version WordPress du snippet ;
 - éventuels scripts de sélection de piste.
+
+### Import local 2026-07-06
+Deux pages HTML historiques/prototypes ont ete classees dans `web/legacy/` :
+- `web/legacy/bzh-games-history.html` — page statique "Histoire des jeux video - BZH CHRONICLES" ;
+- `web/legacy/bzh-games-carousel.html` — version carousel avec images externes et musique de fond historique.
