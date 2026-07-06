@@ -84,8 +84,49 @@
     });
   }
 
+  function bindMediaGallery() {
+    const toolbar = document.querySelector('[data-media-toolbar]');
+    if (!toolbar) return;
+
+    const search = toolbar.querySelector('[data-media-search]');
+    const category = toolbar.querySelector('[data-media-category]');
+    const resultCount = toolbar.querySelector('[data-media-result-count]');
+    const cards = [...document.querySelectorAll('[data-media-card]')];
+    const sections = [...document.querySelectorAll('[data-media-section]')];
+
+    toolbar.addEventListener('submit', (event) => event.preventDefault());
+
+    function applyFilter() {
+      const query = (search?.value || '').trim().toLowerCase();
+      const selected = category?.value || 'all';
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const matchesCategory = selected === 'all' || card.dataset.category === selected;
+        const matchesSearch = !query || (card.dataset.search || '').includes(query);
+        const show = matchesCategory && matchesSearch;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+
+      sections.forEach((section) => {
+        const hasVisibleCard = Boolean(section.querySelector('[data-media-card]:not([hidden])'));
+        section.hidden = !hasVisibleCard;
+      });
+
+      if (resultCount) {
+        resultCount.textContent = `${visible} fichier${visible > 1 ? 's' : ''} visible${visible > 1 ? 's' : ''}`;
+      }
+    }
+
+    search?.addEventListener('input', applyFilter);
+    category?.addEventListener('change', applyFilter);
+    applyFilter();
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     bindControls();
     updateToc();
+    bindMediaGallery();
   });
 })();

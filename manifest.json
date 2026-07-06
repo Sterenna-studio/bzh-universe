@@ -1,8 +1,8 @@
 {
   "generated_on": "2026-07-06",
   "repo_name": "bzh-universe",
-  "version": "V6-media-wave-2-triage",
-  "file_count": 400,
+  "version": "V7-media-gallery",
+  "file_count": 403,
   "files": [
     ".github/workflows/deploy-ovh.yml",
     ".gitignore",
@@ -301,6 +301,8 @@
     "media/audio/previews/.gitkeep",
     "media/catalog/media-catalog.html",
     "media/catalog/media-catalog.md",
+    "media/gallery/index.html",
+    "media/gallery/inventory.json",
     "media/README.html",
     "media/README.md",
     "media/video/trailers/.gitkeep",
@@ -397,6 +399,7 @@
     "templates/track-sheet.html",
     "templates/track-sheet.md",
     "tools/md-to-html.mjs",
+    "tools/media-gallery.mjs",
     "tools/tcg-to-md.mjs",
     "web/legacy/.gitkeep",
     "web/legacy/bzh-games-carousel.css",

@@ -192,6 +192,7 @@ function sidebar(prefix) {
       <a class="sidebar-link" href="${prefix}docs/01-inventaire-source.html">Inventaire source</a>
       <a class="sidebar-link" href="${prefix}docs/chronology/chronologie.html">Chronologie</a>
       <a class="sidebar-link" href="${prefix}media/catalog/media-catalog.html">Catalogue medias</a>
+      <a class="sidebar-link" href="${prefix}media/gallery/index.html">Galerie media</a>
     </section>
     <section class="sidebar-section">
       <p class="sidebar-title">Univers</p>
@@ -225,6 +226,7 @@ function topbar({ prefix, hubLink, indexLink }) {
       <a class="wiki-pill" href="${prefix}docs/universe/personnages.html">Personnages</a>
       <a class="wiki-pill" href="${prefix}docs/projects/bzh-card-game/README.html">TCG</a>
       <a class="wiki-pill" href="${prefix}media/catalog/media-catalog.html">Medias</a>
+      <a class="wiki-pill" href="${prefix}media/gallery/index.html">Galerie</a>
       <a class="wiki-pill" href="${prefix}docs/conversations/index.html">Conversations</a>
     </nav>
     ${readerControls()}

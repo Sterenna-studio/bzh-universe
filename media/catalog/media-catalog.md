@@ -1,5 +1,9 @@
 # Catalogue médias à rattacher
 
+## Acces consultable
+- [Galerie media](../gallery/index.html) — vue visuelle filtree par categorie, avec recherche et ouverture des fichiers originaux.
+- [Inventaire JSON de la galerie](../gallery/inventory.json) — liste machine-readable des fichiers exposes dans la galerie.
+
 ## Logos
 - BZH PW
 - BZH POWER

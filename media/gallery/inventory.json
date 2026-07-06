@@ -1,0 +1,830 @@
+[
+  {
+    "path": "assets/logos/bzh-chronicles/bzhchronicles_esport_badge_v01.png",
+    "url": "../../assets/logos/bzh-chronicles/bzhchronicles_esport_badge_v01.png",
+    "title": "bzhchronicles esport badge v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 1726551,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "assets/logos/bzh-chronicles/bzhchronicles_logo_removebg_v01.png",
+    "url": "../../assets/logos/bzh-chronicles/bzhchronicles_logo_removebg_v01.png",
+    "title": "bzhchronicles logo removebg v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 914317,
+    "sizeLabel": "893 Ko"
+  },
+  {
+    "path": "assets/logos/bzh-chronicles/bzhchronicles_neon_badge_v01.png",
+    "url": "../../assets/logos/bzh-chronicles/bzhchronicles_neon_badge_v01.png",
+    "title": "bzhchronicles neon badge v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 1648829,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "assets/logos/bzh-chronicles/bzhchronicles_neon_badge_v02.png",
+    "url": "../../assets/logos/bzh-chronicles/bzhchronicles_neon_badge_v02.png",
+    "title": "bzhchronicles neon badge v02",
+    "category": "Logos",
+    "type": "image",
+    "size": 1520537,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "assets/logos/bzh-chronicles/bzhchronicles_title_neon_black_v01.gif",
+    "url": "../../assets/logos/bzh-chronicles/bzhchronicles_title_neon_black_v01.gif",
+    "title": "bzhchronicles title neon black v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 6939736,
+    "sizeLabel": "6.6 Mo"
+  },
+  {
+    "path": "assets/logos/bzh-power/bzhpower_esport_badge_v01.png",
+    "url": "../../assets/logos/bzh-power/bzhpower_esport_badge_v01.png",
+    "title": "bzhpower esport badge v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 1629227,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "assets/logos/bzh-pw/bzhpw_title_retro_v01.png",
+    "url": "../../assets/logos/bzh-pw/bzhpw_title_retro_v01.png",
+    "title": "bzhpw title retro v01",
+    "category": "Logos",
+    "type": "image",
+    "size": 2743424,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/characters/aligax/aligax_manga_artifact_v01.webp",
+    "url": "../../assets/characters/aligax/aligax_manga_artifact_v01.webp",
+    "title": "aligax manga artifact v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 487260,
+    "sizeLabel": "476 Ko"
+  },
+  {
+    "path": "assets/characters/aligax/aligax_neotrad_hq_v01.webp",
+    "url": "../../assets/characters/aligax/aligax_neotrad_hq_v01.webp",
+    "title": "aligax neotrad hq v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 547546,
+    "sizeLabel": "535 Ko"
+  },
+  {
+    "path": "assets/characters/aligax/aligax_neotrad_lineart_v01.webp",
+    "url": "../../assets/characters/aligax/aligax_neotrad_lineart_v01.webp",
+    "title": "aligax neotrad lineart v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 411980,
+    "sizeLabel": "402 Ko"
+  },
+  {
+    "path": "assets/characters/aligax/aligax_neotrad_woodblock_v01.webp",
+    "url": "../../assets/characters/aligax/aligax_neotrad_woodblock_v01.webp",
+    "title": "aligax neotrad woodblock v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 561066,
+    "sizeLabel": "548 Ko"
+  },
+  {
+    "path": "assets/characters/aligax/aligax_stickman_artifact_v01.webp",
+    "url": "../../assets/characters/aligax/aligax_stickman_artifact_v01.webp",
+    "title": "aligax stickman artifact v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 249528,
+    "sizeLabel": "244 Ko"
+  },
+  {
+    "path": "assets/characters/mutenrock/mutenrock_manga_science_v01.webp",
+    "url": "../../assets/characters/mutenrock/mutenrock_manga_science_v01.webp",
+    "title": "mutenrock manga science v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 435814,
+    "sizeLabel": "426 Ko"
+  },
+  {
+    "path": "assets/characters/mutenrock/mutenrock_neotrad_hq_v01.webp",
+    "url": "../../assets/characters/mutenrock/mutenrock_neotrad_hq_v01.webp",
+    "title": "mutenrock neotrad hq v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 557622,
+    "sizeLabel": "545 Ko"
+  },
+  {
+    "path": "assets/characters/mutenrock/mutenrock_webtoon_pet_v01.png",
+    "url": "../../assets/characters/mutenrock/mutenrock_webtoon_pet_v01.png",
+    "title": "mutenrock webtoon pet v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 3204441,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/characters/sniky/sniky_ink_parchment_v01.webp",
+    "url": "../../assets/characters/sniky/sniky_ink_parchment_v01.webp",
+    "title": "sniky ink parchment v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 522080,
+    "sizeLabel": "510 Ko"
+  },
+  {
+    "path": "assets/characters/sniky/sniky_manga_shadow_v01.webp",
+    "url": "../../assets/characters/sniky/sniky_manga_shadow_v01.webp",
+    "title": "sniky manga shadow v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 443006,
+    "sizeLabel": "433 Ko"
+  },
+  {
+    "path": "assets/characters/sniky/sniky_neotrad_woodblock_v01.webp",
+    "url": "../../assets/characters/sniky/sniky_neotrad_woodblock_v01.webp",
+    "title": "sniky neotrad woodblock v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 406544,
+    "sizeLabel": "397 Ko"
+  },
+  {
+    "path": "assets/characters/spirit/spirit_manga_hound_v01.webp",
+    "url": "../../assets/characters/spirit/spirit_manga_hound_v01.webp",
+    "title": "spirit manga hound v01",
+    "category": "Personnages",
+    "type": "image",
+    "size": 439296,
+    "sizeLabel": "429 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png",
+    "url": "../../assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png",
+    "title": "bzhcard bzh01 pack layout v01",
+    "category": "TCG",
+    "type": "image",
+    "size": 2947468,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
+    "url": "../../media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
+    "title": "bzhchronicles cd artwork grid v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 482188,
+    "sizeLabel": "471 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_cd-mockup_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles_cd-mockup_v01.png",
+    "title": "bzhchronicles cd mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 2430406,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_cyber-legends_team-artwork_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles_cyber-legends_team-artwork_v01.png",
+    "title": "bzhchronicles cyber legends team artwork v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 2848414,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_mecha_bzh_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles_mecha_bzh_v01.png",
+    "title": "bzhchronicles mecha bzh v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3815349,
+    "sizeLabel": "3.6 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_new-hero_landscape_v01.jpg",
+    "url": "../../media/visual/covers/bzhchronicles_new-hero_landscape_v01.jpg",
+    "title": "bzhchronicles new hero landscape v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 477107,
+    "sizeLabel": "466 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_new-hero_pixel-art_v01.jpg",
+    "url": "../../media/visual/covers/bzhchronicles_new-hero_pixel-art_v01.jpg",
+    "title": "bzhchronicles new hero pixel art v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 178435,
+    "sizeLabel": "174 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_poster_new-hero_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles_poster_new-hero_v01.png",
+    "title": "bzhchronicles poster new hero v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3396752,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_poster_new-hero_v02.png",
+    "url": "../../media/visual/covers/bzhchronicles_poster_new-hero_v02.png",
+    "title": "bzhchronicles poster new hero v02",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3477677,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_poster_sunset-city_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles_poster_sunset-city_v01.png",
+    "title": "bzhchronicles poster sunset city v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 2967869,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_retro-box_backcover_v01.jpg",
+    "url": "../../media/visual/covers/bzhchronicles_retro-box_backcover_v01.jpg",
+    "title": "bzhchronicles retro box backcover v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 787050,
+    "sizeLabel": "769 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles_retro-city-hero_icon_v01.gif",
+    "url": "../../media/visual/covers/bzhchronicles_retro-city-hero_icon_v01.gif",
+    "title": "bzhchronicles retro city hero icon v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 14506051,
+    "sizeLabel": "13.8 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles64_case-mockup_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles64_case-mockup_v01.png",
+    "title": "bzhchronicles64 case mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1797004,
+    "sizeLabel": "1.7 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles64_cover_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles64_cover_v01.png",
+    "title": "bzhchronicles64 cover v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3617135,
+    "sizeLabel": "3.4 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhchronicles64_playstation-mockup_v01.png",
+    "url": "../../media/visual/covers/bzhchronicles64_playstation-mockup_v01.png",
+    "title": "bzhchronicles64 playstation mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 2608136,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhjourney_cover_v01.png",
+    "url": "../../media/visual/covers/bzhjourney_cover_v01.png",
+    "title": "bzhjourney cover v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3257285,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhjourney_vr-mockup_v01.png",
+    "url": "../../media/visual/covers/bzhjourney_vr-mockup_v01.png",
+    "title": "bzhjourney vr mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1745970,
+    "sizeLabel": "1.7 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhshadows_boxart_v01.png",
+    "url": "../../media/visual/covers/bzhshadows_boxart_v01.png",
+    "title": "bzhshadows boxart v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1721027,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhshadows_cover_v01.png",
+    "url": "../../media/visual/covers/bzhshadows_cover_v01.png",
+    "title": "bzhshadows cover v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3175787,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhshadows_pc-mockup_v01.png",
+    "url": "../../media/visual/covers/bzhshadows_pc-mockup_v01.png",
+    "title": "bzhshadows pc mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1617983,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzhshadows_poster_v01.png",
+    "url": "../../media/visual/covers/bzhshadows_poster_v01.png",
+    "title": "bzhshadows poster v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 2421049,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/covers/sniky-titan_ds-mockup_v01.png",
+    "url": "../../media/visual/covers/sniky-titan_ds-mockup_v01.png",
+    "title": "sniky titan ds mockup v01",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3236577,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/king-of-bicycles_poster_v01.png",
+    "url": "../../media/visual/webtoon/king-of-bicycles_poster_v01.png",
+    "title": "king of bicycles poster v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2598634,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/king-of-bicycles_poster_v02.png",
+    "url": "../../media/visual/webtoon/king-of-bicycles_poster_v02.png",
+    "title": "king of bicycles poster v02",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2463988,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/mutenrock_ha-tom-tom_title_v01.png",
+    "url": "../../media/visual/webtoon/mutenrock_ha-tom-tom_title_v01.png",
+    "title": "mutenrock ha tom tom title v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 1522719,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/mutentom_print_v01.png",
+    "url": "../../media/visual/webtoon/mutentom_print_v01.png",
+    "title": "mutentom print v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2918699,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/mutentom_print_v02.png",
+    "url": "../../media/visual/webtoon/mutentom_print_v02.png",
+    "title": "mutentom print v02",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2924624,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/titan-mutenrock_duel_banner_v01.png",
+    "url": "../../media/visual/webtoon/titan-mutenrock_duel_banner_v01.png",
+    "title": "titan mutenrock duel banner v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2653323,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/titan-mutenrock_duel_poster_v01.png",
+    "url": "../../media/visual/webtoon/titan-mutenrock_duel_poster_v01.png",
+    "title": "titan mutenrock duel poster v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2850486,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/titan-yanis_poster_v01.png",
+    "url": "../../media/visual/webtoon/titan-yanis_poster_v01.png",
+    "title": "titan yanis poster v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 2924895,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/titan-yanis_poster_v02.png",
+    "url": "../../media/visual/webtoon/titan-yanis_poster_v02.png",
+    "title": "titan yanis poster v02",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 3282084,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "media/visual/webtoon/tom-pierre_print_v01.png",
+    "url": "../../media/visual/webtoon/tom-pierre_print_v01.png",
+    "title": "tom pierre print v01",
+    "category": "Webtoon",
+    "type": "image",
+    "size": 3118162,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "media/visual/merch/bzhchronicles_shirt_mockup_black_v01.png",
+    "url": "../../media/visual/merch/bzhchronicles_shirt_mockup_black_v01.png",
+    "title": "bzhchronicles shirt mockup black v01",
+    "category": "Merch",
+    "type": "image",
+    "size": 957828,
+    "sizeLabel": "935 Ko"
+  },
+  {
+    "path": "media/visual/merch/bzhpw_apparel_collection_esport_v01.png",
+    "url": "../../media/visual/merch/bzhpw_apparel_collection_esport_v01.png",
+    "title": "bzhpw apparel collection esport v01",
+    "category": "Merch",
+    "type": "image",
+    "size": 2296615,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "media/visual/merch/bzhpw_apparel_collection_esport_v02.png",
+    "url": "../../media/visual/merch/bzhpw_apparel_collection_esport_v02.png",
+    "title": "bzhpw apparel collection esport v02",
+    "category": "Merch",
+    "type": "image",
+    "size": 2036266,
+    "sizeLabel": "1.9 Mo"
+  },
+  {
+    "path": "media/visual/merch/bzhpw_tenture_banner_v01.png",
+    "url": "../../media/visual/merch/bzhpw_tenture_banner_v01.png",
+    "title": "bzhpw tenture banner v01",
+    "category": "Merch",
+    "type": "image",
+    "size": 3466847,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v01.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v01.webp",
+    "title": "bzhpower tapestry group v01",
+    "category": "Merch",
+    "type": "image",
+    "size": 926514,
+    "sizeLabel": "905 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v02.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v02.webp",
+    "title": "bzhpower tapestry group v02",
+    "category": "Merch",
+    "type": "image",
+    "size": 835016,
+    "sizeLabel": "815 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v03.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v03.webp",
+    "title": "bzhpower tapestry group v03",
+    "category": "Merch",
+    "type": "image",
+    "size": 894020,
+    "sizeLabel": "873 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v04.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v04.webp",
+    "title": "bzhpower tapestry group v04",
+    "category": "Merch",
+    "type": "image",
+    "size": 904136,
+    "sizeLabel": "883 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v05.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v05.webp",
+    "title": "bzhpower tapestry group v05",
+    "category": "Merch",
+    "type": "image",
+    "size": 1114682,
+    "sizeLabel": "1.1 Mo"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v06.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v06.webp",
+    "title": "bzhpower tapestry group v06",
+    "category": "Merch",
+    "type": "image",
+    "size": 947144,
+    "sizeLabel": "925 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v07.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v07.webp",
+    "title": "bzhpower tapestry group v07",
+    "category": "Merch",
+    "type": "image",
+    "size": 838792,
+    "sizeLabel": "819 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v08.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v08.webp",
+    "title": "bzhpower tapestry group v08",
+    "category": "Merch",
+    "type": "image",
+    "size": 945684,
+    "sizeLabel": "924 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v09.webp",
+    "url": "../../media/visual/merch/tapestries/bzhpower_tapestry_group_v09.webp",
+    "title": "bzhpower tapestry group v09",
+    "category": "Merch",
+    "type": "image",
+    "size": 825110,
+    "sizeLabel": "806 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/king-of-bicycles_emote_v01.png",
+    "url": "../../media/visual/social/emotes/king-of-bicycles_emote_v01.png",
+    "title": "king of bicycles emote v01",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 3119324,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/player_avatar_v01.png",
+    "url": "../../media/visual/social/emotes/player_avatar_v01.png",
+    "title": "player avatar v01",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 2830697,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "media/visual/social/twitch/bzh_stream_lets-play_v01.png",
+    "url": "../../media/visual/social/twitch/bzh_stream_lets-play_v01.png",
+    "title": "bzh stream lets play v01",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 2435298,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/social/twitch/bzh_stream_on-chill_v01.png",
+    "url": "../../media/visual/social/twitch/bzh_stream_on-chill_v01.png",
+    "title": "bzh stream on chill v01",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 2369106,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/social/twitch/bzh_stream_overlay_frame_v01.png",
+    "url": "../../media/visual/social/twitch/bzh_stream_overlay_frame_v01.png",
+    "title": "bzh stream overlay frame v01",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 2356203,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhchronicles_cyber-space_city_v01.webp",
+    "url": "../../media/visual/wallpapers/bzhchronicles_cyber-space_city_v01.webp",
+    "title": "bzhchronicles cyber space city v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 566728,
+    "sizeLabel": "553 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhchronicles_synthwave-city_background_v01.png",
+    "url": "../../media/visual/wallpapers/bzhchronicles_synthwave-city_background_v01.png",
+    "title": "bzhchronicles synthwave city background v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 2665269,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhchronicles_team_portal_v01.png",
+    "url": "../../media/visual/wallpapers/bzhchronicles_team_portal_v01.png",
+    "title": "bzhchronicles team portal v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 3267631,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhchronicles_team_spaceship_v01.webp",
+    "url": "../../media/visual/wallpapers/bzhchronicles_team_spaceship_v01.webp",
+    "title": "bzhchronicles team spaceship v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 531910,
+    "sizeLabel": "519 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhpower_pirate-ship_ocean_v01.webp",
+    "url": "../../media/visual/wallpapers/bzhpower_pirate-ship_ocean_v01.webp",
+    "title": "bzhpower pirate ship ocean v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 71962,
+    "sizeLabel": "70 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhpower_spaceship_blue_v01.png",
+    "url": "../../media/visual/wallpapers/bzhpower_spaceship_blue_v01.png",
+    "title": "bzhpower spaceship blue v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 1290831,
+    "sizeLabel": "1.2 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzhpw_galactic_background_v01.png",
+    "url": "../../media/visual/wallpapers/bzhpw_galactic_background_v01.png",
+    "title": "bzhpw galactic background v01",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 3490173,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
+    "title": "aligax lol morgana portrait reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 442992,
+    "sizeLabel": "433 Ko"
+  },
+  {
+    "path": "media/visual/references/apex-legends_group-poster_reference_v01.png",
+    "url": "../../media/visual/references/apex-legends_group-poster_reference_v01.png",
+    "title": "apex legends group poster reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 23362277,
+    "sizeLabel": "22.3 Mo"
+  },
+  {
+    "path": "media/visual/references/bzhchronicles_dark-creature_reference_v01.png",
+    "url": "../../media/visual/references/bzhchronicles_dark-creature_reference_v01.png",
+    "title": "bzhchronicles dark creature reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 1988325,
+    "sizeLabel": "1.9 Mo"
+  },
+  {
+    "path": "media/visual/references/bzhpower_org-chart_cyberpunk_v01.webp",
+    "url": "../../media/visual/references/bzhpower_org-chart_cyberpunk_v01.webp",
+    "title": "bzhpower org chart cyberpunk v01",
+    "category": "References",
+    "type": "image",
+    "size": 696480,
+    "sizeLabel": "680 Ko"
+  },
+  {
+    "path": "media/visual/references/bzhpower_org-chart_stickman_v01.webp",
+    "url": "../../media/visual/references/bzhpower_org-chart_stickman_v01.webp",
+    "title": "bzhpower org chart stickman v01",
+    "category": "References",
+    "type": "image",
+    "size": 352768,
+    "sizeLabel": "345 Ko"
+  },
+  {
+    "path": "media/visual/references/cyber-city_unclean_promeai_v01.png",
+    "url": "../../media/visual/references/cyber-city_unclean_promeai_v01.png",
+    "title": "cyber city unclean promeai v01",
+    "category": "References",
+    "type": "image",
+    "size": 655987,
+    "sizeLabel": "641 Ko"
+  },
+  {
+    "path": "media/visual/references/duplicates/bzhchronicles_logo_removebg_duplicate_v01.png",
+    "url": "../../media/visual/references/duplicates/bzhchronicles_logo_removebg_duplicate_v01.png",
+    "title": "bzhchronicles logo removebg duplicate v01",
+    "category": "References",
+    "type": "image",
+    "size": 914317,
+    "sizeLabel": "893 Ko"
+  },
+  {
+    "path": "media/visual/references/duplicates/bzhchronicles64_case-mockup_duplicate_v01.png",
+    "url": "../../media/visual/references/duplicates/bzhchronicles64_case-mockup_duplicate_v01.png",
+    "title": "bzhchronicles64 case mockup duplicate v01",
+    "category": "References",
+    "type": "image",
+    "size": 1797004,
+    "sizeLabel": "1.7 Mo"
+  },
+  {
+    "path": "media/visual/references/duplicates/bzhshadows_boxart_duplicate_v01.png",
+    "url": "../../media/visual/references/duplicates/bzhshadows_boxart_duplicate_v01.png",
+    "title": "bzhshadows boxart duplicate v01",
+    "category": "References",
+    "type": "image",
+    "size": 1721027,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "media/visual/references/duplicates/bzhshadows_cover_duplicate_v01.png",
+    "url": "../../media/visual/references/duplicates/bzhshadows_cover_duplicate_v01.png",
+    "title": "bzhshadows cover duplicate v01",
+    "category": "References",
+    "type": "image",
+    "size": 3175787,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "media/visual/references/fallout-style_poster_reference_v01.png",
+    "url": "../../media/visual/references/fallout-style_poster_reference_v01.png",
+    "title": "fallout style poster reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 3603038,
+    "sizeLabel": "3.4 Mo"
+  },
+  {
+    "path": "media/visual/references/import-wave2_unidentified-sticker_v01.png",
+    "url": "../../media/visual/references/import-wave2_unidentified-sticker_v01.png",
+    "title": "import wave2 unidentified sticker v01",
+    "category": "References",
+    "type": "image",
+    "size": 414728,
+    "sizeLabel": "405 Ko"
+  },
+  {
+    "path": "media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "title": "mutenrock lol zyra portrait reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 542464,
+    "sizeLabel": "530 Ko"
+  },
+  {
+    "path": "media/visual/references/requin-collaris_infographie_gartic_v01.png",
+    "url": "../../media/visual/references/requin-collaris_infographie_gartic_v01.png",
+    "title": "requin collaris infographie gartic v01",
+    "category": "References",
+    "type": "image",
+    "size": 2609258,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
+    "title": "sniky lol vayne portrait reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 376714,
+    "sizeLabel": "368 Ko"
+  },
+  {
+    "path": "media/visual/references/waluigi-cosplay_reference_v01.webp",
+    "url": "../../media/visual/references/waluigi-cosplay_reference_v01.webp",
+    "title": "waluigi cosplay reference v01",
+    "category": "References",
+    "type": "image",
+    "size": 34636,
+    "sizeLabel": "34 Ko"
+  }
+]
