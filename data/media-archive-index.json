@@ -35,5 +35,10 @@
     "media/visual/references/gartic-monster/",
     "media/video/references/gartic-monster/",
     "media/visual/social/icons/"
+  ],
+  "import_metadata": [
+    "archives/import-metadata/2026-07-06/imports/ART/Thumbs.db",
+    "archives/import-metadata/2026-07-06/imports/bzh_games/Thumbs.db",
+    "archives/import-metadata/2026-07-06/imports/bzhpw_lore/GARTIC_MONSTER/desktop.ini"
   ]
 }

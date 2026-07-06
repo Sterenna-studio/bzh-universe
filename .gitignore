@@ -9,3 +9,9 @@ exports/
 dist/
 build/
 media/staging/
+
+# Les imports bruts doivent rester visibles pour inventaire, meme les metadonnees OS.
+!imports/
+!imports/**
+!archives/import-metadata/
+!archives/import-metadata/**

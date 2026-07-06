@@ -1,8 +1,8 @@
 {
   "generated_on": "2026-07-06",
   "repo_name": "bzh-universe",
-  "version": "V8-lore-reference-import",
-  "file_count": 554,
+  "version": "V9-import-metadata-policy",
+  "file_count": 559,
   "files": [
     ".github/workflows/deploy-ovh.yml",
     ".gitignore",
@@ -26,6 +26,11 @@
     "archives/html/bzhpw-lore/MutenRock_Chroniques_BZH_FR.html",
     "archives/html/bzhpw-lore/Sniky_BZH_Chronicles_Updated.html",
     "archives/html/bzhpw-lore/Sniky_Chroniques_BZH_FR.html",
+    "archives/import-metadata/2026-07-06/imports/ART/Thumbs.db",
+    "archives/import-metadata/2026-07-06/imports/bzh_games/Thumbs.db",
+    "archives/import-metadata/2026-07-06/imports/bzhpw_lore/GARTIC_MONSTER/desktop.ini",
+    "archives/import-metadata/README.html",
+    "archives/import-metadata/README.md",
     "archives/pdfs/.gitkeep",
     "archives/pdfs/bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report (1).pdf",
     "archives/pdfs/bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report.pdf",

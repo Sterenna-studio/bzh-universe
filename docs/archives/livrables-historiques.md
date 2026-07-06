@@ -62,3 +62,8 @@ Le lot d'import 2026-07-06 ajoute des fichiers sources conservés hors des pages
 - `archives/pdfs/bzhpw-lore/neokarceris/` — PDF source.
 
 Ces fichiers restent des matériaux de référence. Leur contenu peut être consolidé plus tard dans les dossiers Markdown du hub.
+
+## 7. Métadonnées d'import conservées
+Le dossier `imports/` doit rester un sas visible : rien n'y est masqué par Git pendant l'inventaire.
+
+Les métadonnées système arrivées dans un lot brut sont déplacées vers `archives/import-metadata/` après analyse, afin de conserver la trace complète de l'import sans les mélanger aux assets finaux.
