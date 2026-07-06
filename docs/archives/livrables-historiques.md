@@ -67,3 +67,15 @@ Ces fichiers restent des matériaux de référence. Leur contenu peut être cons
 Le dossier `imports/` doit rester un sas visible : rien n'y est masqué par Git pendant l'inventaire.
 
 Les métadonnées système arrivées dans un lot brut sont déplacées vers `archives/import-metadata/` après analyse, afin de conserver la trace complète de l'import sans les mélanger aux assets finaux.
+
+## 8. Lot Desktop BZH copié et analysé
+Le dossier local `C:\Users\pierr\Desktop\BZH` a été copié sans modification de la source vers `imports/2026-07-06-desktop-bzh/`.
+
+Rapport dédié :
+- `archives/import-reports/2026-07-06-desktop-bzh.md`
+
+Synthèse :
+- 1 657 fichiers copiés ;
+- 231 fichiers déjà présents dans le repo ;
+- 1 426 fichiers nouveaux ;
+- tri final différé pour les vidéos et gros fichiers, notamment `BZH_RESS\Montage\BZH ANTHEM 2.mp4` qui dépasse 100 Mo.

@@ -66,3 +66,10 @@
 - Références visuelles, vidéos, icônes, documents de lore et sources Neokarceris inventoriés
 - Métadonnées système d'import conservées à part dans `archives/import-metadata/`
 - Sas `imports/` vidé des fichiers bruts, mais conservé comme point de dépôt pour les prochains lots
+
+## Ajouts V6
+- Dossier `C:\Users\pierr\Desktop\BZH` copié en sas dans `imports/2026-07-06-desktop-bzh/`
+- Source Desktop traitée en lecture seule, sans modification du dossier original
+- Rapport d'analyse ajouté dans `archives/import-reports/2026-07-06-desktop-bzh.md`
+- 231 doublons exacts détectés avec les médias et archives déjà classés
+- 1 426 fichiers nouveaux détectés, avec blocage volontaire avant commit du lot brut complet à cause d'un fichier vidéo de plus de 100 Mo
