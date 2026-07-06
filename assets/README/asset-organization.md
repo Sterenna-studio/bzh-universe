@@ -43,3 +43,14 @@ bzhchronicles_logo_main_v03.png
 bzhpw_tshirt_front_black_v01.webp
 bzhcard_bzh01_sniky_champion_v02.png
 ```
+
+## Classement applique depuis les imports
+
+- `assets/logos/` conserve les logos propres et reutilisables.
+- `assets/characters/` conserve les portraits ou illustrations rattaches a un personnage precis.
+- `assets/cards/bzh01/` conserve les visuels directement lies au set BZH01.
+- `media/visual/covers/` conserve les covers, mockups de jeu, jaquettes, posters et artworks d'album.
+- `media/visual/merch/` conserve les visuels textiles, tentures et objets.
+- `media/visual/webtoon/` conserve les affiches et prints narratifs.
+- `media/visual/social/` conserve les overlays, emotes et visuels stream.
+- `media/visual/references/` conserve les inspirations, crossovers, fichiers a verifier et doublons.
