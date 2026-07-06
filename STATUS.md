@@ -4,7 +4,7 @@
 - Hub documentaire : prêt
 - Arborescence Git : prête
 - Contenu centralisé : première passe complète
-- Médias originaux inclus : non, sauf catalogage et emplacements dédiés
+- Médias originaux inclus : oui, avec lots visuels, références, documents et métadonnées d'import inventoriés
 - Prêt pour initialisation Git : oui
 
 ## Ce qui est déjà centralisé
@@ -59,3 +59,10 @@
 - Fiches individuelles par conversation
 - Captures des citations originales disponibles
 - Liens depuis chaque conversation vers les sections du HUB concernées
+
+## Ajouts V5
+- Galerie média consultable générée depuis les fichiers suivis
+- Import 2026-07-06 classé dans `assets/`, `media/` et `archives/`
+- Références visuelles, vidéos, icônes, documents de lore et sources Neokarceris inventoriés
+- Métadonnées système d'import conservées à part dans `archives/import-metadata/`
+- Sas `imports/` vidé des fichiers bruts, mais conservé comme point de dépôt pour les prochains lots
