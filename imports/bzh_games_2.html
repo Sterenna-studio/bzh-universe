@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BZH Chronicles – Histoire vidéoludique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #00fff7;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 30px;
+      color: #ff2be6;
+      text-shadow: 0 0 5px #ff2be6;
+    }
+
+    .carousel {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00fff7;
+    }
+
+    .description {
+      margin-top: 15px;
+      font-size: 1.1em;
+      color: #d4d4d4;
+    }
+
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #ff2be6;
+      font-weight: bold;
+      font-size: 30px;
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .arrow:hover {
+      color: #00fff7;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Musique de fond -->
+<audio autoplay loop>
+  <source src="http://sterenna.fr/wp-content/uploads/2024/07/track-1.mp3" type="audio/mpeg">
+  Votre navigateur ne supporte pas l’audio HTML5.
+</audio>
+
+<div class="container">
+  <h1>BZH Chronicles – Histoire vidéoludique</h1>
+
+  <div class="carousel">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <img src="https://i.ibb.co/YTjs42cT/bzh-chronicles-64.png" alt="BZH Chronicles 64">
+      <div class="description">BZH Chronicles 64 (1998) – Un RPG tactique aux graphismes rétro 64-bit.</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="https://i.ibb.co/pkpFsQY/sniky-amp-titan-full.png" alt="Sniky & Titan Save Their Friend">
+      <div class="description">Sniky & Titan Save Their Friend (2005 – Nintendo DS) – Un jeu d’aventure enfantin à la Pokémon.</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="https://i.ibb.co/BVPxNHcp/bzh-journey.png" alt="BZH Journey Online">
+      <div class="description">BZH Journey Online (2026) – Le MMO VR immersif avec classes, raids, et exploration de planètes.</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="https://i.ibb.co/Dfsnyz8J/bzh-shadows.png" alt="BZH Shadows">
+      <div class="description">BZH Shadows (2024 – PC) – Un shooter narratif à ambiance sombre et cybernétique.</div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <img src="https://i.ibb.co/SLJ0PDj/bzh-chronicles-64-full.png" alt="BZH 64 Setup">
+      <div class="description">Setup rétro – L’édition collector de BZH Chronicles 64 exposée dans une chambre d’ado des années 90.</div>
+    </div>
+
+    <!-- Navigation -->
+    <a class="arrow left" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="arrow right" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slide");
+
+  function showSlide(index) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+    slides[index].classList.add("active");
+  }
+
+  function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    showSlide(slideIndex);
+  }
+</script>
+
+</body>
+</html>
