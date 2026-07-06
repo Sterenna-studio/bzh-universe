@@ -52,3 +52,13 @@ Le dépôt est prêt à les recevoir dans :
 - `archives/pdfs/`
 - `archives/svg/`
 - `archives/html/`
+- `archives/documents/`
+
+## 6. Sources brutes réintégrées
+Le lot d'import 2026-07-06 ajoute des fichiers sources conservés hors des pages wiki générées :
+- `archives/html/bzhpw-lore/` — fiches HTML bilingues Sniky et MutenRock.
+- `archives/documents/bzhpw-lore/tcg-story-source.docx` — source brute du récit TCG.
+- `archives/documents/bzhpw-lore/neokarceris/` — documents texte source.
+- `archives/pdfs/bzhpw-lore/neokarceris/` — PDF source.
+
+Ces fichiers restent des matériaux de référence. Leur contenu peut être consolidé plus tard dans les dossiers Markdown du hub.

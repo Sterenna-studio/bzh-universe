@@ -54,3 +54,5 @@ bzhcard_bzh01_sniky_champion_v02.png
 - `media/visual/webtoon/` conserve les affiches et prints narratifs.
 - `media/visual/social/` conserve les overlays, emotes et visuels stream.
 - `media/visual/references/` conserve les inspirations, crossovers, fichiers a verifier et doublons.
+- `media/video/references/` conserve les videos de reference ou de lore non finalisees.
+- `archives/` conserve les sources brutes non media-final : HTML exportes, PDF, DOCX et ODT.

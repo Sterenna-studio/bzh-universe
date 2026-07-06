@@ -10,12 +10,30 @@
     "BZH_PW_Classement.pdf",
     "BZH_PW_Stats.pdf",
     "BZH_PW_Profils_masques.pdf",
-    "attestation_bzhpw_docteur_leo_giosa.pdf"
+    "attestation_bzhpw_docteur_leo_giosa.pdf",
+    "bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report (1).pdf",
+    "bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report.pdf",
+    "bzhpw-lore/neokarceris/Neokarceris_Confidential_Document (1).pdf",
+    "bzhpw-lore/neokarceris/Neokarceris_Confidential_Document.pdf"
   ],
   "svg": [
     "attestation_bzhpw_docteur_leo_giosa.svg"
   ],
   "html": [
-    "attestation_bzhpw_docteur_leo_giosa.html"
+    "attestation_bzhpw_docteur_leo_giosa.html",
+    "bzhpw-lore/MutenRock_BZH_Chronicles.html",
+    "bzhpw-lore/MutenRock_Chroniques_BZH_FR.html",
+    "bzhpw-lore/Sniky_BZH_Chronicles_Updated.html",
+    "bzhpw-lore/Sniky_Chroniques_BZH_FR.html"
+  ],
+  "documents": [
+    "bzhpw-lore/tcg-story-source.docx",
+    "bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report.docx",
+    "bzhpw-lore/neokarceris/Neokarceris_Censored_Confidential_Report.odt"
+  ],
+  "reference_sets": [
+    "media/visual/references/gartic-monster/",
+    "media/video/references/gartic-monster/",
+    "media/visual/social/icons/"
   ]
 }

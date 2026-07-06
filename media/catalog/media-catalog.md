@@ -78,6 +78,25 @@
   - `media/visual/references/*_reference_*` — crossovers, franchises externes, organigrammes et creature.
   - `media/visual/references/duplicates/` — doublons stricts isoles pour audit.
 
+### Import 2026-07-06 — vague 3 classee
+- Sources de lore brutes :
+  - `archives/html/bzhpw-lore/` — fiches HTML bilingues Sniky et MutenRock.
+  - `archives/documents/bzhpw-lore/tcg-story-source.docx` — source DOCX du récit TCG.
+  - `archives/documents/bzhpw-lore/neokarceris/` — documents DOCX/ODT source.
+  - `archives/pdfs/bzhpw-lore/neokarceris/` — documents PDF source.
+- References visuelles :
+  - `media/visual/references/gartic-monster/` — lot de reference conserve par sous-dossiers d'origine.
+  - `media/visual/references/gartic-monster/neokarceris/` — visuels rattaches au dossier Neokarceris.
+  - `media/visual/references/gartic-monster/dream-world/` — scenes de reference oniriques.
+  - `media/visual/references/gartic-monster/gartic-draws/` — dessins et captures importes.
+  - `media/visual/references/gartic-monster/gartic-sentences-screenshots/` — captures GIF.
+  - `media/visual/references/gartic-monster/luna-head/` — serie de portraits source.
+- Videos de reference :
+  - `media/video/references/gartic-monster/` — clips de reference importes.
+  - `media/video/references/gartic-monster/neokarceris/` — clips rattaches au dossier Neokarceris.
+- Social / icones :
+  - `media/visual/social/icons/` — 33 icones `.ico` classees comme raccourcis ou pictogrammes de reference.
+
 ## Audio
 - Sniky: The Frager
 - Aligax: Digital Maiden

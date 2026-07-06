@@ -19,6 +19,7 @@ const SCAN_ROOTS = [
 ];
 const EXTENSIONS = new Map([
   ['.gif', 'image'],
+  ['.ico', 'image'],
   ['.jpg', 'image'],
   ['.jpeg', 'image'],
   ['.png', 'image'],
