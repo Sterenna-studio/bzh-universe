@@ -94,3 +94,16 @@
 - Fichiers audio traités supprimés de `imports/2026-07-06-desktop-bzh/BZH_RESS/Son/`
 - Dossiers vides supprimés du sas local
 - Les fichiers vidéo, exports web/statistiques et visuels restants demeurent dans le sas pour tri ultérieur
+
+## Ajouts V9
+- Sous-lot `LOL_TEAM_STATS` archive comme export web/statistique consultable
+- 360 fichiers copies dans `archives/web/lol-team-stats/raw/`
+- Page d'archive ajoutee dans `archives/web/lol-team-stats/README.md`
+- Aucun doublon exact detecte avec les fichiers deja suivis
+
+## Ajouts V10
+- Sous-lots audio `Sniky The Frager Mix` et `Dernier souffle` traites
+- 22 fichiers MP3 classes dans `media/audio/tracks/`
+- 5 variantes Sniky classees dans `media/audio/tracks/sniky-the-frager-mix/`
+- 17 pistes et variantes Dernier souffle / Echo Vide / Fantome de Chair classees dans `media/audio/tracks/dernier-souffle/`
+- Aucun doublon exact detecte avec l'audio deja classe

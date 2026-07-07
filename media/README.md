@@ -18,3 +18,5 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `audio/tracks/` — pistes MP3 issues des imports.
 - `audio/previews/` — extraits ou musiques de site.
 - `audio/masters/` — sources WAV conservees comme masters.
+- `audio/tracks/sniky-the-frager-mix/` — variantes MP3 Sniky importees depuis le lot Desktop BZH.
+- `audio/tracks/dernier-souffle/` — pistes et variantes MP3 Dernier souffle / Echo Vide / Fantome de Chair.

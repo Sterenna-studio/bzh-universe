@@ -83,16 +83,33 @@
 - Aucun fichier audio ne depasse 100 Mo.
 - Aucun doublon exact detecte avec les medias deja suivis.
 
+## Traitement audio complementaire Sniky / Dernier souffle
+- 22 fichiers MP3 classes dans `media/audio/tracks/`.
+- Volume classe : 87,29 Mo.
+- 5 variantes `mmk sniky 2` classees dans `media/audio/tracks/sniky-the-frager-mix/`.
+- 17 pistes et variantes Dernier souffle / Echo Vide / Fantome de Chair classees dans `media/audio/tracks/dernier-souffle/`.
+- Aucun fichier ne depasse 100 Mo.
+- Aucun doublon exact detecte avec l'audio deja classe avant promotion.
+- Les dossiers sources `Sniky The Frager Mix/` et `Dernier souffle/` ont ete vides dans le sas local apres classement.
+
 ## Nettoyage du sas realise
 - `imports/2026-07-06-desktop-bzh/BZH_TCG_Images/` supprime du sas local apres classement.
 - Les fichiers audio traites ont ete retires de `imports/2026-07-06-desktop-bzh/BZH_RESS/Son/`.
+- Les fichiers audio des dossiers `Sniky The Frager Mix/` et `Dernier souffle/` ont ete retires du sas local apres classement.
 - Les dossiers vides du sas local ont ete supprimes.
 - Les videos de `BZH_RESS\Son` restent dans le sas comme references non traitees.
 - Le reste du lot Desktop BZH reste dans le sas pour tri ou arbitrage.
 
+## Traitement LoL Team Stats realise
+- 360 fichiers archives dans `archives/web/lol-team-stats/raw/`.
+- Les pages HTML, CSV, JSON, CSS, images et fichiers telecharges sont conserves comme snapshot web/statistique.
+- Une page d'entree consultable a ete ajoutee : `archives/web/lol-team-stats/README.md`.
+- Aucun doublon exact detecte avec les fichiers deja suivis.
+- Le dossier source `LOL_TEAM_STATS/` a ete retire du sas local apres archivage.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.
-3. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
+2. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
+3. Traiter les petits lots restants `Hermine`, `LEME`, `RTT` et `bzh_chr_album_wip`.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

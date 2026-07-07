@@ -1,3 +1,4 @@
 *.pdn binary
 *.mp3 binary
 *.wav binary
+archives/web/lol-team-stats/raw/** binary

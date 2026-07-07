@@ -37,6 +37,19 @@ Sous-lot audio traite :
 - aucun doublon exact detecte avant copie ;
 - fichiers audio traites retires du sas local, en laissant les videos `BZH_RESS\Son` non traitees.
 
+Sous-lots audio Sniky / Dernier souffle traites :
+- 22 fichiers MP3 classes dans `media/audio/tracks/` ;
+- 5 variantes `mmk sniky 2` dans `media/audio/tracks/sniky-the-frager-mix/` ;
+- 17 pistes et variantes Dernier souffle / Echo Vide / Fantome de Chair dans `media/audio/tracks/dernier-souffle/` ;
+- aucun doublon exact detecte avec l'audio deja classe ;
+- dossiers sources `Sniky The Frager Mix/` et `Dernier souffle/` vides apres classement.
+
 Nettoyage :
 - les dossiers vides generes par le tri ont ete supprimes du sas local ;
 - les elements restants dans `imports/2026-07-06-desktop-bzh/` sont a traiter ou a arbitrer.
+
+Sous-lot LoL Team Stats traite :
+- 360 fichiers archives dans `archives/web/lol-team-stats/raw/` ;
+- page consultable : `archives/web/lol-team-stats/README.md` ;
+- aucun doublon exact detecte avant copie ;
+- dossier source `LOL_TEAM_STATS/` retire du sas local apres archivage.
