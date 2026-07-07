@@ -155,3 +155,9 @@ Le bloc `bzh_chronicle_logo/` a ete classe comme assets logo :
 - `assets/logos/bzh-chronicles/wip/` — variantes WIP.
 - `archives/sources/logos/bzh-chronicles/` — source Paint.NET conservee.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv` — mapping source/destination.
+
+## 18. bzhpwimage immmaaageg
+Le bloc `immmaaageg/` a ete classe comme references visuelles :
+- `media/visual/references/immmaaageg/` — references cyberpunk, Wuxia, typography et personnages.
+- `archives/sources/bzhpwimage/immmaaageg_source_v001.pdn` — source Paint.NET conservee.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv` — mapping source/destination.

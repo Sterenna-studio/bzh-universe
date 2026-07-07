@@ -24,6 +24,8 @@ Doublons exacts internes conserves sous `archives/import-duplicates/2026-07-06-d
 - `BZH_RESS/wallpaper/tenture/` — 1 copie exacte de tenture archivee ; le media utile est `media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v002.webp`.
 - `BZH_RESS/wallpaper/tenture/` — 1 copie exacte du poster MutenRock archivee ; le media utile est `media/visual/covers/bzh-ress-posters/bzhress_poster_v006.webp`.
 - `BZH_RESS/Montage/bzh_dancers/wario_rework/` — 1 copie exacte low-poly Wario archivee ; le media utile est `media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v001.webp`.
+- `BZH_RESS/bzhpwimage/immmaaageg/image (1).webp` — copie exacte de `media/visual/references/immmaaageg/bzhpwimage_immmaaageg_v027.webp`.
 
 Mapping detaille : `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.
 Mapping Montage : `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv`.
+Mapping immmaaageg : `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv`.

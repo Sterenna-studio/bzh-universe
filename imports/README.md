@@ -103,3 +103,10 @@ Sous-lot bzhpwimage logos traite :
 - 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/` ;
 - 2 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv`.
+
+Sous-lot bzhpwimage immmaaageg traite :
+- 42 references visuelles classees dans `media/visual/references/immmaaageg/` ;
+- 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/` ;
+- 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/immmaaageg/` ;
+- 3 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv`.
