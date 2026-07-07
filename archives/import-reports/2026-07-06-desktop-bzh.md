@@ -229,9 +229,27 @@ Destinations :
 Trace de renommage :
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv`.
 
+## Traitement bzhpwimage logos realise
+- Perimetre traite : `bzhpwimage/bzh_chronicle_logo/`.
+- 176 fichiers examines.
+- 173 visuels logo promus dans `assets/logos/bzh-chronicles/`.
+- 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/`.
+- 2 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv`.
+
+Destinations :
+- `assets/logos/bzh-chronicles/title/` — 144 variantes de titre BZH Chronicles.
+- `assets/logos/bzh-chronicles/dominion/` — 25 variantes Dominion.
+- `assets/logos/bzh-chronicles/wip/` — 3 variantes WIP.
+- `assets/logos/bzh-chronicles/` — 1 variante logo detouree.
+- `archives/sources/logos/bzh-chronicles/` — 1 source Paint.NET.
+
+Trace de renommage :
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer `bzhpwimage` par familles : `bzh_chronicle_logo`, `bzh_pw_artwork`, `immmaaageg` et sources internes.
+2. Continuer `bzhpwimage` par familles : `bzh_pw_artwork`, `immmaaageg` et sources internes.
 3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

@@ -147,3 +147,11 @@ Une premiere passe `bzhpwimage` a classe les petits lots non video :
 - `media/visual/references/bzh-pw-rd-art/split/` — recherches de style MutenRock.
 - `media/visual/references/coloring-pages/` — coloriages Aligax et MutenRock.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv` — mapping source/destination.
+
+## 17. bzhpwimage logos BZH Chronicles
+Le bloc `bzh_chronicle_logo/` a ete classe comme assets logo :
+- `assets/logos/bzh-chronicles/title/` — variantes titre.
+- `assets/logos/bzh-chronicles/dominion/` — variantes Dominion.
+- `assets/logos/bzh-chronicles/wip/` — variantes WIP.
+- `archives/sources/logos/bzh-chronicles/` — source Paint.NET conservee.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv` — mapping source/destination.

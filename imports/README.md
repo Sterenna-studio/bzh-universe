@@ -97,3 +97,9 @@ Sous-lot bzhpwimage petits lots traite :
 - 17 visuels classes dans `media/visual/` ;
 - 1 doublon exact deja suivi reste dans le sas brut et est indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv`.
+
+Sous-lot bzhpwimage logos traite :
+- 173 visuels logo classes dans `assets/logos/bzh-chronicles/` ;
+- 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/` ;
+- 2 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv`.

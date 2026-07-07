@@ -150,3 +150,9 @@
 - 6 recherches RD art classees dans `media/visual/references/bzh-pw-rd-art/split/`
 - 2 coloriages classes dans `media/visual/references/coloring-pages/`
 - 1 doublon exact deja suivi indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv`
+
+## Ajouts V17
+- Sous-lot `bzhpwimage/bzh_chronicle_logo` traite
+- 173 assets logo classes dans `assets/logos/bzh-chronicles/`
+- 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/`
+- 2 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv`
