@@ -3654,6 +3654,330 @@
     "sizeLabel": "84 Ko"
   },
   {
+    "path": "media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v001.jpg",
+    "url": "../../media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v001.jpg",
+    "title": "bzh dancer bowser v001",
+    "category": "References",
+    "type": "image",
+    "size": 55965,
+    "sizeLabel": "55 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v002.webp",
+    "url": "../../media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v002.webp",
+    "title": "bzh dancer bowser v002",
+    "category": "References",
+    "type": "image",
+    "size": 24228,
+    "sizeLabel": "24 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v003.webp",
+    "url": "../../media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v003.webp",
+    "title": "bzh dancer bowser v003",
+    "category": "References",
+    "type": "image",
+    "size": 28654,
+    "sizeLabel": "28 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v004.png",
+    "url": "../../media/visual/references/bzh-dancers/bowser/bzh_dancer_bowser_v004.png",
+    "title": "bzh dancer bowser v004",
+    "category": "References",
+    "type": "image",
+    "size": 919604,
+    "sizeLabel": "898 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v001.jpg",
+    "url": "../../media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v001.jpg",
+    "title": "bzh dancer lethal v001",
+    "category": "References",
+    "type": "image",
+    "size": 21737,
+    "sizeLabel": "21 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v002.png",
+    "url": "../../media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v002.png",
+    "title": "bzh dancer lethal v002",
+    "category": "References",
+    "type": "image",
+    "size": 741558,
+    "sizeLabel": "724 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v003.jpg",
+    "url": "../../media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v003.jpg",
+    "title": "bzh dancer lethal v003",
+    "category": "References",
+    "type": "image",
+    "size": 22423,
+    "sizeLabel": "22 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v004.jpg",
+    "url": "../../media/visual/references/bzh-dancers/lethal/bzh_dancer_lethal_v004.jpg",
+    "title": "bzh dancer lethal v004",
+    "category": "References",
+    "type": "image",
+    "size": 24470,
+    "sizeLabel": "24 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/old-bowser-singer/bzh_dancer_old-bowser_v001.webp",
+    "url": "../../media/visual/references/bzh-dancers/old-bowser-singer/bzh_dancer_old-bowser_v001.webp",
+    "title": "bzh dancer old bowser v001",
+    "category": "References",
+    "type": "image",
+    "size": 141462,
+    "sizeLabel": "138 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v001.jpg",
+    "url": "../../media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v001.jpg",
+    "title": "bzh dancer waluigi v001",
+    "category": "References",
+    "type": "image",
+    "size": 71742,
+    "sizeLabel": "70 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v002.jpg",
+    "url": "../../media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v002.jpg",
+    "title": "bzh dancer waluigi v002",
+    "category": "References",
+    "type": "image",
+    "size": 81746,
+    "sizeLabel": "80 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v003.jpg",
+    "url": "../../media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v003.jpg",
+    "title": "bzh dancer waluigi v003",
+    "category": "References",
+    "type": "image",
+    "size": 69207,
+    "sizeLabel": "68 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v004.jpg",
+    "url": "../../media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v004.jpg",
+    "title": "bzh dancer waluigi v004",
+    "category": "References",
+    "type": "image",
+    "size": 69710,
+    "sizeLabel": "68 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v005.png",
+    "url": "../../media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v005.png",
+    "title": "bzh dancer waluigi v005",
+    "category": "References",
+    "type": "image",
+    "size": 958706,
+    "sizeLabel": "936 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v001.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v001.jpg",
+    "title": "bzh dancer wario rework v001",
+    "category": "References",
+    "type": "image",
+    "size": 75868,
+    "sizeLabel": "74 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v002.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v002.jpg",
+    "title": "bzh dancer wario rework v002",
+    "category": "References",
+    "type": "image",
+    "size": 71313,
+    "sizeLabel": "70 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v003.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v003.jpg",
+    "title": "bzh dancer wario rework v003",
+    "category": "References",
+    "type": "image",
+    "size": 73399,
+    "sizeLabel": "72 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v004.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v004.jpg",
+    "title": "bzh dancer wario rework v004",
+    "category": "References",
+    "type": "image",
+    "size": 72829,
+    "sizeLabel": "71 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v005.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v005.jpg",
+    "title": "bzh dancer wario rework v005",
+    "category": "References",
+    "type": "image",
+    "size": 80634,
+    "sizeLabel": "79 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v006.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v006.jpg",
+    "title": "bzh dancer wario rework v006",
+    "category": "References",
+    "type": "image",
+    "size": 608011,
+    "sizeLabel": "594 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v007.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v007.jpg",
+    "title": "bzh dancer wario rework v007",
+    "category": "References",
+    "type": "image",
+    "size": 71126,
+    "sizeLabel": "69 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v008.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v008.jpg",
+    "title": "bzh dancer wario rework v008",
+    "category": "References",
+    "type": "image",
+    "size": 67734,
+    "sizeLabel": "66 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v009.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v009.webp",
+    "title": "bzh dancer wario rework v009",
+    "category": "References",
+    "type": "image",
+    "size": 163882,
+    "sizeLabel": "160 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v010.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v010.webp",
+    "title": "bzh dancer wario rework v010",
+    "category": "References",
+    "type": "image",
+    "size": 404604,
+    "sizeLabel": "395 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v011.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v011.webp",
+    "title": "bzh dancer wario rework v011",
+    "category": "References",
+    "type": "image",
+    "size": 374718,
+    "sizeLabel": "366 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v012.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v012.webp",
+    "title": "bzh dancer wario rework v012",
+    "category": "References",
+    "type": "image",
+    "size": 348836,
+    "sizeLabel": "341 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v013.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v013.webp",
+    "title": "bzh dancer wario rework v013",
+    "category": "References",
+    "type": "image",
+    "size": 352580,
+    "sizeLabel": "344 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v014.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v014.webp",
+    "title": "bzh dancer wario rework v014",
+    "category": "References",
+    "type": "image",
+    "size": 326972,
+    "sizeLabel": "319 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v015.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v015.webp",
+    "title": "bzh dancer wario rework v015",
+    "category": "References",
+    "type": "image",
+    "size": 429246,
+    "sizeLabel": "419 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v016.webp",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v016.webp",
+    "title": "bzh dancer wario rework v016",
+    "category": "References",
+    "type": "image",
+    "size": 116976,
+    "sizeLabel": "114 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v017.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario-rework/bzh_dancer_wario-rework_v017.jpg",
+    "title": "bzh dancer wario rework v017",
+    "category": "References",
+    "type": "image",
+    "size": 70253,
+    "sizeLabel": "69 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v001.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v001.jpg",
+    "title": "bzh dancer wario v001",
+    "category": "References",
+    "type": "image",
+    "size": 66359,
+    "sizeLabel": "65 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v002.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v002.jpg",
+    "title": "bzh dancer wario v002",
+    "category": "References",
+    "type": "image",
+    "size": 175640,
+    "sizeLabel": "172 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v003.jpg",
+    "url": "../../media/visual/references/bzh-dancers/wario/bzh_dancer_wario_v003.jpg",
+    "title": "bzh dancer wario v003",
+    "category": "References",
+    "type": "image",
+    "size": 562528,
+    "sizeLabel": "549 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-ress-montage/bzhress_montage_root_v001.png",
+    "url": "../../media/visual/references/bzh-ress-montage/bzhress_montage_root_v001.png",
+    "title": "bzhress montage root v001",
+    "category": "References",
+    "type": "image",
+    "size": 1067574,
+    "sizeLabel": "1.0 Mo"
+  },
+  {
+    "path": "media/visual/references/bzh-ress-montage/bzhress_montage_root_v002.png",
+    "url": "../../media/visual/references/bzh-ress-montage/bzhress_montage_root_v002.png",
+    "title": "bzhress montage root v002",
+    "category": "References",
+    "type": "image",
+    "size": 1176300,
+    "sizeLabel": "1.1 Mo"
+  },
+  {
     "path": "media/visual/references/bzh-ress/bzhress_wolf-character_reference_v001.png",
     "url": "../../media/visual/references/bzh-ress/bzhress_wolf-character_reference_v001.png",
     "title": "bzhress wolf character reference v001",
@@ -3661,6 +3985,60 @@
     "type": "image",
     "size": 592954,
     "sizeLabel": "579 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v001.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v001.png",
+    "title": "bzh trio footage v001",
+    "category": "References",
+    "type": "image",
+    "size": 861630,
+    "sizeLabel": "841 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v002.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v002.png",
+    "title": "bzh trio footage v002",
+    "category": "References",
+    "type": "image",
+    "size": 836997,
+    "sizeLabel": "817 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v003.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v003.png",
+    "title": "bzh trio footage v003",
+    "category": "References",
+    "type": "image",
+    "size": 878220,
+    "sizeLabel": "858 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v004.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v004.png",
+    "title": "bzh trio footage v004",
+    "category": "References",
+    "type": "image",
+    "size": 513008,
+    "sizeLabel": "501 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v005.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v005.png",
+    "title": "bzh trio footage v005",
+    "category": "References",
+    "type": "image",
+    "size": 520970,
+    "sizeLabel": "509 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-trio-footage/bzh_trio_footage_v006.png",
+    "url": "../../media/visual/references/bzh-trio-footage/bzh_trio_footage_v006.png",
+    "title": "bzh trio footage v006",
+    "category": "References",
+    "type": "image",
+    "size": 852626,
+    "sizeLabel": "833 Ko"
   },
   {
     "path": "media/visual/references/bzhchronicles_dark-creature_reference_v01.png",

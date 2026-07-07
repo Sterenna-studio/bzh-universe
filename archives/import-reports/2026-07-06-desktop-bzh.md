@@ -197,9 +197,26 @@ Destinations :
 Trace de renommage :
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv`.
 
+## Traitement BZH_RESS Montage images realise
+- Perimetre traite : images fixes dans `imports/2026-07-06-desktop-bzh/BZH_RESS/Montage/`.
+- 43 fichiers images examines.
+- 42 images promues dans `media/visual/references/`.
+- 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/`.
+- Aucun doublon exact detecte avec les fichiers deja suivis avant promotion.
+- Les 136 videos `.mp4` du dossier `Montage/` restent reference-only dans le sas.
+
+Destinations :
+- `media/visual/references/bzh-dancers/` — 34 references chanteurs/danseurs et reworks.
+- `media/visual/references/bzh-trio-footage/` — 6 images de reference trio/anime opening.
+- `media/visual/references/bzh-ress-montage/` — 2 images racine du dossier Montage.
+- `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/` — 1 copie exacte interne.
+
+Trace de renommage :
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage`, `Montage` et documents/sources internes.
+2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage` et documents/sources internes.
 3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

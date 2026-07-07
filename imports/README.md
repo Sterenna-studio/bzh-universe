@@ -86,3 +86,9 @@ Racine BZH_RESS traitee :
 - 4 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` ;
 - `tmp1uphl2jq.mp4` reste reference-only dans le sas.
+
+Sous-lot BZH_RESS Montage images traite :
+- 42 images fixes classees dans `media/visual/references/` ;
+- 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv` ;
+- 136 videos `.mp4` restent reference-only dans le sas.

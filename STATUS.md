@@ -137,3 +137,9 @@
 - 2 documents sources conserves dans `archives/documents/bzhpw-lore/`
 - 1 CSV de metadata conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/`
 - 4 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`
+
+## Ajouts V15
+- Sous-lot `BZH_RESS/Montage` traite pour les images fixes uniquement
+- 42 references visuelles classees dans `media/visual/references/`
+- 1 doublon exact interne conserve dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/`
+- 136 videos `Montage` conservees reference-only dans le sas

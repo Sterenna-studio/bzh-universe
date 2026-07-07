@@ -31,7 +31,10 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/merch/tapestries/bzh-ress/` — tentures issues du sous-lot BZH_RESS.
 - `visual/references/bzh-chronicles/` — references visuelles BZH Chronicles.
 - `visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
+- `visual/references/bzh-dancers/` — references chanteurs/danseurs du sous-lot Montage.
 - `visual/references/bzh-ress/` — references visuelles racine BZH_RESS.
+- `visual/references/bzh-ress-montage/` — references racine du sous-lot Montage.
+- `visual/references/bzh-trio-footage/` — images de reference trio/anime opening.
 - `visual/references/gpt-soiree-trio/` — references de scene du sous-lot BZH_RESS.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
 - `visual/references/leme/` — references LEME / Gwen Ha Star.

@@ -133,3 +133,10 @@ Les fichiers non video poses directement dans `BZH_RESS/` ont ete classes :
 - `media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png` — poster Hall of Playtime.
 - `archives/documents/bzhpw-lore/` — documents sources.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` — mapping source/destination.
+
+## 15. BZH_RESS Montage images fixes
+Les images fixes du dossier `Montage/` ont ete classees sans analyser les videos :
+- `media/visual/references/bzh-dancers/` — references chanteurs/danseurs et reworks.
+- `media/visual/references/bzh-trio-footage/` — references trio/anime opening.
+- `media/visual/references/bzh-ress-montage/` — references racine du sous-lot Montage.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv` — mapping source/destination.
