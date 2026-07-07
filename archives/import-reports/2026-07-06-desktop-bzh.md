@@ -259,9 +259,36 @@ Trace de renommage :
 Trace de renommage :
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv`.
 
+## Traitement bzhpwimage artwork realise
+- Perimetre traite : fichiers non video de `bzhpwimage/bzh_pw_artwork/`.
+- 217 fichiers non video examines ; 3 videos `.mp4` restent reference-only dans le sas.
+- 204 visuels promus dans `media/visual/`.
+- 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/`.
+- 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`.
+- 3 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`.
+- 8 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv`.
+
+Destinations :
+- `media/visual/references/bzh-pw-art-set/` — 44 references art set.
+- `media/visual/references/bzh-pw-base/` — 3 references base.
+- `media/visual/wallpapers/bzh-pw-city/` — 10 wallpapers city.
+- `media/visual/references/bzh-pw-daddy-chronicles/` — 6 references Daddy Chronicles.
+- `media/visual/references/bzh-pw-le-code/` — 5 references Le Code.
+- `media/visual/references/bzh-pw-lol-chronicles/` — 41 references LoL Chronicles.
+- `media/visual/merch/bzh-pw-artwork/` — 31 visuels merch.
+- `media/visual/covers/bzh-pw-song-cover/` — 26 covers de morceaux.
+- `media/visual/wallpapers/bzh-pw-aligax/` — 26 wallpapers Aligax.
+- `media/visual/wallpapers/bzh-pw-mutenrock/` — 6 wallpapers MutenRock.
+- `media/visual/webtoon/bzh-pw-webtoon/` — 4 references webtoon.
+- `media/visual/references/bzh-pw-wuxia/` — 2 references Wuxia.
+
+Trace de renommage :
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer `bzhpwimage` par familles : `bzh_pw_artwork` et sources internes.
-3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
+2. Les visuels non video de `bzhpwimage` sont classes ; continuer seulement sur les videos et doublons bruts si une politique de stockage est decidee.
+3. Traiter le reste du sas en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

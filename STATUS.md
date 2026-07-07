@@ -163,3 +163,11 @@
 - 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/`
 - 1 doublon exact interne conserve dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/immmaaageg/`
 - 3 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv`
+
+## Ajouts V19
+- Sous-lot `bzhpwimage/bzh_pw_artwork` traite hors video
+- 204 visuels classes dans `media/visual/`
+- 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/`
+- 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`
+- 3 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`
+- 8 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv`

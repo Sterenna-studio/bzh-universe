@@ -110,3 +110,12 @@ Sous-lot bzhpwimage immmaaageg traite :
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/immmaaageg/` ;
 - 3 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv`.
+
+Sous-lot bzhpwimage artwork traite :
+- 204 visuels classes dans `media/visual/` ;
+- 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/` ;
+- 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/` ;
+- 3 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/` ;
+- 8 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv` ;
+- 3 videos `.mp4` restent reference-only dans le sas.

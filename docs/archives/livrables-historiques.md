@@ -161,3 +161,14 @@ Le bloc `immmaaageg/` a ete classe comme references visuelles :
 - `media/visual/references/immmaaageg/` — references cyberpunk, Wuxia, typography et personnages.
 - `archives/sources/bzhpwimage/immmaaageg_source_v001.pdn` — source Paint.NET conservee.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv` — mapping source/destination.
+
+## 19. bzhpwimage artwork
+Le bloc `bzh_pw_artwork/` a ete classe hors videos :
+- `media/visual/references/bzh-pw-art-set/` — art set.
+- `media/visual/references/bzh-pw-lol-chronicles/` — references LoL Chronicles.
+- `media/visual/covers/bzh-pw-song-cover/` — covers de morceaux.
+- `media/visual/merch/bzh-pw-artwork/` — merch.
+- `media/visual/wallpapers/bzh-pw-aligax/`, `media/visual/wallpapers/bzh-pw-city/`, `media/visual/wallpapers/bzh-pw-mutenrock/` — wallpapers.
+- `media/visual/webtoon/bzh-pw-webtoon/` — references webtoon.
+- `archives/sources/bzhpwimage/bzh_pw_artwork_source_v001.pdn` — source Paint.NET conservee.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv` — mapping source/destination.

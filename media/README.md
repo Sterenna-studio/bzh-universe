@@ -23,6 +23,7 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 
 ## Visuels classes
 - `visual/covers/bzh-pw-album-cover/` — covers et teasers album BZH Power.
+- `visual/covers/bzh-pw-song-cover/` — covers de morceaux BZH Power.
 - `visual/covers/bzh-ress-posters/` — posters issus du sous-lot BZH_RESS.
 - `visual/covers/bzh-chronicles-album-wip/` — visuels album WIP BZH Chronicles.
 - `visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
@@ -30,6 +31,7 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/merch/apparel/` — references apparel.
 - `visual/merch/plush/` — references plush.
 - `visual/merch/tapestries/bzh-ress/` — tentures issues du sous-lot BZH_RESS.
+- `visual/merch/bzh-pw-artwork/` — visuels merch bzh_pw_artwork.
 - `visual/references/bzh-chronicles/` — references visuelles BZH Chronicles.
 - `visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
 - `visual/references/bzh-dancers/` — references chanteurs/danseurs du sous-lot Montage.
@@ -37,6 +39,12 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/references/bzh-ress-montage/` — references racine du sous-lot Montage.
 - `visual/references/bzh-trio-footage/` — images de reference trio/anime opening.
 - `visual/references/bzh-pw-rd-art/` — recherches de style RD art.
+- `visual/references/bzh-pw-art-set/` — references art set BZH Power.
+- `visual/references/bzh-pw-base/` — references base BZH Power.
+- `visual/references/bzh-pw-daddy-chronicles/` — references Daddy Chronicles.
+- `visual/references/bzh-pw-le-code/` — references Le Code.
+- `visual/references/bzh-pw-lol-chronicles/` — references LoL Chronicles.
+- `visual/references/bzh-pw-wuxia/` — references Wuxia.
 - `visual/references/coloring-pages/` — coloriages personnages.
 - `visual/references/gpt-soiree-trio/` — references de scene du sous-lot BZH_RESS.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
@@ -46,3 +54,7 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/social/emotes/bzh-ress/` — emotes et avatars BZH_RESS.
 - `visual/social/stickers/bzh-ress/` — stickers BZH_RESS.
 - `visual/wallpapers/bzh-ress/` — wallpapers BZH_RESS.
+- `visual/wallpapers/bzh-pw-aligax/` — wallpapers Aligax.
+- `visual/wallpapers/bzh-pw-city/` — wallpapers city.
+- `visual/wallpapers/bzh-pw-mutenrock/` — wallpapers MutenRock.
+- `visual/webtoon/bzh-pw-webtoon/` — references webtoon BZH Power.
