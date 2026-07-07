@@ -122,3 +122,11 @@
 - 1 source Paint.NET conservee dans `archives/sources/webtoon/`
 - 5 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_CHRONICLES/`
 - 116 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`
+
+## Ajouts V13
+- Sous-lot partiel `BZH_RESS` traite sur les visuels courts non video
+- 65 medias classes dans `media/visual/`
+- 1 fiche HTML Sniky complementaire conservee dans `archives/html/bzhpw-lore/`
+- 4 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/`
+- 4 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/`
+- 7 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv`

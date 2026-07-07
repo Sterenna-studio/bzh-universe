@@ -22,10 +22,18 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `audio/tracks/dernier-souffle/` — pistes et variantes MP3 Dernier souffle / Echo Vide / Fantome de Chair.
 
 ## Visuels classes
+- `visual/covers/bzh-ress-posters/` — posters issus du sous-lot BZH_RESS.
 - `visual/covers/bzh-chronicles-album-wip/` — visuels album WIP BZH Chronicles.
 - `visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
 - `visual/covers/rtt/` — covers RTT / Pontivy.
+- `visual/merch/apparel/` — references apparel.
+- `visual/merch/plush/` — references plush.
+- `visual/merch/tapestries/bzh-ress/` — tentures issues du sous-lot BZH_RESS.
 - `visual/references/bzh-chronicles/` — references visuelles BZH Chronicles.
 - `visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
+- `visual/references/gpt-soiree-trio/` — references de scene du sous-lot BZH_RESS.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
 - `visual/references/leme/` — references LEME / Gwen Ha Star.
+- `visual/social/emotes/bzh-ress/` — emotes et avatars BZH_RESS.
+- `visual/social/stickers/bzh-ress/` — stickers BZH_RESS.
+- `visual/wallpapers/bzh-ress/` — wallpapers BZH_RESS.

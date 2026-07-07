@@ -153,9 +153,34 @@ Doublons exacts internes :
 - `old_card/Thorn Lurker.png` est une copie exacte de `old_card/Pulse Rifle.png`, promu dans `assets/cards/legacy/old-card/`.
 - `old_card/1 (13).png` est une copie exacte de `old_card/Titan _ Guardian Beast.png`, promu dans `assets/cards/legacy/old-card/`.
 
+## Traitement BZH_RESS visuels courts realise
+- Perimetre traite : `emote/`, `sticker/`, `poster/`, `wallpaper/` hors video, `chibiii plush/`, `chronicles_profil/` et `gpt_soirée_trio/`.
+- 81 fichiers non video examines.
+- 7 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv`.
+- 74 fichiers nouveaux traites : 66 contenus promus ou archives, 4 metadonnees Windows conservees, 4 copies doublons exactes internes archivees.
+- La video `BZH_RESS/wallpaper/732cc349-54b2-4a49-92f4-01cded1f0342.mp4` reste reference-only dans le sas.
+
+Destinations :
+- `media/visual/social/emotes/bzh-ress/` — 23 emotes et avatars.
+- `media/visual/social/stickers/bzh-ress/` — 4 stickers.
+- `media/visual/covers/bzh-ress-posters/` — 6 posters.
+- `media/visual/wallpapers/bzh-ress/` — 16 wallpapers.
+- `media/visual/merch/tapestries/bzh-ress/` — 6 tentures.
+- `media/visual/merch/plush/` — 1 reference plush.
+- `media/visual/merch/apparel/` — 1 reference apparel.
+- `media/visual/references/gpt-soiree-trio/` — 8 references de scene.
+- `archives/html/bzhpw-lore/` — 1 fiche HTML Sniky complementaire.
+- `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/` — 4 copies exactes internes.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/` — 4 metadonnees Windows.
+
+Trace de renommage :
+- Les fichiers a noms tres longs ont ete renommes en noms courts par famille.
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
+2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage`, `Montage`, fichiers racine et documents.
 3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

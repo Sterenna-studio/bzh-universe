@@ -19,3 +19,9 @@ Doublons exacts internes conserves sous `archives/import-duplicates/2026-07-06-d
 - `BZH_CHRONICLES/old_card/1 (45).png` — copie exacte de `assets/cards/legacy/old-card/Secret of the Maelstrom.png`.
 - `BZH_CHRONICLES/old_card/Thorn Lurker.png` — copie exacte de `assets/cards/legacy/old-card/Pulse Rifle.png`.
 - `BZH_CHRONICLES/old_card/1 (13).png` — copie exacte de `assets/cards/legacy/old-card/Titan _ Guardian Beast.png`.
+- `BZH_RESS/chibiii plush/ChatGPT Image 17 déc. 2025, 04_51_17.png` — copie exacte de `media/visual/merch/plush/bzhress_chibi_plush_v001.png`.
+- `BZH_RESS/wallpaper/` — 1 copie exacte de wallpaper cyber guardian archivee ; le media utile est `media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v010.webp`.
+- `BZH_RESS/wallpaper/tenture/` — 1 copie exacte de tenture archivee ; le media utile est `media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v002.webp`.
+- `BZH_RESS/wallpaper/tenture/` — 1 copie exacte du poster MutenRock archivee ; le media utile est `media/visual/covers/bzh-ress-posters/bzhress_poster_v006.webp`.
+
+Mapping detaille : `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.

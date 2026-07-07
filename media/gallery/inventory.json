@@ -2223,6 +2223,60 @@
     "sizeLabel": "2.1 Mo"
   },
   {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v001.png",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v001.png",
+    "title": "bzhress poster v001",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 8075444,
+    "sizeLabel": "7.7 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v002.png",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v002.png",
+    "title": "bzhress poster v002",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1238816,
+    "sizeLabel": "1.2 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v003.png",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v003.png",
+    "title": "bzhress poster v003",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 30897956,
+    "sizeLabel": "29.5 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v004.webp",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v004.webp",
+    "title": "bzhress poster v004",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1060918,
+    "sizeLabel": "1.0 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v005.png",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v005.png",
+    "title": "bzhress poster v005",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 4340026,
+    "sizeLabel": "4.1 Mo"
+  },
+  {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v006.webp",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v006.webp",
+    "title": "bzhress poster v006",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 1009898,
+    "sizeLabel": "986 Ko"
+  },
+  {
     "path": "media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
     "url": "../../media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
     "title": "bzhchronicles cd artwork grid v01",
@@ -2565,6 +2619,15 @@
     "sizeLabel": "3.0 Mo"
   },
   {
+    "path": "media/visual/merch/apparel/bzhress_holyshirt_v001.png",
+    "url": "../../media/visual/merch/apparel/bzhress_holyshirt_v001.png",
+    "title": "bzhress holyshirt v001",
+    "category": "Merch",
+    "type": "image",
+    "size": 357507,
+    "sizeLabel": "349 Ko"
+  },
+  {
     "path": "media/visual/merch/bzhchronicles_shirt_mockup_black_v01.png",
     "url": "../../media/visual/merch/bzhchronicles_shirt_mockup_black_v01.png",
     "title": "bzhchronicles shirt mockup black v01",
@@ -2608,6 +2671,69 @@
     "type": "image",
     "size": 3466847,
     "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "media/visual/merch/plush/bzhress_chibi_plush_v001.png",
+    "url": "../../media/visual/merch/plush/bzhress_chibi_plush_v001.png",
+    "title": "bzhress chibi plush v001",
+    "category": "Merch",
+    "type": "image",
+    "size": 1444083,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v001.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v001.webp",
+    "title": "bzhress tapestry v001",
+    "category": "Merch",
+    "type": "image",
+    "size": 913526,
+    "sizeLabel": "892 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v002.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v002.webp",
+    "title": "bzhress tapestry v002",
+    "category": "Merch",
+    "type": "image",
+    "size": 945824,
+    "sizeLabel": "924 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v003.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v003.webp",
+    "title": "bzhress tapestry v003",
+    "category": "Merch",
+    "type": "image",
+    "size": 829472,
+    "sizeLabel": "810 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v004.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v004.webp",
+    "title": "bzhress tapestry v004",
+    "category": "Merch",
+    "type": "image",
+    "size": 860200,
+    "sizeLabel": "840 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v005.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v005.webp",
+    "title": "bzhress tapestry v005",
+    "category": "Merch",
+    "type": "image",
+    "size": 1000426,
+    "sizeLabel": "977 Ko"
+  },
+  {
+    "path": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v006.webp",
+    "url": "../../media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v006.webp",
+    "title": "bzhress tapestry v006",
+    "category": "Merch",
+    "type": "image",
+    "size": 603720,
+    "sizeLabel": "590 Ko"
   },
   {
     "path": "media/visual/merch/tapestries/bzhpower_tapestry_group_v01.webp",
@@ -2689,6 +2815,213 @@
     "type": "image",
     "size": 825110,
     "sizeLabel": "806 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/aligax_mote_v001.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/aligax_mote_v001.png",
+    "title": "aligax mote v001",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 448685,
+    "sizeLabel": "438 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/aligax_mote_v002.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/aligax_mote_v002.png",
+    "title": "aligax mote v002",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 442001,
+    "sizeLabel": "432 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/aligax_mote_v003.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/aligax_mote_v003.png",
+    "title": "aligax mote v003",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 448723,
+    "sizeLabel": "438 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/aligax_mote_v004.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/aligax_mote_v004.png",
+    "title": "aligax mote v004",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 451720,
+    "sizeLabel": "441 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v001.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v001.png",
+    "title": "bzhress emote v001",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 791605,
+    "sizeLabel": "773 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v002.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v002.png",
+    "title": "bzhress emote v002",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 874271,
+    "sizeLabel": "854 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v003.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v003.png",
+    "title": "bzhress emote v003",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1394548,
+    "sizeLabel": "1.3 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v004.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v004.png",
+    "title": "bzhress emote v004",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1732580,
+    "sizeLabel": "1.7 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v005.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v005.png",
+    "title": "bzhress emote v005",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1537999,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v006.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v006.png",
+    "title": "bzhress emote v006",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1150613,
+    "sizeLabel": "1.1 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v007.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v007.png",
+    "title": "bzhress emote v007",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1292278,
+    "sizeLabel": "1.2 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v008.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v008.png",
+    "title": "bzhress emote v008",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 967680,
+    "sizeLabel": "945 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v009.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v009.png",
+    "title": "bzhress emote v009",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 955853,
+    "sizeLabel": "933 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v010.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v010.png",
+    "title": "bzhress emote v010",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1585432,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v011.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v011.png",
+    "title": "bzhress emote v011",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1791276,
+    "sizeLabel": "1.7 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v012.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v012.png",
+    "title": "bzhress emote v012",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1603842,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v013.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v013.png",
+    "title": "bzhress emote v013",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1038347,
+    "sizeLabel": "1014 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v014.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v014.png",
+    "title": "bzhress emote v014",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 888119,
+    "sizeLabel": "867 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/bzhress_emote_v015.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/bzhress_emote_v015.png",
+    "title": "bzhress emote v015",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 1100695,
+    "sizeLabel": "1.0 Mo"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/muten_mote_v001.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/muten_mote_v001.png",
+    "title": "muten mote v001",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 388899,
+    "sizeLabel": "380 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/muten_mote_v002.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/muten_mote_v002.png",
+    "title": "muten mote v002",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 387448,
+    "sizeLabel": "378 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/muten_mote_v003.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/muten_mote_v003.png",
+    "title": "muten mote v003",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 386619,
+    "sizeLabel": "378 Ko"
+  },
+  {
+    "path": "media/visual/social/emotes/bzh-ress/muten_mote_v004.png",
+    "url": "../../media/visual/social/emotes/bzh-ress/muten_mote_v004.png",
+    "title": "muten mote v004",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 387626,
+    "sizeLabel": "379 Ko"
   },
   {
     "path": "media/visual/social/emotes/king-of-bicycles_emote_v01.png",
@@ -3006,6 +3339,42 @@
     "sizeLabel": "264 Ko"
   },
   {
+    "path": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v001.png",
+    "url": "../../media/visual/social/stickers/bzh-ress/bzhress_sticker_v001.png",
+    "title": "bzhress sticker v001",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 615575,
+    "sizeLabel": "601 Ko"
+  },
+  {
+    "path": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v002.png",
+    "url": "../../media/visual/social/stickers/bzh-ress/bzhress_sticker_v002.png",
+    "title": "bzhress sticker v002",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 234646,
+    "sizeLabel": "229 Ko"
+  },
+  {
+    "path": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v003.png",
+    "url": "../../media/visual/social/stickers/bzh-ress/bzhress_sticker_v003.png",
+    "title": "bzhress sticker v003",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 322713,
+    "sizeLabel": "315 Ko"
+  },
+  {
+    "path": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v004.png",
+    "url": "../../media/visual/social/stickers/bzh-ress/bzhress_sticker_v004.png",
+    "title": "bzhress sticker v004",
+    "category": "Social et stream",
+    "type": "image",
+    "size": 353436,
+    "sizeLabel": "345 Ko"
+  },
+  {
     "path": "media/visual/social/twitch/bzh_stream_lets-play_v01.png",
     "url": "../../media/visual/social/twitch/bzh_stream_lets-play_v01.png",
     "title": "bzh stream lets play v01",
@@ -3031,6 +3400,150 @@
     "type": "image",
     "size": 2356203,
     "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v001.png",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v001.png",
+    "title": "bzhress wallpaper v001",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 9659833,
+    "sizeLabel": "9.2 Mo"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v002.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v002.webp",
+    "title": "bzhress wallpaper v002",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 453046,
+    "sizeLabel": "442 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v003.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v003.webp",
+    "title": "bzhress wallpaper v003",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 465448,
+    "sizeLabel": "455 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v004.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v004.webp",
+    "title": "bzhress wallpaper v004",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 672246,
+    "sizeLabel": "656 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v005.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v005.webp",
+    "title": "bzhress wallpaper v005",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 601116,
+    "sizeLabel": "587 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v006.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v006.webp",
+    "title": "bzhress wallpaper v006",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 456378,
+    "sizeLabel": "446 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v007.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v007.webp",
+    "title": "bzhress wallpaper v007",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 361696,
+    "sizeLabel": "353 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v008.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v008.webp",
+    "title": "bzhress wallpaper v008",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 774814,
+    "sizeLabel": "757 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v009.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v009.webp",
+    "title": "bzhress wallpaper v009",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 630930,
+    "sizeLabel": "616 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v010.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v010.webp",
+    "title": "bzhress wallpaper v010",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 374778,
+    "sizeLabel": "366 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v011.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v011.webp",
+    "title": "bzhress wallpaper v011",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 564366,
+    "sizeLabel": "551 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v012.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v012.webp",
+    "title": "bzhress wallpaper v012",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 352370,
+    "sizeLabel": "344 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v013.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v013.webp",
+    "title": "bzhress wallpaper v013",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 328442,
+    "sizeLabel": "321 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v014.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v014.webp",
+    "title": "bzhress wallpaper v014",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 722726,
+    "sizeLabel": "706 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v015.webp",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v015.webp",
+    "title": "bzhress wallpaper v015",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 776224,
+    "sizeLabel": "758 Ko"
+  },
+  {
+    "path": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v016.jpg",
+    "url": "../../media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v016.jpg",
+    "title": "bzhress wallpaper v016",
+    "category": "Wallpapers",
+    "type": "image",
+    "size": 107215,
+    "sizeLabel": "105 Ko"
   },
   {
     "path": "media/visual/wallpapers/bzhchronicles_cyber-space_city_v01.webp",
@@ -4138,6 +4651,78 @@
     "type": "image",
     "size": 4128544,
     "sizeLabel": "3.9 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v001.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v001.png",
+    "title": "bzhress soiree trio v001",
+    "category": "References",
+    "type": "image",
+    "size": 2610645,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v002.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v002.png",
+    "title": "bzhress soiree trio v002",
+    "category": "References",
+    "type": "image",
+    "size": 3306525,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v003.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v003.png",
+    "title": "bzhress soiree trio v003",
+    "category": "References",
+    "type": "image",
+    "size": 2750270,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v004.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v004.png",
+    "title": "bzhress soiree trio v004",
+    "category": "References",
+    "type": "image",
+    "size": 1502442,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v005.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v005.png",
+    "title": "bzhress soiree trio v005",
+    "category": "References",
+    "type": "image",
+    "size": 1494657,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v006.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v006.png",
+    "title": "bzhress soiree trio v006",
+    "category": "References",
+    "type": "image",
+    "size": 3068112,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v007.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v007.png",
+    "title": "bzhress soiree trio v007",
+    "category": "References",
+    "type": "image",
+    "size": 2290684,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v008.png",
+    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v008.png",
+    "title": "bzhress soiree trio v008",
+    "category": "References",
+    "type": "image",
+    "size": 4446032,
+    "sizeLabel": "4.2 Mo"
   },
   {
     "path": "media/visual/references/hermine-logos/20250505_0239_Ferret Power Logo_simple_compose_01jtey4qe7fmhvt8f1f5b67a66.gif",

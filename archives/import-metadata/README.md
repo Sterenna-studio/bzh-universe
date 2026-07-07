@@ -16,3 +16,7 @@ Regle appliquee :
 - `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/bzh_chr_album_wip/bzh_jazzy/Thumbs.db` — metadonnee Windows issue du sous-lot BZH Jazzy.
 - `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/Thumbs.db` — metadonnee Windows issue du sous-lot BZH Chronicles.
 - `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/montage/Thumbs.db` — metadonnee Windows issue du montage BZH Chronicles.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/chibiii plush/Thumbs.db` — metadonnee Windows issue du sous-lot plush BZH_RESS.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/emote/Thumbs.db` — metadonnee Windows issue du sous-lot emote BZH_RESS.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/poster/Thumbs.db` — metadonnee Windows issue du sous-lot poster BZH_RESS.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/sticker/Thumbs.db` — metadonnee Windows issue du sous-lot sticker BZH_RESS.
