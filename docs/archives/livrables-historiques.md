@@ -140,3 +140,10 @@ Les images fixes du dossier `Montage/` ont ete classees sans analyser les videos
 - `media/visual/references/bzh-trio-footage/` — references trio/anime opening.
 - `media/visual/references/bzh-ress-montage/` — references racine du sous-lot Montage.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv` — mapping source/destination.
+
+## 16. bzhpwimage petits lots
+Une premiere passe `bzhpwimage` a classe les petits lots non video :
+- `media/visual/covers/bzh-pw-album-cover/` — covers et teasers album.
+- `media/visual/references/bzh-pw-rd-art/split/` — recherches de style MutenRock.
+- `media/visual/references/coloring-pages/` — coloriages Aligax et MutenRock.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv` — mapping source/destination.

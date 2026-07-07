@@ -2223,6 +2223,87 @@
     "sizeLabel": "2.1 Mo"
   },
   {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v001.jpg",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v001.jpg",
+    "title": "bzhpw album cover v001",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 144344,
+    "sizeLabel": "141 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v002.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v002.webp",
+    "title": "bzhpw album cover v002",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 474910,
+    "sizeLabel": "464 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v003.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v003.webp",
+    "title": "bzhpw album cover v003",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 673146,
+    "sizeLabel": "657 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v004.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v004.webp",
+    "title": "bzhpw album cover v004",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 829416,
+    "sizeLabel": "810 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v005.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v005.webp",
+    "title": "bzhpw album cover v005",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 541834,
+    "sizeLabel": "529 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v006.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v006.webp",
+    "title": "bzhpw album cover v006",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 510970,
+    "sizeLabel": "499 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v007.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v007.webp",
+    "title": "bzhpw album cover v007",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 504134,
+    "sizeLabel": "492 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v008.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v008.webp",
+    "title": "bzhpw album cover v008",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 396808,
+    "sizeLabel": "388 Ko"
+  },
+  {
+    "path": "media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v009.webp",
+    "url": "../../media/visual/covers/bzh-pw-album-cover/bzhpw_album_cover_v009.webp",
+    "title": "bzhpw album cover v009",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 546136,
+    "sizeLabel": "533 Ko"
+  },
+  {
     "path": "media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png",
     "url": "../../media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png",
     "title": "bzhress hall of playtime v001",
@@ -3960,6 +4041,60 @@
     "sizeLabel": "549 Ko"
   },
   {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v001.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v001.webp",
+    "title": "bzhpw rd style split v001",
+    "category": "References",
+    "type": "image",
+    "size": 397314,
+    "sizeLabel": "388 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v002.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v002.webp",
+    "title": "bzhpw rd style split v002",
+    "category": "References",
+    "type": "image",
+    "size": 402714,
+    "sizeLabel": "393 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v003.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v003.webp",
+    "title": "bzhpw rd style split v003",
+    "category": "References",
+    "type": "image",
+    "size": 549316,
+    "sizeLabel": "536 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v004.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v004.webp",
+    "title": "bzhpw rd style split v004",
+    "category": "References",
+    "type": "image",
+    "size": 432786,
+    "sizeLabel": "423 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v005.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v005.webp",
+    "title": "bzhpw rd style split v005",
+    "category": "References",
+    "type": "image",
+    "size": 449556,
+    "sizeLabel": "439 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v006.webp",
+    "url": "../../media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v006.webp",
+    "title": "bzhpw rd style split v006",
+    "category": "References",
+    "type": "image",
+    "size": 446778,
+    "sizeLabel": "436 Ko"
+  },
+  {
     "path": "media/visual/references/bzh-ress-montage/bzhress_montage_root_v001.png",
     "url": "../../media/visual/references/bzh-ress-montage/bzhress_montage_root_v001.png",
     "title": "bzhress montage root v001",
@@ -4066,6 +4201,24 @@
     "type": "image",
     "size": 352768,
     "sizeLabel": "345 Ko"
+  },
+  {
+    "path": "media/visual/references/coloring-pages/aligax_coloring_page_v001.png",
+    "url": "../../media/visual/references/coloring-pages/aligax_coloring_page_v001.png",
+    "title": "aligax coloring page v001",
+    "category": "References",
+    "type": "image",
+    "size": 940521,
+    "sizeLabel": "918 Ko"
+  },
+  {
+    "path": "media/visual/references/coloring-pages/mutenrock_coloring_page_v001.png",
+    "url": "../../media/visual/references/coloring-pages/mutenrock_coloring_page_v001.png",
+    "title": "mutenrock coloring page v001",
+    "category": "References",
+    "type": "image",
+    "size": 811253,
+    "sizeLabel": "792 Ko"
   },
   {
     "path": "media/visual/references/cyber-city_unclean_promeai_v01.png",

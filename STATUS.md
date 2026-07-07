@@ -143,3 +143,10 @@
 - 42 references visuelles classees dans `media/visual/references/`
 - 1 doublon exact interne conserve dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/`
 - 136 videos `Montage` conservees reference-only dans le sas
+
+## Ajouts V16
+- Sous-lot `bzhpwimage` entame avec les petits lots non video
+- 9 covers / teasers album classes dans `media/visual/covers/bzh-pw-album-cover/`
+- 6 recherches RD art classees dans `media/visual/references/bzh-pw-rd-art/split/`
+- 2 coloriages classes dans `media/visual/references/coloring-pages/`
+- 1 doublon exact deja suivi indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv`

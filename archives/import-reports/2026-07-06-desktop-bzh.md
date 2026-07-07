@@ -214,9 +214,24 @@ Destinations :
 Trace de renommage :
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv`.
 
+## Traitement bzhpwimage petits lots realise
+- Perimetre traite : `bzhpwimage/bzh_pw_album_cover/`, `bzhpwimage/bzh_pw_rd_art/` et les 2 coloriages racine de `bzhpwimage/`.
+- 18 fichiers examines.
+- 17 visuels promus dans `media/visual/`.
+- 1 fichier est un doublon exact deja suivi et reste dans le sas brut.
+- Le doublon deja suivi est indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv`.
+
+Destinations :
+- `media/visual/covers/bzh-pw-album-cover/` — 9 covers et teasers album.
+- `media/visual/references/bzh-pw-rd-art/split/` — 6 recherches de style MutenRock.
+- `media/visual/references/coloring-pages/` — 2 coloriages Aligax et MutenRock.
+
+Trace de renommage :
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage` et documents/sources internes.
+2. Continuer `bzhpwimage` par familles : `bzh_chronicle_logo`, `bzh_pw_artwork`, `immmaaageg` et sources internes.
 3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

@@ -92,3 +92,8 @@ Sous-lot BZH_RESS Montage images traite :
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv` ;
 - 136 videos `.mp4` restent reference-only dans le sas.
+
+Sous-lot bzhpwimage petits lots traite :
+- 17 visuels classes dans `media/visual/` ;
+- 1 doublon exact deja suivi reste dans le sas brut et est indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv`.
