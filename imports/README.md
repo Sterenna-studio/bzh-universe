@@ -27,11 +27,16 @@ Sous-lot TCG traite :
 - 185 nouveaux PNG classes dans `assets/cards/` ;
 - 1 source `.pdn` conservee dans `archives/sources/tcg/` ;
 - 1 doublon exact ignore car deja present dans `assets/cards/bzh01/` ;
-- dossier brut conserve dans le sas pour tracabilite.
+- dossier source `BZH_TCG_Images/` retire du sas local apres classement.
 
 Sous-lot audio traite :
 - 24 fichiers audio classes dans `media/audio/` ;
 - 16 pistes dans `media/audio/tracks/` ;
 - 4 previews dans `media/audio/previews/site-song/` ;
 - 4 masters WAV dans `media/audio/masters/` ;
-- aucun doublon exact detecte avant copie.
+- aucun doublon exact detecte avant copie ;
+- fichiers audio traites retires du sas local, en laissant les videos `BZH_RESS\Son` non traitees.
+
+Nettoyage :
+- les dossiers vides generes par le tri ont ete supprimes du sas local ;
+- les elements restants dans `imports/2026-07-06-desktop-bzh/` sont a traiter ou a arbitrer.

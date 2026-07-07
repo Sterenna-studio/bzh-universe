@@ -83,6 +83,13 @@
 - Aucun fichier audio ne depasse 100 Mo.
 - Aucun doublon exact detecte avec les medias deja suivis.
 
+## Nettoyage du sas realise
+- `imports/2026-07-06-desktop-bzh/BZH_TCG_Images/` supprime du sas local apres classement.
+- Les fichiers audio traites ont ete retires de `imports/2026-07-06-desktop-bzh/BZH_RESS/Son/`.
+- Les dossiers vides du sas local ont ete supprimes.
+- Les videos de `BZH_RESS\Son` restent dans le sas comme references non traitees.
+- Le reste du lot Desktop BZH reste dans le sas pour tri ou arbitrage.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
 2. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.

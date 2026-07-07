@@ -88,3 +88,9 @@
 - 4 previews MP3 classées dans `media/audio/previews/site-song/`
 - 4 masters WAV conservés dans `media/audio/masters/`
 - Aucun doublon exact détecté avec les médias déjà suivis
+
+## Nettoyage du sas
+- Dossier traité `imports/2026-07-06-desktop-bzh/BZH_TCG_Images/` supprimé du sas local après classement
+- Fichiers audio traités supprimés de `imports/2026-07-06-desktop-bzh/BZH_RESS/Son/`
+- Dossiers vides supprimés du sas local
+- Les fichiers vidéo, exports web/statistiques et visuels restants demeurent dans le sas pour tri ultérieur
