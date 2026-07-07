@@ -12,3 +12,5 @@ Regle appliquee :
 - `archives/import-metadata/2026-07-06/imports/ART/Thumbs.db` — metadonnee Windows issue de `imports/ART/`.
 - `archives/import-metadata/2026-07-06/imports/bzh_games/Thumbs.db` — metadonnee Windows issue de `imports/bzh_games/`.
 - `archives/import-metadata/2026-07-06/imports/bzhpw_lore/GARTIC_MONSTER/desktop.ini` — metadonnee Windows issue de `imports/bzhpw_lore/GARTIC_MONSTER/`.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/desktop.ini` — metadonnee Windows issue de la racine du lot Desktop BZH.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/bzh_chr_album_wip/bzh_jazzy/Thumbs.db` — metadonnee Windows issue du sous-lot BZH Jazzy.

@@ -107,9 +107,33 @@
 - Aucun doublon exact detecte avec les fichiers deja suivis.
 - Le dossier source `LOL_TEAM_STATS/` a ete retire du sas local apres archivage.
 
+## Traitement visuels courts realise
+- Perimetre traite : dossiers `Hermine`, `LEME`, `RTT`, `bzh_chr_album_wip` et visuels PNG racine.
+- 46 fichiers visuels examines.
+- 42 visuels uniques classes dans `assets/logos/` et `media/visual/`.
+- Aucun doublon exact detecte avec les medias deja suivis avant promotion.
+- 4 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/`.
+- 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/`.
+
+Destinations :
+- `assets/logos/aligax/` — 1 logo typographique Aligax.
+- `media/visual/references/hermine-logos/` — 13 references Hermine / BZH Power.
+- `media/visual/references/leme/` — 4 references LEME.
+- `media/visual/covers/rtt/` — 5 covers RTT / Pontivy.
+- `media/visual/covers/bzh-chronicles-album-wip/` — visuels album WIP BZH Chronicles.
+- `media/visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
+- `media/visual/covers/` — poster Cyber Legends et miniature Eclats.
+- `media/visual/merch/` — mockup apparel BZH Power.
+
+Doublons exacts internes :
+- `image (1).png` est une copie exacte de `image.png`, promu comme `media/visual/merch/bzhpower_esport-apparel_lineup_v03.png`.
+- `549254484567813.jpg` est une copie exacte de `album_cover_1.jpg`, promu dans `media/visual/covers/bzh-chronicles-album-wip/album_wip/`.
+- `ChatGPT Image 15 avr. 2025, 00_32_36.png` est une copie exacte de `Nuit pluvieuse au port.png`, promu dans `media/visual/covers/bzh-jazzy/`.
+- `ChatGPT Image 14 avr. 2025, 23_28_48.png` est une copie exacte de `Ombres sur la 9e Avenue.png`, promu dans `media/visual/covers/bzh-jazzy/`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
 2. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
-3. Traiter les petits lots restants `Hermine`, `LEME`, `RTT` et `bzh_chr_album_wip`.
+3. Traiter les lots restants `BZH_CHRONICLES` et `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

@@ -94,3 +94,13 @@ Deux dossiers audio du lot Desktop BZH ont ete classes comme pistes MP3 consulta
 - `media/audio/tracks/dernier-souffle/` — 17 pistes et variantes Dernier souffle / Echo Vide / Fantome de Chair.
 
 Ces fichiers sont exposes par la galerie media generee depuis `media/audio/`.
+
+## 11. Sous-lots visuels courts Desktop BZH
+Les petits dossiers visuels du lot Desktop BZH ont ete classes sans toucher aux videos :
+- `assets/logos/aligax/` — logo typographique Aligax.
+- `media/visual/references/hermine-logos/` — references Hermine / BZH Power.
+- `media/visual/references/leme/` — references LEME.
+- `media/visual/covers/rtt/` — covers RTT / Pontivy.
+- `media/visual/covers/bzh-chronicles-album-wip/` — visuels album WIP.
+- `media/visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
+- `archives/import-duplicates/2026-07-06-desktop-bzh/` — copies exactes conservees hors galerie.

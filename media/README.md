@@ -20,3 +20,10 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `audio/masters/` — sources WAV conservees comme masters.
 - `audio/tracks/sniky-the-frager-mix/` — variantes MP3 Sniky importees depuis le lot Desktop BZH.
 - `audio/tracks/dernier-souffle/` — pistes et variantes MP3 Dernier souffle / Echo Vide / Fantome de Chair.
+
+## Visuels classes
+- `visual/covers/bzh-chronicles-album-wip/` — visuels album WIP BZH Chronicles.
+- `visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
+- `visual/covers/rtt/` — covers RTT / Pontivy.
+- `visual/references/hermine-logos/` — references Hermine / BZH Power.
+- `visual/references/leme/` — references LEME / Gwen Ha Star.

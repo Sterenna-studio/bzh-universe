@@ -53,3 +53,13 @@ Sous-lot LoL Team Stats traite :
 - page consultable : `archives/web/lol-team-stats/README.md` ;
 - aucun doublon exact detecte avant copie ;
 - dossier source `LOL_TEAM_STATS/` retire du sas local apres archivage.
+
+Sous-lots visuels courts traites :
+- 42 visuels uniques classes dans `assets/logos/` et `media/visual/` ;
+- 13 references Hermine / BZH Power dans `media/visual/references/hermine-logos/` ;
+- 4 references LEME dans `media/visual/references/leme/` ;
+- 5 covers RTT dans `media/visual/covers/rtt/` ;
+- 16 visuels album WIP / BZH Jazzy dans `media/visual/covers/` ;
+- 4 visuels racine classes en logo, cover ou merch ;
+- 4 copies doublons exactes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/` ;
+- 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/`.

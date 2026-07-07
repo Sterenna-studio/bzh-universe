@@ -107,3 +107,10 @@
 - 5 variantes Sniky classees dans `media/audio/tracks/sniky-the-frager-mix/`
 - 17 pistes et variantes Dernier souffle / Echo Vide / Fantome de Chair classees dans `media/audio/tracks/dernier-souffle/`
 - Aucun doublon exact detecte avec l'audio deja classe
+
+## Ajouts V11
+- Sous-lots visuels `Hermine`, `LEME`, `RTT`, `bzh_chr_album_wip` et visuels racine traites
+- 42 visuels uniques classes dans `assets/logos/` et `media/visual/`
+- 4 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/`
+- 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/`
+- Galerie media regenerable avec ces nouveaux visuels
