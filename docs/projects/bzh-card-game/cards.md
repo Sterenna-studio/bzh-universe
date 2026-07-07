@@ -10,6 +10,10 @@ Source publique de reference :
 - Types distincts : 6
 - Raretes distinctes : 5
 
+## Visuels BZH01
+- Faces de cartes classees : `assets/cards/bzh01/cards/`
+- Visuel de pack / table : `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`
+
 ### Repartition par type
 - Champion : 15
 - Companion : 8

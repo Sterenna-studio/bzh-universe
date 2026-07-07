@@ -180,6 +180,1671 @@
     "sizeLabel": "2.8 Mo"
   },
   {
+    "path": "assets/cards/bzh01/cards/BZH01_CE001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CE001.png",
+    "title": "BZH01 CE001",
+    "category": "TCG",
+    "type": "image",
+    "size": 629048,
+    "sizeLabel": "614 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CE002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CE002.png",
+    "title": "BZH01 CE002",
+    "category": "TCG",
+    "type": "image",
+    "size": 172555,
+    "sizeLabel": "169 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CE003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CE003.png",
+    "title": "BZH01 CE003",
+    "category": "TCG",
+    "type": "image",
+    "size": 119088,
+    "sizeLabel": "116 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CE004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CE004.png",
+    "title": "BZH01 CE004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2967454,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO001.png",
+    "title": "BZH01 CO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 505153,
+    "sizeLabel": "493 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO002.png",
+    "title": "BZH01 CO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 538521,
+    "sizeLabel": "526 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO003.png",
+    "title": "BZH01 CO003",
+    "category": "TCG",
+    "type": "image",
+    "size": 525295,
+    "sizeLabel": "513 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO004.png",
+    "title": "BZH01 CO004",
+    "category": "TCG",
+    "type": "image",
+    "size": 654346,
+    "sizeLabel": "639 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO005.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO005.png",
+    "title": "BZH01 CO005",
+    "category": "TCG",
+    "type": "image",
+    "size": 557840,
+    "sizeLabel": "545 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO006.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO006.png",
+    "title": "BZH01 CO006",
+    "category": "TCG",
+    "type": "image",
+    "size": 203018,
+    "sizeLabel": "198 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CO007.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CO007.png",
+    "title": "BZH01 CO007",
+    "category": "TCG",
+    "type": "image",
+    "size": 698808,
+    "sizeLabel": "682 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CP001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CP001.png",
+    "title": "BZH01 CP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2873771,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CP002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CP002.png",
+    "title": "BZH01 CP002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2726526,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CP003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CP003.png",
+    "title": "BZH01 CP003",
+    "category": "TCG",
+    "type": "image",
+    "size": 526393,
+    "sizeLabel": "514 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CP004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CP004.png",
+    "title": "BZH01 CP004",
+    "category": "TCG",
+    "type": "image",
+    "size": 132356,
+    "sizeLabel": "129 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CS001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CS001.png",
+    "title": "BZH01 CS001",
+    "category": "TCG",
+    "type": "image",
+    "size": 525444,
+    "sizeLabel": "513 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CS002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CS002.png",
+    "title": "BZH01 CS002",
+    "category": "TCG",
+    "type": "image",
+    "size": 515421,
+    "sizeLabel": "503 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT001.png",
+    "title": "BZH01 CT001",
+    "category": "TCG",
+    "type": "image",
+    "size": 604826,
+    "sizeLabel": "591 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT002.png",
+    "title": "BZH01 CT002",
+    "category": "TCG",
+    "type": "image",
+    "size": 637241,
+    "sizeLabel": "622 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT003.png",
+    "title": "BZH01 CT003",
+    "category": "TCG",
+    "type": "image",
+    "size": 697851,
+    "sizeLabel": "681 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT004.png",
+    "title": "BZH01 CT004",
+    "category": "TCG",
+    "type": "image",
+    "size": 176631,
+    "sizeLabel": "172 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT005.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT005.png",
+    "title": "BZH01 CT005",
+    "category": "TCG",
+    "type": "image",
+    "size": 664032,
+    "sizeLabel": "648 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_CT006.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_CT006.png",
+    "title": "BZH01 CT006",
+    "category": "TCG",
+    "type": "image",
+    "size": 752467,
+    "sizeLabel": "735 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EC001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EC001.png",
+    "title": "BZH01 EC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 666429,
+    "sizeLabel": "651 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EC002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EC002.png",
+    "title": "BZH01 EC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 551271,
+    "sizeLabel": "538 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EC003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EC003.png",
+    "title": "BZH01 EC003",
+    "category": "TCG",
+    "type": "image",
+    "size": 652193,
+    "sizeLabel": "637 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EC004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EC004.png",
+    "title": "BZH01 EC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 162924,
+    "sizeLabel": "159 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EE001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EE001.png",
+    "title": "BZH01 EE001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3364741,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EO001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EO001.png",
+    "title": "BZH01 EO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2738485,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_EP001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_EP001.png",
+    "title": "BZH01 EP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2573944,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ES001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ES001.png",
+    "title": "BZH01 ES001",
+    "category": "TCG",
+    "type": "image",
+    "size": 1918338,
+    "sizeLabel": "1.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ES002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ES002.png",
+    "title": "BZH01 ES002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2980495,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ET001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ET001.png",
+    "title": "BZH01 ET001",
+    "category": "TCG",
+    "type": "image",
+    "size": 100138,
+    "sizeLabel": "98 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LC001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LC001.png",
+    "title": "BZH01 LC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 637104,
+    "sizeLabel": "622 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LC002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LC002.png",
+    "title": "BZH01 LC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2523086,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LO001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LO001.png",
+    "title": "BZH01 LO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2466116,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LP001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LP001.png",
+    "title": "BZH01 LP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2524794,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LS001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LS001.png",
+    "title": "BZH01 LS001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2405742,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_LS002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_LS002.png",
+    "title": "BZH01 LS002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2349729,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC001.png",
+    "title": "BZH01 MC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 692107,
+    "sizeLabel": "676 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC002.png",
+    "title": "BZH01 MC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 710391,
+    "sizeLabel": "694 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC003.png",
+    "title": "BZH01 MC003",
+    "category": "TCG",
+    "type": "image",
+    "size": 685627,
+    "sizeLabel": "670 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC004.png",
+    "title": "BZH01 MC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 646135,
+    "sizeLabel": "631 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC005.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC005.png",
+    "title": "BZH01 MC005",
+    "category": "TCG",
+    "type": "image",
+    "size": 608141,
+    "sizeLabel": "594 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_MC006.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_MC006.png",
+    "title": "BZH01 MC006",
+    "category": "TCG",
+    "type": "image",
+    "size": 596381,
+    "sizeLabel": "582 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ME001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ME001.png",
+    "title": "BZH01 ME001",
+    "category": "TCG",
+    "type": "image",
+    "size": 183704,
+    "sizeLabel": "179 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ME002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ME002.png",
+    "title": "BZH01 ME002",
+    "category": "TCG",
+    "type": "image",
+    "size": 530162,
+    "sizeLabel": "518 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_ME003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_ME003.png",
+    "title": "BZH01 ME003",
+    "category": "TCG",
+    "type": "image",
+    "size": 558448,
+    "sizeLabel": "545 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RC001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RC001.png",
+    "title": "BZH01 RC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2551769,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RC002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RC002.png",
+    "title": "BZH01 RC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2468137,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RC003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RC003.png",
+    "title": "BZH01 RC003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2750881,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RC004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RC004.png",
+    "title": "BZH01 RC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 566790,
+    "sizeLabel": "554 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RE001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RE001.png",
+    "title": "BZH01 RE001",
+    "category": "TCG",
+    "type": "image",
+    "size": 521487,
+    "sizeLabel": "509 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RE002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RE002.png",
+    "title": "BZH01 RE002",
+    "category": "TCG",
+    "type": "image",
+    "size": 577987,
+    "sizeLabel": "564 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RE003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RE003.png",
+    "title": "BZH01 RE003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2983673,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RO001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RO001.png",
+    "title": "BZH01 RO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 686181,
+    "sizeLabel": "670 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RO002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RO002.png",
+    "title": "BZH01 RO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 694001,
+    "sizeLabel": "678 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RP001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RP001.png",
+    "title": "BZH01 RP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 130101,
+    "sizeLabel": "127 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RP002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RP002.png",
+    "title": "BZH01 RP002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3157201,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RS001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RS001.png",
+    "title": "BZH01 RS001",
+    "category": "TCG",
+    "type": "image",
+    "size": 532325,
+    "sizeLabel": "520 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RS002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RS002.png",
+    "title": "BZH01 RS002",
+    "category": "TCG",
+    "type": "image",
+    "size": 609550,
+    "sizeLabel": "595 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RS003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RS003.png",
+    "title": "BZH01 RS003",
+    "category": "TCG",
+    "type": "image",
+    "size": 624356,
+    "sizeLabel": "610 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RS004.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RS004.png",
+    "title": "BZH01 RS004",
+    "category": "TCG",
+    "type": "image",
+    "size": 621916,
+    "sizeLabel": "607 Ko"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RT001.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RT001.png",
+    "title": "BZH01 RT001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2360004,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RT002.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RT002.png",
+    "title": "BZH01 RT002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2638014,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh01/cards/BZH01_RT003.png",
+    "url": "../../assets/cards/bzh01/cards/BZH01_RT003.png",
+    "title": "BZH01 RT003",
+    "category": "TCG",
+    "type": "image",
+    "size": 571971,
+    "sizeLabel": "559 Ko"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO001.png",
+    "title": "BZH02 CO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2546691,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO002.png",
+    "title": "BZH02 CO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2598557,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO003.png",
+    "title": "BZH02 CO003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2498110,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO004.png",
+    "title": "BZH02 CO004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2326726,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO005.png",
+    "title": "BZH02 CO005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2378036,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CO006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CO006.png",
+    "title": "BZH02 CO006",
+    "category": "TCG",
+    "type": "image",
+    "size": 3235291,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP001.png",
+    "title": "BZH02 CP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2941211,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP002.png",
+    "title": "BZH02 CP002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2816361,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP003.png",
+    "title": "BZH02 CP003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2818694,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP004.png",
+    "title": "BZH02 CP004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2987483,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP005.png",
+    "title": "BZH02 CP005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2429500,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CP006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CP006.png",
+    "title": "BZH02 CP006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2687223,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CT001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CT001.png",
+    "title": "BZH02 CT001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2696553,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_CT002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_CT002.png",
+    "title": "BZH02 CT002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3166167,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC001.png",
+    "title": "BZH02 EC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2954896,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC002.png",
+    "title": "BZH02 EC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3117635,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC003.png",
+    "title": "BZH02 EC003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2932334,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC004.png",
+    "title": "BZH02 EC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 3147528,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC005.png",
+    "title": "BZH02 EC005",
+    "category": "TCG",
+    "type": "image",
+    "size": 3242078,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC006.png",
+    "title": "BZH02 EC006",
+    "category": "TCG",
+    "type": "image",
+    "size": 3077623,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC007.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC007.png",
+    "title": "BZH02 EC007",
+    "category": "TCG",
+    "type": "image",
+    "size": 3362574,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC008.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC008.png",
+    "title": "BZH02 EC008",
+    "category": "TCG",
+    "type": "image",
+    "size": 2963620,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EC009.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EC009.png",
+    "title": "BZH02 EC009",
+    "category": "TCG",
+    "type": "image",
+    "size": 3179929,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EE001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EE001.png",
+    "title": "BZH02 EE001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3481467,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EE002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EE002.png",
+    "title": "BZH02 EE002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2815160,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EO001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EO001.png",
+    "title": "BZH02 EO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2747624,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EO002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EO002.png",
+    "title": "BZH02 EO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3092550,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EO003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EO003.png",
+    "title": "BZH02 EO003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2754314,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EP001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EP001.png",
+    "title": "BZH02 EP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2988468,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ER001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ER001.png",
+    "title": "BZH02 ER001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3058548,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ER002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ER002.png",
+    "title": "BZH02 ER002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3199888,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ER003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ER003.png",
+    "title": "BZH02 ER003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2720080,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ER004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ER004.png",
+    "title": "BZH02 ER004",
+    "category": "TCG",
+    "type": "image",
+    "size": 3133817,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ET001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ET001.png",
+    "title": "BZH02 ET001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3504021,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ET002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ET002.png",
+    "title": "BZH02 ET002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2519298,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_ET003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_ET003.png",
+    "title": "BZH02 ET003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2772257,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU001.png",
+    "title": "BZH02 EU001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2928860,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU002.png",
+    "title": "BZH02 EU002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3041863,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU003.png",
+    "title": "BZH02 EU003",
+    "category": "TCG",
+    "type": "image",
+    "size": 598386,
+    "sizeLabel": "584 Ko"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU004.png",
+    "title": "BZH02 EU004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2439210,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU005.png",
+    "title": "BZH02 EU005",
+    "category": "TCG",
+    "type": "image",
+    "size": 3389450,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU006.png",
+    "title": "BZH02 EU006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2723450,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU007.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU007.png",
+    "title": "BZH02 EU007",
+    "category": "TCG",
+    "type": "image",
+    "size": 2742191,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_EU008.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_EU008.png",
+    "title": "BZH02 EU008",
+    "category": "TCG",
+    "type": "image",
+    "size": 3474468,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LO001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LO001.png",
+    "title": "BZH02 LO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2408154,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LO002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LO002.png",
+    "title": "BZH02 LO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2262096,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LP001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LP001.png",
+    "title": "BZH02 LP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2992769,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LT001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LT001.png",
+    "title": "BZH02 LT001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2707620,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LT002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LT002.png",
+    "title": "BZH02 LT002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2451030,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LT003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LT003.png",
+    "title": "BZH02 LT003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2589813,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LU001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LU001.png",
+    "title": "BZH02 LU001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2974024,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_LU002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_LU002.png",
+    "title": "BZH02 LU002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2686137,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC001.png",
+    "title": "BZH02 MC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2782144,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC002.png",
+    "title": "BZH02 MC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2961550,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC003.png",
+    "title": "BZH02 MC003",
+    "category": "TCG",
+    "type": "image",
+    "size": 3095114,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC004.png",
+    "title": "BZH02 MC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2911804,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC005.png",
+    "title": "BZH02 MC005",
+    "category": "TCG",
+    "type": "image",
+    "size": 3346734,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC006.png",
+    "title": "BZH02 MC006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2699146,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC007.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC007.png",
+    "title": "BZH02 MC007",
+    "category": "TCG",
+    "type": "image",
+    "size": 3585420,
+    "sizeLabel": "3.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC008.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC008.png",
+    "title": "BZH02 MC008",
+    "category": "TCG",
+    "type": "image",
+    "size": 3248077,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC009.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC009.png",
+    "title": "BZH02 MC009",
+    "category": "TCG",
+    "type": "image",
+    "size": 2778317,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC010.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC010.png",
+    "title": "BZH02 MC010",
+    "category": "TCG",
+    "type": "image",
+    "size": 2764627,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC011.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC011.png",
+    "title": "BZH02 MC011",
+    "category": "TCG",
+    "type": "image",
+    "size": 2770050,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC012.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC012.png",
+    "title": "BZH02 MC012",
+    "category": "TCG",
+    "type": "image",
+    "size": 2598742,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC013.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC013.png",
+    "title": "BZH02 MC013",
+    "category": "TCG",
+    "type": "image",
+    "size": 3201771,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_MC014.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_MC014.png",
+    "title": "BZH02 MC014",
+    "category": "TCG",
+    "type": "image",
+    "size": 2819199,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO001.png",
+    "title": "BZH02 RO001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2722598,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO002.png",
+    "title": "BZH02 RO002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2343852,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO003.png",
+    "title": "BZH02 RO003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2430205,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO004.png",
+    "title": "BZH02 RO004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2465879,
+    "sizeLabel": "2.4 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO005.png",
+    "title": "BZH02 RO005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2981875,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RO006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RO006.png",
+    "title": "BZH02 RO006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2326908,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP001.png",
+    "title": "BZH02 RP001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2952089,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP002.png",
+    "title": "BZH02 RP002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3113708,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP003.png",
+    "title": "BZH02 RP003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2632458,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP004.png",
+    "title": "BZH02 RP004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2871295,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP005.png",
+    "title": "BZH02 RP005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2231659,
+    "sizeLabel": "2.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RP006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RP006.png",
+    "title": "BZH02 RP006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2891063,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT001.png",
+    "title": "BZH02 RT001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2927528,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT002.png",
+    "title": "BZH02 RT002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2719760,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT003.png",
+    "title": "BZH02 RT003",
+    "category": "TCG",
+    "type": "image",
+    "size": 2670895,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT004.png",
+    "title": "BZH02 RT004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2801767,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT005.png",
+    "title": "BZH02 RT005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2846866,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT006.png",
+    "title": "BZH02 RT006",
+    "category": "TCG",
+    "type": "image",
+    "size": 3310263,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_RT007.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_RT007.png",
+    "title": "BZH02 RT007",
+    "category": "TCG",
+    "type": "image",
+    "size": 2854025,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SC001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SC001.png",
+    "title": "BZH02 SC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3025822,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SC002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SC002.png",
+    "title": "BZH02 SC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3303190,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SC004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SC004.png",
+    "title": "BZH02 SC004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2380143,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE001.png",
+    "title": "BZH02 SE001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2445168,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE002.png",
+    "title": "BZH02 SE002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2890727,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE003.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE003.png",
+    "title": "BZH02 SE003",
+    "category": "TCG",
+    "type": "image",
+    "size": 3295386,
+    "sizeLabel": "3.1 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE004.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE004.png",
+    "title": "BZH02 SE004",
+    "category": "TCG",
+    "type": "image",
+    "size": 2759889,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE005.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE005.png",
+    "title": "BZH02 SE005",
+    "category": "TCG",
+    "type": "image",
+    "size": 2921859,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SE006.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SE006.png",
+    "title": "BZH02 SE006",
+    "category": "TCG",
+    "type": "image",
+    "size": 2577143,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SL001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SL001.png",
+    "title": "BZH02 SL001",
+    "category": "TCG",
+    "type": "image",
+    "size": 3136597,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SL002.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SL002.png",
+    "title": "BZH02 SL002",
+    "category": "TCG",
+    "type": "image",
+    "size": 3394609,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/cards/BZH02_SR001.png",
+    "url": "../../assets/cards/bzh02/cards/BZH02_SR001.png",
+    "title": "BZH02 SR001",
+    "category": "TCG",
+    "type": "image",
+    "size": 2787540,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/A_collectible_card_illustration_titled__ÉQUIPAGE_G.png",
+    "url": "../../assets/cards/bzh02/reference/A_collectible_card_illustration_titled__%C3%89QUIPAGE_G.png",
+    "title": "A collectible card illustration titled ÉQUIPAGE G",
+    "category": "TCG",
+    "type": "image",
+    "size": 2883426,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/BZH02_LU002.png",
+    "url": "../../assets/cards/bzh02/reference/BZH02_LU002.png",
+    "title": "BZH02 LU002",
+    "category": "TCG",
+    "type": "image",
+    "size": 2962761,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 13_46_57.png",
+    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2013_46_57.png",
+    "title": "ChatGPT Image 16 mai 2025, 13 46 57",
+    "category": "TCG",
+    "type": "image",
+    "size": 3474468,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 13_51_44.png",
+    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2013_51_44.png",
+    "title": "ChatGPT Image 16 mai 2025, 13 51 44",
+    "category": "TCG",
+    "type": "image",
+    "size": 2883426,
+    "sizeLabel": "2.7 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 14_12_03.png",
+    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2014_12_03.png",
+    "title": "ChatGPT Image 16 mai 2025, 14 12 03",
+    "category": "TCG",
+    "type": "image",
+    "size": 2962761,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/ChatGPT Image 19 mai 2025, 04_48_38.png",
+    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2019%20mai%202025%2C%2004_48_38.png",
+    "title": "ChatGPT Image 19 mai 2025, 04 48 38",
+    "category": "TCG",
+    "type": "image",
+    "size": 2750647,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/Poignée de main énergétique futuriste.png",
+    "url": "../../assets/cards/bzh02/reference/Poign%C3%A9e%20de%20main%20%C3%A9nerg%C3%A9tique%20futuriste.png",
+    "title": "Poignée de main énergétique futuriste",
+    "category": "TCG",
+    "type": "image",
+    "size": 2971622,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/bzh02/reference/Robot Mini-Titan en action.png",
+    "url": "../../assets/cards/bzh02/reference/Robot%20Mini-Titan%20en%20action.png",
+    "title": "Robot Mini Titan en action",
+    "category": "TCG",
+    "type": "image",
+    "size": 2707618,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 07_35_58.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2007_35_58.png",
+    "title": "ChatGPT Image 20 mai 2025, 07 35 58",
+    "category": "TCG",
+    "type": "image",
+    "size": 1481744,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 09_53_16.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2009_53_16.png",
+    "title": "ChatGPT Image 20 mai 2025, 09 53 16",
+    "category": "TCG",
+    "type": "image",
+    "size": 1428274,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_02_00.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_02_00.png",
+    "title": "ChatGPT Image 20 mai 2025, 10 02 00",
+    "category": "TCG",
+    "type": "image",
+    "size": 1488984,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_07_37.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_07_37.png",
+    "title": "ChatGPT Image 20 mai 2025, 10 07 37",
+    "category": "TCG",
+    "type": "image",
+    "size": 1571430,
+    "sizeLabel": "1.5 Mo"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_09_57.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_09_57.png",
+    "title": "ChatGPT Image 20 mai 2025, 10 09 57",
+    "category": "TCG",
+    "type": "image",
+    "size": 797646,
+    "sizeLabel": "779 Ko"
+  },
+  {
+    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_12_21.png",
+    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_12_21.png",
+    "title": "ChatGPT Image 20 mai 2025, 10 12 21",
+    "category": "TCG",
+    "type": "image",
+    "size": 2041074,
+    "sizeLabel": "1.9 Mo"
+  },
+  {
+    "path": "assets/cards/shared/card_back.png",
+    "url": "../../assets/cards/shared/card_back.png",
+    "title": "card back",
+    "category": "TCG",
+    "type": "image",
+    "size": 2721768,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "assets/cards/shared/card_back2.png",
+    "url": "../../assets/cards/shared/card_back2.png",
+    "title": "card back2",
+    "category": "TCG",
+    "type": "image",
+    "size": 2977057,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/shared/frame.png",
+    "url": "../../assets/cards/shared/frame.png",
+    "title": "frame",
+    "category": "TCG",
+    "type": "image",
+    "size": 25570,
+    "sizeLabel": "25 Ko"
+  },
+  {
+    "path": "assets/cards/shared/set01_champ.png",
+    "url": "../../assets/cards/shared/set01_champ.png",
+    "title": "set01 champ",
+    "category": "TCG",
+    "type": "image",
+    "size": 3326812,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "assets/cards/shared/set01_composite.png",
+    "url": "../../assets/cards/shared/set01_composite.png",
+    "title": "set01 composite",
+    "category": "TCG",
+    "type": "image",
+    "size": 1729015,
+    "sizeLabel": "1.6 Mo"
+  },
+  {
+    "path": "assets/cards/shared/set01.png",
+    "url": "../../assets/cards/shared/set01.png",
+    "title": "set01",
+    "category": "TCG",
+    "type": "image",
+    "size": 2447065,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "assets/cards/shared/Set02_champ.png",
+    "url": "../../assets/cards/shared/Set02_champ.png",
+    "title": "Set02 champ",
+    "category": "TCG",
+    "type": "image",
+    "size": 2309652,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "assets/cards/shared/set02.png",
+    "url": "../../assets/cards/shared/set02.png",
+    "title": "set02",
+    "category": "TCG",
+    "type": "image",
+    "size": 3119639,
+    "sizeLabel": "3.0 Mo"
+  },
+  {
     "path": "media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
     "url": "../../media/visual/covers/bzhchronicles_cd-artwork_grid_v01.webp",
     "title": "bzhchronicles cd artwork grid v01",

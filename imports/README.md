@@ -22,3 +22,9 @@ Analyse courte :
 
 Rapport detaille : `archives/import-reports/2026-07-06-desktop-bzh.md`.
 Index videos reference-only : `archives/import-reports/2026-07-06-desktop-bzh-videos.csv`.
+
+Sous-lot TCG traite :
+- 185 nouveaux PNG classes dans `assets/cards/` ;
+- 1 source `.pdn` conservee dans `archives/sources/tcg/` ;
+- 1 doublon exact ignore car deja present dans `assets/cards/bzh01/` ;
+- dossier brut conserve dans le sas pour tracabilite.

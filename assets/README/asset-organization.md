@@ -3,7 +3,7 @@
 ## Proposition de structure
 
 ```text
-assets/
+  assets/
   logos/
     bzh-pw/
     bzh-chronicles/
@@ -18,6 +18,9 @@ assets/
     titan/
   cards/
     bzh01/
+    bzh02/
+    shared/
+    reference/
   merch/
     tshirts/
     hoodies/
@@ -49,6 +52,9 @@ bzhcard_bzh01_sniky_champion_v02.png
 - `assets/logos/` conserve les logos propres et reutilisables.
 - `assets/characters/` conserve les portraits ou illustrations rattaches a un personnage precis.
 - `assets/cards/bzh01/` conserve les visuels directement lies au set BZH01.
+- `assets/cards/bzh02/` conserve les visuels directement lies au set BZH02.
+- `assets/cards/shared/` conserve les dos, frames et compositions communes aux sets TCG.
+- `assets/cards/reference/` conserve les essais et visuels TCG a arbitrer avant canonisation.
 - `media/visual/covers/` conserve les covers, mockups de jeu, jaquettes, posters et artworks d'album.
 - `media/visual/merch/` conserve les visuels textiles, tentures et objets.
 - `media/visual/webtoon/` conserve les affiches et prints narratifs.

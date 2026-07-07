@@ -97,6 +97,16 @@
 - Social / icones :
   - `media/visual/social/icons/` — 33 icones `.ico` classees comme raccourcis ou pictogrammes de reference.
 
+### Import 2026-07-06 — Desktop BZH / tri TCG
+- 185 nouveaux visuels PNG TCG classes dans `assets/cards/`.
+- `assets/cards/bzh01/cards/` — 66 faces de cartes BZH01.
+- `assets/cards/bzh02/cards/` — 97 faces de cartes BZH02.
+- `assets/cards/shared/` — 8 assets communs : dos, frames et compositions de sets.
+- `assets/cards/bzh02/reference/` — 8 visuels de reference lies a BZH02.
+- `assets/cards/reference/` — 6 visuels TCG libres a arbitrer.
+- `archives/sources/tcg/ablumd.pdn` — source Paint.NET conservee hors galerie media.
+- Doublon exact ignore : `ChatGPT Image 20 juin 2025, 03_20_51.png`, deja classe comme `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`.
+
 ## Audio
 - Sniky: The Frager
 - Aligax: Digital Maiden

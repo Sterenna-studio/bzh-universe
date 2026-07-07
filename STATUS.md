@@ -74,3 +74,10 @@
 - 231 doublons exacts détectés avec les médias et archives déjà classés
 - 1 426 fichiers nouveaux détectés, avec blocage volontaire avant commit du lot brut complet à cause d'un fichier vidéo de plus de 100 Mo
 - Vidéos du lot marquées en `reference-only` : chemins et tailles uniquement, sans analyse de contenu
+
+## Ajouts V7
+- Sous-lot `BZH_TCG_Images` trié sans analyser ni promouvoir les vidéos du lot Desktop
+- 185 nouveaux visuels PNG TCG classés dans `assets/cards/`
+- 1 source Paint.NET conservée dans `archives/sources/tcg/`
+- 1 doublon exact ignoré car déjà présent comme `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`
+- Galerie média régénérable depuis ces assets TCG suivis

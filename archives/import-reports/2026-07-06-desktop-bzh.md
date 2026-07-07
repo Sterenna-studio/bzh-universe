@@ -65,12 +65,20 @@
 - Les videos restent reference-only : pas d'analyse de contenu, pas de promotion automatique dans la galerie.
 - Les fichiers `.téléchargement`, fichiers sans extension des exports web, `.db`, `.ini` et `.lnk` doivent rester hors assets finaux.
 - `LOL_TEAM_STATS` ressemble a une archive web/statistique : a conserver comme archive documentaire ou export web, pas comme media final de galerie.
-- `BZH_TCG_Images` est le lot prioritaire pour un tri TCG dedie.
+- `BZH_TCG_Images` a ete traite comme lot TCG dedie.
 - Les 231 doublons exacts correspondent surtout aux lots deja classes dans `assets/`, `media/` et `archives/`.
+
+## Traitement TCG realise
+- 66 visuels de cartes BZH01 classes dans `assets/cards/bzh01/cards/`.
+- 97 visuels de cartes BZH02 classes dans `assets/cards/bzh02/cards/`.
+- 8 assets communs de carte classes dans `assets/cards/shared/`.
+- 14 visuels de reference TCG classes dans `assets/cards/bzh02/reference/` et `assets/cards/reference/`.
+- 1 source Paint.NET conservee dans `archives/sources/tcg/`.
+- 1 doublon exact ignore : `ChatGPT Image 20 juin 2025, 03_20_51.png`, deja present sous `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`.
 
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Traiter `BZH_TCG_Images` en premier, probablement vers `assets/cards/` ou `media/visual/cards/`.
-3. Traiter l'audio `BZH_RESS\Son\` vers `media/audio/` apres dedoublonnage des variantes.
+2. Poursuivre par l'audio `BZH_RESS\Son\` vers `media/audio/` apres dedoublonnage des variantes.
+3. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
-5. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.
+5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

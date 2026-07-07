@@ -23,6 +23,12 @@
 - Données importées depuis Nitro : `data/tcg/BZH01.json`
 - Page wiki du set : [BZH01 — set de cartes TCG](cards.md)
 
+## Visuels classes
+- `assets/cards/bzh01/cards/` — 66 faces de cartes BZH01.
+- `assets/cards/bzh02/cards/` — 97 faces de cartes BZH02.
+- `assets/cards/shared/` — dos, frames et compositions communes.
+- `assets/cards/reference/` et `assets/cards/bzh02/reference/` — essais visuels a arbitrer.
+
 ## Cartes principales
 - The Cyber Assassin — Sniky
 - The Iron Maiden — Aligax
