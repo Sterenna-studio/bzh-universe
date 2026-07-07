@@ -3717,6 +3717,222 @@
     "sizeLabel": "34 Ko"
   },
   {
+    "path": "media/audio/masters/Les Ombres et la Lumière.wav",
+    "url": "../../media/audio/masters/Les%20Ombres%20et%20la%20Lumi%C3%A8re.wav",
+    "title": "Les Ombres et la Lumière",
+    "category": "Audio",
+    "type": "audio",
+    "size": 38062120,
+    "sizeLabel": "36.3 Mo"
+  },
+  {
+    "path": "media/audio/masters/MutenRock.wav",
+    "url": "../../media/audio/masters/MutenRock.wav",
+    "title": "MutenRock",
+    "category": "Audio",
+    "type": "audio",
+    "size": 30061074,
+    "sizeLabel": "28.7 Mo"
+  },
+  {
+    "path": "media/audio/masters/Soundclash_ BPM Frenzy (Suno contest).wav",
+    "url": "../../media/audio/masters/Soundclash_%20BPM%20Frenzy%20(Suno%20contest).wav",
+    "title": "Soundclash BPM Frenzy (Suno contest)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 39360040,
+    "sizeLabel": "37.5 Mo"
+  },
+  {
+    "path": "media/audio/masters/Work! (One, two, three, four).wav",
+    "url": "../../media/audio/masters/Work!%20(One%2C%20two%2C%20three%2C%20four).wav",
+    "title": "Work! (One, two, three, four)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 33408040,
+    "sizeLabel": "31.9 Mo"
+  },
+  {
+    "path": "media/audio/previews/site-song/track (1).mp3",
+    "url": "../../media/audio/previews/site-song/track%20(1).mp3",
+    "title": "track (1)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 2364647,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/audio/previews/site-song/track (2).mp3",
+    "url": "../../media/audio/previews/site-song/track%20(2).mp3",
+    "title": "track (2)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 6265212,
+    "sizeLabel": "6.0 Mo"
+  },
+  {
+    "path": "media/audio/previews/site-song/track (3).mp3",
+    "url": "../../media/audio/previews/site-song/track%20(3).mp3",
+    "title": "track (3)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 6637008,
+    "sizeLabel": "6.3 Mo"
+  },
+  {
+    "path": "media/audio/previews/site-song/track (4).mp3",
+    "url": "../../media/audio/previews/site-song/track%20(4).mp3",
+    "title": "track (4)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 7118650,
+    "sizeLabel": "6.8 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Credits Song To An End Of A World (Cover).mp3",
+    "url": "../../media/audio/tracks/Credits%20Song%20To%20An%20End%20Of%20A%20World%20(Cover).mp3",
+    "title": "Credits Song To An End Of A World (Cover)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 3587949,
+    "sizeLabel": "3.4 Mo"
+  },
+  {
+    "path": "media/audio/tracks/CYBER RIDDIM (Remastered) (1).mp3",
+    "url": "../../media/audio/tracks/CYBER%20RIDDIM%20(Remastered)%20(1).mp3",
+    "title": "CYBER RIDDIM (Remastered) (1)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 5756589,
+    "sizeLabel": "5.5 Mo"
+  },
+  {
+    "path": "media/audio/tracks/CYBER RIDDIM (Remastered) (2).mp3",
+    "url": "../../media/audio/tracks/CYBER%20RIDDIM%20(Remastered)%20(2).mp3",
+    "title": "CYBER RIDDIM (Remastered) (2)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 5756589,
+    "sizeLabel": "5.5 Mo"
+  },
+  {
+    "path": "media/audio/tracks/CYBER RIDDIM (Remastered).mp3",
+    "url": "../../media/audio/tracks/CYBER%20RIDDIM%20(Remastered).mp3",
+    "title": "CYBER RIDDIM (Remastered)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 5756589,
+    "sizeLabel": "5.5 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Descent on the Moon - BZH CHRONICLES fr - Vocals.mp3",
+    "url": "../../media/audio/tracks/Descent%20on%20the%20Moon%20-%20BZH%20CHRONICLES%20fr%20-%20Vocals.mp3",
+    "title": "Descent on the Moon BZH CHRONICLES fr Vocals",
+    "category": "Audio",
+    "type": "audio",
+    "size": 7346719,
+    "sizeLabel": "7.0 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Descent on the Moon lips.mp3",
+    "url": "../../media/audio/tracks/Descent%20on%20the%20Moon%20lips.mp3",
+    "title": "Descent on the Moon lips",
+    "category": "Audio",
+    "type": "audio",
+    "size": 1442001,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/audio/tracks/DrSpig_La Ballade de MutenRock.mp3",
+    "url": "../../media/audio/tracks/DrSpig_La%20Ballade%20de%20MutenRock.mp3",
+    "title": "DrSpig La Ballade de MutenRock",
+    "category": "Audio",
+    "type": "audio",
+    "size": 8312833,
+    "sizeLabel": "7.9 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Intro.mp3",
+    "url": "../../media/audio/tracks/Intro.mp3",
+    "title": "Intro",
+    "category": "Audio",
+    "type": "audio",
+    "size": 2364647,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/audio/tracks/MutenRock.mp3",
+    "url": "../../media/audio/tracks/MutenRock.mp3",
+    "title": "MutenRock",
+    "category": "Audio",
+    "type": "audio",
+    "size": 6265212,
+    "sizeLabel": "6.0 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Neo Breizh Drift (1).mp3",
+    "url": "../../media/audio/tracks/Neo%20Breizh%20Drift%20(1).mp3",
+    "title": "Neo Breizh Drift (1)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 4009581,
+    "sizeLabel": "3.8 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Neo Breizh Drift (2).mp3",
+    "url": "../../media/audio/tracks/Neo%20Breizh%20Drift%20(2).mp3",
+    "title": "Neo Breizh Drift (2)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 4014189,
+    "sizeLabel": "3.8 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Neo Breizh Drift (3).mp3",
+    "url": "../../media/audio/tracks/Neo%20Breizh%20Drift%20(3).mp3",
+    "title": "Neo Breizh Drift (3)",
+    "category": "Audio",
+    "type": "audio",
+    "size": 4915629,
+    "sizeLabel": "4.7 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Neo Breizh Drift.mp3",
+    "url": "../../media/audio/tracks/Neo%20Breizh%20Drift.mp3",
+    "title": "Neo Breizh Drift",
+    "category": "Audio",
+    "type": "audio",
+    "size": 4505517,
+    "sizeLabel": "4.3 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Sniky The Frager.mp3",
+    "url": "../../media/audio/tracks/Sniky%20The%20Frager.mp3",
+    "title": "Sniky The Frager",
+    "category": "Audio",
+    "type": "audio",
+    "size": 6637008,
+    "sizeLabel": "6.3 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Titan  hound.mp3",
+    "url": "../../media/audio/tracks/Titan%20%20hound.mp3",
+    "title": "Titan hound",
+    "category": "Audio",
+    "type": "audio",
+    "size": 7118650,
+    "sizeLabel": "6.8 Mo"
+  },
+  {
+    "path": "media/audio/tracks/Untitled.mp3",
+    "url": "../../media/audio/tracks/Untitled.mp3",
+    "title": "Untitled",
+    "category": "Audio",
+    "type": "audio",
+    "size": 2953197,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
     "path": "media/video/references/gartic-monster/571456322685125.mp4",
     "url": "../../media/video/references/gartic-monster/571456322685125.mp4",
     "title": "571456322685125",

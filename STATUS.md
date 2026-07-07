@@ -81,3 +81,10 @@
 - 1 source Paint.NET conservée dans `archives/sources/tcg/`
 - 1 doublon exact ignoré car déjà présent comme `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`
 - Galerie média régénérable depuis ces assets TCG suivis
+
+## Ajouts V8
+- Sous-lot audio `BZH_RESS\Son` traité sans analyse de contenu
+- 16 pistes MP3 classées dans `media/audio/tracks/`
+- 4 previews MP3 classées dans `media/audio/previews/site-song/`
+- 4 masters WAV conservés dans `media/audio/masters/`
+- Aucun doublon exact détecté avec les médias déjà suivis

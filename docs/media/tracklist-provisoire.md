@@ -14,6 +14,11 @@
 - état mastering ;
 - crédits.
 
+## Fichiers audio disponibles
+- `media/audio/tracks/` — pistes MP3 importees.
+- `media/audio/previews/site-song/` — previews et musiques de site.
+- `media/audio/masters/` — masters WAV conserves.
+
 ## Catalogue étendu retrouvé
 - Spirit’s Rage
 - Void Echoes

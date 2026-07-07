@@ -107,6 +107,13 @@
 - `archives/sources/tcg/ablumd.pdn` — source Paint.NET conservee hors galerie media.
 - Doublon exact ignore : `ChatGPT Image 20 juin 2025, 03_20_51.png`, deja classe comme `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`.
 
+### Import 2026-07-06 — Desktop BZH / tri audio
+- 24 fichiers audio classes dans `media/audio/`.
+- `media/audio/tracks/` — 16 pistes MP3.
+- `media/audio/previews/site-song/` — 4 previews MP3.
+- `media/audio/masters/` — 4 masters WAV.
+- Aucun doublon exact detecte avec les medias deja suivis.
+
 ## Audio
 - Sniky: The Frager
 - Aligax: Digital Maiden

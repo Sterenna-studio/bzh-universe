@@ -11,6 +11,11 @@ Projet d’EP / album identifié.
 - Titan: The Guardian Hound
 - Aligax: Digital Maiden — Riddim / Dubstep Remix
 
+## Fichiers audio classes
+- Pistes MP3 : `media/audio/tracks/`
+- Previews / musiques de site : `media/audio/previews/site-song/`
+- Masters WAV : `media/audio/masters/`
+
 ## Autres concepts
 - Glitched Warcry
 - L’Heure du Combat

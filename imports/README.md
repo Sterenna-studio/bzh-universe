@@ -28,3 +28,10 @@ Sous-lot TCG traite :
 - 1 source `.pdn` conservee dans `archives/sources/tcg/` ;
 - 1 doublon exact ignore car deja present dans `assets/cards/bzh01/` ;
 - dossier brut conserve dans le sas pour tracabilite.
+
+Sous-lot audio traite :
+- 24 fichiers audio classes dans `media/audio/` ;
+- 16 pistes dans `media/audio/tracks/` ;
+- 4 previews dans `media/audio/previews/site-song/` ;
+- 4 masters WAV dans `media/audio/masters/` ;
+- aucun doublon exact detecte avant copie.

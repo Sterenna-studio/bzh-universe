@@ -76,9 +76,16 @@
 - 1 source Paint.NET conservee dans `archives/sources/tcg/`.
 - 1 doublon exact ignore : `ChatGPT Image 20 juin 2025, 03_20_51.png`, deja present sous `assets/cards/bzh01/bzhcard_bzh01_pack-layout_v01.png`.
 
+## Traitement audio realise
+- 16 pistes MP3 classees dans `media/audio/tracks/`.
+- 4 previews MP3 classees dans `media/audio/previews/site-song/`.
+- 4 masters WAV conserves dans `media/audio/masters/`.
+- Aucun fichier audio ne depasse 100 Mo.
+- Aucun doublon exact detecte avec les medias deja suivis.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Poursuivre par l'audio `BZH_RESS\Son\` vers `media/audio/` apres dedoublonnage des variantes.
-3. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.
+2. Archiver `LOL_TEAM_STATS` separement comme export web/statistique si son contenu doit rester consultable.
+3. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.
