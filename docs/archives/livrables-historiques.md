@@ -104,3 +104,11 @@ Les petits dossiers visuels du lot Desktop BZH ont ete classes sans toucher aux 
 - `media/visual/covers/bzh-chronicles-album-wip/` — visuels album WIP.
 - `media/visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
 - `archives/import-duplicates/2026-07-06-desktop-bzh/` — copies exactes conservees hors galerie.
+
+## 12. Sous-lot BZH Chronicles Desktop BZH
+Le sous-lot `BZH_CHRONICLES` a ete classe comme references et assets historiques :
+- `assets/cards/legacy/old-card/` — 25 visuels de cartes legacy.
+- `media/visual/references/bzh-chronicles/` — reference visuelle BZH Chronicles.
+- `media/visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
+- `archives/sources/webtoon/MUTEN TOM.pdn` — source Paint.NET conservee.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv` — index des 116 doublons exacts deja suivis.

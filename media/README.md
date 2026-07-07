@@ -25,5 +25,7 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/covers/bzh-chronicles-album-wip/` — visuels album WIP BZH Chronicles.
 - `visual/covers/bzh-jazzy/` — visuels BZH Jazzy.
 - `visual/covers/rtt/` — covers RTT / Pontivy.
+- `visual/references/bzh-chronicles/` — references visuelles BZH Chronicles.
+- `visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
 - `visual/references/leme/` — references LEME / Gwen Ha Star.

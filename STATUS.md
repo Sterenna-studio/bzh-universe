@@ -114,3 +114,11 @@
 - 4 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/`
 - 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/`
 - Galerie media regenerable avec ces nouveaux visuels
+
+## Ajouts V12
+- Sous-lot `BZH_CHRONICLES` traite sans video
+- 25 visuels de cartes legacy classes dans `assets/cards/legacy/old-card/`
+- 2 references visuelles classees dans `media/visual/references/`
+- 1 source Paint.NET conservee dans `archives/sources/webtoon/`
+- 5 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_CHRONICLES/`
+- 116 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`

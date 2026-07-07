@@ -131,9 +131,31 @@ Doublons exacts internes :
 - `ChatGPT Image 15 avr. 2025, 00_32_36.png` est une copie exacte de `Nuit pluvieuse au port.png`, promu dans `media/visual/covers/bzh-jazzy/`.
 - `ChatGPT Image 14 avr. 2025, 23_28_48.png` est une copie exacte de `Ombres sur la 9e Avenue.png`, promu dans `media/visual/covers/bzh-jazzy/`.
 
+## Traitement BZH Chronicles realise
+- Perimetre traite : `imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/`.
+- 151 fichiers examines, sans video.
+- 116 fichiers sont des doublons exacts deja suivis dans `assets/`, `media/` ou `archives/`.
+- Ces 116 doublons ne sont pas recopies ; ils restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
+- 35 fichiers nouveaux traites : 27 visuels ou assets classes, 1 source Paint.NET conservee, 2 metadonnees Windows conservees, 5 copies doublons exactes internes archivees.
+
+Destinations :
+- `assets/cards/legacy/old-card/` — 25 visuels de cartes legacy.
+- `media/visual/references/bzh-chronicles/` — 1 reference visuelle BZH Chronicles.
+- `media/visual/references/bzh-chronicles-montage/` — 1 montage photo BZH Power.
+- `archives/sources/webtoon/` — 1 source Paint.NET Webtoon.
+- `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_CHRONICLES/old_card/` — 5 copies exactes internes.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/` — 2 metadonnees Windows.
+
+Doublons exacts internes :
+- `old_card/1 (3).png` est une copie exacte de `old_card/Floating Monastery.png`, promu dans `assets/cards/legacy/old-card/`.
+- `old_card/1 (62).png` est une copie exacte de `old_card/Aligax _ Spirit _ The Shield and the Aim.png`, promu dans `assets/cards/legacy/old-card/`.
+- `old_card/1 (45).png` est une copie exacte de `old_card/Secret of the Maelstrom.png`, promu dans `assets/cards/legacy/old-card/`.
+- `old_card/Thorn Lurker.png` est une copie exacte de `old_card/Pulse Rifle.png`, promu dans `assets/cards/legacy/old-card/`.
+- `old_card/1 (13).png` est une copie exacte de `old_card/Titan _ Guardian Beast.png`, promu dans `assets/cards/legacy/old-card/`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
 2. Continuer les images `BZH_RESS` restantes par familles : logos, merch, wallpapers, references.
-3. Traiter les lots restants `BZH_CHRONICLES` et `BZH_RESS` par familles, en gardant les videos reference-only.
+3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

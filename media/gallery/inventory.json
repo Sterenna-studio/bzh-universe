@@ -1728,6 +1728,231 @@
     "sizeLabel": "2.6 Mo"
   },
   {
+    "path": "assets/cards/legacy/old-card/1 (1).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(1).png",
+    "title": "1 (1)",
+    "category": "TCG",
+    "type": "image",
+    "size": 2227903,
+    "sizeLabel": "2.1 Mo"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/1 (14).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(14).png",
+    "title": "1 (14)",
+    "category": "TCG",
+    "type": "image",
+    "size": 724707,
+    "sizeLabel": "708 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/1 (22).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(22).png",
+    "title": "1 (22)",
+    "category": "TCG",
+    "type": "image",
+    "size": 3436595,
+    "sizeLabel": "3.3 Mo"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/1 (60).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(60).png",
+    "title": "1 (60)",
+    "category": "TCG",
+    "type": "image",
+    "size": 2616845,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/1 (61).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(61).png",
+    "title": "1 (61)",
+    "category": "TCG",
+    "type": "image",
+    "size": 132096,
+    "sizeLabel": "129 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/1 (66).png",
+    "url": "../../assets/cards/legacy/old-card/1%20(66).png",
+    "title": "1 (66)",
+    "category": "TCG",
+    "type": "image",
+    "size": 218594,
+    "sizeLabel": "213 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Aligax _ Spirit _ The Shield and the Aim.png",
+    "url": "../../assets/cards/legacy/old-card/Aligax%20_%20Spirit%20_%20The%20Shield%20and%20the%20Aim.png",
+    "title": "Aligax Spirit The Shield and the Aim",
+    "category": "TCG",
+    "type": "image",
+    "size": 767324,
+    "sizeLabel": "749 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/BZH01_RC001.jpeg",
+    "url": "../../assets/cards/legacy/old-card/BZH01_RC001.jpeg",
+    "title": "BZH01 RC001",
+    "category": "TCG",
+    "type": "image",
+    "size": 672982,
+    "sizeLabel": "657 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/BZH01_RC002.jpeg",
+    "url": "../../assets/cards/legacy/old-card/BZH01_RC002.jpeg",
+    "title": "BZH01 RC002",
+    "category": "TCG",
+    "type": "image",
+    "size": 568174,
+    "sizeLabel": "555 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/card_back.png",
+    "url": "../../assets/cards/legacy/old-card/card_back.png",
+    "title": "card back",
+    "category": "TCG",
+    "type": "image",
+    "size": 638850,
+    "sizeLabel": "624 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/ChatGPT Image 22 avr. 2025, 05_03_55.png",
+    "url": "../../assets/cards/legacy/old-card/ChatGPT%20Image%2022%20avr.%202025%2C%2005_03_55.png",
+    "title": "ChatGPT Image 22 avr. 2025, 05 03 55",
+    "category": "TCG",
+    "type": "image",
+    "size": 2987567,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Floating Monastery.png",
+    "url": "../../assets/cards/legacy/old-card/Floating%20Monastery.png",
+    "title": "Floating Monastery",
+    "category": "TCG",
+    "type": "image",
+    "size": 720380,
+    "sizeLabel": "703 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Lure of the Archive.png",
+    "url": "../../assets/cards/legacy/old-card/Lure%20of%20the%20Archive.png",
+    "title": "Lure of the Archive",
+    "category": "TCG",
+    "type": "image",
+    "size": 240833,
+    "sizeLabel": "235 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/MutenRock _ Gabilone _ Natural Harmony.png",
+    "url": "../../assets/cards/legacy/old-card/MutenRock%20_%20Gabilone%20_%20Natural%20Harmony.png",
+    "title": "MutenRock Gabilone Natural Harmony",
+    "category": "TCG",
+    "type": "image",
+    "size": 680377,
+    "sizeLabel": "664 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Neon Forest.png",
+    "url": "../../assets/cards/legacy/old-card/Neon%20Forest.png",
+    "title": "Neon Forest",
+    "category": "TCG",
+    "type": "image",
+    "size": 718238,
+    "sizeLabel": "701 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Pulse Rifle.png",
+    "url": "../../assets/cards/legacy/old-card/Pulse%20Rifle.png",
+    "title": "Pulse Rifle",
+    "category": "TCG",
+    "type": "image",
+    "size": 257285,
+    "sizeLabel": "251 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Secret of the Maelstrom.png",
+    "url": "../../assets/cards/legacy/old-card/Secret%20of%20the%20Maelstrom.png",
+    "title": "Secret of the Maelstrom",
+    "category": "TCG",
+    "type": "image",
+    "size": 98078,
+    "sizeLabel": "96 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Sniky _ Titan _ Silent Strike.png",
+    "url": "../../assets/cards/legacy/old-card/Sniky%20_%20Titan%20_%20Silent%20Strike.png",
+    "title": "Sniky Titan Silent Strike",
+    "category": "TCG",
+    "type": "image",
+    "size": 570696,
+    "sizeLabel": "557 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Spike _ Loyal Hunter.png",
+    "url": "../../assets/cards/legacy/old-card/Spike%20_%20Loyal%20Hunter.png",
+    "title": "Spike Loyal Hunter",
+    "category": "TCG",
+    "type": "image",
+    "size": 259752,
+    "sizeLabel": "254 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Temporal Rift.png",
+    "url": "../../assets/cards/legacy/old-card/Temporal%20Rift.png",
+    "title": "Temporal Rift",
+    "category": "TCG",
+    "type": "image",
+    "size": 680494,
+    "sizeLabel": "665 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/The Core of the Code.png",
+    "url": "../../assets/cards/legacy/old-card/The%20Core%20of%20the%20Code.png",
+    "title": "The Core of the Code",
+    "category": "TCG",
+    "type": "image",
+    "size": 505465,
+    "sizeLabel": "494 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Titan _ Guardian Beast.png",
+    "url": "../../assets/cards/legacy/old-card/Titan%20_%20Guardian%20Beast.png",
+    "title": "Titan Guardian Beast",
+    "category": "TCG",
+    "type": "image",
+    "size": 226249,
+    "sizeLabel": "221 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Uplink Overload.png",
+    "url": "../../assets/cards/legacy/old-card/Uplink%20Overload.png",
+    "title": "Uplink Overload",
+    "category": "TCG",
+    "type": "image",
+    "size": 261677,
+    "sizeLabel": "256 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Verdant Nexus.png",
+    "url": "../../assets/cards/legacy/old-card/Verdant%20Nexus.png",
+    "title": "Verdant Nexus",
+    "category": "TCG",
+    "type": "image",
+    "size": 555066,
+    "sizeLabel": "542 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/Wyrm Of Plelan.png",
+    "url": "../../assets/cards/legacy/old-card/Wyrm%20Of%20Plelan.png",
+    "title": "Wyrm Of Plelan",
+    "category": "TCG",
+    "type": "image",
+    "size": 156330,
+    "sizeLabel": "153 Ko"
+  },
+  {
     "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 07_35_58.png",
     "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2007_35_58.png",
     "title": "ChatGPT Image 20 mai 2025, 07 35 58",
@@ -2887,6 +3112,24 @@
     "type": "image",
     "size": 23362277,
     "sizeLabel": "22.3 Mo"
+  },
+  {
+    "path": "media/visual/references/bzh-chronicles-montage/BZH_PW_photos_v2_x2.jpg",
+    "url": "../../media/visual/references/bzh-chronicles-montage/BZH_PW_photos_v2_x2.jpg",
+    "title": "BZH PW photos v2 x2",
+    "category": "References",
+    "type": "image",
+    "size": 579802,
+    "sizeLabel": "566 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-chronicles/8c24d6e6bcab4765b4df956b863092ae.jpg",
+    "url": "../../media/visual/references/bzh-chronicles/8c24d6e6bcab4765b4df956b863092ae.jpg",
+    "title": "8c24d6e6bcab4765b4df956b863092ae",
+    "category": "References",
+    "type": "image",
+    "size": 85894,
+    "sizeLabel": "84 Ko"
   },
   {
     "path": "media/visual/references/bzhchronicles_dark-creature_reference_v01.png",

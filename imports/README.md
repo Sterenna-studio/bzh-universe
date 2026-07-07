@@ -63,3 +63,12 @@ Sous-lots visuels courts traites :
 - 4 visuels racine classes en logo, cover ou merch ;
 - 4 copies doublons exactes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/` ;
 - 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/`.
+
+Sous-lot BZH Chronicles traite :
+- 151 fichiers examines, sans video ;
+- 25 cartes legacy classees dans `assets/cards/legacy/old-card/` ;
+- 2 references visuelles classees dans `media/visual/references/` ;
+- 1 source Paint.NET conservee dans `archives/sources/webtoon/` ;
+- 5 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_CHRONICLES/` ;
+- 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/` ;
+- 116 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
