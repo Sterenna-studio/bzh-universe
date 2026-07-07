@@ -1,0 +1,5 @@
+category,path,count,size_bytes,status,reference
+already_archived_web_snapshot,imports/2026-07-06-desktop-bzh/LOL_TEAM_STATS,360,40852998,hash_identical_to_archive,archives/web/lol-team-stats/raw/
+indexed_duplicate,imports/2026-07-06-desktop-bzh/BZH_CHRONICLES,116,201385757,all_source_paths_in_duplicate_csv,archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv
+indexed_duplicate_non_video,imports/2026-07-06-desktop-bzh/BZH_RESS,25,15360758,all_non_video_source_paths_in_duplicate_csv,"archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv; archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv; archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv; archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv; archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv; archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv"
+reference_only_video,imports/2026-07-06-desktop-bzh/BZH_RESS,156,985523772,video_reference_only,archives/import-reports/2026-07-06-desktop-bzh-videos.csv

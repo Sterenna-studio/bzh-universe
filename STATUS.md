@@ -171,3 +171,11 @@
 - 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`
 - 3 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`
 - 8 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv`
+
+## Ajouts V20
+- Controle residuel du sas `imports/2026-07-06-desktop-bzh/`
+- 360 fichiers `LOL_TEAM_STATS` verifies comme identiques a l'archive `archives/web/lol-team-stats/raw/`
+- 116 fichiers `BZH_CHRONICLES` restants confirmes comme doublons deja suivis
+- 25 fichiers non video `BZH_RESS` restants confirmes comme doublons deja suivis
+- 156 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
+- Synthese ajoutee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`

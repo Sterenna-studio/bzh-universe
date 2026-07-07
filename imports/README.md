@@ -119,3 +119,10 @@ Sous-lot bzhpwimage artwork traite :
 - 8 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv` ;
 - 3 videos `.mp4` restent reference-only dans le sas.
+
+Controle residuel du sas :
+- `LOL_TEAM_STATS/` : 360 fichiers encore presents localement, verifies bit a bit comme identiques a `archives/web/lol-team-stats/raw/` ;
+- `BZH_CHRONICLES/` : 116 fichiers restants, tous couverts par le CSV de doublons deja suivis ;
+- `BZH_RESS/` : 25 fichiers non video restants, tous couverts par les CSV de doublons deja suivis ;
+- `BZH_RESS/` : 156 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion Git classique ;
+- synthese conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
