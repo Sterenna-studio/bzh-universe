@@ -80,3 +80,9 @@ Sous-lot BZH_RESS visuels courts traite :
 - 4 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/` ;
 - 7 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.
+
+Racine BZH_RESS traitee :
+- 8 fichiers nouveaux classes : 5 visuels, 2 documents, 1 CSV de metadata ;
+- 4 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv` ;
+- mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` ;
+- `tmp1uphl2jq.mp4` reste reference-only dans le sas.

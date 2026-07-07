@@ -124,3 +124,12 @@ Une premiere passe BZH_RESS a classe les familles visuelles courtes hors videos 
 - `media/visual/references/gpt-soiree-trio/` — references de scene.
 - `archives/html/bzhpw-lore/Sniky_BZH_Chronicles.html` — fiche HTML Sniky complementaire.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv` — mapping source/destination.
+
+## 14. Racine BZH_RESS
+Les fichiers non video poses directement dans `BZH_RESS/` ont ete classes :
+- `media/visual/references/steam-escape-game/` — photos de reference.
+- `media/visual/references/bzh-ress/` — reference personnage/loups.
+- `assets/site/frames/bzhress_contour_frame_v001.png` — frame/contour.
+- `media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png` — poster Hall of Playtime.
+- `archives/documents/bzhpw-lore/` — documents sources.
+- `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` — mapping source/destination.

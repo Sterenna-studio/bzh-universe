@@ -2223,6 +2223,15 @@
     "sizeLabel": "2.1 Mo"
   },
   {
+    "path": "media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png",
+    "url": "../../media/visual/covers/bzh-ress-posters/bzhress_hall-of-playtime_v001.png",
+    "title": "bzhress hall of playtime v001",
+    "category": "Covers et mockups",
+    "type": "image",
+    "size": 3050813,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
     "path": "media/visual/covers/bzh-ress-posters/bzhress_poster_v001.png",
     "url": "../../media/visual/covers/bzh-ress-posters/bzhress_poster_v001.png",
     "title": "bzhress poster v001",
@@ -3645,6 +3654,15 @@
     "sizeLabel": "84 Ko"
   },
   {
+    "path": "media/visual/references/bzh-ress/bzhress_wolf-character_reference_v001.png",
+    "url": "../../media/visual/references/bzh-ress/bzhress_wolf-character_reference_v001.png",
+    "title": "bzhress wolf character reference v001",
+    "category": "References",
+    "type": "image",
+    "size": 592954,
+    "sizeLabel": "579 Ko"
+  },
+  {
     "path": "media/visual/references/bzhchronicles_dark-creature_reference_v01.png",
     "url": "../../media/visual/references/bzhchronicles_dark-creature_reference_v01.png",
     "title": "bzhchronicles dark creature reference v01",
@@ -4912,6 +4930,24 @@
     "type": "image",
     "size": 376714,
     "sizeLabel": "368 Ko"
+  },
+  {
+    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
+    "url": "../../media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
+    "title": "bzhress steam escape photo v001",
+    "category": "References",
+    "type": "image",
+    "size": 275371,
+    "sizeLabel": "269 Ko"
+  },
+  {
+    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
+    "url": "../../media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
+    "title": "bzhress steam escape photo v002",
+    "category": "References",
+    "type": "image",
+    "size": 583001,
+    "sizeLabel": "569 Ko"
   },
   {
     "path": "media/visual/references/waluigi-cosplay_reference_v01.webp",

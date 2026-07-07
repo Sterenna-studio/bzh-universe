@@ -178,9 +178,28 @@ Trace de renommage :
 - Les fichiers a noms tres longs ont ete renommes en noms courts par famille.
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.
 
+## Traitement BZH_RESS racine realise
+- Perimetre traite : fichiers poses directement dans `imports/2026-07-06-desktop-bzh/BZH_RESS/`, hors video.
+- 12 fichiers non video examines.
+- 4 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`.
+- 8 fichiers nouveaux traites : 5 visuels classes, 2 documents conserves, 1 CSV de metadata conserve.
+- La video `BZH_RESS/tmp1uphl2jq.mp4` reste reference-only dans le sas.
+
+Destinations :
+- `media/visual/references/steam-escape-game/` — 2 photos de reference.
+- `media/visual/references/bzh-ress/` — 1 reference personnage/loups.
+- `media/visual/covers/bzh-ress-posters/` — 1 poster Hall of Playtime.
+- `assets/site/frames/` — 1 frame/contour.
+- `archives/documents/bzhpw-lore/` — 2 documents texte/source.
+- `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/` — 1 CSV de metadata.
+
+Trace de renommage :
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv`.
+
 ## Recommandation de suite
 1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage`, `Montage`, fichiers racine et documents.
+2. Continuer les images `BZH_RESS` restantes par familles : `bzhpwimage`, `Montage` et documents/sources internes.
 3. Traiter le lot restant `BZH_RESS` par familles, en gardant les videos reference-only.
 4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
 5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.

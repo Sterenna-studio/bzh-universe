@@ -31,9 +31,11 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/merch/tapestries/bzh-ress/` — tentures issues du sous-lot BZH_RESS.
 - `visual/references/bzh-chronicles/` — references visuelles BZH Chronicles.
 - `visual/references/bzh-chronicles-montage/` — montage photo BZH Power.
+- `visual/references/bzh-ress/` — references visuelles racine BZH_RESS.
 - `visual/references/gpt-soiree-trio/` — references de scene du sous-lot BZH_RESS.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
 - `visual/references/leme/` — references LEME / Gwen Ha Star.
+- `visual/references/steam-escape-game/` — photos de reference Steam Escape Game.
 - `visual/social/emotes/bzh-ress/` — emotes et avatars BZH_RESS.
 - `visual/social/stickers/bzh-ress/` — stickers BZH_RESS.
 - `visual/wallpapers/bzh-ress/` — wallpapers BZH_RESS.

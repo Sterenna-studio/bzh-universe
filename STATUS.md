@@ -130,3 +130,10 @@
 - 4 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/`
 - 4 doublons exacts internes conserves dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/`
 - 7 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv`
+
+## Ajouts V14
+- Racine `BZH_RESS` traitee hors video
+- 5 visuels classes dans `media/visual/` et `assets/site/frames/`
+- 2 documents sources conserves dans `archives/documents/bzhpw-lore/`
+- 1 CSV de metadata conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/`
+- 4 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`
