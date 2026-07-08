@@ -8,6 +8,13 @@
 ## Role narratif
 Aligax incarne la force frontale, la protection et la figure de commandement impitoyable. Elle est liee aux motifs de rose de metal, d'armure vivante et de puissance cybernetique.
 
+## References visuelles importees
+- `media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v001.mp4`
+- `media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v002.mp4`
+- `media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v003.mp4`
+
+Ces trois boucles de portrait montrent une lecture cyberpunk argent-bleu compatible avec Aligax / `Digital Maiden`. Les watermarks visibles les classent comme references de pose, armure et ambiance, pas comme assets finaux.
+
 ## Liens internes
 - [Personnages](../personnages.md)
 - [BZH01 — set de cartes TCG](../../projects/bzh-card-game/cards.md)

@@ -17,7 +17,7 @@ Les 520 fichiers encore presents avant cette passe ont ete traites par statut, s
 | `LOL_TEAM_STATS/` | 360 | Archive brute interne deja verifiee bit a bit. Mise de cote, sans lien direct wiki ni promotion publique. |
 | `BZH_CHRONICLES/` | 116 | Doublons exacts deja suivis. Retires du sas apres verification du CSV de doublons. |
 | `BZH_RESS/` non video | 25 | Doublons exacts deja suivis. Retires du sas apres verification des CSV de doublons BZH_RESS et bzhpwimage. |
-| `BZH_RESS/` videos | 19 | Promues comme videos de reference dans `media/video/references/desktop-bzh/`, sans analyse de contenu. |
+| `BZH_RESS/` videos | 19 | Promues comme videos de reference dans `media/video/references/desktop-bzh/`, puis rattachees aux pages wiki pertinentes. |
 
 ## Videos ajoutees au hub
 Les videos restantes etaient toutes sous 100 Mo. Elles ont ete renommees avec une base issue des noms de dossiers source, puis ajoutees a la galerie media via `media/video/references/desktop-bzh/`.
@@ -33,6 +33,17 @@ Les videos restantes etaient toutes sous 100 Mo. Elles ont ete renommees avec un
 Mapping complet source/destination :
 - `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`
 
+## Analyse wiki des videos
+L'analyse a ete faite par famille source, avec controle de metadonnees et vignettes. Les videos restent des references de travail quand elles portent un watermark ou un rendu generatif visible.
+
+| Dossier | Lecture retenue | Destination wiki |
+| --- | --- | --- |
+| `media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/` | Trois boucles 512x512 de portrait cyberpunk feminin / Aligax, avec armure argent-bleu et watermark Hedra. | `docs/universe/personnages/aligax-dossier.md`, `docs/identity/direction-artistique.md` |
+| `media/video/references/desktop-bzh/bzhpwimage/` | Deux references motion heterogenes : bateau / drapeau BZH POWER et essai de performance verticale type mascotte. | `docs/media/trailers-et-scripts.md`, `docs/identity/direction-artistique.md` |
+| `media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/` | Dix clips courts : trio fantasy, personnage chibi vert et animations de logo BZH POWER, tous a traiter comme tests social / motion. | `docs/media/trailers-et-scripts.md`, `docs/merch/merchandising.md`, `docs/identity/direction-artistique.md` |
+| `media/video/references/desktop-bzh/son/` | Trois lyric videos / cartes Suno pour `Les Ombres et la Lumiere` et `MutenRock v2`. | `docs/media/musique-et-albums.md`, `docs/media/trailers-et-scripts.md`, `docs/universe/personnages/mutenrock-dossier.md` |
+| `media/video/references/desktop-bzh/wallpaper/` | Une boucle 512x512 de portrait / mascotte en jaune, a arbitrer avant canonisation personnage. | `docs/identity/direction-artistique.md` |
+
 ## Traces conservees
 - Rapport principal : `archives/import-reports/2026-07-06-desktop-bzh.md`
 - Etat final machine-readable : `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`
@@ -41,5 +52,6 @@ Mapping complet source/destination :
 - Galerie media : `media/gallery/index.html`
 
 ## Limites
-- Les videos promues sont classees par dossier et nom de fichier source, sans transcription, miniature ni analyse de contenu.
+- Les videos promues ont une analyse visuelle de premier niveau, mais pas de transcription integrale ni de validation canonique.
+- Les clips watermarkes ou manifestement generatifs restent des references de direction, pas des assets finaux.
 - Les statistiques LoL restent internes : la page hub documente leur existence et leur statut, mais ne les expose pas comme entree de navigation directe.

@@ -118,6 +118,12 @@
 - 520 fichiers residuels traites apres verification.
 - 19 videos `BZH_RESS` promues comme references dans `media/video/references/desktop-bzh/`.
 - Dossiers exposes par nom de famille source : `bzhpwimage/`, `bzh-pw-wallpaper-aligax/`, `chibi-bzh-power-decembre-2024/`, `son/`, `wallpaper/`.
+- Analyse wiki ajoutee :
+  - `bzh-pw-wallpaper-aligax/` — references Aligax / Digital Maiden pour personnage et direction artistique.
+  - `bzhpwimage/` — references BZH POWER, bateau / drapeau et performance verticale.
+  - `chibi-bzh-power-decembre-2024/` — clips courts social, chibi, logo anime et piste merch/stickers.
+  - `son/` — lyric videos pour `Les Ombres et la Lumiere` et `MutenRock v2`.
+  - `wallpaper/` — portrait / mascotte jaune a arbitrer avant rattachement canonique.
 - 116 doublons `BZH_CHRONICLES` et 25 doublons non video `BZH_RESS` retires du sas apres couverture CSV.
 - 360 fichiers `LOL_TEAM_STATS` conserves comme archive interne mise de cote, sans lien direct depuis le hub public.
 - Mapping complet : `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`.

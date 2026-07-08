@@ -35,3 +35,5 @@ Des notes antérieures décrivent MutenRock comme :
   - **The Nature Owner**
 - Musique :
   - **MutenRock: The Digital Commander** — titre à confirmer
+- Video reference :
+  - `media/video/references/desktop-bzh/son/desktop-bzh-son-mutenrock-v002.mp4` — lyric video / motion reference `MutenRock v2`, a utiliser comme piste d'ambiance et de paroles visuelles avant validation canonique.

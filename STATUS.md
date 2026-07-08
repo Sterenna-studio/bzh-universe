@@ -187,3 +187,8 @@
 - Page hub ajoutee : `docs/archives/import-desktop-bzh.md`
 - Mapping source/destination videos ajoute dans `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`
 - `imports/` ne contient plus que son README source et son HTML genere
+
+## Ajouts V22
+- Analyse visuelle de premier niveau des 19 videos Desktop BZH promues.
+- Rattachement wiki ajoute pour Aligax, MutenRock, musique, trailers/scripts, merchandising et direction artistique.
+- Les videos watermarkees restent documentees comme references de direction, pas comme assets finaux.
