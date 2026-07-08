@@ -25,6 +25,17 @@ Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les not
 | Medias | [Catalogue medias](../../media/catalog/media-catalog.md), [Galerie media](../../media/gallery/index.html) |
 | Sources | [Citations originales - lore & personnages](../sources/messages-originaux/08-lore-personnages.md), [Index des conversations](../conversations/index.md) |
 
+## Relations fiables a garder visibles
+
+| Relation | Statut | Dossiers |
+| --- | --- | --- |
+| Sniky / Titan | `canon` pour le rattachement, nature de Titan a confirmer | [Sniky](personnages/sniky-dossier.md), [Titan](personnages/titan-dossier.md) |
+| Spirit / Spike | `canon` pour le rattachement, nature de Spike a confirmer | [Spirit](personnages/spirit-dossier.md), [Spike](personnages/spike-dossier.md) |
+| MutenRock / Dr. Sorn | `canon` pour le lien fraternel cite | [MutenRock](personnages/mutenrock-dossier.md), [Dr. Sorn](personnages/dr-sorn-dossier.md) |
+| Gabilone / Aligax | `canon` pour le lien fraternel cite, nom Gabilone/Gabylon a arbitrer | [Gabilone](personnages/gabilone-dossier.md), [Aligax](personnages/aligax-dossier.md) |
+| Aligax / Spirit | `canon` TCG, interaction narrative a decrire | [Aligax](personnages/aligax-dossier.md), [Spirit](personnages/spirit-dossier.md) |
+| MutenRock / Gabilone | `canon` TCG, cooperation techno-nature | [MutenRock](personnages/mutenrock-dossier.md), [Gabilone](personnages/gabilone-dossier.md) |
+
 ## A lire ensuite
 
 - Pour consolider le canon : [Questions ouvertes](../02-questions-ouvertes.md).

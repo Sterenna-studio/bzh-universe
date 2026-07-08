@@ -13,6 +13,8 @@ Projet d’EP / album identifié.
 | `Sniky: The Frager` | `canon` musical | [Sniky](../universe/personnages/sniky-dossier.md) |
 | `Aligax: Digital Maiden` | `canon` musical / variantes a confirmer | [Aligax](../universe/personnages/aligax-dossier.md) |
 | `MutenRock: The Digital Commander` | `a confirmer` | [MutenRock](../universe/personnages/mutenrock-dossier.md) |
+| `Spirit's Rage` | `a confirmer` | [Spirit](../universe/personnages/spirit-dossier.md) |
+| `Titan: The Guardian Hound` | `a confirmer` | [Titan](../universe/personnages/titan-dossier.md) |
 | Videos `son/` Desktop BZH | `reference` | [Trailers et scripts](trailers-et-scripts.md), [Import Desktop BZH](../archives/import-desktop-bzh.md) |
 
 ## Titres connus

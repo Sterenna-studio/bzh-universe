@@ -10117,7 +10117,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages/dr-sorn-dossier.md",
     "section": "Univers",
     "summary": "Dr. Sorn — dossier personnage Statut Personnage coeur de BZH Chronicles. Alias TCG : The Story Doctor. Motifs : cyber-runes, hasard, recits, gladiateur numerique. Role narratif Dr. Sorn agit comme medecin des recits et m",
-    "keywords": "docs universe personnages dr sorn dossier md Dr. Sorn — dossier personnage Statut Role narratif Liens internes Points a consolider"
+    "keywords": "docs universe personnages dr sorn dossier md Dr. Sorn — dossier personnage Statut Role narratif Rattachements croises Liens internes Points a consolider"
   },
   {
     "id": 125,
@@ -10367,7 +10367,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages/gabilone-dossier.md",
     "section": "Univers",
     "summary": "Gabilone / Gabylon — dossier personnage Statut Personnage coeur de BZH Chronicles. Alias TCG : The Naturalist. Axes : hacker, infiltrateur, animisme, bricolage et nature. Role narratif Gabilone relie la debrouille techni",
-    "keywords": "docs universe personnages gabilone dossier md Gabilone / Gabylon — dossier personnage Statut Role narratif Liens internes Points a consolider"
+    "keywords": "docs universe personnages gabilone dossier md Gabilone / Gabylon — dossier personnage Statut Role narratif Rattachements croises Liens internes Points a consolider"
   },
   {
     "id": 1227,
@@ -11337,7 +11337,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages.md",
     "section": "Univers",
     "summary": "Personnages Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les notes longues ; ici, le but est de voir rapidement le role, le statut et les liens de production utiles. Vue rapide Personnage Role",
-    "keywords": "docs universe personnages md Personnages Vue rapide Rattachements croises rapides A lire ensuite MutenRock Aligax Sniky Spirit"
+    "keywords": "docs universe personnages md Personnages Vue rapide Rattachements croises rapides Relations fiables a garder visibles A lire ensuite MutenRock Aligax Sniky"
   },
   {
     "id": 736,
@@ -11807,7 +11807,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages/spike-dossier.md",
     "section": "Univers",
     "summary": "Spike — dossier personnage Statut Compagnon canin de Spirit. Carte TCG associee : Spike – Loyal Hunter. Role narratif Spike fonctionne comme lien animal, pisteur et signal de fidelite. Dans le TCG, il est classe comme co",
-    "keywords": "docs universe personnages spike dossier md Spike — dossier personnage Statut Role narratif Liens internes Points a consolider"
+    "keywords": "docs universe personnages spike dossier md Spike — dossier personnage Statut Role narratif Rattachements croises Liens internes Points a consolider"
   },
   {
     "id": 514,
@@ -11827,7 +11827,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages/spirit-dossier.md",
     "section": "Univers",
     "summary": "Spirit — dossier personnage Statut Personnage coeur de BZH Chronicles. Alias TCG : The Cooker. Role principal : tacticien et tireur de precision. Role narratif Spirit represente la concentration, la lecture tactique et l",
-    "keywords": "docs universe personnages spirit dossier md Spirit — dossier personnage Statut Role narratif Liens internes Points a consolider"
+    "keywords": "docs universe personnages spirit dossier md Spirit — dossier personnage Statut Role narratif Rattachements croises Liens internes Points a consolider"
   },
   {
     "id": 323,
@@ -11967,7 +11967,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/universe/personnages/titan-dossier.md",
     "section": "Univers",
     "summary": "Titan — dossier personnage Statut Gardien canin / chien heroique. Carte TCG associee : Titan – Guardian Beast. Statut canonique encore a confirmer. Role narratif Titan est associe a Sniky comme gardien, presence protectr",
-    "keywords": "docs universe personnages titan dossier md Titan — dossier personnage Statut Role narratif Liens internes Points a consolider"
+    "keywords": "docs universe personnages titan dossier md Titan — dossier personnage Statut Role narratif Rattachements croises Liens internes Points a consolider"
   },
   {
     "id": 23,

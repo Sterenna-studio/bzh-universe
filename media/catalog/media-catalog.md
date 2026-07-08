@@ -9,7 +9,7 @@
 | Famille | Nom lisible | Statut | Entrees utiles |
 | --- | --- | --- | --- |
 | Logos | Identites BZH PW / BZH POWER / BZH CHRONICLES | `canon` / variantes | `assets/logos/`, [Direction artistique](../../docs/identity/direction-artistique.md) |
-| Personnages | Portraits et recherches MutenRock, Aligax, Sniky, Spirit | `reference` a `canon` selon usage | `assets/characters/`, [Personnages](../../docs/universe/personnages.md) |
+| Personnages | Portraits et recherches MutenRock, Aligax, Sniky, Spirit, Spike, Titan | `reference` a `canon` selon usage | `assets/characters/`, [Personnages](../../docs/universe/personnages.md) |
 | TCG | Sets BZH01 / BZH02 et assets communs | `canon` / `a confirmer` par carte | `assets/cards/`, [BZH Card Game](../../docs/projects/bzh-card-game/README.md) |
 | Audio | Pistes, previews et masters | `reference` / `master` | `media/audio/`, [Musique et albums](../../docs/media/musique-et-albums.md) |
 | Video | Lyric videos, motion tests et clips de reference | `reference` | `media/video/references/`, [Trailers et scripts](../../docs/media/trailers-et-scripts.md) |
@@ -66,13 +66,13 @@
   - `assets/characters/aligax/` — manga, neo-trad et stickman artefact.
   - `assets/characters/mutenrock/` — manga, QG neo-trad et portrait webtoon.
   - `assets/characters/sniky/` — manga, woodblock et encre parchemin.
-  - `assets/characters/spirit/spirit_manga_hound_v01.webp` — illustration Spirit avec chien.
+  - `assets/characters/spirit/spirit_manga_hound_v01.webp` — illustration Spirit avec chien, reference Spirit / Spike.
 - Covers, jaquettes et mockups :
   - `media/visual/covers/bzhchronicles_*` — posters, CD, mecha, retro hero, box backcover et mockups BZH Chronicles.
   - `media/visual/covers/bzhchronicles64_*` — jaquette et mockups BZH Chronicles 64.
   - `media/visual/covers/bzhjourney_*` — jaquette et mockup VR BZH Journey.
   - `media/visual/covers/bzhshadows_*` — jaquette, boxart, poster et mockup PC BZH Shadows.
-  - `media/visual/covers/sniky-titan_ds-mockup_v01.png` — mockup jeu Sniky & Titan.
+  - `media/visual/covers/sniky-titan_ds-mockup_v01.png` — mockup jeu Sniky & Titan, reference pour le duo Sniky / Titan.
 - Webtoon / affiches :
   - `media/visual/webtoon/king-of-bicycles_poster_v01.png` et `v02`.
   - `media/visual/webtoon/titan-mutenrock_duel_poster_v01.png` et `titan-mutenrock_duel_banner_v01.png`.

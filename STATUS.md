@@ -207,3 +207,8 @@
 - Page `docs/identity/statuts-canon.md` ajoutee pour distinguer canon, reference, archive, interne et source brute.
 - Pages pivots renforcees : personnages, carte des projets, musique et atlas media.
 - Rattachements croises ajoutes pour Aligax, MutenRock et Sniky.
+
+## Ajouts V26
+- Rattachements croises ajoutes pour Spirit, Spike, Dr. Sorn, Gabilone / Gabylon et Titan.
+- Pivot personnages enrichi avec les relations fiables a garder visibles.
+- Musique et catalogue media alignes avec `Spirit's Rage`, `Titan: The Guardian Hound`, Spirit / Spike et Sniky / Titan.
