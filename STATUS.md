@@ -192,3 +192,8 @@
 - Analyse visuelle de premier niveau des 19 videos Desktop BZH promues.
 - Rattachement wiki ajoute pour Aligax, MutenRock, musique, trailers/scripts, merchandising et direction artistique.
 - Les videos watermarkees restent documentees comme references de direction, pas comme assets finaux.
+
+## Ajouts V23
+- Navigation wiki renforcee : index recompose en parcours rapides, sidebar enrichie et topbar clarifiee.
+- Hub d'accueil complete avec des entrees par besoin : medias, imports, sources et orientation globale.
+- Surlignage automatique de la page courante dans les liens de navigation HTML.

@@ -177,10 +177,19 @@ function sidebar(grouped) {
 
   return `<aside class="wiki-sidebar" aria-label="Navigation galerie">
     <section class="sidebar-section">
-      <p class="sidebar-title">Medias</p>
+      <p class="sidebar-title">Demarrer</p>
+      <a class="sidebar-link" href="../../hub/index.html">Accueil du hub</a>
+      <a class="sidebar-link" href="../../docs/00-index.html">Index documentaire</a>
       <a class="sidebar-link" href="../catalog/media-catalog.html">Catalogue medias</a>
       <a class="sidebar-link" href="./index.html">Galerie consultable</a>
-      <a class="sidebar-link" href="../../docs/00-index.html">Index documentaire</a>
+      <a class="sidebar-link" href="../README.html">README media</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Rattachements</p>
+      <a class="sidebar-link" href="../../docs/media/musique-et-albums.html">Musique et albums</a>
+      <a class="sidebar-link" href="../../docs/media/trailers-et-scripts.html">Trailers et scripts</a>
+      <a class="sidebar-link" href="../../docs/identity/direction-artistique.html">Direction artistique</a>
+      <a class="sidebar-link" href="../../docs/archives/import-desktop-bzh.html">Import Desktop BZH</a>
     </section>
     <section class="sidebar-section">
       <p class="sidebar-title">Sections</p>
@@ -217,10 +226,12 @@ function page(items, grouped) {
   </a>
   <nav class="wiki-toplinks" aria-label="Acces rapides">
     <a class="wiki-pill" href="../../docs/00-index.html">Index</a>
+    <a class="wiki-pill" href="../../docs/universe/00-vision-globale.html">Univers</a>
     <a class="wiki-pill" href="../../docs/universe/personnages.html">Personnages</a>
-    <a class="wiki-pill" href="../../docs/projects/bzh-card-game/README.html">TCG</a>
+    <a class="wiki-pill" href="../../docs/projects/00-carte-des-projets.html">Projets</a>
     <a class="wiki-pill" href="../catalog/media-catalog.html">Medias</a>
     <a class="wiki-pill" href="./index.html">Galerie</a>
+    <a class="wiki-pill" href="../../docs/conversations/index.html">Sources</a>
   </nav>
   ${readerControls()}
 </header>

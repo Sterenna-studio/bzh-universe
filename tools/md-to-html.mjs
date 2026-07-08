@@ -187,26 +187,48 @@ function readerControls() {
 function sidebar(prefix) {
   return `<aside class="wiki-sidebar" aria-label="Navigation wiki">
     <section class="sidebar-section">
-      <p class="sidebar-title">Cartographie</p>
+      <p class="sidebar-title">Demarrer</p>
+      <a class="sidebar-link" href="${prefix}hub/index.html">Accueil du hub</a>
       <a class="sidebar-link" href="${prefix}docs/00-index.html">Index documentaire</a>
+      <a class="sidebar-link" href="${prefix}docs/projects/00-carte-des-projets.html">Carte des projets</a>
       <a class="sidebar-link" href="${prefix}docs/01-inventaire-source.html">Inventaire source</a>
-      <a class="sidebar-link" href="${prefix}docs/chronology/chronologie.html">Chronologie</a>
-      <a class="sidebar-link" href="${prefix}media/catalog/media-catalog.html">Catalogue medias</a>
-      <a class="sidebar-link" href="${prefix}media/gallery/index.html">Galerie media</a>
+      <a class="sidebar-link" href="${prefix}docs/02-questions-ouvertes.html">Questions ouvertes</a>
+      <a class="sidebar-link" href="${prefix}docs/99-backlog.html">Backlog</a>
     </section>
     <section class="sidebar-section">
       <p class="sidebar-title">Univers</p>
       <a class="sidebar-link" href="${prefix}docs/universe/00-vision-globale.html">Vision globale</a>
+      <a class="sidebar-link" href="${prefix}docs/identity/direction-artistique.html">Direction artistique</a>
       <a class="sidebar-link" href="${prefix}docs/universe/personnages.html">Personnages</a>
+      <a class="sidebar-link" href="${prefix}docs/universe/scenes-et-micro-lore.html">Scenes et micro-lore</a>
       <a class="sidebar-link" href="${prefix}docs/universe/lexique.html">Lexique</a>
       <a class="sidebar-link" href="${prefix}docs/universe/le-code.html">Le Code</a>
     </section>
     <section class="sidebar-section">
+      <p class="sidebar-title">Medias</p>
+      <a class="sidebar-link" href="${prefix}media/catalog/media-catalog.html">Catalogue medias</a>
+      <a class="sidebar-link" href="${prefix}media/gallery/index.html">Galerie media</a>
+      <a class="sidebar-link" href="${prefix}docs/media/musique-et-albums.html">Musique et albums</a>
+      <a class="sidebar-link" href="${prefix}docs/media/trailers-et-scripts.html">Trailers et scripts</a>
+      <a class="sidebar-link" href="${prefix}docs/media/communication-et-annonces.html">Communication</a>
+      <a class="sidebar-link" href="${prefix}docs/archives/import-desktop-bzh.html">Import Desktop BZH</a>
+    </section>
+    <section class="sidebar-section">
       <p class="sidebar-title">Projets</p>
+      <a class="sidebar-link" href="${prefix}docs/projects/00-carte-des-projets.html">Carte des projets</a>
       <a class="sidebar-link" href="${prefix}docs/projects/bzh-card-game/README.html">BZH Card Game</a>
       <a class="sidebar-link" href="${prefix}docs/projects/bzh-card-game/cards.html">Cartes BZH01</a>
       <a class="sidebar-link" href="${prefix}docs/projects/roguelite/README.html">Roguelite</a>
       <a class="sidebar-link" href="${prefix}docs/projects/minitel-hub-3d/README.html">Minitel HUB 3D</a>
+      <a class="sidebar-link" href="${prefix}docs/web/mini-site-bzh-power.html">Mini-site BZH POWER</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Sources</p>
+      <a class="sidebar-link" href="${prefix}docs/conversations/index.html">Conversations</a>
+      <a class="sidebar-link" href="${prefix}docs/chronology/chronologie.html">Chronologie</a>
+      <a class="sidebar-link" href="${prefix}docs/sources/00-methodologie-citations.html">Tracabilite</a>
+      <a class="sidebar-link" href="${prefix}docs/sources/01-couverture-des-citations.html">Couverture citations</a>
+      <a class="sidebar-link" href="${prefix}docs/archives/livrables-historiques.html">Livrables historiques</a>
     </section>
     <section class="sidebar-section">
       <p class="sidebar-title">Sommaire</p>
@@ -223,11 +245,12 @@ function topbar({ prefix, hubLink, indexLink }) {
     </a>
     <nav class="wiki-toplinks" aria-label="Acces rapides">
       <a class="wiki-pill" href="${indexLink}">Index</a>
+      <a class="wiki-pill" href="${prefix}docs/universe/00-vision-globale.html">Univers</a>
       <a class="wiki-pill" href="${prefix}docs/universe/personnages.html">Personnages</a>
-      <a class="wiki-pill" href="${prefix}docs/projects/bzh-card-game/README.html">TCG</a>
+      <a class="wiki-pill" href="${prefix}docs/projects/00-carte-des-projets.html">Projets</a>
       <a class="wiki-pill" href="${prefix}media/catalog/media-catalog.html">Medias</a>
       <a class="wiki-pill" href="${prefix}media/gallery/index.html">Galerie</a>
-      <a class="wiki-pill" href="${prefix}docs/conversations/index.html">Conversations</a>
+      <a class="wiki-pill" href="${prefix}docs/conversations/index.html">Sources</a>
     </nav>
     ${readerControls()}
   </header>`;

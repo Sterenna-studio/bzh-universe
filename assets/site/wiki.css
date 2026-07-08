@@ -263,6 +263,19 @@ textarea {
 
 .sidebar-link:hover { color: var(--accent); }
 
+.wiki-pill[aria-current="page"],
+.sidebar-link[aria-current="page"] {
+  border-color: var(--line-strong);
+  background: color-mix(in srgb, var(--accent) 13%, var(--surface-soft));
+  color: var(--accent);
+}
+
+.sidebar-link[aria-current="page"] {
+  margin-inline: -0.4rem;
+  padding-inline: 0.4rem;
+  border-left: 3px solid var(--accent);
+}
+
 .toc-list {
   display: grid;
   gap: 0.25rem;

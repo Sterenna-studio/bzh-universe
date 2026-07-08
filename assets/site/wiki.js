@@ -58,6 +58,23 @@
     toc.replaceChildren(list);
   }
 
+  function normalizePath(pathname) {
+    return decodeURIComponent(pathname)
+      .replace(/\\/g, '/')
+      .replace(/\/index\.html$/i, '/')
+      .replace(/\/README\.html$/i, '/')
+      .replace(/\/+$/g, '');
+  }
+
+  function markCurrentNavigation() {
+    const current = normalizePath(window.location.pathname);
+    document.querySelectorAll('.wiki-pill[href], .sidebar-link[href], .hub-card[href]').forEach((link) => {
+      const target = new URL(link.getAttribute('href'), window.location.href);
+      if (normalizePath(target.pathname) !== current) return;
+      link.setAttribute('aria-current', 'page');
+    });
+  }
+
   function bindControls() {
     let prefs = readPrefs();
     applyPrefs(prefs);
@@ -126,6 +143,7 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     bindControls();
+    markCurrentNavigation();
     updateToc();
     bindMediaGallery();
   });
