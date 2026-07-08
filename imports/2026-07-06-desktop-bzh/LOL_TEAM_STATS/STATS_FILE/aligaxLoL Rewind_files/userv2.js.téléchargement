@@ -1,0 +1,1343 @@
+"use strict";
+let MMR_TIER_DIV = {
+    "0": "--",
+    "100": "I4",
+    "200": "I3",
+    "300": "I2",
+    "400": "I1",
+    "500": "B4",
+    "600": "B3",
+    "700": "B2",
+    "800": "B1",
+    "900": "S4",
+    "1000": "S3",
+    "1100": "S2",
+    "1200": "S1",
+    "1300": "G4",
+    "1400": "G3",
+    "1500": "G2",
+    "1600": "G1",
+    "1700": "P4",
+    "1800": "P3",
+    "1900": "P2",
+    "2000": "P1",
+    "2100": "D4",
+    "2200": "D3",
+    "2300": "D2",
+    "2400": "D1",
+    "2500": "MA",
+    "2600": "GM",
+    "2700": "CH",
+};
+const DATA_UNAVAILABLE_STRING = `The data could not be loaded for this section.
+<br>
+<br>• This feature may not be supported for this profile: See our FAQ for a list of ideal summoner criteria.
+<br>• The profile may not be up-to-date: Try updating the profile.
+<br>• The website may be down for maintenance or there may be a service outage: Check the home page for status information.`;
+const BLUE_SPAN = `<span style="color:#89bbf9;background-color:inherit;">`;
+let GET_DATA_BASE_PATH = ``;
+if (getParameterByName("year")) GET_DATA_BASE_PATH += `/${getParameterByName("year")}`;
+else if (getParameterByName("key")) GET_DATA_BASE_PATH += `/${getParameterByName("key")}`;
+GET_DATA_BASE_PATH += `/get_data/${getParameterByName("region")}/${encodeURIComponent(getParameterByName("username"))}/`;
+let table_cache = {};
+let table_sort_settings = {};
+
+let igns = ["s1", "s2"];
+for (let b in igns) {
+    $(igns[b]).innerHTML = escapeHtml(getParameterByName("username"));
+}
+let regions = ["s3"];
+for (let b in regions) {
+    $(regions[b]).innerHTML = escapeHtml(getParameterByName("region"));
+}
+if (getParameterByName("key")) {
+    $("ts1").innerHTML = "Custom Profile";
+}
+else if (getParameterByName("year")) {
+    $("ts1").innerHTML = `${escapeHtml(getParameterByName("year"))} Year In Review`;
+}
+else {
+    $("ts1").innerHTML = "Match History Rewind";
+}
+if ($("yoy1") && parseInt(getParameterByName("year")) >= 2025){
+    $("yoy1").style.display = "";
+}
+let match_performance = [];
+let last_update_data;
+loadJSON(`${GET_DATA_BASE_PATH}last_update`, data => {
+    data = JSON.parse(data);
+    last_update_data = data;
+    onloadCallback();
+}, () => {//if 404
+    let redirect_url = `/notavailable.html?username=${encodeURIComponent(getParameterByName("username"))}&region=${getParameterByName("region")}`;
+    if (getParameterByName("year")) redirect_url += `&year=${getParameterByName("year")}`;
+    window.location.href = redirect_url;
+});
+function onloadCallback() {
+    let data = last_update_data;
+    if (!data) return;
+    $("s4").innerHTML = timeago.format(data.epoch_ms);
+    if (!data.key) {
+        if (data.update_ready) {
+            $("b2").removeAttribute("style");
+        }
+        else {
+            $("b2").setAttribute("disabled", "disabled");
+            //TODO: write update not available yet
+            $("b2").innerHTML = "update not available yet";
+            $("b2").removeAttribute("style");
+        }
+    }
+}
+let form = $("f1");
+$("flookupname1").value = getParameterByName("username");
+$("fregion1").value = getParameterByName("region");
+if (getParameterByName("year")) $("fyir1").value = "true";
+else $("fyir1").value = "false";
+let lookup = document.getElementById("t1");
+const REGIONS = ["Auto", "NA", "EUW", "EUNE", "KR", "OCE", "LAN", "LAS", "BR", "JP", "TR", "RU", "PH", "SG", "TH", "TW", "VN", "ME"];
+let lookup_action = false;
+
+try {
+    let region = getParameterByName("region");
+    if (region != "") {
+        document.getElementById("select1").value = region;
+    }
+}
+catch (e) {
+    console.error(e);
+}
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        //document.getElementById("b1").click();
+        console.log("enter key shortcut registered");
+        buttonLookup();
+        return false;
+    }
+});
+function buttonLookup() {
+    if (lookup.value !== "") {
+        if ($("select1").value.length < 2 || REGIONS.indexOf($("select1").value) === -1) {
+            alert("Missing or invalid region\nYou must select a valid region: " + REGIONS.join(", "));
+        }
+        else {
+            lookup_action = true;
+            console.log("buttonLookup()");
+            let redirect_url = `${window.location.origin}/lookup/${encodeURIComponent($("select1").value)}/${encodeURIComponent(lookup.value)}`;
+            if (getParameterByName("year")) redirect_url += `?year=${getParameterByName("year")}`;
+            window.location.href = redirect_url;
+        }
+    }
+}
+
+function buttonUpdate(token) {
+    form.submit();
+}
+
+generateFriendTable();
+generateChampionTable();
+generateKryptonite();
+generateHeatmaps();
+generateGraphs();
+generateYoyPlots();
+
+function generateKryptonite() {
+    loadHTML("d40");
+    loadHTML("d41");
+    loadHTML("d42");
+    loadHTML("d43");
+    loadHTML("d45");
+}
+
+function generateChampionTable() {
+    loadHTML("d2");
+    loadHTML("d2a");
+    loadHTML("d2b");
+    loadHTML("d3");
+    loadHTML("d4");
+    loadHTML("d5");
+    loadHTML("d6");
+    loadHTML("d7");
+    loadHTML("d8");
+    loadHTML("d9");
+    loadHTML("d0a", () => {
+        timeago.render(document.querySelectorAll(".date-render"));
+    });
+
+    if ($("d1f")) {
+        loadJSON("/champions.json", champion_data => {
+            champion_data = JSON.parse(champion_data);
+            let champion_keys_alphabetical_name = [];
+            for (let b in champion_data.data) {
+                champion_keys_alphabetical_name.push([b, champion_data.data[b].name]);
+            }
+            champion_keys_alphabetical_name.sort((a, b) => a[1].localeCompare(b[1]));
+            champion_keys_alphabetical_name = champion_keys_alphabetical_name.map(v => v[0]);
+            function appendChampionNameTo(div_id, champion_key, champion_name) {
+                let opt = document.createElement("option");
+                opt.value = champion_key;
+                opt.innerHTML = champion_name;
+                $(div_id).appendChild(opt);
+            }
+
+            loadJSON(`${GET_DATA_BASE_PATH}match_performance`, matches => {//legacy
+                matches = JSON.parse(matches);
+                match_performance = matches;
+                for (let b of champion_keys_alphabetical_name) {
+                    appendChampionNameTo("d1f-champion-name", champion_data.data[b].key, champion_data.data[b].name);
+                }
+            });
+            loadJSON(`${GET_DATA_BASE_PATH}d1f`, matches => {//new
+                matches = JSON.parse(matches);
+                match_performance = matches;
+                for (let b of champion_keys_alphabetical_name) {
+                    if (matches[champion_data.data[b].key + ""] !== undefined) {
+                        appendChampionNameTo("d1f-champion-name", champion_data.data[b].key, champion_data.data[b].name);
+                    }
+                }
+            });
+            loadHTML("d5a", () => {
+                for (let b of champion_keys_alphabetical_name) {
+                    if (table_cache.d5a[champion_data.data[b].key + ""] !== undefined) {
+                        appendChampionNameTo("d5a-champion-name", champion_data.data[b].key, champion_data.data[b].name);
+                    }
+                }
+            });
+            loadHTML("d5b", () => {
+                for (let b of champion_keys_alphabetical_name) {
+                    if (table_cache.d5b[champion_data.data[b].key + ""] !== undefined) {
+                        appendChampionNameTo("d5b-champion-name", champion_data.data[b].key, champion_data.data[b].name);
+                    }
+                }
+            });
+        });
+
+    }
+    if (false) {//$("d0e") && $("d0f")) {
+        loadJSON(`${GET_DATA_BASE_PATH}enemy_ranks`, ranks => {
+            ranks = JSON.parse(ranks);
+            const mmr_buckets = ranks.map(r => MMR_TIER_DIV[r.mmr]);
+            Plotly.newPlot("d0e", [
+                    {   x: mmr_buckets,
+                        y: ranks.map(r => r.w),
+                        type: "bar",
+                        histfunc: "count",
+                        name: "wins",
+                        marker: { color: "green", line: { width: 1 }}
+                    },
+                    {   x: mmr_buckets,
+                        y: ranks.map(r => r.l),
+                        type: "bar",
+                        histfunc: "count",
+                        name: "losses",
+                        marker: { color: "red", line: { width: 1 }}
+                    },
+                    {
+                        x: mmr_buckets,
+                        y: ranks.map(r => (100 * r.w / (r.w + r.l)).toFixed(2)),
+                        yaxis: "y2",
+                        type: "scatter",
+                        mode: "lines+markers",
+                        name: "win rate %",
+                        marker: { color: "#add8e6", line: { width: 1 }}}], {
+                barmode: "group",
+                title: "Winrate Against Different Ranks<br>(excludes AI games and remakes)",
+                xaxis: {title: {text:"Enemy Laner's Rank (Tier + Division)"}},
+                yaxis: {title: {text:"# of games"}},
+                yaxis2: {title: {text:"% winrate"},
+                    overlaying: "y",
+                    side: "right",
+                    range: [0, 100],
+                    showgrid: true,
+                    tickvals: [40, 50, 60],
+                    ticktext: ["40%", "50%", "60%"],
+                    gridcolor: "#add8e6"
+                },
+                height: 600,
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+            Plotly.newPlot("d0f", [
+                {   x: mmr_buckets,
+                    y: ranks.map(r => r.pw),
+                    type: "bar",
+                    histfunc: "count",
+                    name: "better",
+                    marker: { color: "green", line: { width: 1 }}
+                },
+                {   x: mmr_buckets,
+                    y: ranks.map(r => r.pe),
+                    type: "bar",
+                    histfunc: "count",
+                    name: "equal",
+                    marker: { color: "yellow", line: { width: 1 }}
+                },
+                {   x: mmr_buckets,
+                    y: ranks.map(r => r.pl),
+                    type: "bar",
+                    histfunc: "count",
+                    name: "worse",
+                    marker: { color: "red", line: { width: 1 }}
+                },
+                {
+                    x: mmr_buckets,
+                    y: ranks.map(r => (100 * (r.pw + (r.pe / 2)) / (r.pw + r.pl + r.pe)).toFixed(2)),
+                    yaxis: "y2",
+                    type: "scatter",
+                    mode: "lines+markers",
+                    name: "% games, better",
+                    marker: { color: "#add8e6", line: { width: 1 }}}
+                ], {
+                    barmode: "group",
+                    title: "Performance Against Different Ranks<br>(excludes AI games and remakes)",
+                    xaxis: {title: {text:"Enemy Laner's Rank (Tier + Division)"}},
+                    yaxis: {title: {text:"# of games"}},
+                    yaxis2: {title: {text:"% games with better performance"},
+                    overlaying: "y",
+                    side: "right",
+                    range: [0, 100],
+                    showgrid: true,
+                    tickvals: [40, 50, 60],
+                    ticktext: ["40%", "50%", "60%"],
+                    gridcolor: "#add8e6"
+                },
+                height: 600,
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d0b")) {
+        loadJSON(`${GET_DATA_BASE_PATH}d0b`, matches => {
+            matches = JSON.parse(matches);
+
+            generatePlotd0b(matches.durations_w, matches.durations_l, matches.durations_ff, matches.duration_wr_x, matches.duration_wr_y, matches.ff15, matches.ff20);
+        });
+        loadJSON(`${GET_DATA_BASE_PATH}match_performance`, matches => {
+            matches = JSON.parse(matches);
+
+            let durations_w = [];
+            let durations_l = [];
+            let durations_ff = [];
+            for (let b in matches) {
+                if (matches[b].win) {
+                    durations_w.push(Math.floor(matches[b].duration / 60));
+                }
+                else {
+                    durations_l.push(Math.floor(matches[b].duration / 60));
+                }
+                if (matches[b].ff) {
+                    durations_ff.push(Math.floor(matches[b].duration / 60));
+                }
+            }
+            let ff15_w = 0;
+            let ff15_l = 0;
+            for (let b in durations_w) if (durations_w[b] == 15) ++ff15_w;
+            for (let b in durations_l) if (durations_l[b] == 15) ++ff15_l;
+            let ff15 = Math.max(ff15_w, ff15_l);
+            let ff20_w = 0;
+            let ff20_l = 0;
+            for (let b in durations_w) if (durations_w[b] == 20) ++ff20_w;
+            for (let b in durations_l) if (durations_l[b] == 20) ++ff20_l;
+            let ff20 = Math.max(ff20_w, ff20_l);
+            let duration_wr = {};
+            for (let b in durations_w) {
+                if (duration_wr[durations_w[b]] == undefined) {
+                    duration_wr[durations_w[b]] = { w: 0, l: 0 };
+                }
+                duration_wr[durations_w[b]].w++;
+            }
+            for (let b in durations_l) {
+                if (duration_wr[durations_l[b]] == undefined) {
+                    duration_wr[durations_l[b]] = { w: 0, l: 0 };
+                }
+                duration_wr[durations_l[b]].l++;
+            }
+            let duration_wr_x = [];
+            let duration_wr_y = [];
+            for (let b in duration_wr) {
+                duration_wr_x.push(b);
+                duration_wr_y.push((100 * (duration_wr[b].w / (duration_wr[b].w + duration_wr[b].l))).toFixed(2));
+            }
+            generatePlotd0b(durations_w, durations_l, durations_ff, duration_wr_x, duration_wr_y, ff15, ff20);
+        });
+        function generatePlotd0b(durations_w, durations_l, durations_ff, duration_wr_x, duration_wr_y, ff15, ff20) {
+            Plotly.newPlot("d0b", [{x: durations_w, type: "histogram", name: "wins", marker: { color: "green", line: { width: 1 }}},
+                    {x: durations_l, type: "histogram", name: "losses", marker: { color: "red", line: { width: 1 }}},
+                    {x: durations_ff, type: "histogram", name: "forfeits", marker: { color: "black", line: { width: 1 }}},
+                    {x: duration_wr_x, y: duration_wr_y, yaxis: "y2", type: "scatter", mode: "lines+markers", name: "win rate %", marker: { color: "#add8e6", line: { width: 1 }}}], {
+                barmode: "group",
+                title: "Match Length<br>(excludes AI games and remakes)",
+                xaxis: {title: {text:"minutes"}},
+                yaxis: {title: {text:"# of games"}},
+                yaxis2: {title: {text:"% winrate"},
+                    overlaying: "y",
+                    side: "right",
+                    range: [0, 100],
+                    showgrid: true,
+                    tickvals: [40, 50, 60],
+                    ticktext: ["40%", "50%", "60%"],
+                    gridcolor: "#add8e6"
+                },
+                height: 500,
+                annotations: [
+                    {
+                        x: 15,
+                        y: ff15,
+                        xref: 'x',
+                        yref: 'y',
+                        text: 'ff15',
+                        showarrow: true,
+                        arrowhead: 2,
+                        arrowsize: 1,
+                        arrowwidth: 2,
+                        ax: 35,
+                        ay: -30,
+                        font: {
+                            color: "#ffffff"
+                        },
+                        arrowcolor: "#ffffff"
+                    },
+                    {
+                        x: 20,
+                        y: ff20,
+                        xref: 'x',
+                        yref: 'y',
+                        text: 'ff20',
+                        showarrow: true,
+                        arrowhead: 2,
+                        arrowsize: 1,
+                        arrowwidth: 2,
+                        ax: 35,
+                        ay: -30,
+                        font: {
+                            color: "#ffffff"
+                        },
+                        arrowcolor: "#ffffff"
+                    }
+                ],
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        }
+    }
+
+    if ($("d0c")) {
+        loadJSON(`${GET_DATA_BASE_PATH}kd_time`, data => {
+            data = JSON.parse(data);
+            const maxKDA = Math.max(...data.kda.y);
+            let y2ticks = [1, 2, 3, 4];
+            for (let i = 5; i < maxKDA; i += 5) {
+                y2ticks.push(i);
+            }
+            Plotly.newPlot("d0c", [{x: data.kills.x, y: data.kills.y, type: "histogram", histfunc: "sum", name: "kills", marker: { color: "green", line: { width: 1 }}, xbins: { size: 1, start: 0 }},
+            {x: data.deaths.x, y: data.deaths.y, type: "histogram", histfunc: "sum", name: "deaths", marker: { color: "red", line: { width: 1 }}, xbins: { size: 1, start: 0 }},
+            {x: data.assists.x, y: data.assists.y, type: "histogram", histfunc: "sum", name: "assists", marker: { color: "#add8e6", line: { width: 1 }}, xbins: { size: 1, start: 0 }},
+            {x: data.kda.x, y: data.kda.y, yaxis: "y2", type: "scatter", mode: "lines+markers", name: "KDA Ratio", marker: { color: "gold", line: { width: 1 }}}], {
+                barmode: "group",
+                height: 550,
+                title: "K/D/A by minute<br>(excludes AI games and remakes)",
+                xaxis: {
+                    title: {text:"minutes"},
+                    rangemode: 'tozero',
+                    autorange: true
+                },
+                yaxis: {title: {text:"# of kills, deaths, or assists"},
+                    gridcolor: "#999999",
+                    showgrid: false
+                },
+                yaxis2: {
+                    title: {text:"KDA Ratio"},
+                    rangemode: 'tozero',
+                    autorange: true,
+                    overlaying: "y",
+                    side: "right",
+                    showgrid: true,
+                    tickvals: y2ticks,
+                    ticktext: y2ticks,
+                    gridcolor: "gold"
+                },
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d1b")) {
+        loadJSON(`${GET_DATA_BASE_PATH}dates`, data => {
+            data = JSON.parse(data);
+            data.type = "heatmap";
+            data.colorscale = "Portland";
+            data.zmin = 0;
+            data.hovertemplate = "Week of %{x}, %{y}<br>%{z} games played<extra></extra>";
+            Plotly.newPlot("d1b", [data], {
+                title: "Games per day (UTC timezone)",
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d1b1")) {
+        loadJSON(`${GET_DATA_BASE_PATH}special_dates`, data => {
+            data = JSON.parse(data);
+            data.type = "heatmap";
+            data.colorscale = "Portland";
+            data.zmin = 0;
+            data.hovertemplate = "Week of %{x}, %{y}<br>%{z} games played<extra></extra>";
+            Plotly.newPlot("d1b1", [data], {
+                title: "Non-SR Games per day (UTC timezone)",
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d1c")) {
+        loadJSON(`${GET_DATA_BASE_PATH}ranked_dates`, data => {
+            data = JSON.parse(data);
+            data.type = "heatmap";
+            data.colorscale = "Portland";
+            data.zmin = 0;
+            data.hovertemplate = "Week of %{x}, %{y}<br>%{z} games played<extra></extra>";
+            Plotly.newPlot("d1c", [data], {
+                title: "Ranked games per day (UTC timezone)<br>(excludes remakes)",
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d0d")) {
+        loadJSON(`${GET_DATA_BASE_PATH}gold`, data => {
+            data = JSON.parse(data);
+            data.type = "heatmap";
+            data.hovertemplate = "at minute %{x} with a team gold difference of %{y:+}k<br>%{z:.2f}% winrate<extra></extra>";
+            data.zmin = 0.0;
+            data.zmax = 100.0;
+            data.colorscale = [
+                ['0', 'rgb(255,0,0)'],
+                ['0.15', 'rgb(255,127,0)'],
+                ['0.50', 'rgb(255,255,255)'],
+                ['0.85', 'rgb(127,255,0)'],
+                ['1', 'rgb(0,255,0)']
+            ];
+            data.colorbar = {
+                title: "winrate %"
+            };
+            Plotly.newPlot("d0d", [data], {
+                title: "Winrate by Gold Advantage and Minute<br>(excludes AI games and remakes)",
+                height: 900,
+                xaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 1,
+                    showgrid: true,
+                    title: "minute"
+                },
+                yaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 1,
+                    title: "team gold diff (thousands)",
+                    showgrid: true
+                },
+                plot_bgcolor: "#17181d",
+                paper_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d1d")) {
+        loadJSON(`${GET_DATA_BASE_PATH}times`, data => {
+            data = JSON.parse(data);
+            const tzoffset_hours = -Math.round(new Date().getTimezoneOffset() / 60);
+            if (data.z[0].length == 24) {
+                data.tzoffset = tzoffset_hours < 0 ? tzoffset_hours + "" : `+${tzoffset_hours}`;
+                data = tzShift(data, tzoffset_hours);
+                let all_days = zeroArray(24);//get w/l for each hour
+                for (let i = 0; i < data.z.length; ++i) {
+                    for (let j = 0; j < data.z[i].length; ++j) {
+                        all_days[j] += data.z[i][j] / 7;
+                    }
+                }
+
+
+                let all_hours = zeroArray(7);//get w/l for each day
+                for (let i = 0; i < data.z.length; ++i) {
+                    for (let j = 0; j < data.z[i].length; ++j) {
+                        all_hours[i] += data.z[i][j] / 24;
+                    }
+                }
+
+                data.z.unshift(all_days);
+                for (let i = 0; i < all_hours.length; ++i) {
+                    data.z[i + 1].push(all_hours[i]);
+                }
+                data.z[0].push(data.games / (24 * 7));
+            }
+            data.type = "heatmap";
+            data.hovertemplate = `%{y} %{x} UTC${data.tzoffset}<br>%{z} games played<extra></extra>`;
+            data.colorscale = "Portland";
+            data.zmin = 0;
+            data.colorbar = {
+                title: "# of games"
+            };
+            Plotly.newPlot("d1d", [data], {
+                title: "Hourly schedule<br>(excludes remakes)",
+                height: 450,
+                xaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 2,
+                    dtick: 1,
+                    showgrid: true,
+                    title: `Hour of Day, UTC${data.tzoffset}`,
+                    type: "category"
+                },
+                yaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 2,
+                    showgrid: true
+                },
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+
+    if ($("d1e")) {
+        loadJSON(`${GET_DATA_BASE_PATH}wr_times`, data => {
+            data = JSON.parse(data);
+            const tzoffset_hours = -Math.round(new Date().getTimezoneOffset() / 60);
+            if (data.z[0].length == 24) {
+                data.tzoffset = tzoffset_hours < 0 ? tzoffset_hours + "" : `+${tzoffset_hours}`;
+                data = tzShift(data, tzoffset_hours);
+                let all_days = emptyObjectArray(24);//get w/l for each hour
+                for (let i = 0; i < data.z.length; ++i) {
+                    for (let j = 0; j < data.z[i].length; ++j) {
+                        all_days[j].w += data.z[i][j].w;
+                        all_days[j].l += data.z[i][j].l;
+                    }
+                }
+
+                let all_hours = emptyObjectArray(7);//get w/l for each day
+                for (let i = 0; i < data.z.length; ++i) {
+                    for (let j = 0; j < data.z[i].length; ++j) {
+                        all_hours[i].w += data.z[i][j].w;
+                        all_hours[i].l += data.z[i][j].l;
+                    }
+                }
+
+                data.z.unshift(all_days);
+                for (let i = 0; i < all_hours.length; ++i) {
+                    data.z[i + 1].push(all_hours[i]);
+                }
+                data.z[0].push({ w: data.wins, l: data.losses });
+
+                //transforms to wr%
+                for (let b in data.z) {
+                    data.z[b] = data.z[b].map(v => (100 * (v.w / (v.l + v.w))).toFixed(2));
+                }
+            }
+            data.type = "heatmap";
+            data.hovertemplate = `%{y} %{x} UTC${data.tzoffset}<br>%{z}% winrate<extra></extra>`;
+            data.colorscale = [
+                ['0', 'rgb(255,0,0)'],
+                ['0.25', 'rgb(255,0,0)'],
+                ['0.45', 'rgb(255,127,0)'],
+                ['0.50', 'rgb(255,255,255)'],
+                ['0.55', 'rgb(127,255,0)'],
+                ['0.75', 'rgb(0,255,0)'],
+                ['1', 'rgb(0,255,0)']
+            ];
+            data.zmin = 0.0;
+            data.zmax = 100.0;
+            data.colorbar = {
+                title: "winrate %"
+            };
+            Plotly.newPlot("d1e", [data], {
+                title: "Winrate by hour<br>(excludes AI games and remakes)",
+                height: 450,
+                xaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 2,
+                    dtick: 1,
+                    showgrid: false,
+                    title: `Hour of Day, UTC${data.tzoffset}`,
+                    type: "category"
+                },
+                yaxis: {
+                    gridcolor: '#bdbdbd',
+                    gridwidth: 2,
+                    showgrid: false
+                },
+                paper_bgcolor: "#17181d",
+                plot_bgcolor: "#2A2A2A",
+                font: { color: "#fff"}
+            }, {
+                displayModeBar: false
+            });
+        });
+    }
+}
+function generateFriendTable() {
+    loadHTML("d0", () => {
+        timeago.render(document.querySelectorAll(".date-render"));
+    });
+    loadHTML("d1");
+    loadHTML("d1a");
+    loadHTML("d1a1");
+}
+var yoy = null;
+var yoy_normalization = false;
+var renderYoyPlots;
+function generateYoyPlots() {
+    renderYoyPlots = checkbox => renderYoyPlotsInternal(checkbox);
+    if ($("d100a")) {// && getParameterByName("year")) {
+        loadJSON(`${GET_DATA_BASE_PATH}yoy`, data => {
+            yoy = JSON.parse(data);
+            renderYoyPlotsInternal();
+        });
+    }
+
+    function renderYoyPlotsInternal(normalize = false) {
+        console.log("yoy");
+        yoy_normalization = normalize;
+        const yearEntries = Object.entries(yoy.years || {}).sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
+        const monthEntries = Object.entries(yoy.months || {}).sort((a, b) => {
+            const [am, ay] = a[0].split("/").map(Number);
+            const [bm, by] = b[0].split("/").map(Number);
+            if (ay === by) return am - bm;
+            return ay - by;
+        });
+
+        if (yearEntries.length) {
+            const x = yearEntries.map(([label]) => label);
+            const wins = yearEntries.map(([, bucket]) => bucket.stats?.wins || 0);
+            const losses = yearEntries.map(([, bucket]) => bucket.stats?.losses || 0);
+            plotWinsLossesWithWinrate("d100a", x, wins, losses, "Wins vs Losses by Year");
+        }
+
+        if (monthEntries.length) {
+            const x = monthEntries.map(([label]) => label);
+            const wins = monthEntries.map(([, bucket]) => bucket.stats?.wins || 0);
+            const losses = monthEntries.map(([, bucket]) => bucket.stats?.losses || 0);
+            plotWinsLossesWithWinrate("d100b", x, wins, losses, "Wins vs Losses by Month");
+        }
+
+        const allQueuesYear = collectQueues(yearEntries);
+        if (allQueuesYear.length) {
+            const x = yearEntries.map(([label]) => label);
+            const series = allQueuesYear.map(qid => ({
+                name: qid,
+                y: yearEntries.map(([, bucket]) => {
+                    const modes = bucket.stats?.modes || [];
+                    const found = modes.find(m => m.name == qid);
+                    return found ? found.g : 0;
+                })
+            }));
+            plotStackedLines("d100c", x, series, "Queues by Year", {
+                hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`
+            });
+        }
+
+        const allQueuesMonth = collectQueues(monthEntries);
+        if (allQueuesMonth.length) {
+            const x = monthEntries.map(([label]) => label);
+            const series = allQueuesMonth.map(qid => ({
+                name: qid,
+                y: monthEntries.map(([, bucket]) => {
+                    const modes = bucket.stats?.modes || [];
+                    const found = modes.find(m => m.name == qid);
+                    return found ? found.g : 0;
+                })
+            }));
+            plotStackedLines("d100d", x, series, "Queues by Month", {
+                hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`
+            });
+        }
+
+        const xYear = yearEntries.map(([label]) => label);
+        const xMonth = monthEntries.map(([label]) => label);
+        if (yearEntries.length) {
+            plotStackedLines("d101a", xYear, [
+                { name: "Kills", y: yearEntries.map(([, bucket]) => bucket.stats?.kills || 0), color: "green" },
+                { name: "Deaths", y: yearEntries.map(([, bucket]) => bucket.stats?.deaths || 0), color: "red" },
+                { name: "Assists", y: yearEntries.map(([, bucket]) => bucket.stats?.assists || 0), color: "#add8e6" }
+            ], "Kills / Deaths / Assists by Year", {
+                hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "total"}<extra></extra>`,
+                yTitle: "# of events"
+            });
+
+            plotStackedLines("d101c", xYear, [
+                { name: "KDA ratio", y: yearEntries.map(([, bucket]) => bucket.stats?.kdaRatio || 0), color: "gold" },
+                { name: "KD ratio", y: yearEntries.map(([, bucket]) => bucket.stats?.kdRatio || 0), color: "#add8e6" }
+            ], "KDA and KD Ratios by Year", {
+                stackgroup: false,
+                hovertemplate: "%{fullData.name}<br>%{y:.2f}<extra></extra>",
+                yTitle: "Ratio",
+                linewidth: 2,
+            });
+        }
+
+        if (monthEntries.length) {
+            plotStackedLines("d101b", xMonth, [
+                { name: "Kills", y: monthEntries.map(([, bucket]) => bucket.stats?.kills || 0), color: "green" },
+                { name: "Deaths", y: monthEntries.map(([, bucket]) => bucket.stats?.deaths || 0), color: "red" },
+                { name: "Assists", y: monthEntries.map(([, bucket]) => bucket.stats?.assists || 0), color: "#add8e6" }
+            ], "Kills / Deaths / Assists by Month", {
+                hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "total"}<extra></extra>`,
+                yTitle: "# of events"
+            });
+
+            plotStackedLines("d101d", xMonth, [
+                { name: "KDA ratio", y: monthEntries.map(([, bucket]) => bucket.stats?.kdaRatio || 0), color: "gold" },
+                { name: "KD ratio", y: monthEntries.map(([, bucket]) => bucket.stats?.kdRatio || 0), color: "#add8e6" }
+            ], "KDA and KD Ratios by Month", {
+                stackgroup: false,
+                hovertemplate: "%{fullData.name}<br>%{y:.2f}<extra></extra>",
+                yTitle: "Ratio",
+                linewidth: 2,
+            });
+        }
+
+        const rankedYearLabels = getTopEntities(yearEntries, bucket => bucket.stats?.friends?.ranked || [], "games", item => item.name || item.id || "");
+        if (rankedYearLabels.length) {
+            const rankedYearSeries = buildSeriesForTop(yearEntries, rankedYearLabels, bucket => bucket.stats?.friends?.ranked || [], "games", item => item.name || item.id || "", palette);
+            plotStackedLines("d102a", xYear, rankedYearSeries, "Top Ranked Friends by Year", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+        const rankedMonthLabels = getTopEntities(monthEntries, bucket => bucket.stats?.friends?.ranked || [], "games", item => item.name || item.id || "");
+        if (rankedMonthLabels.length) {
+            const rankedMonthSeries = buildSeriesForTop(monthEntries, rankedMonthLabels, bucket => bucket.stats?.friends?.ranked || [], "games", item => item.name || item.id || "", palette);
+            plotStackedLines("d102b", xMonth, rankedMonthSeries, "Top Ranked Friends by Month", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+
+        const casualYearLabels = getTopEntities(yearEntries, bucket => bucket.stats?.friends?.casual || [], "games", item => item.name || item.id || "");
+        if (casualYearLabels.length) {
+            const casualYearSeries = buildSeriesForTop(yearEntries, casualYearLabels, bucket => bucket.stats?.friends?.casual || [], "games", item => item.name || item.id || "", palette);
+            plotStackedLines("d102c", xYear, casualYearSeries, "Top Casual Friends by Year", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+        const casualMonthLabels = getTopEntities(monthEntries, bucket => bucket.stats?.friends?.casual || [], "games", item => item.name || item.id || "");
+        if (casualMonthLabels.length) {
+            const casualMonthSeries = buildSeriesForTop(monthEntries, casualMonthLabels, bucket => bucket.stats?.friends?.casual || [], "games", item => item.name || item.id || "", palette);
+            plotStackedLines("d102d", xMonth, casualMonthSeries, "Top Casual Friends by Month", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+
+        const championYearLabels = getTopEntities(yearEntries, bucket => bucket.stats?.champions || [], "g", item => item.name);
+        if (championYearLabels.length) {
+            const champYearSeries = buildSeriesForTop(yearEntries, championYearLabels, bucket => bucket.stats?.champions || [], "g", item => item.name, palette);
+            plotStackedLines("d103a", xYear, champYearSeries, "Top Champions by Year", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+        const championMonthLabels = getTopEntities(monthEntries, bucket => bucket.stats?.champions || [], "g", item => item.name);
+        if (championMonthLabels.length) {
+            const champMonthSeries = buildSeriesForTop(monthEntries, championMonthLabels, bucket => bucket.stats?.champions || [], "g", item => item.name, palette);
+            plotStackedLines("d103b", xMonth, champMonthSeries, "Top Champions by Month", { hovertemplate: `%{fullData.name}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`, yTitle: "# of games" });
+        }
+    }
+
+    function collectQueues(entries) {
+        return getTopEntities(entries, bucket => bucket.stats?.modes || [], "g", item => item.name);
+    }
+
+    function getTopEntities(entries, listAccessor, valueKey, labelFormatter = item => item.id ?? item.cid ?? "") {
+        const totals = new Map();
+        entries.forEach(([, bucket]) => {
+            const list = listAccessor(bucket) || [];
+            list.forEach(item => {
+                const label = labelFormatter(item);
+                if (!label) return;
+                const val = item[valueKey] || 0;
+                totals.set(label, (totals.get(label) || 0) + val);
+            });
+        });
+        return Array.from(totals.entries())
+            .sort((a, b) => b[1] - a[1])
+            .map(entry => entry[0]);
+    }
+
+    function buildSeriesForTop(entries, labels, listAccessor, valueKey, labelFormatter, colors = []) {
+        return labels.map((label, idx) => {
+            const color = colors[idx % colors.length];
+            return {
+                name: label,
+                y: entries.map(([, bucket]) => {
+                    const list = listAccessor(bucket) || [];
+                    const found = list.find(item => labelFormatter(item) === label);
+                    return found ? (found[valueKey] || 0) : 0;
+                }),
+                color
+            };
+        });
+    }
+
+    function plotWinsLossesWithWinrate(divId, x, wins, losses, title) {
+        const target = $(divId);
+        if (!target) return;
+
+        const winrates = wins.map((w, idx) => {
+            const total = (w || 0) + (losses[idx] || 0);
+            return total === 0 ? 0 : w / total;
+        });
+
+        const traces = [
+            {
+                x,
+                y: wins,
+                type: "scatter",
+                mode: "lines",
+                name: "wins",
+                stackgroup: `stack-${divId}`,
+                line: { width: 2, color: "green" },
+                hovertemplate: `%{x}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`,
+                groupnorm: yoy_normalization ? "percent" : undefined
+            },
+            {
+                x,
+                y: losses,
+                type: "scatter",
+                mode: "lines",
+                name: "losses",
+                stackgroup: `stack-${divId}`,
+                line: { width: 2, color: "red" },
+                hovertemplate: `%{x}<br>%{y} ${yoy_normalization ? "%" : "games"}<extra></extra>`
+            }
+        ];
+        if (!yoy_normalization) {
+            traces.push({
+                x,
+                y: winrates,
+                type: "scatter",
+                mode: "lines",
+                name: "winrate",
+                yaxis: "y2",
+                line: { width: 2, color: "#add8e6" },
+                hovertemplate: "%{fullData.name}<br>%{y:.2%}<extra></extra>"
+            })
+        }
+
+        const layout = {
+            title,
+            height: 600,
+            xaxis: { type: "category" },
+            yaxis: {
+                title: { text: "# of games" },
+                rangemode: "tozero"
+            },
+            yaxis2: {
+                title: { text: "Winrate" },
+                overlaying: "y",
+                side: "right",
+                range: [0, 1],
+                showgrid: true,
+                tickvals: [0.40, 0.50, 0.60],
+                ticktext: ["40%", "50%", "60%"],
+                gridcolor: "#add8e6"
+            },
+            paper_bgcolor: "#17181d",
+            plot_bgcolor: "#2A2A2A",
+            font: { color: "#fff" },
+            hovermode: "x unified",
+        };
+
+        Plotly.newPlot(divId, traces, layout, {
+            displayModeBar: false,
+        });
+        console.log("render complete");
+    }
+
+    function plotStackedLines(divId, x, series, title, options = {}) {
+        const target = $(divId);
+        if (!target) return;
+        const stackName = options.stackgroup === false ? undefined : (options.stackgroup || `stack-${divId}`);
+        const traces = series.map(s => ({
+            x,
+            y: s.y,
+            type: "scatter",
+            mode: "lines",
+            name: s.name,
+            stackgroup: stackName,
+            line: { width: options.linewidth ? options.linewidth : 0 , color: s.color },
+            hovertemplate: options.hovertemplate || "%{x}<br>%{y} games<extra></extra>",
+            groupnorm: yoy_normalization ? "percent" : undefined,
+            connectgaps: false,
+        }));
+
+        const layout = {
+            title,
+            height: options.height || 600,
+            xaxis: { type: options.xaxisType || "category" },
+            yaxis: Object.assign({
+                title: { text: options.yTitle || "# of games" },
+                rangemode: "tozero"
+            }, options.yaxis || {}),
+            paper_bgcolor: "#17181d",
+            plot_bgcolor: "#2A2A2A",
+            font: { color: "#fff" },
+            hovermode: "x unified",
+        };
+
+        Plotly.newPlot(divId, traces, layout, {
+            displayModeBar: false,
+        });
+    }
+
+    const palette = [
+        "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c",
+        "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5",
+        "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
+        "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"
+    ];
+}
+
+function generateHeatmaps() {
+    const heatmapdivs = ["d10", "d16", "d12", "d18", "d14", "d20", "d30", "d31", "d32", "d33", "d34", "d35", "d36", "d37", "d38", "d39", "d60", "d61", "d62", "d63", "d64", "d65"];
+    for (let b in heatmapdivs) {
+        if ($(heatmapdivs[b])) {
+            let elem = document.createElement("img");
+            elem.src = `${GET_DATA_BASE_PATH}${heatmapdivs[b]}`;
+            elem.crossOrigin = "anonymous";
+            elem.style = "border:1px solid white;z-index: 1;max-width: 512px; max-height: 512px; width: 100%; height: 100%;";
+            $(heatmapdivs[b]).appendChild(elem);
+        }
+    }
+}
+
+function generateGraphs() {
+    if ($("d50")) {
+        $("d50").setAttribute("data", `${GET_DATA_BASE_PATH}friend_graph.pdf#zoom=100`);
+        $("d50").innerHTML = `<h2><a href="${GET_DATA_BASE_PATH}friend_graph.pdf" target="_self">Click here to open</a></h2>`;
+    }
+    if ($("d51")) {
+        $("d51").setAttribute("data", `${GET_DATA_BASE_PATH}item_graph.pdf#zoom=100`);
+        $("d51").innerHTML = `<h2><a href="${GET_DATA_BASE_PATH}item_graph.pdf" target="_self">Click here to open</a></h2>`;
+    }
+}
+
+function loadJSON(path, callback, callback404) {
+    fetch(path)
+        .then(response => {
+            if (response.status === 200) {
+                return response.text().then(callback);
+            } else if ((response.status === 404 || response.status === 500) && callback404 !== undefined) {
+                callback404();
+            }
+        })
+        .catch(error => {
+            console.error('Error loading JSON:', error);
+        });
+}
+
+function loadHTML(div, callback) {
+    if ($(div)) {
+        loadJSON(`${GET_DATA_BASE_PATH}${div}`, data => {
+            if (data[0] === "{") {//new table format
+                data = JSON.parse(data);
+                if (table_cache[div] == undefined) {
+                    table_cache[div] = data;
+                }
+                if (data.multi) {
+                    if (table_sort_settings[div] == undefined) {
+                        table_sort_settings[div] = {
+                            i: -1,//index
+                            r: false, //reverse
+                            k: null
+                        };
+                    }
+                }
+                else {
+                    if (table_sort_settings[div] == undefined) {
+                        table_sort_settings[div] = {
+                            i: -1,//index
+                            r: false //reverse
+                        };
+                    }
+                    resortTable(div, data.header.dsci, data.dsci_reverse);
+                }
+            }
+            else {//old
+                $(div).innerHTML = data;
+            }
+            if (callback) {
+                try {
+                    callback();
+                }
+                catch(e) {
+                    console.error(e);
+                }
+            }
+        }, () => {
+            $(div).innerHTML = DATA_UNAVAILABLE_STRING;
+        });
+    }
+}
+
+function $(id) {
+    return document.getElementById(id);
+}
+
+function getParameterByName(name, url) {
+	if (!url) url = window.location.href;
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function escapeHtml(unsafe) {
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+}
+
+function tzShift(dataset, tzoffset_hours) {
+    //does not account for the hourly or daily averages
+    console.log(`tz offset is ${tzoffset_hours}h`);
+    if (tzoffset_hours > 0) {
+        let carry = dataset.z[dataset.z.length - 1][dataset.z[dataset.z.length - 1].length - 1];
+        for (let i = 0; i < tzoffset_hours; ++i) {
+            for (let dayofweek = 0; dayofweek < dataset.z.length; ++dayofweek) {
+                dataset.z[dayofweek].unshift(carry);
+                carry = dataset.z[dayofweek].pop();
+            }
+        }
+    }
+    else if (tzoffset_hours < 0) {
+        let carry = dataset.z[0][0];
+        for (let i = 0; i < Math.abs(tzoffset_hours); ++i) {
+            for (let dayofweek = dataset.z.length - 1; dayofweek >= 0; --dayofweek) {
+                dataset.z[dayofweek].push(carry);
+                carry = dataset.z[dayofweek].shift();
+            }
+        }
+    }
+    return dataset;
+}
+
+function zeroArray(length) {
+    let ans = [];
+    for (let i = 0; i < length; ++i) ans.push(0);
+    return ans;
+}
+
+function emptyObjectArray(length) {
+    let ans = [];
+    for (let i = 0; i < length; ++i) ans.push({
+        w: 0,
+        l: 0
+    });
+    return ans;
+}
+
+function resortTable(div, ci, reverse = false) {//ci = column index
+    let table_object = table_cache[div];
+    if (table_sort_settings[div].k !== undefined) {//is a multi-table
+        table_object = table_cache[div][table_sort_settings[div].k];
+    }
+    if (table_sort_settings[div].i == ci) {
+        reverse = !table_sort_settings[div].r;
+        table_sort_settings[div].r = reverse;
+    }
+    else {
+        table_sort_settings[div].i = ci;
+    }
+    let ans = table_object.header.style;
+    ans += "<tr>";
+    for (let i = 0; i < table_object.header.th.length; ++i) {
+        let title = "";
+        if (table_object.header.tooltips) title = table_object.header.tooltips[i];
+        if (i == ci) {
+            let color = "#89bbf9";
+            if (reverse) color = "#ff968f";
+            ans += `<th title="${title}" onclick="resortTable('${div}', ${i});"><span style="color:${color};background-color:inherit;">${table_object.header.th[i]}</span></th>`;
+        }
+        else {
+            ans += `<th title="${title}" onclick="resortTable('${div}', ${i});">${table_object.header.th[i]}</th>`;
+        }
+    }
+    ans += "</tr>";
+    if (table_object.headersupplement) {
+        ans += `<tr><th>${table_object.headersupplement.th.join("</th><th>")}</th></tr>`;
+    }
+    if (reverse) {
+        for (let i = table_object.sorts[ci].length - 1; i >= 0; --i) {
+            ans += table_object.rows[table_object.sorts[ci][i]];
+        }
+    }
+    else {
+        for (let i = 0; i < table_object.sorts[ci].length; ++i) {
+            ans += table_object.rows[table_object.sorts[ci][i]];
+        }
+    }
+    ans += "</table>";
+    $(div).innerHTML = ans;
+}
+if ($("d1f-champion-name")) {
+    $("d1f-champion-name").addEventListener("change", () => {
+        if (Array.isArray(match_performance)) displayChampionPatch($("d1f-champion-name").value, "d1f", $("d1f-champion-name").options[$("d1f-champion-name").selectedIndex].text);
+        else displayChampionPatchNew($("d1f-champion-name").value, "d1f", $("d1f-champion-name").options[$("d1f-champion-name").selectedIndex].text);
+    });
+}
+if ($("d5a-champion-name")) {
+    $("d5a-champion-name").addEventListener("change", () => {
+        table_sort_settings.d5a.i = -1;
+        table_sort_settings.d5a.k = $("d5a-champion-name").value;
+        if (table_cache.d5a[table_sort_settings.d5a.k] === undefined) {
+            $("d5a").innerHTML = "No Data";
+        }
+        else {
+            resortTable("d5a", table_cache.d5a[table_sort_settings.d5a.k].header.dsci, table_cache.d5a[table_sort_settings.d5a.k].dsci_reverse);
+        }
+    });
+}
+if ($("d5b-champion-name")) {
+    $("d5b-champion-name").addEventListener("change", () => {
+        table_sort_settings.d5b.i = -1;
+        table_sort_settings.d5b.k = $("d5b-champion-name").value;
+        if (table_cache.d5b[table_sort_settings.d5b.k] === undefined) {
+            $("d5b").innerHTML = "No Data";
+        }
+        else {
+            resortTable("d5b", table_cache.d5b[table_sort_settings.d5b.k].header.dsci, table_cache.d5b[table_sort_settings.d5b.k].dsci_reverse);
+        }
+    });
+}
+function displayChampionPatch(CHAMPION_FILTER, div, champion_name, annotations = [[], [], [], []]) {
+    let patch_record = [];
+    let matches = match_performance;
+    for (let b in matches) {
+        if (patch_record.findIndex(e => e.patch == matches[b].patch) == -1) {
+            patch_record.push({ tg: 0, w: 0, l: 0, patch: matches[b].patch });
+        }
+        const patch_record_index = patch_record.findIndex(e => e.patch == matches[b].patch);
+        if (matches[b].win) {
+            if (matches[b].cid == CHAMPION_FILTER) patch_record[patch_record_index].w++;
+        }
+        else {
+            if (matches[b].cid == CHAMPION_FILTER) patch_record[patch_record_index].l++;
+        }
+        patch_record[patch_record_index].tg++;
+    }
+
+    patch_record.sort((a, b) => a.patch - b.patch);
+    const patch_ver = patch_record.map(e => e.patch + "");
+    Plotly.newPlot(div, [{x: patch_ver, y: patch_record.map(e => e.w), type: "bar", name: "wins", marker: { color: "green", line: { width: 1 }}, visible: "legendonly"},
+            {x: patch_ver, y: patch_record.map(e => e.l), type: "bar", name: "losses", marker: { color: "red", line: { width: 1 }}, visible: "legendonly"},
+            {x: patch_ver, y: patch_record.map(e => 100 * (e.w / (e.w + e.l))), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "win rate %", marker: { color: "#add8e6", line: { width: 1 }}},
+            {x: patch_ver, y: patch_record.map(e => 100 * ((e.w + e.l) / e.tg)), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "pick rate %", marker: { color: "pink", line: { width: 1 }}},
+            {x: patch_ver, y: patch_record.map(e => happinessWithGameCount(e)), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "happiness", marker: { color: "gold", line: { width: 1 }}}], {
+        barmode: "group",
+        title: champion_name + " Winrate by Patch<br>(excludes AI games and remakes)",
+        xaxis: {title: {text:"patch"}, type: "category"},
+        yaxis: {title: {text:"# of games"},
+            rangemode: "nonnegative",
+            autorange: true
+        },
+        yaxis2: {title: {text:"% win/pick rate"},
+            overlaying: "y",
+            side: "right",
+            range: [0, 100],
+            showgrid: true,
+            tickvals: [40, 50, 60],
+            ticktext: ["40%", "50%", "60%"],
+            gridcolor: "#add8e6"
+        },
+        height: 600,
+        paper_bgcolor: "#17181d",
+        plot_bgcolor: "#2A2A2A",
+        font: { color: "#fff"}
+    }, {
+        displayModeBar: false
+    });
+    function happinessWithGameCount(e) {
+        const games = e.w + e.l;
+        const ans = ((Math.log10(100 * (games / e.tg)) + Math.log10(100 * (e.w / games))) * 20) + (Math.log2(games + 1) / Math.log2(1.75));
+        if (ans < 0) return 0;
+        else if (isNaN(ans)) return 0;
+        else return ans;
+    }
+}
+function displayChampionPatchNew(CHAMPION_FILTER, div, champion_name, annotations = [[], [], [], []]) {
+    let matches = match_performance;
+    let patch_record = matches[CHAMPION_FILTER + ""];
+    if (patch_record === undefined) {
+        $(div).innerHTML = "No Data";
+        return;
+    }
+    $(div).innerHTML = "";
+
+    const patch_ver = matches.patch_ver;
+    Plotly.newPlot(div, [{x: patch_ver, y: patch_record.map(e => e[0]), type: "bar", name: "wins", marker: { color: "green", line: { width: 1 }}, visible: "legendonly"},
+            {x: patch_ver, y: patch_record.map(e => e[1]), type: "bar", name: "losses", marker: { color: "red", line: { width: 1 }}, visible: "legendonly"},
+            {x: patch_ver, y: patch_record.map(e => 100 * (e[0] / (e[0] + e[1]))), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "win rate %", marker: { color: "#add8e6", line: { width: 1 }}},
+            {x: patch_ver, y: patch_record.map((e, i) => 100 * ((e[0] + e[1]) / matches.tg[i].tg)), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "pick rate %", marker: { color: "pink", line: { width: 1 }}},
+            {x: patch_ver, y: patch_record.map((e, i) => happinessWithGameCount(e, i)), yaxis: "y2", type: "scatter", mode: "lines+markers", name: "happiness", marker: { color: "gold", line: { width: 1 }}}], {
+        barmode: "group",
+        title: champion_name + " Winrate by Patch<br>(excludes AI games and remakes)",
+        xaxis: {title: {text:"patch"}, type: "category"},
+        yaxis: {title: {text:"# of games"},
+            rangemode: "nonnegative",
+            autorange: true
+        },
+        yaxis2: {title: {text:"% win/pick rate"},
+            overlaying: "y",
+            side: "right",
+            range: [0, 100],
+            showgrid: true,
+            tickvals: [40, 50, 60],
+            ticktext: ["40%", "50%", "60%"],
+            gridcolor: "#add8e6"
+        },
+        height: 500,
+        paper_bgcolor: "#17181d",
+        plot_bgcolor: "#2A2A2A",
+        font: { color: "#fff"}
+    }, {
+        displayModeBar: false
+    });
+    function happinessWithGameCount(e, i) {
+        const games = e[0] + e[1];
+        const ans = ((Math.log10(100 * (games / matches.tg[i].tg)) + Math.log10(100 * (e[0] / games))) * 20) + (Math.log2(games + 1) / Math.log2(1.75));
+        if (ans < 0) return 0;
+        else if (isNaN(ans)) return 0;
+        else return ans;
+    }
+}
+
+function goToMatchHistory(region, platform, mid) {
+    const match_stats_url = `https://rewind.lol/getmatch/${region}/${mid}/stats`;
+    const timeline_url = `https://rewind.lol/getmatch/${region}/${mid}/timeline`;
+    window.open(`https://iaace-na.github.io/lol-match-stats-viewer/?match=${encodeURIComponent(match_stats_url)}&timeline=${encodeURIComponent(timeline_url)}`, "_blank");
+}

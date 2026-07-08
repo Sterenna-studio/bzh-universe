@@ -203,7 +203,7 @@ Trace de renommage :
 - 42 images promues dans `media/visual/references/`.
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/`.
 - Aucun doublon exact detecte avec les fichiers deja suivis avant promotion.
-- Les 136 videos `.mp4` du dossier `Montage/` restent reference-only dans le sas.
+- Les 136 videos `.mp4` du dossier `Montage/` sont conservees dans l'index video reference-only ; le dossier `Montage/` n'est plus present dans le sas local au controle de publication du 2026-07-08.
 
 Destinations :
 - `media/visual/references/bzh-dancers/` — 34 references chanteurs/danseurs et reworks.
@@ -290,12 +290,11 @@ Trace de renommage :
 - `LOL_TEAM_STATS/` contient encore 360 fichiers dans le sas local ; tous les hashes correspondent a `archives/web/lol-team-stats/raw/`.
 - `BZH_CHRONICLES/` contient 116 fichiers restants ; tous les chemins sont indexes dans `2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
 - `BZH_RESS/` contient 25 fichiers non video restants ; tous les chemins sont indexes dans les CSV de doublons BZH_RESS / bzhpwimage.
-- `BZH_RESS/` contient 155 videos `.mp4` reference-only, pour 985 103 279 octets ; aucune analyse de contenu ni extraction n'a ete faite.
+- `BZH_RESS/` contient 19 videos `.mp4` reference-only, pour 65 011 251 octets ; aucune analyse de contenu ni extraction n'a ete faite.
 - La synthese machine-readable est conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
 
 ## Recommandation de suite
-1. Ne pas commiter le snapshot brut complet tant que la strategie LFS ou archive externe n'est pas tranchee.
-2. Les visuels non video de `bzhpwimage` sont classes ; continuer seulement sur les videos et doublons bruts si une politique de stockage est decidee.
-3. Le reste non video du sas est soit deja archive, soit indexe comme doublon deja suivi.
-4. Ne pas analyser les videos : les conserver comme references de lot, avec decision explicite uniquement si une selection doit etre archivee ailleurs.
-5. Garder le sas Desktop BZH non promu tant que les fichiers videos et archives web n'ont pas une politique de stockage explicite.
+1. Le sas residuel actuel est versionnable en Git classique : aucun fichier restant ne depasse 100 Mo.
+2. Les fichiers non video restants sont deja archives ou indexes comme doublons deja suivis.
+3. Ne pas analyser les videos : les conserver comme references de lot, sans extraction de contenu ni promotion automatique en galerie.
+4. Garder le sas Desktop BZH comme trace d'import residuelle, distincte des assets finaux.

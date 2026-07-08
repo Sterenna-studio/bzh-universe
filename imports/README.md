@@ -91,7 +91,7 @@ Sous-lot BZH_RESS Montage images traite :
 - 42 images fixes classees dans `media/visual/references/` ;
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-montage-moves.csv` ;
-- 136 videos `.mp4` restent reference-only dans le sas.
+- 136 videos `.mp4` sont conservees dans l'index video reference-only ; le dossier `Montage/` n'est plus present dans le sas local au controle de publication du 2026-07-08.
 
 Sous-lot bzhpwimage petits lots traite :
 - 17 visuels classes dans `media/visual/` ;
@@ -124,5 +124,5 @@ Controle residuel du sas :
 - `LOL_TEAM_STATS/` : 360 fichiers encore presents localement, verifies bit a bit comme identiques a `archives/web/lol-team-stats/raw/` ;
 - `BZH_CHRONICLES/` : 116 fichiers restants, tous couverts par le CSV de doublons deja suivis ;
 - `BZH_RESS/` : 25 fichiers non video restants, tous couverts par les CSV de doublons deja suivis ;
-- `BZH_RESS/` : 155 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion Git classique ;
+- `BZH_RESS/` : 19 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion automatique en galerie ;
 - synthese conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.

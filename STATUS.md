@@ -142,7 +142,7 @@
 - Sous-lot `BZH_RESS/Montage` traite pour les images fixes uniquement
 - 42 references visuelles classees dans `media/visual/references/`
 - 1 doublon exact interne conserve dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/`
-- 136 videos `Montage` conservees reference-only dans le sas
+- 136 videos `Montage` conservees dans l'index reference-only ; le dossier `Montage` n'est plus present dans le sas local
 
 ## Ajouts V16
 - Sous-lot `bzhpwimage` entame avec les petits lots non video
@@ -177,5 +177,5 @@
 - 360 fichiers `LOL_TEAM_STATS` verifies comme identiques a l'archive `archives/web/lol-team-stats/raw/`
 - 116 fichiers `BZH_CHRONICLES` restants confirmes comme doublons deja suivis
 - 25 fichiers non video `BZH_RESS` restants confirmes comme doublons deja suivis
-- 155 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
+- 19 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
 - Synthese ajoutee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`
