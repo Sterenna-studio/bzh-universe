@@ -1,7 +1,19 @@
 # Musique et albums
 
+Cette page rassemble les titres, pistes classees et references video. Les noms de morceaux sont conserves meme quand le statut exact reste a confirmer.
+
 ## BZH_CHRONICLES Vol.1
 Projet d’EP / album identifié.
+
+## Statuts rapides
+
+| Element | Statut | Rattachements |
+| --- | --- | --- |
+| `BZH_CHRONICLES Vol.1` | `a confirmer` | [Plan d'EP et publication](plan-ep-et-publication.md) |
+| `Sniky: The Frager` | `canon` musical | [Sniky](../universe/personnages/sniky-dossier.md) |
+| `Aligax: Digital Maiden` | `canon` musical / variantes a confirmer | [Aligax](../universe/personnages/aligax-dossier.md) |
+| `MutenRock: The Digital Commander` | `a confirmer` | [MutenRock](../universe/personnages/mutenrock-dossier.md) |
+| Videos `son/` Desktop BZH | `reference` | [Trailers et scripts](trailers-et-scripts.md), [Import Desktop BZH](../archives/import-desktop-bzh.md) |
 
 ## Titres connus
 - Sniky: The Frager
@@ -52,3 +64,9 @@ D’autres titres / fichiers plus anciens ont été mentionnés dans des analyse
 ## Citations sources associées
 Voir :
 - `docs/sources/messages-originaux/03-musique-ep.md`
+
+## A lire ensuite
+- [Tracklist provisoire](tracklist-provisoire.md)
+- [Paroles, scripts et chansons](paroles-scripts-et-chansons.md)
+- [Textes promo et communication](communication-et-annonces.md)
+- [Catalogue medias](../../media/catalog/media-catalog.md)

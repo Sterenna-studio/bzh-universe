@@ -6,6 +6,7 @@
   <title>BZH Universe Wiki</title>
   <link rel="stylesheet" href="../assets/site/wiki.css">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="../assets/site/wiki-search-index.js"></script>
   <script defer src="../assets/site/wiki.js"></script>
 </head>
 <body class="hub-page">
@@ -24,6 +25,13 @@
       <a class="wiki-pill" href="../media/gallery/index.html">Galerie</a>
       <a class="wiki-pill" href="../docs/conversations/index.html">Sources</a>
     </nav>
+    <form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
+      <label>
+        <span class="reader-control-label">Recherche globale</span>
+        <input type="search" data-wiki-search-input placeholder="Recherche" aria-label="Recherche globale">
+      </label>
+      <div class="wiki-search-results" data-wiki-search-results hidden></div>
+    </form>
     <div class="reader-controls" aria-label="Options de lecture">
       <button class="reader-control" type="button" data-reader-action="font-down" title="Reduire la taille du texte">A-<span class="reader-control-label">Reduire la taille du texte</span></button>
       <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>

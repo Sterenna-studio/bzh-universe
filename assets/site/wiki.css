@@ -118,7 +118,7 @@ textarea {
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-columns: auto minmax(0, 1fr) minmax(13rem, 24rem) auto;
   gap: 1rem;
   align-items: center;
   padding: 0.65rem 1rem;
@@ -202,6 +202,90 @@ textarea {
   display: flex;
   gap: 0.35rem;
   justify-content: flex-end;
+}
+
+.wiki-search {
+  position: relative;
+  min-width: 0;
+}
+
+.wiki-search label {
+  display: block;
+}
+
+.wiki-search input {
+  width: 100%;
+  min-height: 2.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
+  color: var(--ink);
+  padding: 0.35rem 0.75rem;
+}
+
+.wiki-search input:focus {
+  border-color: var(--line-strong);
+  outline: 2px solid color-mix(in srgb, var(--accent) 36%, transparent);
+  outline-offset: 2px;
+}
+
+.wiki-search-results {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 80;
+  width: min(38rem, calc(100vw - 2rem));
+  max-height: min(70vh, 34rem);
+  overflow: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.wiki-search-results[hidden] {
+  display: none;
+}
+
+.wiki-search-list {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.35rem;
+}
+
+.wiki-search-result {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.wiki-search-result:hover,
+.wiki-search-result:focus {
+  background: var(--surface-soft);
+  color: var(--ink);
+}
+
+.wiki-search-result strong {
+  color: var(--accent);
+  line-height: 1.25;
+}
+
+.wiki-search-result span,
+.wiki-search-result small,
+.wiki-search-empty {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.wiki-search-empty {
+  margin: 0;
+  padding: 0.75rem;
 }
 
 .reader-control {
@@ -752,6 +836,11 @@ textarea {
 @media (max-width: 980px) {
   .wiki-topbar {
     grid-template-columns: 1fr;
+  }
+
+  .wiki-search-results {
+    right: auto;
+    left: 0;
   }
 
   .reader-controls {

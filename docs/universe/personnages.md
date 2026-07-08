@@ -1,5 +1,36 @@
 # Personnages
 
+Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les notes longues ; ici, le but est de voir rapidement le role, le statut et les liens de production utiles.
+
+## Vue rapide
+
+| Personnage | Role lisible | Statut | Fiche |
+| --- | --- | --- | --- |
+| MutenRock | Leader tactique, commandant, pivot narratif | `canon` avec alias musicaux a confirmer | [Dossier MutenRock](personnages/mutenrock-dossier.md) |
+| Aligax | Commandante / puissance frontale / Digital Maiden | `canon`, variantes visuelles a arbitrer | [Dossier Aligax](personnages/aligax-dossier.md) |
+| Sniky | Assassin furtif, ombre operationnelle | `canon` | [Dossier Sniky](personnages/sniky-dossier.md) |
+| Spirit | Tacticien, meilleur tireur, support d'equipe | `canon` / details a completer | [Dossier Spirit](personnages/spirit-dossier.md) |
+| Spike | Compagnon canin de Spirit | `a confirmer` | [Dossier Spike](personnages/spike-dossier.md) |
+| Dr. Sorn | Figure technique / hasard / cyber-runes | `canon` / role exact a consolider | [Dossier Dr. Sorn](personnages/dr-sorn-dossier.md) |
+| Gabilone / Gabylon | Hacker, infiltrateur, profil MacGyver | `canon` / nom final a arbitrer | [Dossier Gabilone](personnages/gabilone-dossier.md) |
+| Titan | Gardien canin heroique | `a confirmer` | [Dossier Titan](personnages/titan-dossier.md) |
+
+## Rattachements croises rapides
+
+| Axe | Pages utiles |
+| --- | --- |
+| Cartes TCG | [BZH01 - set de cartes TCG](../projects/bzh-card-game/cards.md), [BZH Card Game](../projects/bzh-card-game/README.md) |
+| Musique | [Musique et albums](../media/musique-et-albums.md), [Tracklist provisoire](../media/tracklist-provisoire.md) |
+| Direction artistique | [Direction artistique](../identity/direction-artistique.md), [Statuts canon et usage](../identity/statuts-canon.md) |
+| Medias | [Catalogue medias](../../media/catalog/media-catalog.md), [Galerie media](../../media/gallery/index.html) |
+| Sources | [Citations originales - lore & personnages](../sources/messages-originaux/08-lore-personnages.md), [Index des conversations](../conversations/index.md) |
+
+## A lire ensuite
+
+- Pour consolider le canon : [Questions ouvertes](../02-questions-ouvertes.md).
+- Pour relier personnages et assets : [Catalogue medias](../../media/catalog/media-catalog.md).
+- Pour comprendre le cadre global : [Vision globale](00-vision-globale.md).
+
 ## MutenRock
 - Leader stratégique
 - Nature + modules technologiques

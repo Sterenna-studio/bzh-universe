@@ -11,6 +11,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 | Naviguer les medias | [Catalogue medias](../media/catalog/media-catalog.md) | [Galerie media](../media/gallery/index.html), [Musique et albums](media/musique-et-albums.md), [Trailers et scripts](media/trailers-et-scripts.md) |
 | Suivre les projets | [Carte des projets](projects/00-carte-des-projets.md) | [BZH Card Game](projects/bzh-card-game/README.md), [Roguelite](projects/roguelite/README.md), [Minitel HUB 3D](projects/minitel-hub-3d/README.md) |
 | Verifier les sources | [Methode de tracabilite](sources/00-methodologie-citations.md) | [Conversations](conversations/index.md), [Couverture des citations](sources/01-couverture-des-citations.md) |
+| Arbitrer le canon | [Statuts canon et usage](identity/statuts-canon.md) | [Questions ouvertes](02-questions-ouvertes.md), [Direction artistique](identity/direction-artistique.md) |
 | Reprendre le tri d'import | [Integration du lot Desktop BZH](archives/import-desktop-bzh.md) | [Rapports d'import](../archives/import-reports/README.md), [Inventaire source](01-inventaire-source.md) |
 
 ## Entrees principales
@@ -25,6 +26,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 ## Identite
 
 - [Direction artistique](identity/direction-artistique.md)
+- [Statuts canon et usage](identity/statuts-canon.md)
 - [Symboles et motifs](identity/symboles-et-motifs.md)
 - [Principes de coherence](identity/principes-de-coherence.md)
 

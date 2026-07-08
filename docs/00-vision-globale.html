@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vision globale - BZH Universe</title>
 <link rel="stylesheet" href="../assets/site/wiki.css">
+<script defer src="../assets/site/wiki-search-index.js"></script>
 <script defer src="../assets/site/wiki.js"></script>
 </head>
 <body>
@@ -23,6 +24,13 @@
       <a class="wiki-pill" href="../media/gallery/index.html">Galerie</a>
       <a class="wiki-pill" href="../docs/conversations/index.html">Sources</a>
     </nav>
+    <form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
+    <label>
+      <span class="reader-control-label">Recherche globale</span>
+      <input type="search" data-wiki-search-input placeholder="Recherche" aria-label="Recherche globale">
+    </label>
+    <div class="wiki-search-results" data-wiki-search-results hidden></div>
+  </form>
     <div class="reader-controls" aria-label="Options de lecture">
     <button class="reader-control" type="button" data-reader-action="font-down" title="Reduire la taille du texte">A-<span class="reader-control-label">Reduire la taille du texte</span></button>
     <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>
@@ -46,6 +54,7 @@
       <p class="sidebar-title">Univers</p>
       <a class="sidebar-link" href="../docs/universe/00-vision-globale.html">Vision globale</a>
       <a class="sidebar-link" href="../docs/identity/direction-artistique.html">Direction artistique</a>
+      <a class="sidebar-link" href="../docs/identity/statuts-canon.html">Statuts canon</a>
       <a class="sidebar-link" href="../docs/universe/personnages.html">Personnages</a>
       <a class="sidebar-link" href="../docs/universe/scenes-et-micro-lore.html">Scenes et micro-lore</a>
       <a class="sidebar-link" href="../docs/universe/lexique.html">Lexique</a>

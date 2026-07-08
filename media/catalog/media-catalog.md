@@ -4,6 +4,26 @@
 - [Galerie media](../gallery/index.html) — vue visuelle filtree par categorie, avec recherche et ouverture des fichiers originaux.
 - [Inventaire JSON de la galerie](../gallery/inventory.json) — liste machine-readable des fichiers exposes dans la galerie.
 
+## Atlas media
+
+| Famille | Nom lisible | Statut | Entrees utiles |
+| --- | --- | --- | --- |
+| Logos | Identites BZH PW / BZH POWER / BZH CHRONICLES | `canon` / variantes | `assets/logos/`, [Direction artistique](../../docs/identity/direction-artistique.md) |
+| Personnages | Portraits et recherches MutenRock, Aligax, Sniky, Spirit | `reference` a `canon` selon usage | `assets/characters/`, [Personnages](../../docs/universe/personnages.md) |
+| TCG | Sets BZH01 / BZH02 et assets communs | `canon` / `a confirmer` par carte | `assets/cards/`, [BZH Card Game](../../docs/projects/bzh-card-game/README.md) |
+| Audio | Pistes, previews et masters | `reference` / `master` | `media/audio/`, [Musique et albums](../../docs/media/musique-et-albums.md) |
+| Video | Lyric videos, motion tests et clips de reference | `reference` | `media/video/references/`, [Trailers et scripts](../../docs/media/trailers-et-scripts.md) |
+| Merch | Apparel, tentures, plush, mockups | `piste` / `reference` | `media/visual/merch/`, [Merchandising](../../docs/merch/merchandising.md) |
+| Covers et affiches | Albums, jeux, posters, webtoon | `reference` / `a confirmer` | `media/visual/covers/`, `media/visual/webtoon/` |
+| Archives internes | Snapshots ou exports non destines a la navigation publique directe | `interne` / `archive` | rapports d'import, sans lien direct si marque interne |
+
+## Regle de lecture
+
+- Le chemin fichier reste la source technique.
+- Le nom lisible dans cette page sert a naviguer sans renommer les imports historiques.
+- Les medias watermarkes ou generatifs doivent rester `reference` tant que les droits et le rendu final ne sont pas arbitres.
+- Les contenus marques `interne` ne doivent pas etre ajoutes comme liens directs dans le hub public.
+
 ## Logos
 - BZH PW
 - BZH POWER

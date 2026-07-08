@@ -75,6 +75,116 @@
     });
   }
 
+  function wikiRootUrl() {
+    const script = document.querySelector('script[src$="assets/site/wiki.js"], script[src$="wiki.js"]');
+    if (!script) return new URL('./', window.location.href);
+    return new URL('../../', script.src);
+  }
+
+  function normalizeSearchText(value) {
+    return String(value || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  }
+
+  function searchIndex() {
+    return Array.isArray(window.BZH_WIKI_SEARCH_INDEX) ? window.BZH_WIKI_SEARCH_INDEX : [];
+  }
+
+  function scoreSearchEntry(entry, terms) {
+    const title = normalizeSearchText(entry.title);
+    const path = normalizeSearchText(entry.path);
+    const section = normalizeSearchText(entry.section);
+    const keywords = normalizeSearchText(entry.keywords);
+    const summary = normalizeSearchText(entry.summary);
+    let score = 0;
+    for (const term of terms) {
+      if (title.includes(term)) score += title === term ? 80 : 35;
+      if (path.includes(term)) score += 18;
+      if (section.includes(term)) score += 14;
+      if (keywords.includes(term)) score += 10;
+      if (summary.includes(term)) score += 5;
+    }
+    return score;
+  }
+
+  function renderSearchResults(container, entries, rootUrl) {
+    if (!entries.length) {
+      container.innerHTML = '<p class="wiki-search-empty">Aucun resultat.</p>';
+      container.hidden = false;
+      return;
+    }
+
+    const list = document.createElement('div');
+    list.className = 'wiki-search-list';
+    entries.slice(0, 10).forEach((entry) => {
+      const link = document.createElement('a');
+      link.className = 'wiki-search-result';
+      link.href = new URL(entry.url, rootUrl).href;
+      const title = document.createElement('strong');
+      title.textContent = entry.title;
+      const meta = document.createElement('span');
+      meta.textContent = `${entry.section} - ${entry.path}`;
+      const summary = document.createElement('small');
+      summary.textContent = entry.summary || entry.keywords || '';
+      link.append(title, meta, summary);
+      list.appendChild(link);
+    });
+    container.replaceChildren(list);
+    container.hidden = false;
+  }
+
+  function bindWikiSearch() {
+    const forms = [...document.querySelectorAll('[data-wiki-search-form]')];
+    if (!forms.length) return;
+
+    const rootUrl = wikiRootUrl();
+    const entries = searchIndex();
+
+    forms.forEach((form) => {
+      const input = form.querySelector('[data-wiki-search-input]');
+      const results = form.querySelector('[data-wiki-search-results]');
+      if (!input || !results) return;
+
+      function updateResults() {
+        const terms = normalizeSearchText(input.value).split(/\s+/).filter((term) => term.length >= 2);
+        if (!terms.length) {
+          results.hidden = true;
+          results.replaceChildren();
+          return;
+        }
+        if (!entries.length) {
+          results.innerHTML = '<p class="wiki-search-empty">Index de recherche indisponible.</p>';
+          results.hidden = false;
+          return;
+        }
+        const matches = entries
+          .map((entry) => ({ entry, score: scoreSearchEntry(entry, terms) }))
+          .filter((item) => item.score > 0)
+          .sort((a, b) => b.score - a.score || a.entry.title.localeCompare(b.entry.title, 'fr'))
+          .map((item) => item.entry);
+        renderSearchResults(results, matches, rootUrl);
+      }
+
+      input.addEventListener('input', updateResults);
+      input.addEventListener('focus', updateResults);
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const first = results.querySelector('a[href]');
+        if (first) window.location.href = first.href;
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target.closest('[data-wiki-search-form]')) return;
+      forms.forEach((form) => {
+        const results = form.querySelector('[data-wiki-search-results]');
+        if (results) results.hidden = true;
+      });
+    });
+  }
+
   function bindControls() {
     let prefs = readPrefs();
     applyPrefs(prefs);
@@ -144,6 +254,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     bindControls();
     markCurrentNavigation();
+    bindWikiSearch();
     updateToc();
     bindMediaGallery();
   });

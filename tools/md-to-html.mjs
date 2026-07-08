@@ -6,12 +6,14 @@
 //
 //   node tools/md-to-html.mjs
 //
-import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, sep, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IGNORE_DIRS = new Set(['.git', '.github', 'node_modules', 'tools']);
+const SEARCH_INDEX_JSON = join(ROOT, 'assets', 'site', 'wiki-search-index.json');
+const SEARCH_INDEX_JS = join(ROOT, 'assets', 'site', 'wiki-search-index.js');
 // Sentinelle ASCII pour proteger les spans `code` (jamais present dans les docs)
 const PH_OPEN = '@@CODE';
 const PH_CLOSE = 'CODE@@';
@@ -184,6 +186,16 @@ function readerControls() {
   </div>`;
 }
 
+function searchBox() {
+  return `<form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
+    <label>
+      <span class="reader-control-label">Recherche globale</span>
+      <input type="search" data-wiki-search-input placeholder="Recherche" aria-label="Recherche globale">
+    </label>
+    <div class="wiki-search-results" data-wiki-search-results hidden></div>
+  </form>`;
+}
+
 function sidebar(prefix) {
   return `<aside class="wiki-sidebar" aria-label="Navigation wiki">
     <section class="sidebar-section">
@@ -199,6 +211,7 @@ function sidebar(prefix) {
       <p class="sidebar-title">Univers</p>
       <a class="sidebar-link" href="${prefix}docs/universe/00-vision-globale.html">Vision globale</a>
       <a class="sidebar-link" href="${prefix}docs/identity/direction-artistique.html">Direction artistique</a>
+      <a class="sidebar-link" href="${prefix}docs/identity/statuts-canon.html">Statuts canon</a>
       <a class="sidebar-link" href="${prefix}docs/universe/personnages.html">Personnages</a>
       <a class="sidebar-link" href="${prefix}docs/universe/scenes-et-micro-lore.html">Scenes et micro-lore</a>
       <a class="sidebar-link" href="${prefix}docs/universe/lexique.html">Lexique</a>
@@ -252,6 +265,7 @@ function topbar({ prefix, hubLink, indexLink }) {
       <a class="wiki-pill" href="${prefix}media/gallery/index.html">Galerie</a>
       <a class="wiki-pill" href="${prefix}docs/conversations/index.html">Sources</a>
     </nav>
+    ${searchBox()}
     ${readerControls()}
   </header>`;
 }
@@ -264,6 +278,7 @@ function page({ title, body, hubLink, indexLink, crumb, prefix }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)} - BZH Universe</title>
 <link rel="stylesheet" href="${prefix}assets/site/wiki.css">
+<script defer src="${prefix}assets/site/wiki-search-index.js"></script>
 <script defer src="${prefix}assets/site/wiki.js"></script>
 </head>
 <body>
@@ -282,15 +297,102 @@ ${body}
 `;
 }
 
+function plainText(md) {
+  return md
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/^\s*[-*+]\s+/gm, '')
+    .replace(/^\s*\d+\.\s+/gm, '')
+    .replace(/[|*_>#]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function headings(md) {
+  return [...md.matchAll(/^#{1,3}\s+(.*?)\s*#*\s*$/gm)]
+    .map((m) => m[1].trim())
+    .filter(Boolean);
+}
+
+function sectionForPath(relPath) {
+  if (relPath.startsWith('docs/universe/')) return 'Univers';
+  if (relPath.startsWith('docs/identity/')) return 'Identite';
+  if (relPath.startsWith('docs/projects/')) return 'Projets';
+  if (relPath.startsWith('docs/media/')) return 'Media';
+  if (relPath.startsWith('docs/merch/')) return 'Merchandising';
+  if (relPath.startsWith('docs/sources/')) return 'Sources';
+  if (relPath.startsWith('docs/conversations/')) return 'Conversations';
+  if (relPath.startsWith('docs/archives/')) return 'Archives';
+  if (relPath.startsWith('media/')) return 'Media';
+  if (relPath.startsWith('archives/')) return 'Archives';
+  return 'Wiki';
+}
+
+function searchEntryForMarkdown(relPath, title, md) {
+  const text = plainText(md);
+  const h = headings(md).slice(0, 8);
+  return {
+    type: 'page',
+    title: title || relPath.replace(/.*\//, '').replace(/\.md$/i, ''),
+    url: relPath.replace(/\.md$/i, '.html'),
+    path: relPath,
+    section: sectionForPath(relPath),
+    summary: text.slice(0, 220),
+    keywords: [...new Set([...relPath.split(/[\/._-]+/), ...h])].join(' '),
+  };
+}
+
+function isSearchExcluded(relPath) {
+  return relPath.startsWith('archives/web/lol-team-stats/');
+}
+
+function mediaSearchEntries() {
+  const inventoryPath = join(ROOT, 'media', 'gallery', 'inventory.json');
+  if (!existsSync(inventoryPath)) return [];
+  try {
+    const items = JSON.parse(readFileSync(inventoryPath, 'utf8'));
+    if (!Array.isArray(items)) return [];
+    return items.map((item) => ({
+      type: 'media',
+      title: item.title || item.path,
+      url: item.path,
+      path: item.path,
+      section: `Media / ${item.category || 'Sans categorie'}`,
+      summary: `${item.category || 'Media'} - ${item.type || 'fichier'} - ${item.sizeLabel || ''}`.trim(),
+      keywords: `${item.path || ''} ${item.category || ''} ${item.type || ''}`,
+    }));
+  } catch {
+    return [];
+  }
+}
+
+function writeSearchIndex(entries) {
+  const full = [...entries, ...mediaSearchEntries()]
+    .map((entry, index) => ({ id: index + 1, ...entry }))
+    .sort((a, b) => a.title.localeCompare(b.title, 'fr'));
+  const json = `${JSON.stringify(full, null, 2)}\n`;
+  writeFileSync(SEARCH_INDEX_JSON, json, 'utf8');
+  writeFileSync(SEARCH_INDEX_JS, `window.BZH_WIKI_SEARCH_INDEX = ${json};\n`, 'utf8');
+  return full.length;
+}
+
 const files = walk(ROOT);
 let count = 0;
+const searchEntries = [];
 for (const file of files) {
   const relPath = relative(ROOT, file).split(sep).join('/');
-  const { html, title } = mdToHtml(readFileSync(file, 'utf8'));
+  const md = readFileSync(file, 'utf8');
+  const { html, title } = mdToHtml(md);
   const depth = relPath.split('/').length - 1;
   const prefix = '../'.repeat(depth);
   const outPath = file.replace(/\.md$/i, '.html');
   const pageTitle = title || relPath.replace(/.*\//, '').replace(/\.md$/i, '');
+  if (!isSearchExcluded(relPath)) {
+    searchEntries.push(searchEntryForMarkdown(relPath, pageTitle, md));
+  }
   writeFileSync(
     outPath,
     page({
@@ -305,4 +407,6 @@ for (const file of files) {
   );
   count++;
 }
+const searchCount = writeSearchIndex(searchEntries);
 console.log(`OK ${count} fichiers Markdown convertis en HTML.`);
+console.log(`OK ${searchCount} entrees ecrites dans assets/site/wiki-search-index.json.`);

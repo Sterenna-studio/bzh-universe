@@ -30,6 +30,16 @@ Des notes antérieures décrivent MutenRock comme :
 - affrontant des gardiens par étage ;
 - lié à Aligax par une fusion ou interconnexion narrative forte.
 
+## Rattachements croises
+
+| Axe | Lien | Statut |
+| --- | --- | --- |
+| TCG | [BZH01 - set de cartes TCG](../../projects/bzh-card-game/cards.md) | `canon` / alias a confirmer |
+| Musique | [Musique et albums](../../media/musique-et-albums.md) | `a confirmer` pour `The Digital Commander` |
+| Video | `media/video/references/desktop-bzh/son/desktop-bzh-son-mutenrock-v002.mp4` | `reference` |
+| Medias | [Catalogue medias](../../../media/catalog/media-catalog.md), [Galerie media](../../../media/gallery/index.html) | `reference` |
+| Sources | [Citations lore & personnages](../../sources/messages-originaux/08-lore-personnages.md) | provenance |
+
 ## Déclinaisons
 - Card game :
   - **The Nature Owner**

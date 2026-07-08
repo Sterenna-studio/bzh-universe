@@ -15,6 +15,15 @@ Aligax incarne la force frontale, la protection et la figure de commandement imp
 
 Ces trois boucles de portrait montrent une lecture cyberpunk argent-bleu compatible avec Aligax / `Digital Maiden`. Les watermarks visibles les classent comme references de pose, armure et ambiance, pas comme assets finaux.
 
+## Rattachements croises
+
+| Axe | Lien | Statut |
+| --- | --- | --- |
+| TCG | [BZH01 - set de cartes TCG](../../projects/bzh-card-game/cards.md) | `canon` / carte a confirmer |
+| Musique | [Musique et albums](../../media/musique-et-albums.md) | `canon` pour `Digital Maiden`, variantes a confirmer |
+| Medias | [Catalogue medias](../../../media/catalog/media-catalog.md), [Galerie media](../../../media/gallery/index.html) | `reference` |
+| Direction | [Direction artistique](../../identity/direction-artistique.md), [Statuts canon](../../identity/statuts-canon.md) | cadrage |
+
 ## Liens internes
 - [Personnages](../personnages.md)
 - [BZH01 — set de cartes TCG](../../projects/bzh-card-game/cards.md)

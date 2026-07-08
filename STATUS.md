@@ -201,3 +201,9 @@
 ## Ajouts V24
 - Guideline Git ajoutee dans `CONTRIBUTING.md` : status de depart, commits cibles, push, verification remote et interdiction des nettoyages destructifs non demandes.
 - Index documentaire relie a la page contribution / Git pour rendre la regle retrouvable depuis le wiki.
+
+## Ajouts V25
+- Recherche globale statique ajoutee pour les pages wiki et les medias exposes.
+- Page `docs/identity/statuts-canon.md` ajoutee pour distinguer canon, reference, archive, interne et source brute.
+- Pages pivots renforcees : personnages, carte des projets, musique et atlas media.
+- Rattachements croises ajoutes pour Aligax, MutenRock et Sniky.

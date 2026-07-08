@@ -44,3 +44,12 @@ Une fiche ancienne le d√©crivait comme issu des **bas-fonds cyberpunk**, recrut√
   - **The Cyber Assassin**
 - Musique :
   - **Sniky: The Frager**
+
+## Rattachements croises
+
+| Axe | Lien | Statut |
+| --- | --- | --- |
+| TCG | [BZH01 - set de cartes TCG](../../projects/bzh-card-game/cards.md) | `canon` |
+| Musique | [Musique et albums](../../media/musique-et-albums.md), [Tracklist provisoire](../../media/tracklist-provisoire.md) | `canon` pour `Sniky: The Frager` |
+| Medias | [Catalogue medias](../../../media/catalog/media-catalog.md), [Galerie media](../../../media/gallery/index.html) | `reference` |
+| Sources | [Citations lore & personnages](../../sources/messages-originaux/08-lore-personnages.md) | provenance |

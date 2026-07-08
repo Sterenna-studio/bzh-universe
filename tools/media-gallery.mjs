@@ -169,6 +169,16 @@ function readerControls() {
   </div>`;
 }
 
+function searchBox() {
+  return `<form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
+    <label>
+      <span class="reader-control-label">Recherche globale</span>
+      <input type="search" data-wiki-search-input placeholder="Recherche" aria-label="Recherche globale">
+    </label>
+    <div class="wiki-search-results" data-wiki-search-results hidden></div>
+  </form>`;
+}
+
 function sidebar(grouped) {
   const links = CATEGORY_ORDER
     .filter((name) => grouped.has(name))
@@ -215,6 +225,7 @@ function page(items, grouped) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galerie media - BZH Universe</title>
 <link rel="stylesheet" href="../../assets/site/wiki.css">
+<script defer src="../../assets/site/wiki-search-index.js"></script>
 <script defer src="../../assets/site/wiki.js"></script>
 </head>
 <body>
@@ -233,6 +244,7 @@ function page(items, grouped) {
     <a class="wiki-pill" href="./index.html">Galerie</a>
     <a class="wiki-pill" href="../../docs/conversations/index.html">Sources</a>
   </nav>
+  ${searchBox()}
   ${readerControls()}
 </header>
 <div class="wiki-layout">
