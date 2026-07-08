@@ -361,8 +361,8 @@ function mediaSearchEntries() {
       url: item.path,
       path: item.path,
       section: `Media / ${item.category || 'Sans categorie'}`,
-      summary: `${item.category || 'Media'} - ${item.type || 'fichier'} - ${item.sizeLabel || ''}`.trim(),
-      keywords: `${item.path || ''} ${item.category || ''} ${item.type || ''}`,
+      summary: `${item.category || 'Media'} - ${item.collection || 'Sans collection'} - ${item.status || 'reference'} - ${item.type || 'fichier'} - ${item.sizeLabel || ''}`.trim(),
+      keywords: `${item.path || ''} ${item.title || ''} ${item.collection || ''} ${item.category || ''} ${item.status || ''} ${item.type || ''}`,
     }));
   } catch {
     return [];

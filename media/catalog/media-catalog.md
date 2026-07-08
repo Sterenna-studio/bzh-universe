@@ -1,7 +1,7 @@
 # Catalogue médias à rattacher
 
 ## Acces consultable
-- [Galerie media](../gallery/index.html) — vue visuelle filtree par categorie, avec recherche et ouverture des fichiers originaux.
+- [Galerie media](../gallery/index.html) — vue visuelle filtree par categorie, avec recherche, noms lisibles, statuts et ouverture des fichiers originaux.
 - [Inventaire JSON de la galerie](../gallery/inventory.json) — liste machine-readable des fichiers exposes dans la galerie.
 
 ## Atlas media
@@ -20,7 +20,8 @@
 ## Regle de lecture
 
 - Le chemin fichier reste la source technique.
-- Le nom lisible dans cette page sert a naviguer sans renommer les imports historiques.
+- Le nom lisible dans cette page et dans la galerie sert a naviguer sans renommer les imports historiques.
+- Les champs `collection` et `status` de l'inventaire galerie aident a filtrer les familles media sans deplacer les fichiers.
 - Les medias watermarkes ou generatifs doivent rester `reference` tant que les droits et le rendu final ne sont pas arbitres.
 - Les contenus marques `interne` ne doivent pas etre ajoutes comme liens directs dans le hub public.
 

@@ -217,3 +217,8 @@
 - Carte des projets enrichie avec Runner BZH et Pirate Chronicles.
 - Fiches projets renforcees avec statut, rattachements utiles et suites de lecture.
 - Livrables historiques relies aux pages projet pour distinguer archive, prototype, piste et canon.
+
+## Ajouts V28
+- Galerie media enrichie avec titres lisibles, collection et statut par fichier, sans renommer les sources.
+- Atlas rapide ajoute en haut de galerie pour parcourir les familles media par categorie et statut.
+- Recherche globale media enrichie avec collection et statut.

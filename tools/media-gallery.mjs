@@ -52,6 +52,37 @@ const CATEGORY_ORDER = [
 ];
 
 const CATEGORY_SLUGS = Object.fromEntries(CATEGORY_ORDER.map((name) => [name, slug(name)]));
+const READABLE_WORDS = new Map([
+  ['ai', 'AI'],
+  ['aligax', 'Aligax'],
+  ['bzh', 'BZH'],
+  ['bzhchronicles', 'BZH Chronicles'],
+  ['bzhchronicles64', 'BZH Chronicles 64'],
+  ['bzhpower', 'BZH POWER'],
+  ['bzhpw', 'BZH PW'],
+  ['cd', 'CD'],
+  ['drspig', 'DrSpig'],
+  ['gabilone', 'Gabilone'],
+  ['gabylon', 'Gabylon'],
+  ['gif', 'GIF'],
+  ['ia', 'IA'],
+  ['leme', 'LEME'],
+  ['lemegeton', 'LEMEGETON'],
+  ['mp3', 'MP3'],
+  ['mutenrock', 'MutenRock'],
+  ['neo', 'Neo'],
+  ['pc', 'PC'],
+  ['pw', 'PW'],
+  ['rtt', 'RTT'],
+  ['sniky', 'Sniky'],
+  ['sorn', 'Sorn'],
+  ['spirit', 'Spirit'],
+  ['spike', 'Spike'],
+  ['tcg', 'TCG'],
+  ['titan', 'Titan'],
+  ['vdt', 'VDT'],
+  ['vr', 'VR'],
+]);
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -108,12 +139,58 @@ function categoryFor(rel, type) {
 
 function titleFor(rel) {
   const file = rel.split('/').pop() ?? rel;
-  return file
+  return readableText(file);
+}
+
+function readableWord(word) {
+  const lower = word.toLowerCase();
+  if (READABLE_WORDS.has(lower)) return READABLE_WORDS.get(lower);
+  if (/^v\d+$/i.test(word)) return lower;
+  if (/^\d+$/.test(word)) return word;
+  if (word.length <= 2 && word === word.toUpperCase()) return word;
+  return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function readableText(value) {
+  return String(value)
     .replace(/\.[^.]+$/, '')
+    .replace(/bzhchronicles64/gi, 'BZH Chronicles 64')
+    .replace(/bzhchronicles/gi, 'BZH Chronicles')
+    .replace(/bzhpower/gi, 'BZH POWER')
+    .replace(/bzhpw/gi, 'BZH PW')
     .replace(/[_-]+/g, ' ')
     .replace(/\bv(\d+)\b/gi, 'v$1')
     .replace(/\s+/g, ' ')
-    .trim();
+    .trim()
+    .split(' ')
+    .filter(Boolean)
+    .map(readableWord)
+    .join(' ');
+}
+
+function collectionFor(rel, category) {
+  const parts = rel.split('/');
+  if (rel.startsWith('assets/logos/')) return readableText(parts[2] || 'Logos');
+  if (rel.startsWith('assets/characters/')) return readableText(parts[2] || 'Personnages');
+  if (rel.startsWith('assets/cards/')) return readableText(parts[2] || 'TCG');
+  if (rel.startsWith('media/audio/')) return readableText(parts.slice(2, -1).join(' / ') || 'Audio');
+  if (rel.startsWith('media/video/')) return readableText(parts.slice(2, -1).join(' / ') || 'Video');
+  if (rel.startsWith('media/visual/')) return readableText(parts.slice(2, -1).join(' / ') || category);
+  return category;
+}
+
+function statusFor(rel, category, type) {
+  if (rel.startsWith('assets/cards/bzh01/cards/')) return 'canon';
+  if (rel.startsWith('assets/cards/bzh02/cards/')) return 'a confirmer';
+  if (rel.startsWith('assets/cards/reference/') || rel.includes('/reference/')) return 'reference';
+  if (rel.startsWith('media/audio/masters/')) return 'master';
+  if (type === 'audio') return 'reference';
+  if (type === 'video') return 'reference';
+  if (rel.startsWith('assets/logos/')) return 'canon / variante';
+  if (rel.startsWith('assets/characters/')) return 'reference';
+  if (rel.startsWith('media/visual/merch/')) return 'piste / reference';
+  if (category === 'TCG') return 'canon / a confirmer';
+  return 'reference';
 }
 
 function mediaMarkup(item) {
@@ -134,16 +211,43 @@ function card(item) {
   const path = escapeHtml(item.path);
   const type = escapeHtml(item.type);
   const size = escapeHtml(item.sizeLabel);
-  return `<article class="media-card" data-media-card data-category="${category}" data-search="${title.toLowerCase()} ${path.toLowerCase()}">
+  const collection = escapeHtml(item.collection);
+  const status = escapeHtml(item.status);
+  return `<article class="media-card" data-media-card data-category="${category}" data-search="${title.toLowerCase()} ${collection.toLowerCase()} ${status.toLowerCase()} ${path.toLowerCase()}">
   <a class="media-thumb" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="Ouvrir ${title}">
     ${mediaMarkup(item)}
   </a>
   <div class="media-card-body">
     <h3>${title}</h3>
-    <p>${path}</p>
-    <div class="media-meta"><span>${type}</span><span>${size}</span></div>
+    <p class="media-collection">${collection}</p>
+    <p class="media-path">${path}</p>
+    <div class="media-meta"><span>${escapeHtml(item.category)}</span><span>${status}</span><span>${type}</span><span>${size}</span></div>
   </div>
 </article>`;
+}
+
+function statusSummary(items) {
+  const statuses = [...new Set(items.map((item) => item.status))];
+  if (statuses.length <= 2) return statuses.join(' / ');
+  return `${statuses.slice(0, 2).join(' / ')} / mixte`;
+}
+
+function atlas(grouped) {
+  const entries = CATEGORY_ORDER
+    .filter((name) => grouped.has(name))
+    .map((name) => {
+      const id = CATEGORY_SLUGS[name] ?? slug(name);
+      const items = grouped.get(name);
+      return `<a class="media-atlas-item" href="#${escapeHtml(id)}">
+        <strong>${escapeHtml(name)}</strong>
+        <span>${items.length} fichier${items.length > 1 ? 's' : ''}</span>
+        <small>${escapeHtml(statusSummary(items))}</small>
+      </a>`;
+    })
+    .join('\n    ');
+  return `<div class="media-atlas" aria-label="Atlas media rapide">
+    ${entries}
+  </div>`;
 }
 
 function section(name, items) {
@@ -256,8 +360,10 @@ ${sidebar(grouped)}
   <div class="media-gallery-summary" aria-label="Resume de la galerie">
     <span><strong>${items.length}</strong> fichiers</span>
     <span><strong>${grouped.size}</strong> sections</span>
+    <span>Noms lisibles sans renommer les sources</span>
     <a href="./inventory.json">Inventaire JSON</a>
   </div>
+  ${atlas(grouped)}
   <form class="media-toolbar" data-media-toolbar role="search">
     <label>
       <span>Recherche</span>
@@ -303,12 +409,16 @@ const items = files
     const ext = rel.slice(rel.lastIndexOf('.')).toLowerCase();
     const type = EXTENSIONS.get(ext);
     const category = categoryFor(rel, type);
+    const collection = collectionFor(rel, category);
+    const status = statusFor(rel, category, type);
     const size = statSync(full).size;
     return {
       path: rel,
       url: relativeUrl('media/gallery', rel),
       title: titleFor(rel),
+      collection,
       category,
+      status,
       type,
       size,
       sizeLabel: formatSize(size),
