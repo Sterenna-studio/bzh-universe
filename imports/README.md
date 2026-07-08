@@ -50,7 +50,8 @@ Nettoyage :
 
 Sous-lot LoL Team Stats traite :
 - 360 fichiers archives dans `archives/web/lol-team-stats/raw/` ;
-- page consultable : `archives/web/lol-team-stats/README.md` ;
+- lot mis de cote car il contient nos statistiques de jeu LoL ;
+- aucun lien direct depuis le wiki ou la navigation publique du hub ;
 - aucun doublon exact detecte avant copie ;
 - dossier source `LOL_TEAM_STATS/` retire du sas local apres archivage.
 

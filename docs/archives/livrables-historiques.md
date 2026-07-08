@@ -81,12 +81,13 @@ Synthèse :
 - vidéos référencées uniquement par chemin et taille dans `archives/import-reports/2026-07-06-desktop-bzh-videos.csv` ;
 - tri final différé pour les gros fichiers, notamment `BZH_RESS\Montage\BZH ANTHEM 2.mp4` qui dépasse 100 Mo.
 
-## 9. Archive LoL Team Stats
-Le sous-lot `LOL_TEAM_STATS` du Desktop BZH est conserve comme snapshot web/statistique :
-- `archives/web/lol-team-stats/README.md`
-- `archives/web/lol-team-stats/raw/`
+## 9. Lot LoL Team Stats mis de cote
+Le sous-lot `LOL_TEAM_STATS` du Desktop BZH contient nos statistiques de jeu LoL.
+Il est conserve comme snapshot brut interne, sans lien direct depuis le wiki ni promotion dans les pages publiques du hub.
 
-Il contient les pages quiz, les exports CSV/JSON et les pages LoL Rewind consultables depuis le README d'archive.
+Emplacement de conservation :
+- `archives/web/lol-team-stats/raw/`
+- `imports/2026-07-06-desktop-bzh/LOL_TEAM_STATS/`
 
 ## 10. Sous-lots audio Sniky / Dernier souffle
 Deux dossiers audio du lot Desktop BZH ont ete classes comme pistes MP3 consultables :

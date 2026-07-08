@@ -96,9 +96,9 @@
 - Les fichiers vidéo, exports web/statistiques et visuels restants demeurent dans le sas pour tri ultérieur
 
 ## Ajouts V9
-- Sous-lot `LOL_TEAM_STATS` archive comme export web/statistique consultable
+- Sous-lot `LOL_TEAM_STATS` mis de cote comme snapshot brut de statistiques LoL
 - 360 fichiers copies dans `archives/web/lol-team-stats/raw/`
-- Page d'archive ajoutee dans `archives/web/lol-team-stats/README.md`
+- Aucun lien direct ajoute dans le wiki ou la navigation publique du hub
 - Aucun doublon exact detecte avec les fichiers deja suivis
 
 ## Ajouts V10

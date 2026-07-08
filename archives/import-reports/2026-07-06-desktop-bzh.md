@@ -102,8 +102,8 @@
 
 ## Traitement LoL Team Stats realise
 - 360 fichiers archives dans `archives/web/lol-team-stats/raw/`.
-- Les pages HTML, CSV, JSON, CSS, images et fichiers telecharges sont conserves comme snapshot web/statistique.
-- Une page d'entree consultable a ete ajoutee : `archives/web/lol-team-stats/README.md`.
+- Les pages HTML, CSV, JSON, CSS, images et fichiers telecharges sont conserves comme snapshot brut de statistiques LoL.
+- Le lot est mis de cote : pas de lien direct depuis le wiki, pas de navigation publique dediee, pas de promotion dans la galerie media.
 - Aucun doublon exact detecte avec les fichiers deja suivis.
 - Le dossier source `LOL_TEAM_STATS/` a ete retire du sas local apres archivage.
 
