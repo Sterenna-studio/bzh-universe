@@ -3949,9 +3949,9 @@
     "sizeLabel": "2.8 Mo"
   },
   {
-    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 13_46_57.png",
-    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2013_46_57.png",
-    "title": "Chatgpt Image 16 Mai 2025, 13 46 57",
+    "path": "assets/cards/bzh02/reference/bzh02-card-reference-v001.png",
+    "url": "../../assets/cards/bzh02/reference/bzh02-card-reference-v001.png",
+    "title": "Bzh02 Card Reference v001",
     "collection": "Bzh02",
     "category": "TCG",
     "status": "reference",
@@ -3960,9 +3960,9 @@
     "sizeLabel": "3.3 Mo"
   },
   {
-    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 13_51_44.png",
-    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2013_51_44.png",
-    "title": "Chatgpt Image 16 Mai 2025, 13 51 44",
+    "path": "assets/cards/bzh02/reference/bzh02-card-reference-v002.png",
+    "url": "../../assets/cards/bzh02/reference/bzh02-card-reference-v002.png",
+    "title": "Bzh02 Card Reference v002",
     "collection": "Bzh02",
     "category": "TCG",
     "status": "reference",
@@ -3971,9 +3971,9 @@
     "sizeLabel": "2.7 Mo"
   },
   {
-    "path": "assets/cards/bzh02/reference/ChatGPT Image 16 mai 2025, 14_12_03.png",
-    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2016%20mai%202025%2C%2014_12_03.png",
-    "title": "Chatgpt Image 16 Mai 2025, 14 12 03",
+    "path": "assets/cards/bzh02/reference/bzh02-card-reference-v003.png",
+    "url": "../../assets/cards/bzh02/reference/bzh02-card-reference-v003.png",
+    "title": "Bzh02 Card Reference v003",
     "collection": "Bzh02",
     "category": "TCG",
     "status": "reference",
@@ -3982,9 +3982,9 @@
     "sizeLabel": "2.8 Mo"
   },
   {
-    "path": "assets/cards/bzh02/reference/ChatGPT Image 19 mai 2025, 04_48_38.png",
-    "url": "../../assets/cards/bzh02/reference/ChatGPT%20Image%2019%20mai%202025%2C%2004_48_38.png",
-    "title": "Chatgpt Image 19 Mai 2025, 04 48 38",
+    "path": "assets/cards/bzh02/reference/bzh02-card-reference-v004.png",
+    "url": "../../assets/cards/bzh02/reference/bzh02-card-reference-v004.png",
+    "title": "Bzh02 Card Reference v004",
     "collection": "Bzh02",
     "category": "TCG",
     "status": "reference",
@@ -4125,17 +4125,6 @@
     "sizeLabel": "624 Ko"
   },
   {
-    "path": "assets/cards/legacy/old-card/ChatGPT Image 22 avr. 2025, 05_03_55.png",
-    "url": "../../assets/cards/legacy/old-card/ChatGPT%20Image%2022%20avr.%202025%2C%2005_03_55.png",
-    "title": "Chatgpt Image 22 Avr. 2025, 05 03 55",
-    "collection": "Legacy",
-    "category": "TCG",
-    "status": "canon / a confirmer",
-    "type": "image",
-    "size": 2987567,
-    "sizeLabel": "2.8 Mo"
-  },
-  {
     "path": "assets/cards/legacy/old-card/Floating Monastery.png",
     "url": "../../assets/cards/legacy/old-card/Floating%20Monastery.png",
     "title": "Floating Monastery",
@@ -4145,6 +4134,17 @@
     "type": "image",
     "size": 720380,
     "sizeLabel": "703 Ko"
+  },
+  {
+    "path": "assets/cards/legacy/old-card/legacy-card-reference-v001.png",
+    "url": "../../assets/cards/legacy/old-card/legacy-card-reference-v001.png",
+    "title": "Legacy Card Reference v001",
+    "collection": "Legacy",
+    "category": "TCG",
+    "status": "canon / a confirmer",
+    "type": "image",
+    "size": 2987567,
+    "sizeLabel": "2.8 Mo"
   },
   {
     "path": "assets/cards/legacy/old-card/Lure of the Archive.png",
@@ -4290,9 +4290,9 @@
     "sizeLabel": "153 Ko"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 07_35_58.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2007_35_58.png",
-    "title": "Chatgpt Image 20 Mai 2025, 07 35 58",
+    "path": "assets/cards/reference/bzhcard-reference-v001.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v001.png",
+    "title": "Bzhcard Reference v001",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4301,9 +4301,9 @@
     "sizeLabel": "1.4 Mo"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 09_53_16.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2009_53_16.png",
-    "title": "Chatgpt Image 20 Mai 2025, 09 53 16",
+    "path": "assets/cards/reference/bzhcard-reference-v002.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v002.png",
+    "title": "Bzhcard Reference v002",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4312,9 +4312,9 @@
     "sizeLabel": "1.4 Mo"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_02_00.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_02_00.png",
-    "title": "Chatgpt Image 20 Mai 2025, 10 02 00",
+    "path": "assets/cards/reference/bzhcard-reference-v003.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v003.png",
+    "title": "Bzhcard Reference v003",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4323,9 +4323,9 @@
     "sizeLabel": "1.4 Mo"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_07_37.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_07_37.png",
-    "title": "Chatgpt Image 20 Mai 2025, 10 07 37",
+    "path": "assets/cards/reference/bzhcard-reference-v004.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v004.png",
+    "title": "Bzhcard Reference v004",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4334,9 +4334,9 @@
     "sizeLabel": "1.5 Mo"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_09_57.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_09_57.png",
-    "title": "Chatgpt Image 20 Mai 2025, 10 09 57",
+    "path": "assets/cards/reference/bzhcard-reference-v005.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v005.png",
+    "title": "Bzhcard Reference v005",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4345,9 +4345,9 @@
     "sizeLabel": "779 Ko"
   },
   {
-    "path": "assets/cards/reference/ChatGPT Image 20 mai 2025, 10_12_21.png",
-    "url": "../../assets/cards/reference/ChatGPT%20Image%2020%20mai%202025%2C%2010_12_21.png",
-    "title": "Chatgpt Image 20 Mai 2025, 10 12 21",
+    "path": "assets/cards/reference/bzhcard-reference-v006.png",
+    "url": "../../assets/cards/reference/bzhcard-reference-v006.png",
+    "title": "Bzhcard Reference v006",
     "collection": "Reference",
     "category": "TCG",
     "status": "reference",
@@ -4477,9 +4477,9 @@
     "sizeLabel": "2.0 Mo"
   },
   {
-    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL·E 2024-06-03 13.38.07 - Cover art for the single 'Cyber Shadows' from the 'BZH Chronicles' album. The design features a dark cyberpunk city with flickering neon lights and sh.webp",
-    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL%C2%B7E%202024-06-03%2013.38.07%20-%20Cover%20art%20for%20the%20single%20'Cyber%20Shadows'%20from%20the%20'BZH%20Chronicles'%20album.%20The%20design%20features%20a%20dark%20cyberpunk%20city%20with%20flickering%20neon%20lights%20and%20sh.webp",
-    "title": "Dall·e 2024 06 03 13.38.07 Cover Art For The Single 'cyber Shadows' From The 'bzh Chronicles' Album. The Design Features A Dark Cyberpunk City With Flickering Neon Lights And Sh",
+    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v001.webp",
+    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v001.webp",
+    "title": "BZH Chronicles Album Wip Reference v001",
     "collection": "Covers / BZH Chronicles Album Wip / Album Wip",
     "category": "Covers et mockups",
     "status": "reference",
@@ -4488,9 +4488,9 @@
     "sizeLabel": "285 Ko"
   },
   {
-    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL·E 2024-06-06 12.09.57 - An album cover with a futuristic, cybernetic theme. The background features a digital landscape with lines of code and integrated circuits. The colors.webp",
-    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL%C2%B7E%202024-06-06%2012.09.57%20-%20An%20album%20cover%20with%20a%20futuristic%2C%20cybernetic%20theme.%20The%20background%20features%20a%20digital%20landscape%20with%20lines%20of%20code%20and%20integrated%20circuits.%20The%20colors.webp",
-    "title": "Dall·e 2024 06 06 12.09.57 An Album Cover With A Futuristic, Cybernetic Theme. The Background Features A Digital Landscape With Lines Of Code And Integrated Circuits. The Colors",
+    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v002.webp",
+    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v002.webp",
+    "title": "BZH Chronicles Album Wip Reference v002",
     "collection": "Covers / BZH Chronicles Album Wip / Album Wip",
     "category": "Covers et mockups",
     "status": "reference",
@@ -4499,9 +4499,9 @@
     "sizeLabel": "511 Ko"
   },
   {
-    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL·E 2024-06-06 12.12.40 - A YouTube thumbnail for the song 'Sniky_ The Frager' from the album 'BZH Chronicles'. The design should feature Sniky, the stealthy assassin, in an ac.webp",
-    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL%C2%B7E%202024-06-06%2012.12.40%20-%20A%20YouTube%20thumbnail%20for%20the%20song%20'Sniky_%20The%20Frager'%20from%20the%20album%20'BZH%20Chronicles'.%20The%20design%20should%20feature%20Sniky%2C%20the%20stealthy%20assassin%2C%20in%20an%20ac.webp",
-    "title": "Dall·e 2024 06 06 12.12.40 A Youtube Thumbnail For The Song 'sniky The Frager' From The Album 'bzh Chronicles'. The Design Should Feature Sniky, The Stealthy Assassin, In An Ac",
+    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v003.webp",
+    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v003.webp",
+    "title": "BZH Chronicles Album Wip Reference v003",
     "collection": "Covers / BZH Chronicles Album Wip / Album Wip",
     "category": "Covers et mockups",
     "status": "reference",
@@ -4510,9 +4510,9 @@
     "sizeLabel": "318 Ko"
   },
   {
-    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL·E 2024-06-06 12.14.50 - A YouTube thumbnail template for the BZH Power group channel. The design should feature a dynamic and cyberpunk background with neon lights and digita.webp",
-    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/DALL%C2%B7E%202024-06-06%2012.14.50%20-%20A%20YouTube%20thumbnail%20template%20for%20the%20BZH%20Power%20group%20channel.%20The%20design%20should%20feature%20a%20dynamic%20and%20cyberpunk%20background%20with%20neon%20lights%20and%20digita.webp",
-    "title": "Dall·e 2024 06 06 12.14.50 A Youtube Thumbnail Template For The BZH Power Group Channel. The Design Should Feature A Dynamic And Cyberpunk Background With Neon Lights And Digita",
+    "path": "media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v004.webp",
+    "url": "../../media/visual/covers/bzh-chronicles-album-wip/album_wip/bzhchronicles-album-wip-reference-v004.webp",
+    "title": "BZH Chronicles Album Wip Reference v004",
     "collection": "Covers / BZH Chronicles Album Wip / Album Wip",
     "category": "Covers et mockups",
     "status": "reference",
@@ -9449,17 +9449,6 @@
     "sizeLabel": "41 Ko"
   },
   {
-    "path": "media/visual/references/gartic-monster/ChatGPT Image 2 juin 2025, 05_44_29.png",
-    "url": "../../media/visual/references/gartic-monster/ChatGPT%20Image%202%20juin%202025%2C%2005_44_29.png",
-    "title": "Chatgpt Image 2 Juin 2025, 05 44 29",
-    "collection": "References / Gartic Monster",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2863863,
-    "sizeLabel": "2.7 Mo"
-  },
-  {
     "path": "media/visual/references/gartic-monster/dream-world/Aventure tropicale et créatures colorées.png",
     "url": "../../media/visual/references/gartic-monster/dream-world/Aventure%20tropicale%20et%20cr%C3%A9atures%20color%C3%A9es.png",
     "title": "Aventure Tropicale Et Créatures Colorées",
@@ -9469,50 +9458,6 @@
     "type": "image",
     "size": 3253522,
     "sizeLabel": "3.1 Mo"
-  },
-  {
-    "path": "media/visual/references/gartic-monster/dream-world/ChatGPT Image 2 juin 2025, 05_22_15.png",
-    "url": "../../media/visual/references/gartic-monster/dream-world/ChatGPT%20Image%202%20juin%202025%2C%2005_22_15.png",
-    "title": "Chatgpt Image 2 Juin 2025, 05 22 15",
-    "collection": "References / Gartic Monster / Dream World",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2412109,
-    "sizeLabel": "2.3 Mo"
-  },
-  {
-    "path": "media/visual/references/gartic-monster/dream-world/ChatGPT Image 2 juin 2025, 05_27_34.png",
-    "url": "../../media/visual/references/gartic-monster/dream-world/ChatGPT%20Image%202%20juin%202025%2C%2005_27_34.png",
-    "title": "Chatgpt Image 2 Juin 2025, 05 27 34",
-    "collection": "References / Gartic Monster / Dream World",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 3594914,
-    "sizeLabel": "3.4 Mo"
-  },
-  {
-    "path": "media/visual/references/gartic-monster/dream-world/ChatGPT Image 2 juin 2025, 05_37_30.png",
-    "url": "../../media/visual/references/gartic-monster/dream-world/ChatGPT%20Image%202%20juin%202025%2C%2005_37_30.png",
-    "title": "Chatgpt Image 2 Juin 2025, 05 37 30",
-    "collection": "References / Gartic Monster / Dream World",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2887521,
-    "sizeLabel": "2.8 Mo"
-  },
-  {
-    "path": "media/visual/references/gartic-monster/dream-world/ChatGPT Image 2 juin 2025, 05_38_58.png",
-    "url": "../../media/visual/references/gartic-monster/dream-world/ChatGPT%20Image%202%20juin%202025%2C%2005_38_58.png",
-    "title": "Chatgpt Image 2 Juin 2025, 05 38 58",
-    "collection": "References / Gartic Monster / Dream World",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2963037,
-    "sizeLabel": "2.8 Mo"
   },
   {
     "path": "media/visual/references/gartic-monster/dream-world/Chroniques de la Vallée Ensoleillée.png",
@@ -9568,6 +9513,50 @@
     "type": "image",
     "size": 4205758,
     "sizeLabel": "4.0 Mo"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v001.png",
+    "url": "../../media/visual/references/gartic-monster/dream-world/dream-world-reference-v001.png",
+    "title": "Dream World Reference v001",
+    "collection": "References / Gartic Monster / Dream World",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2412109,
+    "sizeLabel": "2.3 Mo"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v002.png",
+    "url": "../../media/visual/references/gartic-monster/dream-world/dream-world-reference-v002.png",
+    "title": "Dream World Reference v002",
+    "collection": "References / Gartic Monster / Dream World",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 3594914,
+    "sizeLabel": "3.4 Mo"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v003.png",
+    "url": "../../media/visual/references/gartic-monster/dream-world/dream-world-reference-v003.png",
+    "title": "Dream World Reference v003",
+    "collection": "References / Gartic Monster / Dream World",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2887521,
+    "sizeLabel": "2.8 Mo"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v004.png",
+    "url": "../../media/visual/references/gartic-monster/dream-world/dream-world-reference-v004.png",
+    "title": "Dream World Reference v004",
+    "collection": "References / Gartic Monster / Dream World",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2963037,
+    "sizeLabel": "2.8 Mo"
   },
   {
     "path": "media/visual/references/gartic-monster/dream-world/Île tropicale animée et fantaisiste.png",
@@ -9843,6 +9832,17 @@
     "type": "image",
     "size": 203823,
     "sizeLabel": "199 Ko"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/gartic-monster-reference-v001.png",
+    "url": "../../media/visual/references/gartic-monster/gartic-monster-reference-v001.png",
+    "title": "Gartic Monster Reference v001",
+    "collection": "References / Gartic Monster",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2863863,
+    "sizeLabel": "2.7 Mo"
   },
   {
     "path": "media/visual/references/gartic-monster/gartic-sentences-screenshots/album_2024-07-19_23-29-38.gif",
@@ -10274,17 +10274,6 @@
     "sizeLabel": "95 Ko"
   },
   {
-    "path": "media/visual/references/gartic-monster/neokarceris/DALL·E 2024-07-28 21.35.03 - A detailed sketch of Neokarceris' origin world. The scene depicts a dark, ancient, and ruined civilization with advanced technological elements. Crumb.webp",
-    "url": "../../media/visual/references/gartic-monster/neokarceris/DALL%C2%B7E%202024-07-28%2021.35.03%20-%20A%20detailed%20sketch%20of%20Neokarceris'%20origin%20world.%20The%20scene%20depicts%20a%20dark%2C%20ancient%2C%20and%20ruined%20civilization%20with%20advanced%20technological%20elements.%20Crumb.webp",
-    "title": "Dall·e 2024 07 28 21.35.03 A Detailed Sketch Of Neokarceris' Origin World. The Scene Depicts A Dark, Ancient, And Ruined Civilization With Advanced Technological Elements. Crumb",
-    "collection": "References / Gartic Monster / Neokarceris",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 816010,
-    "sizeLabel": "797 Ko"
-  },
-  {
     "path": "media/visual/references/gartic-monster/neokarceris/de8dfb2d478c4f04a7d00b476375b3d4.jpg",
     "url": "../../media/visual/references/gartic-monster/neokarceris/de8dfb2d478c4f04a7d00b476375b3d4.jpg",
     "title": "De8dfb2d478c4f04a7d00b476375b3d4",
@@ -10360,6 +10349,17 @@
     "type": "image",
     "size": 672194,
     "sizeLabel": "656 Ko"
+  },
+  {
+    "path": "media/visual/references/gartic-monster/neokarceris/neokarceris-origin-world-reference-v001.webp",
+    "url": "../../media/visual/references/gartic-monster/neokarceris/neokarceris-origin-world-reference-v001.webp",
+    "title": "Neokarceris Origin World Reference v001",
+    "collection": "References / Gartic Monster / Neokarceris",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 816010,
+    "sizeLabel": "797 Ko"
   },
   {
     "path": "media/visual/references/gartic-monster/Papillomonstre.PNG",
@@ -10505,94 +10505,6 @@
     "sizeLabel": "3.9 Mo"
   },
   {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v001.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v001.png",
-    "title": "Bzhress Soiree Trio v001",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2610645,
-    "sizeLabel": "2.5 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v002.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v002.png",
-    "title": "Bzhress Soiree Trio v002",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 3306525,
-    "sizeLabel": "3.2 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v003.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v003.png",
-    "title": "Bzhress Soiree Trio v003",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2750270,
-    "sizeLabel": "2.6 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v004.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v004.png",
-    "title": "Bzhress Soiree Trio v004",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 1502442,
-    "sizeLabel": "1.4 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v005.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v005.png",
-    "title": "Bzhress Soiree Trio v005",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 1494657,
-    "sizeLabel": "1.4 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v006.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v006.png",
-    "title": "Bzhress Soiree Trio v006",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 3068112,
-    "sizeLabel": "2.9 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v007.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v007.png",
-    "title": "Bzhress Soiree Trio v007",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2290684,
-    "sizeLabel": "2.2 Mo"
-  },
-  {
-    "path": "media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v008.png",
-    "url": "../../media/visual/references/gpt-soiree-trio/bzhress_soiree-trio_v008.png",
-    "title": "Bzhress Soiree Trio v008",
-    "collection": "References / Gpt Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 4446032,
-    "sizeLabel": "4.2 Mo"
-  },
-  {
     "path": "media/visual/references/hermine-logos/20250505_0239_Ferret Power Logo_simple_compose_01jtey4qe7fmhvt8f1f5b67a66.gif",
     "url": "../../media/visual/references/hermine-logos/20250505_0239_Ferret%20Power%20Logo_simple_compose_01jtey4qe7fmhvt8f1f5b67a66.gif",
     "title": "20250505 0239 Ferret Power Logo Simple Compose 01jtey4qe7fmhvt8f1f5b67a66",
@@ -10615,9 +10527,9 @@
     "sizeLabel": "859 Ko"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 14 avr. 2026, 04_09_30.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%2014%20avr.%202026%2C%2004_09_30.png",
-    "title": "Chatgpt Image 14 Avr. 2026, 04 09 30",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v001.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v001.png",
+    "title": "Hermine Logo Reference v001",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10626,9 +10538,9 @@
     "sizeLabel": "2.0 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 18 avr. 2026, 18_01_44.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%2018%20avr.%202026%2C%2018_01_44.png",
-    "title": "Chatgpt Image 18 Avr. 2026, 18 01 44",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v002.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v002.png",
+    "title": "Hermine Logo Reference v002",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10637,9 +10549,9 @@
     "sizeLabel": "1.9 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 19 févr. 2026, 01_01_19.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%2019%20f%C3%A9vr.%202026%2C%2001_01_19.png",
-    "title": "Chatgpt Image 19 Févr. 2026, 01 01 19",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v003.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v003.png",
+    "title": "Hermine Logo Reference v003",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10648,9 +10560,9 @@
     "sizeLabel": "2.2 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 4 avr. 2025, 23_35_43.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%204%20avr.%202025%2C%2023_35_43.png",
-    "title": "Chatgpt Image 4 Avr. 2025, 23 35 43",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v004.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v004.png",
+    "title": "Hermine Logo Reference v004",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10659,9 +10571,9 @@
     "sizeLabel": "1.1 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 7 avr. 2025, 19_53_30.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%207%20avr.%202025%2C%2019_53_30.png",
-    "title": "Chatgpt Image 7 Avr. 2025, 19 53 30",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v005.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v005.png",
+    "title": "Hermine Logo Reference v005",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10670,9 +10582,9 @@
     "sizeLabel": "1.6 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 9 avr. 2025, 11_21_42 (1).png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%209%20avr.%202025%2C%2011_21_42%20(1).png",
-    "title": "Chatgpt Image 9 Avr. 2025, 11 21 42 (1)",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v006.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v006.png",
+    "title": "Hermine Logo Reference v006",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10681,9 +10593,9 @@
     "sizeLabel": "2.1 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 9 avr. 2025, 11_25_43.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%209%20avr.%202025%2C%2011_25_43.png",
-    "title": "Chatgpt Image 9 Avr. 2025, 11 25 43",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v007.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v007.png",
+    "title": "Hermine Logo Reference v007",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10692,9 +10604,9 @@
     "sizeLabel": "1.7 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 9 févr. 2026, 16_02_04.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%209%20f%C3%A9vr.%202026%2C%2016_02_04.png",
-    "title": "Chatgpt Image 9 Févr. 2026, 16 02 04",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v008.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v008.png",
+    "title": "Hermine Logo Reference v008",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10703,9 +10615,9 @@
     "sizeLabel": "2.6 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/ChatGPT Image 9 févr. 2026, 16_02_22.png",
-    "url": "../../media/visual/references/hermine-logos/ChatGPT%20Image%209%20f%C3%A9vr.%202026%2C%2016_02_22.png",
-    "title": "Chatgpt Image 9 Févr. 2026, 16 02 22",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v009.png",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v009.png",
+    "title": "Hermine Logo Reference v009",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -10714,9 +10626,9 @@
     "sizeLabel": "2.8 Mo"
   },
   {
-    "path": "media/visual/references/hermine-logos/DALL·E 2025-04-04 05.35.10 - A vibrant logo for an esports team named 'BZH power', featuring a white ermine. The color palette is black, white, and purple. The logo should be extr.webp",
-    "url": "../../media/visual/references/hermine-logos/DALL%C2%B7E%202025-04-04%2005.35.10%20-%20A%20vibrant%20logo%20for%20an%20esports%20team%20named%20'BZH%20power'%2C%20featuring%20a%20white%20ermine.%20The%20color%20palette%20is%20black%2C%20white%2C%20and%20purple.%20The%20logo%20should%20be%20extr.webp",
-    "title": "Dall·e 2025 04 04 05.35.10 A Vibrant Logo For An Esports Team Named 'bzh Power', Featuring A White Ermine. The Color Palette Is Black, White, And Purple. The Logo Should Be Extr",
+    "path": "media/visual/references/hermine-logos/hermine-logo-reference-v010.webp",
+    "url": "../../media/visual/references/hermine-logos/hermine-logo-reference-v010.webp",
+    "title": "Hermine Logo Reference v010",
     "collection": "References / Hermine Logos",
     "category": "References",
     "status": "reference",
@@ -11209,9 +11121,9 @@
     "sizeLabel": "405 Ko"
   },
   {
-    "path": "media/visual/references/leme/ChatGPT Image 20 avr. 2026, 23_16_53.png",
-    "url": "../../media/visual/references/leme/ChatGPT%20Image%2020%20avr.%202026%2C%2023_16_53.png",
-    "title": "Chatgpt Image 20 Avr. 2026, 23 16 53",
+    "path": "media/visual/references/leme/leme-reference-v001.png",
+    "url": "../../media/visual/references/leme/leme-reference-v001.png",
+    "title": "LEME Reference v001",
     "collection": "References / LEME",
     "category": "References",
     "status": "reference",
@@ -11220,9 +11132,9 @@
     "sizeLabel": "1.7 Mo"
   },
   {
-    "path": "media/visual/references/leme/ChatGPT Image 20 avr. 2026, 23_31_52.png",
-    "url": "../../media/visual/references/leme/ChatGPT%20Image%2020%20avr.%202026%2C%2023_31_52.png",
-    "title": "Chatgpt Image 20 Avr. 2026, 23 31 52",
+    "path": "media/visual/references/leme/leme-reference-v002.png",
+    "url": "../../media/visual/references/leme/leme-reference-v002.png",
+    "title": "LEME Reference v002",
     "collection": "References / LEME",
     "category": "References",
     "status": "reference",
@@ -11231,9 +11143,9 @@
     "sizeLabel": "1.4 Mo"
   },
   {
-    "path": "media/visual/references/leme/ChatGPT Image 21 avr. 2026, 00_12_24.png",
-    "url": "../../media/visual/references/leme/ChatGPT%20Image%2021%20avr.%202026%2C%2000_12_24.png",
-    "title": "Chatgpt Image 21 Avr. 2026, 00 12 24",
+    "path": "media/visual/references/leme/leme-reference-v003.png",
+    "url": "../../media/visual/references/leme/leme-reference-v003.png",
+    "title": "LEME Reference v003",
     "collection": "References / LEME",
     "category": "References",
     "status": "reference",
@@ -11242,9 +11154,9 @@
     "sizeLabel": "2.1 Mo"
   },
   {
-    "path": "media/visual/references/leme/ChatGPT Image 21 avr. 2026, 00_40_25.png",
-    "url": "../../media/visual/references/leme/ChatGPT%20Image%2021%20avr.%202026%2C%2000_40_25.png",
-    "title": "Chatgpt Image 21 Avr. 2026, 00 40 25",
+    "path": "media/visual/references/leme/leme-reference-v004.png",
+    "url": "../../media/visual/references/leme/leme-reference-v004.png",
+    "title": "LEME Reference v004",
     "collection": "References / LEME",
     "category": "References",
     "status": "reference",
@@ -11284,6 +11196,94 @@
     "type": "image",
     "size": 376714,
     "sizeLabel": "368 Ko"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
+    "title": "Bzhress Soiree Trio v001",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2610645,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
+    "title": "Bzhress Soiree Trio v002",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 3306525,
+    "sizeLabel": "3.2 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
+    "title": "Bzhress Soiree Trio v003",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2750270,
+    "sizeLabel": "2.6 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
+    "title": "Bzhress Soiree Trio v004",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 1502442,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
+    "title": "Bzhress Soiree Trio v005",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 1494657,
+    "sizeLabel": "1.4 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
+    "title": "Bzhress Soiree Trio v006",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 3068112,
+    "sizeLabel": "2.9 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
+    "title": "Bzhress Soiree Trio v007",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2290684,
+    "sizeLabel": "2.2 Mo"
+  },
+  {
+    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
+    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
+    "title": "Bzhress Soiree Trio v008",
+    "collection": "References / Soiree Trio",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 4446032,
+    "sizeLabel": "4.2 Mo"
   },
   {
     "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",

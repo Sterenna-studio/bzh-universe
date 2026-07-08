@@ -132,7 +132,7 @@ Une premiere passe BZH_RESS a classe les familles visuelles courtes hors videos 
 - `media/visual/wallpapers/bzh-ress/` — wallpapers.
 - `media/visual/merch/tapestries/bzh-ress/` — tentures.
 - `media/visual/merch/plush/` et `media/visual/merch/apparel/` — references merch.
-- `media/visual/references/gpt-soiree-trio/` — references de scene.
+- `media/visual/references/soiree-trio/` — references de scene.
 - `archives/html/bzhpw-lore/Sniky_BZH_Chronicles.html` — fiche HTML Sniky complementaire.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv` — mapping source/destination.
 

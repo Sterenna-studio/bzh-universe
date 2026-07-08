@@ -53,7 +53,7 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `visual/references/bzh-pw-lol-chronicles/` — references LoL Chronicles.
 - `visual/references/bzh-pw-wuxia/` — references Wuxia.
 - `visual/references/coloring-pages/` — coloriages personnages.
-- `visual/references/gpt-soiree-trio/` — references de scene du sous-lot BZH_RESS.
+- `visual/references/soiree-trio/` — references de scene du sous-lot BZH_RESS.
 - `visual/references/hermine-logos/` — references Hermine / BZH Power.
 - `visual/references/immmaaageg/` — references visuelles bzhpwimage immmaaageg.
 - `visual/references/leme/` — references LEME / Gwen Ha Star.
