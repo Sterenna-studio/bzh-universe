@@ -105,7 +105,7 @@
 - Les pages HTML, CSV, JSON, CSS, images et fichiers telecharges sont conserves comme snapshot brut de statistiques LoL.
 - Le lot est mis de cote : pas de lien direct depuis le wiki, pas de navigation publique dediee, pas de promotion dans la galerie media.
 - Aucun doublon exact detecte avec les fichiers deja suivis.
-- Le dossier source `LOL_TEAM_STATS/` a ete retire du sas local apres archivage.
+- Le dossier source `LOL_TEAM_STATS/` est conserve dans le sas local, verifie comme identique a l'archive brute.
 
 ## Traitement visuels courts realise
 - Perimetre traite : dossiers `Hermine`, `LEME`, `RTT`, `bzh_chr_album_wip` et visuels PNG racine.

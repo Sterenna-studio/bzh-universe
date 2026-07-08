@@ -53,7 +53,7 @@ Sous-lot LoL Team Stats traite :
 - lot mis de cote car il contient nos statistiques de jeu LoL ;
 - aucun lien direct depuis le wiki ou la navigation publique du hub ;
 - aucun doublon exact detecte avant copie ;
-- dossier source `LOL_TEAM_STATS/` retire du sas local apres archivage.
+- dossier source `LOL_TEAM_STATS/` conserve dans le sas local, verifie comme identique a l'archive brute.
 
 Sous-lots visuels courts traites :
 - 42 visuels uniques classes dans `assets/logos/` et `media/visual/` ;
