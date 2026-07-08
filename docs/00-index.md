@@ -16,6 +16,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 ## Entrees principales
 
 - [Accueil du hub](../hub/index.html)
+- [Contribution et guideline Git](../CONTRIBUTING.md)
 - [Inventaire source complet](01-inventaire-source.md)
 - [Chronologie](chronology/chronologie.md)
 - [Questions ouvertes](02-questions-ouvertes.md)
