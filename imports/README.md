@@ -46,14 +46,14 @@ Sous-lots audio Sniky / Dernier souffle traites :
 
 Nettoyage :
 - les dossiers vides generes par le tri ont ete supprimes du sas local ;
-- les elements restants dans `imports/2026-07-06-desktop-bzh/` sont a traiter ou a arbitrer.
+- les elements restants ont ete traites lors de la passe finale du sas Desktop BZH.
 
 Sous-lot LoL Team Stats traite :
 - 360 fichiers archives dans `archives/web/lol-team-stats/raw/` ;
 - lot mis de cote car il contient nos statistiques de jeu LoL ;
 - aucun lien direct depuis le wiki ou la navigation publique du hub ;
 - aucun doublon exact detecte avant copie ;
-- dossier source `LOL_TEAM_STATS/` conserve dans le sas local, verifie comme identique a l'archive brute.
+- dossier source `LOL_TEAM_STATS/` retire du sas local apres verification bit a bit contre l'archive brute.
 
 Sous-lots visuels courts traites :
 - 42 visuels uniques classes dans `assets/logos/` et `media/visual/` ;
@@ -72,19 +72,19 @@ Sous-lot BZH Chronicles traite :
 - 1 source Paint.NET conservee dans `archives/sources/webtoon/` ;
 - 5 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_CHRONICLES/` ;
 - 2 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/` ;
-- 116 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
+- 116 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`, puis retires du sas final.
 
 Sous-lot BZH_RESS visuels courts traite :
 - perimetre : `emote/`, `sticker/`, `poster/`, `wallpaper/` hors video, `chibiii plush/`, `chronicles_profil/`, `gpt_soirée_trio/` ;
 - 66 contenus promus vers `media/visual/` ou `archives/html/` ;
 - 4 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/` ;
 - 4 metadonnees Windows conservees dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/` ;
-- 7 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv` ;
+- 7 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv`, puis retires du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-moves.csv`.
 
 Racine BZH_RESS traitee :
 - 8 fichiers nouveaux classes : 5 visuels, 2 documents, 1 CSV de metadata ;
-- 4 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv` ;
+- 4 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`, puis retires du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` ;
 - `tmp1uphl2jq.mp4` reste reference dans l'index video reference-only, mais n'est plus present dans le sas local au controle de reprise du 2026-07-08.
 
@@ -96,20 +96,20 @@ Sous-lot BZH_RESS Montage images traite :
 
 Sous-lot bzhpwimage petits lots traite :
 - 17 visuels classes dans `media/visual/` ;
-- 1 doublon exact deja suivi reste dans le sas brut et est indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv` ;
+- 1 doublon exact deja suivi indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv`, puis retire du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-moves.csv`.
 
 Sous-lot bzhpwimage logos traite :
 - 173 visuels logo classes dans `assets/logos/bzh-chronicles/` ;
 - 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/` ;
-- 2 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv` ;
+- 2 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv`, puis retires du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-moves.csv`.
 
 Sous-lot bzhpwimage immmaaageg traite :
 - 42 references visuelles classees dans `media/visual/references/immmaaageg/` ;
 - 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/` ;
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/immmaaageg/` ;
-- 3 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv` ;
+- 3 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv`, puis retires du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-moves.csv`.
 
 Sous-lot bzhpwimage artwork traite :
@@ -117,13 +117,14 @@ Sous-lot bzhpwimage artwork traite :
 - 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/` ;
 - 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/` ;
 - 3 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/` ;
-- 8 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv` ;
+- 8 doublons exacts deja suivis indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv`, puis retires du sas final ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv` ;
-- 3 videos `.mp4` restent reference-only dans le sas.
+- 3 videos `.mp4` promues comme references video dans `media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/`.
 
-Controle residuel du sas :
-- `LOL_TEAM_STATS/` : 360 fichiers encore presents localement, verifies bit a bit comme identiques a `archives/web/lol-team-stats/raw/` ;
-- `BZH_CHRONICLES/` : 116 fichiers restants, tous couverts par le CSV de doublons deja suivis ;
-- `BZH_RESS/` : 25 fichiers non video restants, tous couverts par les CSV de doublons deja suivis ;
-- `BZH_RESS/` : 19 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion automatique en galerie ;
-- synthese conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
+Traitement final des 520 fichiers residuels :
+- `LOL_TEAM_STATS/` : 360 fichiers retires du sas apres verification bit a bit contre `archives/web/lol-team-stats/raw/` ;
+- `BZH_CHRONICLES/` : 116 fichiers retires du sas apres confirmation comme doublons deja suivis ;
+- `BZH_RESS/` : 25 fichiers non video retires du sas apres confirmation comme doublons deja suivis ;
+- `BZH_RESS/` : 19 videos `.mp4` promues dans `media/video/references/desktop-bzh/`, sans analyse de contenu ;
+- mapping videos conserve dans `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv` ;
+- synthese finale conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.

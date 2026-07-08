@@ -179,3 +179,11 @@
 - 25 fichiers non video `BZH_RESS` restants confirmes comme doublons deja suivis
 - 19 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
 - Synthese ajoutee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`
+
+## Ajouts V21
+- Traitement final des 520 fichiers residuels du sas Desktop BZH
+- 19 videos promues dans `media/video/references/desktop-bzh/` et exposees par la galerie media
+- 501 fichiers non video retires de `imports/` apres verification : archive LoL interne deja copiee et doublons exacts deja indexes
+- Page hub ajoutee : `docs/archives/import-desktop-bzh.md`
+- Mapping source/destination videos ajoute dans `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`
+- `imports/` ne contient plus que son README source et son HTML genere

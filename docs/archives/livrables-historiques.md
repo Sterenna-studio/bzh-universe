@@ -173,3 +173,16 @@ Le bloc `bzh_pw_artwork/` a ete classe hors videos :
 - `media/visual/webtoon/bzh-pw-webtoon/` — references webtoon.
 - `archives/sources/bzhpwimage/bzh_pw_artwork_source_v001.pdn` — source Paint.NET conservee.
 - `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv` — mapping source/destination.
+
+## 20. Traitement final du sas Desktop BZH
+Les 520 fichiers qui restaient dans `imports/2026-07-06-desktop-bzh/` ont ete traites :
+- 19 videos promues dans `media/video/references/desktop-bzh/`, avec des dossiers de destination derives des noms de dossiers source ;
+- 116 doublons exacts `BZH_CHRONICLES` retires du sas apres verification du CSV de doublons ;
+- 25 doublons exacts non video `BZH_RESS` retires du sas apres verification des CSV de doublons ;
+- 360 fichiers `LOL_TEAM_STATS` retires du sas apres verification bit a bit contre l'archive brute interne.
+
+Point d'entree hub :
+- `docs/archives/import-desktop-bzh.md`
+
+Mapping videos :
+- `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`

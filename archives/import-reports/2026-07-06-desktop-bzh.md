@@ -62,7 +62,8 @@
 ## Risques et decisions de tri
 - `BZH_RESS\Montage\BZH ANTHEM 2.mp4` fait 122,88 Mo : il depasse la limite GitHub standard de 100 Mo et ne doit pas etre commite en Git classique.
 - Git LFS est installe localement, mais le repo n'a pas encore de `.gitattributes` LFS.
-- Les videos restent reference-only : pas d'analyse de contenu, pas de promotion automatique dans la galerie.
+- Les videos ont d'abord ete indexees reference-only, sans analyse de contenu ni promotion automatique dans la galerie.
+- Les 19 videos residuelles encore presentes le 2026-07-08 ont ensuite ete promues comme references de hub sur demande, en conservant une logique par noms de dossiers source.
 - Les fichiers `.téléchargement`, fichiers sans extension des exports web, `.db`, `.ini` et `.lnk` doivent rester hors assets finaux.
 - `LOL_TEAM_STATS` ressemble a une archive web/statistique : a conserver comme archive documentaire ou export web, pas comme media final de galerie.
 - `BZH_TCG_Images` a ete traite comme lot TCG dedie.
@@ -97,15 +98,15 @@
 - Les fichiers audio traites ont ete retires de `imports/2026-07-06-desktop-bzh/BZH_RESS/Son/`.
 - Les fichiers audio des dossiers `Sniky The Frager Mix/` et `Dernier souffle/` ont ete retires du sas local apres classement.
 - Les dossiers vides du sas local ont ete supprimes.
-- Les videos de `BZH_RESS\Son` restent dans le sas comme references non traitees.
-- Le reste du lot Desktop BZH reste dans le sas pour tri ou arbitrage.
+- Les videos de `BZH_RESS\Son` ont ete promues comme references video lors du traitement final du sas.
+- Le reste du lot Desktop BZH a ete traite lors des passes suivantes, jusqu'au retrait du dossier de lot residuel.
 
 ## Traitement LoL Team Stats realise
 - 360 fichiers archives dans `archives/web/lol-team-stats/raw/`.
 - Les pages HTML, CSV, JSON, CSS, images et fichiers telecharges sont conserves comme snapshot brut de statistiques LoL.
 - Le lot est mis de cote : pas de lien direct depuis le wiki, pas de navigation publique dediee, pas de promotion dans la galerie media.
 - Aucun doublon exact detecte avec les fichiers deja suivis.
-- Le dossier source `LOL_TEAM_STATS/` est conserve dans le sas local, verifie comme identique a l'archive brute.
+- Le dossier source `LOL_TEAM_STATS/` a ete retire du sas local apres verification bit a bit contre l'archive brute.
 
 ## Traitement visuels courts realise
 - Perimetre traite : dossiers `Hermine`, `LEME`, `RTT`, `bzh_chr_album_wip` et visuels PNG racine.
@@ -135,7 +136,7 @@ Doublons exacts internes :
 - Perimetre traite : `imports/2026-07-06-desktop-bzh/BZH_CHRONICLES/`.
 - 151 fichiers examines, sans video.
 - 116 fichiers sont des doublons exacts deja suivis dans `assets/`, `media/` ou `archives/`.
-- Ces 116 doublons ne sont pas recopies ; ils restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
+- Ces 116 doublons ne sont pas recopies ; ils sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`, puis retires du sas final.
 - 35 fichiers nouveaux traites : 27 visuels ou assets classes, 1 source Paint.NET conservee, 2 metadonnees Windows conservees, 5 copies doublons exactes internes archivees.
 
 Destinations :
@@ -156,10 +157,10 @@ Doublons exacts internes :
 ## Traitement BZH_RESS visuels courts realise
 - Perimetre traite : `emote/`, `sticker/`, `poster/`, `wallpaper/` hors video, `chibiii plush/`, `chronicles_profil/` et `gpt_soirée_trio/`.
 - 81 fichiers non video examines.
-- 7 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- 7 fichiers sont des doublons exacts deja suivis.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-visuals-duplicates.csv`.
 - 74 fichiers nouveaux traites : 66 contenus promus ou archives, 4 metadonnees Windows conservees, 4 copies doublons exactes internes archivees.
-- La video `BZH_RESS/wallpaper/732cc349-54b2-4a49-92f4-01cded1f0342.mp4` reste reference-only dans le sas.
+- La video `BZH_RESS/wallpaper/732cc349-54b2-4a49-92f4-01cded1f0342.mp4` a ete promue comme reference video lors du traitement final.
 
 Destinations :
 - `media/visual/social/emotes/bzh-ress/` — 23 emotes et avatars.
@@ -181,7 +182,7 @@ Trace de renommage :
 ## Traitement BZH_RESS racine realise
 - Perimetre traite : fichiers poses directement dans `imports/2026-07-06-desktop-bzh/BZH_RESS/`, hors video.
 - 12 fichiers non video examines.
-- 4 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- 4 fichiers sont des doublons exacts deja suivis.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`.
 - 8 fichiers nouveaux traites : 5 visuels classes, 2 documents conserves, 1 CSV de metadata conserve.
 - La video `BZH_RESS/tmp1uphl2jq.mp4` reste referencee dans l'index video reference-only ; elle n'est plus presente dans le sas local au controle de reprise du 2026-07-08.
@@ -218,7 +219,7 @@ Trace de renommage :
 - Perimetre traite : `bzhpwimage/bzh_pw_album_cover/`, `bzhpwimage/bzh_pw_rd_art/` et les 2 coloriages racine de `bzhpwimage/`.
 - 18 fichiers examines.
 - 17 visuels promus dans `media/visual/`.
-- 1 fichier est un doublon exact deja suivi et reste dans le sas brut.
+- 1 fichier est un doublon exact deja suivi.
 - Le doublon deja suivi est indexe dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-small-duplicates.csv`.
 
 Destinations :
@@ -234,7 +235,7 @@ Trace de renommage :
 - 176 fichiers examines.
 - 173 visuels logo promus dans `assets/logos/bzh-chronicles/`.
 - 1 source Paint.NET conservee dans `archives/sources/logos/bzh-chronicles/`.
-- 2 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- 2 fichiers sont des doublons exacts deja suivis.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-logo-duplicates.csv`.
 
 Destinations :
@@ -253,7 +254,7 @@ Trace de renommage :
 - 42 references visuelles promues dans `media/visual/references/immmaaageg/`.
 - 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/`.
 - 1 copie doublon exacte interne conservee dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/immmaaageg/`.
-- 3 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- 3 fichiers sont des doublons exacts deja suivis.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-immmaaageg-duplicates.csv`.
 
 Trace de renommage :
@@ -261,12 +262,12 @@ Trace de renommage :
 
 ## Traitement bzhpwimage artwork realise
 - Perimetre traite : fichiers non video de `bzhpwimage/bzh_pw_artwork/`.
-- 217 fichiers non video examines ; 3 videos `.mp4` restent reference-only dans le sas.
+- 217 fichiers non video examines ; 3 videos `.mp4` promues comme references video lors du traitement final.
 - 204 visuels promus dans `media/visual/`.
 - 1 source Paint.NET conservee dans `archives/sources/bzhpwimage/`.
 - 1 raccourci Windows conserve dans `archives/import-metadata/2026-07-06/imports/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`.
 - 3 copies doublons exactes internes conservees dans `archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/`.
-- 8 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
+- 8 fichiers sont des doublons exacts deja suivis.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-duplicates.csv`.
 
 Destinations :
@@ -286,15 +287,17 @@ Destinations :
 Trace de renommage :
 - Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzhpwimage-artwork-moves.csv`.
 
-## Controle residuel du sas
-- `LOL_TEAM_STATS/` contient encore 360 fichiers dans le sas local ; tous les hashes correspondent a `archives/web/lol-team-stats/raw/`.
-- `BZH_CHRONICLES/` contient 116 fichiers restants ; tous les chemins sont indexes dans `2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
-- `BZH_RESS/` contient 25 fichiers non video restants ; tous les chemins sont indexes dans les CSV de doublons BZH_RESS / bzhpwimage.
-- `BZH_RESS/` contient 19 videos `.mp4` reference-only, pour 65 011 251 octets ; aucune analyse de contenu ni extraction n'a ete faite.
-- La synthese machine-readable est conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
+## Traitement final du sas
+- 520 fichiers residuels ont ete traites apres re-mesure.
+- `LOL_TEAM_STATS/` : 360 fichiers retires du sas apres verification bit a bit contre `archives/web/lol-team-stats/raw/`.
+- `BZH_CHRONICLES/` : 116 fichiers retires du sas ; tous les chemins etaient indexes dans `2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
+- `BZH_RESS/` non video : 25 fichiers retires du sas ; tous les chemins etaient indexes dans les CSV de doublons BZH_RESS / bzhpwimage.
+- `BZH_RESS/` videos : 19 videos `.mp4`, 65 011 251 octets, promues comme references dans `media/video/references/desktop-bzh/`.
+- Les videos ont ete classees par noms de dossiers source, sans analyse de contenu, transcription, miniature ni extraction.
+- Le mapping source/destination est conserve dans `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`.
+- La synthese machine-readable finale est conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
+- Le dossier `imports/2026-07-06-desktop-bzh/` a ete vide puis retire ; `imports/` ne contient plus que son README source et son HTML genere.
 
-## Recommandation de suite
-1. Le sas residuel actuel est versionnable en Git classique : aucun fichier restant ne depasse 100 Mo.
-2. Les fichiers non video restants sont deja archives ou indexes comme doublons deja suivis.
-3. Ne pas analyser les videos : les conserver comme references de lot, sans extraction de contenu ni promotion automatique en galerie.
-4. Garder le sas Desktop BZH comme trace d'import residuelle, distincte des assets finaux.
+## Point hub
+- Page de synthese : `docs/archives/import-desktop-bzh.md`
+- Galerie media : `media/gallery/index.html`

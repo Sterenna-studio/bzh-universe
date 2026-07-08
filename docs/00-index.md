@@ -46,6 +46,7 @@
 
 ## Archives et compléments V2
 - [Livrables historiques connus](archives/livrables-historiques.md)
+- [Integration du lot Desktop BZH](archives/import-desktop-bzh.md)
 - [Paroles, scripts et chansons](media/paroles-scripts-et-chansons.md)
 - [Plan d’EP et publication](media/plan-ep-et-publication.md)
 - [Textes promo et communication](media/communication-et-annonces.md)

@@ -21,6 +21,13 @@ Les médias historiques ne sont pas tous disponibles dans ce ZIP, mais le catalo
 - `audio/tracks/sniky-the-frager-mix/` — variantes MP3 Sniky importees depuis le lot Desktop BZH.
 - `audio/tracks/dernier-souffle/` — pistes et variantes MP3 Dernier souffle / Echo Vide / Fantome de Chair.
 
+## Videos de reference classees
+- `video/references/desktop-bzh/bzhpwimage/` — videos de reference issues du dossier `BZH_RESS/bzhpwimage/`.
+- `video/references/desktop-bzh/bzh-pw-wallpaper-aligax/` — references video Aligax issues du dossier `bzh_pw_wallpaper_aligax/`.
+- `video/references/desktop-bzh/chibi-bzh-power-decembre-2024/` — videos courtes du dossier `chibi bzh power decembre 2024/`.
+- `video/references/desktop-bzh/son/` — exports video associes au dossier `BZH_RESS/Son/`.
+- `video/references/desktop-bzh/wallpaper/` — reference video issue du dossier `wallpaper/`.
+
 ## Visuels classes
 - `visual/covers/bzh-pw-album-cover/` — covers et teasers album BZH Power.
 - `visual/covers/bzh-pw-song-cover/` — covers de morceaux BZH Power.

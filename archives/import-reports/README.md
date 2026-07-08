@@ -4,3 +4,4 @@ Ce dossier conserve les rapports d'analyse des lots externes copies dans le sas 
 
 - [Lot Desktop BZH - 2026-07-06](2026-07-06-desktop-bzh.md)
 - [Index videos reference-only du lot Desktop BZH](2026-07-06-desktop-bzh-videos.csv)
+- [Mapping videos promues du sas Desktop BZH](2026-07-06-desktop-bzh-video-promotions.csv)

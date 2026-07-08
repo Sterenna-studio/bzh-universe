@@ -114,6 +114,14 @@
 - `media/audio/masters/` — 4 masters WAV.
 - Aucun doublon exact detecte avec les medias deja suivis.
 
+### Import 2026-07-06 — Desktop BZH / traitement final du sas
+- 520 fichiers residuels traites apres verification.
+- 19 videos `BZH_RESS` promues comme references dans `media/video/references/desktop-bzh/`.
+- Dossiers exposes par nom de famille source : `bzhpwimage/`, `bzh-pw-wallpaper-aligax/`, `chibi-bzh-power-decembre-2024/`, `son/`, `wallpaper/`.
+- 116 doublons `BZH_CHRONICLES` et 25 doublons non video `BZH_RESS` retires du sas apres couverture CSV.
+- 360 fichiers `LOL_TEAM_STATS` conserves comme archive interne mise de cote, sans lien direct depuis le hub public.
+- Mapping complet : `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`.
+
 ## Audio
 - Sniky: The Frager
 - Aligax: Digital Maiden
