@@ -1,5 +1,11 @@
 # BZH PW PC HUB 3D
 
+## Statut dans le hub
+- Type : projet technique / interface.
+- Statut : `prototype` documente.
+- Attention : ne pas confondre avec le hub statique actuel ; cette page documente les pistes PC 3D, Minitel et Telnet/WebSocket.
+- Entree pivot : [Carte des projets](../00-carte-des-projets.md).
+
 ## Éléments évoqués
 - Three.js
 - `hub_ws.py`
@@ -53,6 +59,20 @@ Fonctions :
 
 ## Outil complémentaire
 - `convert_img_to_vdt_tool.zip`
+
+## Rattachements utiles
+
+| Axe | Lien | Statut |
+| --- | --- | --- |
+| Archives | [Livrables historiques](../../archives/livrables-historiques.md) | `archive` |
+| Sources | [Citations projets techniques](../../sources/messages-originaux/06-projets-techniques.md) | provenance |
+| Interface actuelle | [Index documentaire](../../00-index.md), [Mini-site BZH POWER](../../web/mini-site-bzh-power.md) | contexte |
+| Direction | [Direction artistique](../../identity/direction-artistique.md), [Symboles et motifs](../../identity/symboles-et-motifs.md) | `reference` |
+
+## A lire ensuite
+- [Runner Haste](../runner-haste/README.md)
+- [Bateau BZH POWER](../bateau-bzh-power/README.md)
+- [Statuts canon et usage](../../identity/statuts-canon.md)
 
 ## Citations sources associées
 Voir :

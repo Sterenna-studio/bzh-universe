@@ -2,6 +2,16 @@
 
 Ce document liste les livrables mentionnés dans les anciens échanges, même lorsqu’ils ne sont pas physiquement inclus dans ce ZIP.
 
+## Index projet / livrable
+
+| Projet | Livrable ou trace | Page wiki | Statut |
+| --- | --- | --- | --- |
+| BZH Card Game | `data/tcg/BZH01.json`, visuels `assets/cards/` | [BZH Card Game](../projects/bzh-card-game/README.md) | `canon` / `a confirmer` |
+| bzh-chronicles-roguelite | `bzh-chronicles-roguelite-v3_1.zip` | [Roguelite](../projects/roguelite/README.md) | `archive` / `prototype` |
+| BZH PW PC HUB 3D | `minitel_hub_beta.zip`, `MINI-STAR_v1.1.zip` | [Minitel HUB 3D](../projects/minitel-hub-3d/README.md) | `archive` / `prototype` |
+| Runner BZH | notes de design runner / visualizer | [Runner Haste](../projects/runner-haste/README.md) | `piste` |
+| Pirate Chronicles | animation frégate BZH POWER | [Bateau BZH POWER](../projects/bateau-bzh-power/README.md) | `piste` |
+
 ## 1. Prototypes / ZIP techniques
 ### Roguelite BZH Chronicles
 - `bzh-chronicles-roguelite-v3_1.zip`

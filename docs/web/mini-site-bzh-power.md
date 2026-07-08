@@ -1,5 +1,10 @@
 # Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés
 
+## Statut dans le hub
+- Type : page web historique / prototype editorial.
+- Statut : `archive` pour les fragments retrouves, `reference` pour les intentions de presentation.
+- Entree projet : [Carte des projets](../projects/00-carte-des-projets.md).
+
 ## 1. Hero / bannière
 ### Asset de fond
 - `http://sterenna.fr/wp-content/uploads/2024/07/chronicles_city.webp`
@@ -56,3 +61,12 @@ web/legacy/
 Deux pages HTML historiques/prototypes ont ete classees dans `web/legacy/` :
 - `web/legacy/bzh-games-history.html` — page statique "Histoire des jeux video - BZH CHRONICLES" ;
 - `web/legacy/bzh-games-carousel.html` — version carousel avec images externes et musique de fond historique.
+
+## Rattachements utiles
+
+| Axe | Lien | Statut |
+| --- | --- | --- |
+| Univers | [Vision globale](../universe/00-vision-globale.md), [Personnages](../universe/personnages.md) | `canon` / presentation |
+| Musique | [Musique et albums](../media/musique-et-albums.md), [Plan EP](../media/plan-ep-et-publication.md) | `a confirmer` |
+| Medias | [Catalogue medias](../../media/catalog/media-catalog.md), [Galerie media](../../media/gallery/index.html) | `reference` |
+| Archives | [Livrables historiques](../archives/livrables-historiques.md) | `archive` |

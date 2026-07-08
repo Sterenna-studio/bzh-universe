@@ -11,6 +11,17 @@ Cette carte donne une entree rapide par projet. Le statut indique le niveau de m
 | Certificats | Artefacts | `archive` / production possible | [Attestation d'Ancien](../certificates/attestation-ancien.md) | [Livrables historiques](../archives/livrables-historiques.md) |
 | bzh-chronicles-roguelite | Prototype | `prototype` documente | [Roguelite](roguelite/README.md) | [Mini-site BZH POWER](../web/mini-site-bzh-power.md) |
 | BZH PW PC HUB 3D | Projet technique | `prototype` documente | [Minitel HUB 3D](minitel-hub-3d/README.md) | [Bateau BZH POWER](bateau-bzh-power/README.md), [Runner Haste](runner-haste/README.md) |
+| Runner BZH / adaptation Haste | Prototype jeu | `piste` / game design | [Runner Haste](runner-haste/README.md) | [Le Code](../universe/le-code.md), [Musique et albums](../media/musique-et-albums.md) |
+| Animation BZH POWER - Pirate Chronicles | Animation / direction visuelle | `piste` | [Bateau BZH POWER](bateau-bzh-power/README.md) | [Catalogue medias](../../media/catalog/media-catalog.md), [Prompts visuels](../prompts/prompts-visuels.md) |
+
+## Lecture par maturite
+
+| Besoin | Lire |
+| --- | --- |
+| Noyau canon | [Vision globale](../universe/00-vision-globale.md), [Personnages](../universe/personnages.md), [BZH01](bzh-card-game/cards.md) |
+| Prototypes jouables ou techniques | [Roguelite](roguelite/README.md), [Runner Haste](runner-haste/README.md), [Minitel HUB 3D](minitel-hub-3d/README.md) |
+| Production media | [Musique et albums](../media/musique-et-albums.md), [Mini-site BZH POWER](../web/mini-site-bzh-power.md), [Catalogue medias](../../media/catalog/media-catalog.md) |
+| Archives a ne pas sur-vendre | [Livrables historiques](../archives/livrables-historiques.md), [Statuts canon](../identity/statuts-canon.md) |
 
 ## Priorites de consolidation
 

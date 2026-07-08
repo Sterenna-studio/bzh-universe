@@ -212,3 +212,8 @@
 - Rattachements croises ajoutes pour Spirit, Spike, Dr. Sorn, Gabilone / Gabylon et Titan.
 - Pivot personnages enrichi avec les relations fiables a garder visibles.
 - Musique et catalogue media alignes avec `Spirit's Rage`, `Titan: The Guardian Hound`, Spirit / Spike et Sniky / Titan.
+
+## Ajouts V27
+- Carte des projets enrichie avec Runner BZH et Pirate Chronicles.
+- Fiches projets renforcees avec statut, rattachements utiles et suites de lecture.
+- Livrables historiques relies aux pages projet pour distinguer archive, prototype, piste et canon.

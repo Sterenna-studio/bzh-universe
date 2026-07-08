@@ -1126,8 +1126,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/projects/bzh-card-game/README.html",
     "path": "docs/projects/bzh-card-game/README.md",
     "section": "Projets",
-    "summary": "BZH CARD GAME: Power Your Hand Gameplay retenu 15 HP 20 cartes par deck 1 Champion +1 mana par tour Pas d’affinités Types de cartes Champions Companions Terrains Objects Events Specials Duos / Trio / Team Mythical / Lege",
-    "keywords": "docs projects bzh card game README md BZH CARD GAME: Power Your Hand Gameplay retenu Types de cartes Set initial Visuels classes Cartes principales Direction visuelle Citations sources associées"
+    "summary": "BZH CARD GAME: Power Your Hand Statut dans le hub Type : jeu de cartes / TCG. Statut : canon pour le principe BZH01, decisions de regles encore a completer. Entree pivot : Carte des projets. Gameplay retenu 15 HP 20 cart",
+    "keywords": "docs projects bzh card game README md BZH CARD GAME: Power Your Hand Statut dans le hub Gameplay retenu Types de cartes Set initial Visuels classes Rattachements utiles Cartes principales"
   },
   {
     "id": 25,
@@ -1506,8 +1506,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/projects/minitel-hub-3d/README.html",
     "path": "docs/projects/minitel-hub-3d/README.md",
     "section": "Projets",
-    "summary": "BZH PW PC HUB 3D Éléments évoqués Three.js hub ws.py telnet ws bridge.py vdt archive cockpit / console HUD triskel / sigil panneaux holographiques palette override data-dust Minitel Hub Beta — architecture retrouvée Livr",
-    "keywords": "docs projects minitel hub 3d README md BZH PW PC HUB 3D Éléments évoqués Minitel Hub Beta — architecture retrouvée Fonctionnement documenté Fonctions clés identifiées MINI-STAR v1.1 — éléments ajoutés Outil complémentaire Citations sources associées"
+    "summary": "BZH PW PC HUB 3D Statut dans le hub Type : projet technique / interface. Statut : prototype documente. Attention : ne pas confondre avec le hub statique actuel ; cette page documente les pistes PC 3D, Minitel et Telnet/W",
+    "keywords": "docs projects minitel hub 3d README md BZH PW PC HUB 3D Statut dans le hub Éléments évoqués Minitel Hub Beta — architecture retrouvée Fonctionnement documenté Fonctions clés identifiées MINI-STAR v1.1 — éléments ajoutés Outil complémentaire"
   },
   {
     "id": 820,
@@ -1626,8 +1626,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/projects/roguelite/README.html",
     "path": "docs/projects/roguelite/README.md",
     "section": "Projets",
-    "summary": "bzh-chronicles-roguelite Éléments évoqués version v3.1 game.js index.html Game feel recoil 0.20 +0.05 par upgrade hitstop conditionnel sur boss / élites barre d’énergie secondaire icônes UI d’upgrades shards confinés dan",
-    "keywords": "docs projects roguelite README md bzh-chronicles-roguelite Éléments évoqués Game feel Détails retrouvés — v3.1 Changements signalés Détails retrouvés — v3.2 Direction de design"
+    "summary": "bzh-chronicles-roguelite Statut dans le hub Type : prototype jeu. Statut : prototype documente, a ne pas presenter comme version finale. Livraison historique associee : bzh-chronicles-roguelite-v3 1.zip. Entree pivot : C",
+    "keywords": "docs projects roguelite README md bzh-chronicles-roguelite Statut dans le hub Éléments évoqués Game feel Détails retrouvés — v3.1 Changements signalés Détails retrouvés — v3.2 Direction de design"
   },
   {
     "id": 83,
@@ -8997,7 +8997,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "docs/projects/00-carte-des-projets.md",
     "section": "Projets",
     "summary": "Carte des projets Cette carte donne une entree rapide par projet. Le statut indique le niveau de maturite dans le wiki, pas une validation commerciale. Projet Type Statut wiki Entree principale A lire ensuite --- --- ---",
-    "keywords": "docs projects 00 carte des projets md Carte des projets Priorites de consolidation"
+    "keywords": "docs projects 00 carte des projets md Carte des projets Lecture par maturite Priorites de consolidation"
   },
   {
     "id": 18,
@@ -10686,8 +10686,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/archives/livrables-historiques.html",
     "path": "docs/archives/livrables-historiques.md",
     "section": "Archives",
-    "summary": "Livrables historiques connus à rattacher au HUB Ce document liste les livrables mentionnés dans les anciens échanges, même lorsqu’ils ne sont pas physiquement inclus dans ce ZIP. Prototypes / ZIP techniques Roguelite BZH",
-    "keywords": "docs archives livrables historiques md Livrables historiques connus à rattacher au HUB 1. Prototypes / ZIP techniques Roguelite BZH Chronicles Minitel / Hub 2. Documents événementiels 3. Gravure / motifs 4. Attestations / certificats 5. Limite actuelle"
+    "summary": "Livrables historiques connus à rattacher au HUB Ce document liste les livrables mentionnés dans les anciens échanges, même lorsqu’ils ne sont pas physiquement inclus dans ce ZIP. Index projet / livrable Projet Livrable o",
+    "keywords": "docs archives livrables historiques md Livrables historiques connus à rattacher au HUB Index projet / livrable 1. Prototypes / ZIP techniques Roguelite BZH Chronicles Minitel / Hub 2. Documents événementiels 3. Gravure / motifs 4. Attestations / certificats"
   },
   {
     "id": 508,
@@ -10766,8 +10766,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/web/mini-site-bzh-power.html",
     "path": "docs/web/mini-site-bzh-power.md",
     "section": "Wiki",
-    "summary": "Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés Hero / bannière Asset de fond http://sterenna.fr/wp-content/uploads/2024/07/chronicles city.webp Contenu titre : BZH POWER style : lettres pixel art",
-    "keywords": "docs web mini site bzh power md Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés 1. Hero / bannière Asset de fond Contenu Interactions présentes dans l’ancien bloc 2. Bloc lecteur musique Fonctionnement récupéré Exemples de médias cités dans ce vieux bloc"
+    "summary": "Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés Statut dans le hub Type : page web historique / prototype editorial. Statut : archive pour les fragments retrouves, reference pour les intentions de",
+    "keywords": "docs web mini site bzh power md Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés Statut dans le hub 1. Hero / bannière Asset de fond Contenu Interactions présentes dans l’ancien bloc 2. Bloc lecteur musique Fonctionnement récupéré"
   },
   {
     "id": 59,
@@ -11416,8 +11416,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/projects/bateau-bzh-power/README.html",
     "path": "docs/projects/bateau-bzh-power/README.md",
     "section": "Projets",
-    "summary": "Prototype / animation — BZH POWER & Pirate Chronicles Idée retrouvée Animation d’une frégate nommée BZH POWER avec le titre : PIRATE CHRONICLES formé dans les nuages. Pistes visuelles registre épique ; imagerie aventure ",
-    "keywords": "docs projects bateau bzh power README md Prototype / animation — BZH POWER & Pirate Chronicles Idée retrouvée Pistes visuelles"
+    "summary": "Prototype / animation — BZH POWER & Pirate Chronicles Statut dans le hub Type : animation / direction visuelle. Statut : piste, a ne pas traiter comme projet final valide. Entree pivot : Carte des projets. Idée retrouvée",
+    "keywords": "docs projects bateau bzh power README md Prototype / animation — BZH POWER & Pirate Chronicles Statut dans le hub Idée retrouvée Pistes visuelles Rattachements utiles A lire ensuite"
   },
   {
     "id": 90,
@@ -11426,8 +11426,8 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "url": "docs/projects/runner-haste/README.html",
     "path": "docs/projects/runner-haste/README.md",
     "section": "Projets",
-    "summary": "Prototype runner BZH / adaptation Haste Concept retrouvé Projet de jeu 2D side-scroller auto-run inspiré de Haste . Principes clés jump ; dash / boost ; momentum ; système de perfect landing ; terrain procédural ; menace",
-    "keywords": "docs projects runner haste README md Prototype runner BZH / adaptation Haste Concept retrouvé Principes clés Mode visualizer prévu Intention"
+    "summary": "Prototype runner BZH / adaptation Haste Statut dans le hub Type : prototype jeu / game design. Statut : piste, base de design a consolider. Entree pivot : Carte des projets. Concept retrouvé Projet de jeu 2D side-scrolle",
+    "keywords": "docs projects runner haste README md Prototype runner BZH / adaptation Haste Statut dans le hub Concept retrouvé Principes clés Mode visualizer prévu Intention Rattachements utiles A lire ensuite"
   },
   {
     "id": 95,
