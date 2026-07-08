@@ -177,5 +177,5 @@
 - 360 fichiers `LOL_TEAM_STATS` verifies comme identiques a l'archive `archives/web/lol-team-stats/raw/`
 - 116 fichiers `BZH_CHRONICLES` restants confirmes comme doublons deja suivis
 - 25 fichiers non video `BZH_RESS` restants confirmes comme doublons deja suivis
-- 156 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
+- 155 videos `BZH_RESS` conservees reference-only, sans analyse de contenu
 - Synthese ajoutee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`

@@ -184,7 +184,7 @@ Trace de renommage :
 - 4 fichiers sont des doublons exacts deja suivis et restent dans le sas brut.
 - Les doublons deja suivis sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv`.
 - 8 fichiers nouveaux traites : 5 visuels classes, 2 documents conserves, 1 CSV de metadata conserve.
-- La video `BZH_RESS/tmp1uphl2jq.mp4` reste reference-only dans le sas.
+- La video `BZH_RESS/tmp1uphl2jq.mp4` reste referencee dans l'index video reference-only ; elle n'est plus presente dans le sas local au controle de reprise du 2026-07-08.
 
 Destinations :
 - `media/visual/references/steam-escape-game/` — 2 photos de reference.
@@ -290,7 +290,7 @@ Trace de renommage :
 - `LOL_TEAM_STATS/` contient encore 360 fichiers dans le sas local ; tous les hashes correspondent a `archives/web/lol-team-stats/raw/`.
 - `BZH_CHRONICLES/` contient 116 fichiers restants ; tous les chemins sont indexes dans `2026-07-06-desktop-bzh-bzh-chronicles-duplicates.csv`.
 - `BZH_RESS/` contient 25 fichiers non video restants ; tous les chemins sont indexes dans les CSV de doublons BZH_RESS / bzhpwimage.
-- `BZH_RESS/` contient 156 videos `.mp4` reference-only, pour 985 523 772 octets ; aucune analyse de contenu ni extraction n'a ete faite.
+- `BZH_RESS/` contient 155 videos `.mp4` reference-only, pour 985 103 279 octets ; aucune analyse de contenu ni extraction n'a ete faite.
 - La synthese machine-readable est conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
 
 ## Recommandation de suite

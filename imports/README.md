@@ -85,7 +85,7 @@ Racine BZH_RESS traitee :
 - 8 fichiers nouveaux classes : 5 visuels, 2 documents, 1 CSV de metadata ;
 - 4 doublons exacts deja suivis restent dans le sas brut et sont indexes dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-duplicates.csv` ;
 - mapping source/destination conserve dans `archives/import-reports/2026-07-06-desktop-bzh-bzh-ress-root-moves.csv` ;
-- `tmp1uphl2jq.mp4` reste reference-only dans le sas.
+- `tmp1uphl2jq.mp4` reste reference dans l'index video reference-only, mais n'est plus present dans le sas local au controle de reprise du 2026-07-08.
 
 Sous-lot BZH_RESS Montage images traite :
 - 42 images fixes classees dans `media/visual/references/` ;
@@ -124,5 +124,5 @@ Controle residuel du sas :
 - `LOL_TEAM_STATS/` : 360 fichiers encore presents localement, verifies bit a bit comme identiques a `archives/web/lol-team-stats/raw/` ;
 - `BZH_CHRONICLES/` : 116 fichiers restants, tous couverts par le CSV de doublons deja suivis ;
 - `BZH_RESS/` : 25 fichiers non video restants, tous couverts par les CSV de doublons deja suivis ;
-- `BZH_RESS/` : 156 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion Git classique ;
+- `BZH_RESS/` : 155 videos `.mp4` restent reference-only, sans analyse de contenu ni promotion Git classique ;
 - synthese conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
