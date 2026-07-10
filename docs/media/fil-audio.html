@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fil audio - BZH Universe</title>
+<link rel="stylesheet" href="../../assets/site/wiki.css">
+<script defer src="../../assets/site/wiki-search-index.js"></script>
+<script defer src="../../assets/site/wiki.js"></script>
+<script defer src="../../assets/site/audio-player.js" data-bzh-playlist="../../media/audio/playlist.json"></script>
+<style>
+  /* ── Stats bar ── */
+  .audio-stats {
+    display: flex; flex-wrap: wrap; gap: .5rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .stat-chip {
+    display: inline-flex; align-items: center; gap: .35rem;
+    padding: .3rem .75rem;
+    border-radius: 10px;
+    font-size: .78rem; font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .stat-chip.total  { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); color: var(--c-text, #e0e0ff); }
+  .stat-chip.canon  { background: rgba(0,200,100,.10); border-color: rgba(0,200,100,.30); color: #00c864; }
+  .stat-chip.confirmer { background: rgba(123,47,255,.12); border-color: rgba(123,47,255,.30); color: var(--c-accent, #7b2fff); }
+  .stat-chip.archive  { background: rgba(180,120,40,.12); border-color: rgba(180,120,40,.30); color: #c8882a; }
+  .stat-chip.concept  { background: rgba(80,160,220,.12); border-color: rgba(80,160,220,.30); color: #50a0dc; }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+    display: flex; flex-wrap: wrap; gap: .5rem;
+    margin-bottom: 1.25rem;
+  }
+  .filter-btn {
+    padding: .3rem .9rem;
+    border-radius: 10px;
+    font-size: .8rem; font-weight: 600;
+    border: 1px solid rgba(255,255,255,.15);
+    background: transparent;
+    color: var(--c-text-muted, #aaa);
+    cursor: pointer;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .filter-btn:hover { background: rgba(255,255,255,.06); }
+  .filter-btn.active {
+    background: var(--c-accent, #7b2fff);
+    border-color: var(--c-accent, #7b2fff);
+    color: #fff;
+  }
+  .filter-btn[data-filter="canon"].active    { background: #00a853; border-color: #00a853; }
+  .filter-btn[data-filter="a confirmer"].active { background: #5b1fc8; border-color: #5b1fc8; }
+  .filter-btn[data-filter="archive"].active  { background: #9a6010; border-color: #9a6010; }
+  .filter-btn[data-filter="concept"].active  { background: #1e6fa0; border-color: #1e6fa0; }
+
+  /* ── Nav cards ── */
+  .nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+    gap: .75rem;
+    margin: 1.5rem 0;
+  }
+  .nav-card {
+    display: flex; flex-direction: column; gap: .25rem;
+    padding: .85rem 1rem;
+    background: var(--c-bg-alt, rgba(255,255,255,.03));
+    border: 1px solid var(--c-border, rgba(255,255,255,.08));
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--c-text, #e0e0ff);
+    transition: border-color .15s, background .15s;
+  }
+  .nav-card:hover {
+    border-color: var(--c-accent, #7b2fff);
+    background: rgba(123,47,255,.06);
+  }
+  .nav-card-label { font-size: .7rem; opacity: .5; text-transform: uppercase; letter-spacing: .06em; }
+  .nav-card-title { font-size: .95rem; font-weight: 600; }
+  .nav-card-desc  { font-size: .78rem; opacity: .6; margin-top: .1rem; }
+
+  /* ── Track list ── */
+  .track-list { list-style: none; padding: 0; margin: .75rem 0 1.5rem; display: flex; flex-direction: column; gap: .45rem; }
+  .track-item {
+    display: flex; align-items: center; gap: .6rem;
+    padding: .45rem .7rem;
+    background: var(--c-bg-alt, rgba(255,255,255,.03));
+    border: 1px solid var(--c-border, rgba(255,255,255,.08));
+    border-radius: 6px;
+    font-size: .9rem;
+    transition: border-color .15s;
+  }
+  .track-item[hidden] { display: none; }
+  .track-item:hover { border-color: var(--c-accent, #7b2fff); }
+  .track-item.is-now-playing { border-color: var(--c-accent, #7b2fff); background: rgba(123,47,255,.08); }
+  .track-num  { opacity: .35; font-size: .75rem; width: 1.6em; text-align: right; flex-shrink: 0; }
+  .track-meta { flex: 1; min-width: 0; }
+  .track-title  { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .track-style  { font-size: .72rem; opacity: .5; margin-top: .1rem; }
+  .track-status {
+    font-size: .68rem; padding: .1rem .45rem; border-radius: 10px;
+    background: rgba(123,47,255,.15); color: var(--c-accent, #7b2fff);
+    border: 1px solid rgba(123,47,255,.3); flex-shrink: 0;
+  }
+  .track-status.canon    { background: rgba(0,200,100,.10); color: #00c864; border-color: rgba(0,200,100,.3); }
+  .track-status.archive  { background: rgba(180,120,40,.12); color: #c8882a; border-color: rgba(180,120,40,.3); }
+  .track-status.concept  { background: rgba(80,160,220,.12); color: #50a0dc; border-color: rgba(80,160,220,.3); }
+  .track-btns { display: flex; gap: .4rem; flex-shrink: 0; }
+  .track-btns a {
+    font-size: .75rem; padding: .15rem .5rem;
+    border-radius: 4px; border: 1px solid var(--c-border, rgba(255,255,255,.1));
+    color: var(--c-text, #e0e0ff); text-decoration: none;
+    transition: background .15s, border-color .15s;
+  }
+  .track-btns a:hover { background: rgba(123,47,255,.2); border-color: var(--c-accent, #7b2fff); }
+
+  .empty-filter {
+    padding: 1.5rem; text-align: center;
+    color: var(--c-text-muted, #aaa);
+    font-size: .9rem; display: none;
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#content">Aller au contenu</a>
+<header class="wiki-topbar">
+    <a class="wiki-brand" href="../../hub/index.html">
+      <span class="wiki-brand-mark" aria-hidden="true"></span>
+      <span><span class="wiki-brand-kicker">Archive numerique</span><span class="wiki-brand-name">BZH Universe</span></span>
+    </a>
+    <nav class="wiki-toplinks" aria-label="Acces rapides">
+      <a class="wiki-pill" href="../../docs/00-index.html">Index</a>
+      <a class="wiki-pill" href="../../docs/universe/00-vision-globale.html">Univers</a>
+      <a class="wiki-pill" href="../../docs/universe/personnages.html">Personnages</a>
+      <a class="wiki-pill" href="../../docs/projects/00-carte-des-projets.html">Projets</a>
+      <a class="wiki-pill" href="../../media/catalog/media-catalog.html">Medias</a>
+      <a class="wiki-pill" href="../../media/gallery/index.html">Galerie</a>
+      <a class="wiki-pill" href="../../docs/conversations/index.html">Sources</a>
+    </nav>
+    <form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
+    <label>
+      <span class="reader-control-label">Recherche globale</span>
+      <input type="search" data-wiki-search-input placeholder="Recherche" aria-label="Recherche globale">
+    </label>
+    <div class="wiki-search-results" data-wiki-search-results hidden></div>
+  </form>
+    <div class="reader-controls" aria-label="Options de lecture">
+    <button class="reader-control" type="button" data-reader-action="font-down" title="Reduire la taille du texte">A-<span class="reader-control-label">Reduire la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="font-up" title="Augmenter la taille du texte">A+<span class="reader-control-label">Augmenter la taille du texte</span></button>
+    <button class="reader-control" type="button" data-reader-action="dyslexic" aria-pressed="false">Dys<span class="reader-control-label">Activer OpenDyslexic</span></button>
+    <button class="reader-control" type="button" data-reader-action="theme" aria-pressed="false">&#9788;<span class="reader-control-label">Changer de theme</span></button>
+  </div>
+  </header>
+<div class="wiki-layout">
+<aside class="wiki-sidebar" aria-label="Navigation wiki">
+    <section class="sidebar-section">
+      <p class="sidebar-title">Demarrer</p>
+      <a class="sidebar-link" href="../../hub/index.html">Accueil du hub</a>
+      <a class="sidebar-link" href="../../docs/00-index.html">Index documentaire</a>
+      <a class="sidebar-link" href="../../docs/projects/00-carte-des-projets.html">Carte des projets</a>
+      <a class="sidebar-link" href="../../docs/01-inventaire-source.html">Inventaire source</a>
+      <a class="sidebar-link" href="../../docs/02-questions-ouvertes.html">Questions ouvertes</a>
+      <a class="sidebar-link" href="../../docs/99-backlog.html">Backlog</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Univers</p>
+      <a class="sidebar-link" href="../../docs/universe/00-vision-globale.html">Vision globale</a>
+      <a class="sidebar-link" href="../../docs/identity/direction-artistique.html">Direction artistique</a>
+      <a class="sidebar-link" href="../../docs/identity/statuts-canon.html">Statuts canon</a>
+      <a class="sidebar-link" href="../../docs/universe/personnages.html">Personnages</a>
+      <a class="sidebar-link" href="../../docs/universe/scenes-et-micro-lore.html">Scenes et micro-lore</a>
+      <a class="sidebar-link" href="../../docs/universe/lexique.html">Lexique</a>
+      <a class="sidebar-link" href="../../docs/universe/le-code.html">Le Code</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Medias</p>
+      <a class="sidebar-link" href="../../media/catalog/media-catalog.html">Catalogue medias</a>
+      <a class="sidebar-link" href="../../media/gallery/index.html">Galerie media</a>
+      <a class="sidebar-link" href="../../docs/media/musique-et-albums.html">Musique et albums</a>
+      <a class="sidebar-link" href="../../docs/media/fil-audio.html" aria-current="page">Fil audio</a>
+      <a class="sidebar-link" href="../../docs/media/trailers-et-scripts.html">Trailers et scripts</a>
+      <a class="sidebar-link" href="../../docs/media/communication-et-annonces.html">Communication</a>
+      <a class="sidebar-link" href="../../docs/archives/import-desktop-bzh.html">Import Desktop BZH</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Projets</p>
+      <a class="sidebar-link" href="../../docs/projects/00-carte-des-projets.html">Carte des projets</a>
+      <a class="sidebar-link" href="../../docs/projects/bzh-card-game/README.html">BZH Card Game</a>
+      <a class="sidebar-link" href="../../docs/projects/bzh-card-game/cards.html">Cartes BZH01</a>
+      <a class="sidebar-link" href="../../docs/projects/roguelite/README.html">Roguelite</a>
+      <a class="sidebar-link" href="../../docs/projects/minitel-hub-3d/README.html">Minitel HUB 3D</a>
+      <a class="sidebar-link" href="../../docs/web/mini-site-bzh-power.html">Mini-site BZH POWER</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Sources</p>
+      <a class="sidebar-link" href="../../docs/conversations/index.html">Conversations</a>
+      <a class="sidebar-link" href="../../docs/chronology/chronologie.html">Chronologie</a>
+      <a class="sidebar-link" href="../../docs/sources/00-methodologie-citations.html">Tracabilite</a>
+      <a class="sidebar-link" href="../../docs/sources/01-couverture-des-citations.html">Couverture citations</a>
+      <a class="sidebar-link" href="../../docs/archives/livrables-historiques.html">Livrables historiques</a>
+    </section>
+    <section class="sidebar-section">
+      <p class="sidebar-title">Sommaire</p>
+      <nav data-toc aria-label="Sommaire de la page"></nav>
+    </section>
+  </aside>
+<main class="wiki-page" id="content">
+<div class="breadcrumb">docs/media/fil-audio.html</div>
+<h1 id="fil-audio">Fil audio</h1>
+<p>Hub central du catalogue musical de BZH Universe. Toutes les pistes connues sont listees ici avec leur statut, leur style et leurs boutons de lecture. Utilise les filtres pour naviguer par statut, ou consulte <a href="musique-et-albums.html">Musique et albums</a> pour le detail des contextes et rattachements narratifs.</p>
+
+<!-- Stats bar -->
+<div class="audio-stats" id="audio-stats" aria-label="Statistiques du catalogue">
+  <span class="stat-chip total">&#9835; <span id="stat-total">15</span> pistes</span>
+  <span class="stat-chip canon">&#10003; <span id="stat-canon">3</span> canon</span>
+  <span class="stat-chip confirmer">&#8943; <span id="stat-confirmer">5</span> a confirmer</span>
+  <span class="stat-chip archive">&#8635; <span id="stat-archive">4</span> archive</span>
+  <span class="stat-chip concept">&#9670; <span id="stat-concept">3</span> concept</span>
+</div>
+
+<h2 id="filtrer-par-statut">Filtrer par statut</h2>
+
+<div class="filter-bar" role="group" aria-label="Filtres par statut">
+  <button class="filter-btn active" data-filter="all" type="button">Toutes</button>
+  <button class="filter-btn" data-filter="canon" type="button">Canon</button>
+  <button class="filter-btn" data-filter="a confirmer" type="button">A confirmer</button>
+  <button class="filter-btn" data-filter="archive" type="button">Archive</button>
+  <button class="filter-btn" data-filter="concept" type="button">Concept</button>
+</div>
+
+<ul class="track-list" id="track-list-hub" aria-label="Catalogue audio">
+
+  <li class="track-item" data-status="canon" data-track-src="../../media/audio/tracks/sniky-the-frager.mp3">
+    <span class="track-num">01</span>
+    <div class="track-meta">
+      <div class="track-title">Sniky: The Frager</div>
+      <div class="track-style">glitch-hop &middot; drum'n'bass &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status canon">canon</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/sniky-the-frager.mp3" data-bzh-play data-bzh-title="Sniky: The Frager" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/sniky-the-frager.mp3" data-bzh-queue data-bzh-title="Sniky: The Frager" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="canon" data-track-src="../../media/audio/tracks/aligax-digital-maiden.mp3">
+    <span class="track-num">02</span>
+    <div class="track-meta">
+      <div class="track-title">Aligax: Digital Maiden</div>
+      <div class="track-style">orchestral cinematic &middot; ambient &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status canon">canon</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/aligax-digital-maiden.mp3" data-bzh-play data-bzh-title="Aligax: Digital Maiden" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/aligax-digital-maiden.mp3" data-bzh-queue data-bzh-title="Aligax: Digital Maiden" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="canon" data-track-src="../../media/audio/tracks/aligax-digital-maiden-riddim-remix.mp3">
+    <span class="track-num">03</span>
+    <div class="track-meta">
+      <div class="track-title">Aligax: Digital Maiden &mdash; Riddim Remix</div>
+      <div class="track-style">dubstep &middot; riddim &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status canon">canon</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/aligax-digital-maiden-riddim-remix.mp3" data-bzh-play data-bzh-title="Aligax: Digital Maiden (Riddim Remix)" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/aligax-digital-maiden-riddim-remix.mp3" data-bzh-queue data-bzh-title="Aligax: Digital Maiden (Riddim Remix)" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/bzh-power-united-legends.mp3">
+    <span class="track-num">04</span>
+    <div class="track-meta">
+      <div class="track-title">BZH Power: United Legends</div>
+      <div class="track-style">glitch &middot; orchestral &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status">a confirmer</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/bzh-power-united-legends.mp3" data-bzh-play data-bzh-title="BZH Power: United Legends" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/bzh-power-united-legends.mp3" data-bzh-queue data-bzh-title="BZH Power: United Legends" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/mutenrock-the-digital-commander.mp3">
+    <span class="track-num">05</span>
+    <div class="track-meta">
+      <div class="track-title">MutenRock: The Digital Commander</div>
+      <div class="track-style">glitch-hop &middot; trip-hop &mdash; MutenRock</div>
+    </div>
+    <span class="track-status">a confirmer</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/mutenrock-the-digital-commander.mp3" data-bzh-play data-bzh-title="MutenRock: The Digital Commander" data-bzh-artist="MutenRock">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/mutenrock-the-digital-commander.mp3" data-bzh-queue data-bzh-title="MutenRock: The Digital Commander" data-bzh-artist="MutenRock">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/titan-the-guardian-hound.mp3">
+    <span class="track-num">06</span>
+    <div class="track-meta">
+      <div class="track-title">Titan: The Guardian Hound</div>
+      <div class="track-style">orchestral cinematic &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status">a confirmer</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/titan-the-guardian-hound.mp3" data-bzh-play data-bzh-title="Titan: The Guardian Hound" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/titan-the-guardian-hound.mp3" data-bzh-queue data-bzh-title="Titan: The Guardian Hound" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/spirits-rage.mp3">
+    <span class="track-num">07</span>
+    <div class="track-meta">
+      <div class="track-title">Spirit's Rage</div>
+      <div class="track-style">glitch &middot; ambient &mdash; Spirit / BZH Chronicles</div>
+    </div>
+    <span class="track-status">a confirmer</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/spirits-rage.mp3" data-bzh-play data-bzh-title="Spirit's Rage" data-bzh-artist="Spirit / BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/spirits-rage.mp3" data-bzh-queue data-bzh-title="Spirit's Rage" data-bzh-artist="Spirit / BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/void-echoes.mp3">
+    <span class="track-num">08</span>
+    <div class="track-meta">
+      <div class="track-title">Void Echoes</div>
+      <div class="track-style">ambient &middot; trip-hop &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status">a confirmer</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/void-echoes.mp3" data-bzh-play data-bzh-title="Void Echoes" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/void-echoes.mp3" data-bzh-queue data-bzh-title="Void Echoes" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/sniky-the-killer.mp3">
+    <span class="track-num">09</span>
+    <div class="track-meta">
+      <div class="track-title">Sniky the Killer</div>
+      <div class="track-style">glitch-hop &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status archive">archive</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/sniky-the-killer.mp3" data-bzh-play data-bzh-title="Sniky the Killer" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/sniky-the-killer.mp3" data-bzh-queue data-bzh-title="Sniky the Killer" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/aligax-beautiful-warrior.mp3">
+    <span class="track-num">10</span>
+    <div class="track-meta">
+      <div class="track-title">Aligax &ndash; Beautiful Warrior</div>
+      <div class="track-style">orchestral &middot; ambient &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status archive">archive</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/aligax-beautiful-warrior.mp3" data-bzh-play data-bzh-title="Aligax: Beautiful Warrior" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/aligax-beautiful-warrior.mp3" data-bzh-queue data-bzh-title="Aligax: Beautiful Warrior" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/empire-de-lombre.mp3">
+    <span class="track-num">11</span>
+    <div class="track-meta">
+      <div class="track-title">Empire de l'Ombre</div>
+      <div class="track-style">orchestral cinematic &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status archive">archive</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/empire-de-lombre.mp3" data-bzh-play data-bzh-title="Empire de l'Ombre" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/empire-de-lombre.mp3" data-bzh-queue data-bzh-title="Empire de l'Ombre" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/night-of-power.mp3">
+    <span class="track-num">12</span>
+    <div class="track-meta">
+      <div class="track-title">Night of Power</div>
+      <div class="track-style">glitch &middot; dubstep &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status archive">archive</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/night-of-power.mp3" data-bzh-play data-bzh-title="Night of Power" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/night-of-power.mp3" data-bzh-queue data-bzh-title="Night of Power" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/glitched-warcry.mp3">
+    <span class="track-num">13</span>
+    <div class="track-meta">
+      <div class="track-title">Glitched Warcry</div>
+      <div class="track-style">glitch &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status concept">concept</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/glitched-warcry.mp3" data-bzh-play data-bzh-title="Glitched Warcry" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/glitched-warcry.mp3" data-bzh-queue data-bzh-title="Glitched Warcry" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/lheure-du-combat.mp3">
+    <span class="track-num">14</span>
+    <div class="track-meta">
+      <div class="track-title">L'Heure du Combat</div>
+      <div class="track-style">orchestral cinematic &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status concept">concept</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/lheure-du-combat.mp3" data-bzh-play data-bzh-title="L'Heure du Combat" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/lheure-du-combat.mp3" data-bzh-queue data-bzh-title="L'Heure du Combat" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/bzh-power.mp3">
+    <span class="track-num">15</span>
+    <div class="track-meta">
+      <div class="track-title">BZH POWER</div>
+      <div class="track-style">glitch-hop &middot; anthem &mdash; BZH Chronicles</div>
+    </div>
+    <span class="track-status concept">concept</span>
+    <div class="track-btns">
+      <a href="../../media/audio/tracks/bzh-power.mp3" data-bzh-play data-bzh-title="BZH POWER" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
+      <a href="../../media/audio/tracks/bzh-power.mp3" data-bzh-queue data-bzh-title="BZH POWER" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+    </div>
+  </li>
+
+</ul>
+<p class="empty-filter" id="empty-filter">Aucune piste pour ce filtre.</p>
+
+<h2 id="navigation-associee">Navigation associee</h2>
+<nav class="nav-cards" aria-label="Pages liees">
+  <a class="nav-card" href="musique-et-albums.html">
+    <span class="nav-card-label">Detail</span>
+    <span class="nav-card-title">Musique et albums</span>
+    <span class="nav-card-desc">Contexte narratif, rattachements personnages et statuts</span>
+  </a>
+  <a class="nav-card" href="trailers-et-scripts.html">
+    <span class="nav-card-label">Video</span>
+    <span class="nav-card-title">Trailers et scripts</span>
+    <span class="nav-card-desc">Lyric videos, clips et scripts associes</span>
+  </a>
+  <a class="nav-card" href="paroles-scripts-et-chansons.html">
+    <span class="nav-card-label">Paroles</span>
+    <span class="nav-card-title">Paroles et chansons</span>
+    <span class="nav-card-desc">Textes et scripts chantés</span>
+  </a>
+  <a class="nav-card" href="../../media/catalog/media-catalog.html">
+    <span class="nav-card-label">Catalogue</span>
+    <span class="nav-card-title">Catalogue medias</span>
+    <span class="nav-card-desc">Vue d'ensemble de tous les medias</span>
+  </a>
+</nav>
+
+<script>
+(function () {
+  var items = Array.from(document.querySelectorAll('#track-list-hub .track-item'));
+  var buttons = Array.from(document.querySelectorAll('.filter-btn'));
+  var emptyMsg = document.getElementById('empty-filter');
+
+  function applyFilter(filter) {
+    var visible = 0;
+    items.forEach(function (item) {
+      var match = filter === 'all' || item.dataset.status === filter;
+      item.hidden = !match;
+      if (match) visible++;
+    });
+    emptyMsg.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      buttons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      applyFilter(btn.dataset.filter);
+    });
+  });
+
+  // Compute real stats from DOM
+  var stats = { canon: 0, 'a confirmer': 0, archive: 0, concept: 0 };
+  items.forEach(function (item) {
+    var s = item.dataset.status;
+    if (s in stats) stats[s]++;
+  });
+  document.getElementById('stat-total').textContent = items.length;
+  document.getElementById('stat-canon').textContent = stats['canon'];
+  document.getElementById('stat-confirmer').textContent = stats['a confirmer'];
+  document.getElementById('stat-archive').textContent = stats['archive'];
+  document.getElementById('stat-concept').textContent = stats['concept'];
+
+  // Highlight now-playing
+  document.addEventListener('DOMContentLoaded', function () {
+    var audio = window.BZHAudioPlayer && window.BZHAudioPlayer._audio;
+    if (!audio) return;
+    function updateHighlight() {
+      var src = audio.src;
+      items.forEach(function (item) {
+        var ts = item.dataset.trackSrc;
+        var match = ts && src && src.endsWith(ts.replace(/^\.\.\/\.\.\//, '').replace(/\.\.\//g, ''));
+        item.classList.toggle('is-now-playing', !!match);
+      });
+    }
+    audio.addEventListener('play', updateHighlight);
+    audio.addEventListener('pause', updateHighlight);
+    audio.addEventListener('emptied', updateHighlight);
+  });
+}());
+</script>
+
+</main>
+</div>
+<footer class="wiki-footer">BZH CHRONICLES - genere depuis Markdown - ne pas editer le .html, modifier le .md source</footer>
+</body>
+</html>
