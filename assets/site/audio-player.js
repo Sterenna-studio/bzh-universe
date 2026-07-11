@@ -1,24 +1,27 @@
 /**
- * BZH Universe – Audio Player v2
+ * BZH Universe – Audio Player v3
+ *
+ * Nouveauté v3 : Preview + Lazy-load
+ *   – Si la track a un champ `preview`, c'est ce fichier court (~30s) qui est chargé
+ *     immédiatement au clic. La barre affiche un badge « ▶ PREVIEW ».
+ *   – Quand le preview se termine, le full track est chargé et continue automatiquement.
+ *   – Un bouton « Écoute complète » permet de forcer le chargement full à tout moment.
+ *   – Si pas de preview, comportement v2 classique (charge direct le full).
  *
  * API publique :
- *   BZHAudioPlayer.play({ title, artist, src, cover? })  → charge + joue immédiatement
- *   BZHAudioPlayer.queue({ title, artist, src, cover? }) → ajoute à la file locale
- *   BZHAudioPlayer.init(tracks[])                        → remplace la playlist courante
+ *   BZHAudioPlayer.play({ title, artist, src, preview?, cover? })  → charge + joue immédiatement
+ *   BZHAudioPlayer.queue({ title, artist, src, preview?, cover? }) → ajoute à la file locale
+ *   BZHAudioPlayer.init(tracks[])                                  → remplace la playlist courante
  *
  * Intégration dans une page :
  *   <a href="mon-fichier.mp3"
  *      data-bzh-play
  *      data-bzh-title="Titre"
  *      data-bzh-artist="Artiste"
+ *      data-bzh-preview="previews/mon-preview.mp3"
  *      data-bzh-cover="cover.jpg">Écouter</a>
  *
- *   <a href="mon-fichier.mp3"
- *      data-bzh-queue
- *      data-bzh-title="Titre">+ Ajouter</a>
- *
  * La playlist locale est sauvegardée dans localStorage (bzh_ap_queue).
- * Le volume et l'état shuffle/repeat sont également mémorisés.
  */
 (function () {
   'use strict';
@@ -40,7 +43,7 @@
       prev: '⏮', play: '▶', pause: '⏸', next: '⏭',
       vol: '🔊', mute: '🔇', list: '☰', shuffle: '🔀',
       repeat: '🔁', music: '🎵', plus: '＋', trash: '🗑',
-      queue: '📋', close: '✕'
+      queue: '📋', close: '✕', expand: '⊹'
     };
     return map[name] || '?';
   }
@@ -88,6 +91,7 @@
       '<div class="bzh-ap-info">' +
         '<div class="bzh-ap-title"  id="bzh-ap-title">–</div>' +
         '<div class="bzh-ap-artist" id="bzh-ap-artist">BZH Universe</div>' +
+        '<button class="bzh-ap-btn bzh-ap-expand-btn" id="bzh-ap-expand" title="Charger la version complète" style="display:none;font-size:.7rem;padding:2px 6px;margin-top:2px">' + icon('expand') + ' Écoute complète</button>' +
       '</div>' +
       '<div class="bzh-ap-controls">' +
         '<button class="bzh-ap-btn" id="bzh-ap-shuffle" title="Aléatoire">'    + icon('shuffle') + '</button>' +
@@ -100,6 +104,7 @@
         '<span class="bzh-ap-time" id="bzh-ap-cur">0:00</span>' +
         '<input class="bzh-ap-seek" id="bzh-ap-seek" type="range" min="0" value="0" step="0.1" aria-label="Position">' +
         '<span class="bzh-ap-time" id="bzh-ap-dur">0:00</span>' +
+        '<span class="bzh-ap-preview-badge" id="bzh-ap-preview-badge" style="display:none;font-size:.65rem;opacity:.7;margin-left:4px;color:#f90">PREVIEW</span>' +
       '</div>' +
       '<div class="bzh-ap-vol-wrap">' +
         '<button class="bzh-ap-btn" id="bzh-ap-mute" title="Muet">' + icon('vol') + '</button>' +
@@ -139,21 +144,27 @@
 
   // ── Player ───────────────────────────────────────────────────────────────
   function Player() {
-    this._audio   = new Audio();
-    this._built   = false;
-    this._server  = [];
-    this._sCursor = 0;
-    this._queue   = lsGet(LS_QUEUE, []);
-    this._qCursor = lsGet(LS_CURSOR, 0);
-    this._mode    = 'server';   // 'server' | 'local'
-    this.shuffle  = false;
-    this.repeat   = false;
+    this._audio      = new Audio();
+    this._built      = false;
+    this._server     = [];
+    this._sCursor    = 0;
+    this._queue      = lsGet(LS_QUEUE, []);
+    this._qCursor    = lsGet(LS_CURSOR, 0);
+    this._mode       = 'server';  // 'server' | 'local'
+    this.shuffle     = false;
+    this.repeat      = false;
     this._nowPlaying = null;
+    this._isPreview  = false;     // true = on joue le preview court
   }
 
-  // init (playlist serveur JSON)
-  Player.prototype.init = function (tracks) {
-    this._server  = tracks || [];
+  // ── init (playlist serveur JSON) ─────────────────────────────────────────
+  Player.prototype.init = function (data) {
+    // Support v1 (array direct) et v2+ (objet { tracks: [...] })
+    var tracks = Array.isArray(data) ? data : (data && data.tracks ? data.tracks : []);
+    // Filtrer les tracks sans src web listenables
+    this._server = tracks.filter(function(t){
+      return t.src && t.status !== 'masters_only' && t.status !== 'to_identify';
+    });
     this._sCursor = 0;
     if (!this._built) { this._build(); this._built = true; }
     this._renderServer();
@@ -173,7 +184,7 @@
       this._audio.loop = true;
       this._repeatBtn.classList.add('is-active');
     }
-    // choisir source initiale
+    // Pré-charger la première track sans autoplay
     if (this._queue.length) {
       this._mode = 'local';
       if (this._qCursor >= this._queue.length) this._qCursor = 0;
@@ -184,10 +195,11 @@
     }
   };
 
-  // play immédiat (data-bzh-play)
+  // ── play immédiat (data-bzh-play) ────────────────────────────────────────
   Player.prototype.play = function (track) {
     if (!track || !track.src) return;
     track.src = resolveUrl(track.src);
+    if (track.preview) track.preview = resolveUrl(track.preview);
     if (!this._built) { this._build(); this._built = true; }
     this._insertInQueue(track, true);
     this._mode    = 'local';
@@ -197,10 +209,11 @@
     this._doPlay();
   };
 
-  // ajouter à la queue locale (data-bzh-queue)
+  // ── ajouter à la queue locale ────────────────────────────────────────────
   Player.prototype.queue = function (track) {
     if (!track || !track.src) return;
     track.src = resolveUrl(track.src);
+    if (track.preview) track.preview = resolveUrl(track.preview);
     if (!this._built) { this._build(); this._built = true; }
     this._insertInQueue(track, false);
     this._renderQueue();
@@ -214,10 +227,35 @@
     lsSet(LS_QUEUE, this._queue);
   };
 
+  // ── _loadRaw : cœur du système preview ───────────────────────────────────
   Player.prototype._loadRaw = function (track) {
     if (!track) return;
     this._nowPlaying = track;
-    this._audio.src  = track.src;
+    var self = this;
+
+    if (track.preview) {
+      // Charger le preview court → instantané
+      this._audio.src = track.preview;
+      this._isPreview = true;
+      this._setPreviewUI(true);
+      // Quand le preview se termine → charger le full automatiquement
+      this._audio.onended = function () {
+        if (self._isPreview && !self.repeat) {
+          self._switchToFull();
+        } else if (!self.repeat) {
+          self.next();
+        }
+      };
+    } else {
+      // Pas de preview → comportement classique v2
+      this._audio.src = track.src;
+      this._isPreview = false;
+      this._setPreviewUI(false);
+      this._audio.onended = function () {
+        if (!self.repeat) self.next();
+      };
+    }
+
     if (this._titleEl)  this._titleEl.textContent  = track.title  || 'Sans titre';
     if (this._artistEl) this._artistEl.textContent = track.artist || 'BZH Universe';
     if (this._thumbEl) {
@@ -232,6 +270,28 @@
     this._renderQueue();
   };
 
+  // ── Swap preview → full track ─────────────────────────────────────────────
+  Player.prototype._switchToFull = function () {
+    if (!this._nowPlaying) return;
+    var self = this;
+    this._isPreview = false;
+    this._setPreviewUI(false);
+    this._audio.src = this._nowPlaying.src;
+    this._audio.onended = function () {
+      if (!self.repeat) self.next();
+    };
+    this._audio.play().catch(function(){});
+  };
+
+  // ── UI helpers preview ────────────────────────────────────────────────────
+  Player.prototype._setPreviewUI = function (isPreview) {
+    var badge     = document.getElementById('bzh-ap-preview-badge');
+    var expandBtn = document.getElementById('bzh-ap-expand');
+    if (badge)     badge.style.display     = isPreview ? 'inline' : 'none';
+    if (expandBtn) expandBtn.style.display = isPreview ? 'inline-block' : 'none';
+  };
+
+  // ── _doPlay ───────────────────────────────────────────────────────────────
   Player.prototype._doPlay = function () {
     this._bar.classList.remove('is-hidden');
     this._toggle.setAttribute('aria-expanded', 'true');
@@ -239,7 +299,7 @@
     this._audio.play().catch(function(){});
   };
 
-  // construction DOM + événements
+  // ── construction DOM + événements ────────────────────────────────────────
   Player.prototype._build = function () {
     var ui   = buildUI();
     var self = this;
@@ -267,6 +327,14 @@
     this._playBtn.addEventListener('click', function(){ self.togglePlay(); });
     $('bzh-ap-prev').addEventListener('click', function(){ self.prev(); });
     $('bzh-ap-next').addEventListener('click', function(){ self.next(); });
+
+    // Bouton "Écoute complète" → force le swap vers le full
+    var expandBtn = $('bzh-ap-expand');
+    if (expandBtn) {
+      expandBtn.addEventListener('click', function(){
+        if (self._isPreview) self._switchToFull();
+      });
+    }
 
     this._seekEl.addEventListener('input', function(){
       audio.currentTime = parseFloat(self._seekEl.value);
@@ -307,7 +375,6 @@
     });
     audio.addEventListener('play',  function(){ self._playBtn.textContent = icon('pause'); });
     audio.addEventListener('pause', function(){ self._playBtn.textContent = icon('play');  });
-    audio.addEventListener('ended', function(){ if (!self.repeat) self.next(); });
 
     // toggle barre
     ui.toggleBtn.addEventListener('click', function(){
@@ -316,7 +383,6 @@
       if (hidden) { self._plSrv.classList.remove('is-open'); self._plLoc.classList.remove('is-open'); }
       self._updatePad();
     });
-    // panneaux
     $('bzh-ap-list-btn').addEventListener('click', function(){
       self._plLoc.classList.remove('is-open');
       self._plSrv.classList.toggle('is-open');
@@ -325,7 +391,6 @@
       self._plSrv.classList.remove('is-open');
       self._plLoc.classList.toggle('is-open');
     });
-    // vider queue
     this._plLoc.querySelector('.bzh-ap-queue-clear').addEventListener('click', function(){
       self._queue = []; self._qCursor = 0;
       lsSet(LS_QUEUE, []); lsSet(LS_CURSOR, 0);
@@ -343,7 +408,7 @@
       (this._bar.classList.contains('is-hidden') ? 0 : h) + 'px';
   };
 
-  // Navigation
+  // ── Navigation ───────────────────────────────────────────────────────────
   Player.prototype.togglePlay = function () {
     if (this._audio.paused) this._doPlay();
     else this._audio.pause();
@@ -375,7 +440,7 @@
     else                        { this._sCursor = idx; }
   };
 
-  // Rendu playlist serveur
+  // ── Rendu playlist serveur ───────────────────────────────────────────────
   Player.prototype._renderServer = function () {
     if (!this._plSrv) return;
     var self = this;
@@ -385,9 +450,10 @@
     }
     this._plSrv.innerHTML = this._server.map(function(t, i){
       var active = (self._mode === 'server' && i === self._sCursor);
+      var hasPreview = t.preview ? ' <small style="opacity:.4;font-size:.65rem">[preview]</small>' : '';
       return '<div class="bzh-ap-playlist-item' + (active ? ' is-playing' : '') + '" data-src-idx="' + i + '">' +
         '<span class="bzh-ap-playlist-num">' + (i+1) + '</span>' +
-        '<span>' + (t.title || 'Sans titre') +
+        '<span>' + (t.title || 'Sans titre') + hasPreview +
           (t.artist ? ' <small style="opacity:.6">– ' + t.artist + '</small>' : '') +
         '</span></div>';
     }).join('');
@@ -402,7 +468,7 @@
     });
   };
 
-  // Rendu queue locale
+  // ── Rendu queue locale ───────────────────────────────────────────────────
   Player.prototype._renderQueue = function () {
     var listEl  = document.getElementById('bzh-ap-queue-list');
     var emptyEl = document.getElementById('bzh-ap-queue-empty');
@@ -447,7 +513,7 @@
     });
   };
 
-  // flash badge
+  // ── flash badge ──────────────────────────────────────────────────────────
   Player.prototype._flashQueueBtn = function () {
     var btn = document.getElementById('bzh-ap-queue-btn');
     if (!btn) return;
@@ -477,10 +543,11 @@
       if (!el) return;
       var href  = el.getAttribute('href') || el.dataset.bzhSrc || '';
       var track = {
-        src:    href,
-        title:  el.dataset.bzhTitle  || el.textContent.trim().slice(0, 60) || 'Sans titre',
-        artist: el.dataset.bzhArtist || '',
-        cover:  el.dataset.bzhCover  || ''
+        src:     href,
+        preview: el.dataset.bzhPreview || '',
+        title:   el.dataset.bzhTitle   || el.textContent.trim().slice(0, 60) || 'Sans titre',
+        artist:  el.dataset.bzhArtist  || '',
+        cover:   el.dataset.bzhCover   || ''
       };
       if (el.hasAttribute('data-bzh-play')) {
         e.preventDefault();
