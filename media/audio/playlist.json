@@ -1,5 +1,6 @@
 {
-  "version": 1,
+  "version": 2,
+  "streaming_note": "Pour le player web : utiliser src depuis previews/ (mp3 ~30s, <500KB) pour lecture instantanee. Le src complet dans tracks/ est chargé uniquement au clic 'lecture complète'. Les masters WAV dans masters/ ne sont jamais streamés en web.",
   "tracks": [
     {
       "id": "bzh-c-001",
@@ -7,7 +8,9 @@
       "artist": "BZH Chronicles",
       "style": "glitch-hop · drum'n'bass",
       "status": "canon",
-      "src": "tracks/sniky-the-frager.mp3"
+      "src": "tracks/sniky-the-frager.mp3",
+      "src_raw": "tracks/Sniky The Frager.mp3",
+      "preview": "previews/sniky-the-frager-preview.mp3"
     },
     {
       "id": "bzh-c-002",
@@ -15,7 +18,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic · ambient",
       "status": "canon",
-      "src": "tracks/aligax-digital-maiden.mp3"
+      "src": "tracks/aligax-digital-maiden.mp3",
+      "preview": "previews/aligax-digital-maiden-preview.mp3"
     },
     {
       "id": "bzh-c-003",
@@ -23,7 +27,13 @@
       "artist": "BZH Chronicles",
       "style": "dubstep · riddim",
       "status": "canon",
-      "src": "tracks/aligax-digital-maiden-riddim-remix.mp3"
+      "src": "tracks/aligax-digital-maiden-riddim-remix.mp3",
+      "src_raw": "tracks/CYBER RIDDIM (Remastered).mp3",
+      "preview": "previews/aligax-digital-maiden-riddim-remix-preview.mp3",
+      "duplicates_to_remove": [
+        "tracks/CYBER RIDDIM (Remastered) (1).mp3",
+        "tracks/CYBER RIDDIM (Remastered) (2).mp3"
+      ]
     },
     {
       "id": "bzh-c-004",
@@ -31,7 +41,8 @@
       "artist": "BZH Chronicles",
       "style": "glitch · orchestral",
       "status": "a confirmer",
-      "src": "tracks/bzh-power-united-legends.mp3"
+      "src": "tracks/bzh-power-united-legends.mp3",
+      "preview": "previews/bzh-power-united-legends-preview.mp3"
     },
     {
       "id": "bzh-c-005",
@@ -39,7 +50,10 @@
       "artist": "MutenRock",
       "style": "glitch-hop · trip-hop",
       "status": "a confirmer",
-      "src": "tracks/mutenrock-the-digital-commander.mp3"
+      "src": "tracks/mutenrock-the-digital-commander.mp3",
+      "src_raw": "tracks/MutenRock.mp3",
+      "master": "masters/MutenRock.wav",
+      "preview": "previews/mutenrock-the-digital-commander-preview.mp3"
     },
     {
       "id": "bzh-c-006",
@@ -47,7 +61,9 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
       "status": "a confirmer",
-      "src": "tracks/titan-the-guardian-hound.mp3"
+      "src": "tracks/titan-the-guardian-hound.mp3",
+      "src_raw": "tracks/Titan  hound.mp3",
+      "preview": "previews/titan-the-guardian-hound-preview.mp3"
     },
     {
       "id": "bzh-c-007",
@@ -55,7 +71,8 @@
       "artist": "Spirit / BZH Chronicles",
       "style": "glitch · ambient",
       "status": "a confirmer",
-      "src": "tracks/spirits-rage.mp3"
+      "src": "tracks/spirits-rage.mp3",
+      "preview": "previews/spirits-rage-preview.mp3"
     },
     {
       "id": "bzh-c-008",
@@ -63,7 +80,8 @@
       "artist": "BZH Chronicles",
       "style": "ambient · trip-hop",
       "status": "a confirmer",
-      "src": "tracks/void-echoes.mp3"
+      "src": "tracks/void-echoes.mp3",
+      "preview": "previews/void-echoes-preview.mp3"
     },
     {
       "id": "bzh-c-009",
@@ -71,7 +89,8 @@
       "artist": "BZH Chronicles",
       "style": "glitch-hop",
       "status": "archive",
-      "src": "tracks/sniky-the-killer.mp3"
+      "src": "tracks/sniky-the-killer.mp3",
+      "preview": "previews/sniky-the-killer-preview.mp3"
     },
     {
       "id": "bzh-c-010",
@@ -79,7 +98,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral · ambient",
       "status": "archive",
-      "src": "tracks/aligax-beautiful-warrior.mp3"
+      "src": "tracks/aligax-beautiful-warrior.mp3",
+      "preview": "previews/aligax-beautiful-warrior-preview.mp3"
     },
     {
       "id": "bzh-c-011",
@@ -87,7 +107,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
       "status": "archive",
-      "src": "tracks/empire-de-lombre.mp3"
+      "src": "tracks/empire-de-lombre.mp3",
+      "preview": "previews/empire-de-lombre-preview.mp3"
     },
     {
       "id": "bzh-c-012",
@@ -95,7 +116,8 @@
       "artist": "BZH Chronicles",
       "style": "glitch · dubstep",
       "status": "archive",
-      "src": "tracks/night-of-power.mp3"
+      "src": "tracks/night-of-power.mp3",
+      "preview": "previews/night-of-power-preview.mp3"
     },
     {
       "id": "bzh-c-013",
@@ -103,7 +125,8 @@
       "artist": "BZH Chronicles",
       "style": "glitch",
       "status": "concept",
-      "src": "tracks/glitched-warcry.mp3"
+      "src": "tracks/glitched-warcry.mp3",
+      "preview": "previews/glitched-warcry-preview.mp3"
     },
     {
       "id": "bzh-c-014",
@@ -111,7 +134,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
       "status": "concept",
-      "src": "tracks/lheure-du-combat.mp3"
+      "src": "tracks/lheure-du-combat.mp3",
+      "preview": "previews/lheure-du-combat-preview.mp3"
     },
     {
       "id": "bzh-c-015",
@@ -119,7 +143,108 @@
       "artist": "BZH Chronicles",
       "style": "glitch-hop · anthem",
       "status": "concept",
-      "src": "tracks/bzh-power.mp3"
+      "src": "tracks/bzh-power.mp3",
+      "preview": "previews/bzh-power-preview.mp3"
+    },
+    {
+      "id": "bzh-o-001",
+      "title": "Descent on the Moon (Vocals FR)",
+      "artist": "BZH Chronicles",
+      "style": "cinematic · vocal",
+      "status": "archive",
+      "note": "Version chantée FR — variante de travail, pas encore canonisée",
+      "src": "tracks/Descent on the Moon - BZH CHRONICLES fr - Vocals.mp3",
+      "src_slug": "tracks/descent-on-the-moon-vocals-fr.mp3"
+    },
+    {
+      "id": "bzh-o-002",
+      "title": "Descent on the Moon (Lips)",
+      "artist": "BZH Chronicles",
+      "style": "cinematic · lips sync",
+      "status": "masters_only",
+      "note": "Extrait lips sync — à déplacer dans masters/ ou previews/site-song/",
+      "src": "tracks/Descent on the Moon lips.mp3"
+    },
+    {
+      "id": "bzh-o-003",
+      "title": "La Ballade de MutenRock",
+      "artist": "DrSpig / BZH Chronicles",
+      "style": "ballad · narrative",
+      "status": "archive",
+      "note": "Collaboration DrSpig — à garder en archive canon étendu",
+      "src": "tracks/DrSpig_La Ballade de MutenRock.mp3",
+      "src_slug": "tracks/drspig-la-ballade-de-mutenrock.mp3"
+    },
+    {
+      "id": "bzh-o-004",
+      "title": "Intro BZH",
+      "artist": "BZH Chronicles",
+      "style": "intro · jingle",
+      "status": "archive",
+      "note": "Jingle d'intro site/vidéo — court, à garder en archive",
+      "src": "tracks/Intro.mp3",
+      "src_slug": "tracks/intro-bzh.mp3"
+    },
+    {
+      "id": "bzh-o-005",
+      "title": "Credits Song — To An End Of A World",
+      "artist": "BZH Chronicles",
+      "style": "orchestral · credits",
+      "status": "archive",
+      "note": "Générique de fin / cover — archive canon",
+      "src": "tracks/Credits Song To An End Of A World (Cover).mp3",
+      "src_slug": "tracks/credits-song-to-an-end-of-a-world.mp3"
+    },
+    {
+      "id": "bzh-o-006",
+      "title": "Neo Breizh Drift",
+      "artist": "BZH Chronicles",
+      "style": "synthwave · drift",
+      "status": "archive",
+      "note": "Version finale retenue — les variantes (1)(2)(3) sont à déplacer dans masters/",
+      "src": "tracks/Neo Breizh Drift.mp3",
+      "src_slug": "tracks/neo-breizh-drift.mp3",
+      "duplicates_to_masters": [
+        "tracks/Neo Breizh Drift (1).mp3",
+        "tracks/Neo Breizh Drift (2).mp3",
+        "tracks/Neo Breizh Drift (3).mp3"
+      ]
+    },
+    {
+      "id": "bzh-o-007",
+      "title": "Untitled",
+      "artist": "BZH Chronicles",
+      "style": "unknown",
+      "status": "to_identify",
+      "note": "⚠️ Fichier non identifié — à écouter et renommer en priorité",
+      "src": "tracks/Untitled.mp3"
+    },
+    {
+      "id": "bzh-m-001",
+      "title": "Les Ombres et la Lumière",
+      "artist": "BZH Chronicles",
+      "style": "orchestral cinematic",
+      "status": "masters_only",
+      "note": "Master WAV uniquement — pas de version MP3 web pour l'instant",
+      "master": "masters/Les Ombres et la Lumière.wav"
+    },
+    {
+      "id": "bzh-m-002",
+      "title": "Soundclash: BPM Frenzy",
+      "artist": "BZH Chronicles",
+      "style": "glitch · contest",
+      "status": "masters_only",
+      "note": "Soumission Suno contest — master WAV uniquement",
+      "master": "masters/Soundclash_ BPM Frenzy (Suno contest).wav"
+    },
+    {
+      "id": "bzh-m-003",
+      "title": "Work! (One, Two, Three, Four)",
+      "artist": "BZH Chronicles",
+      "style": "electronic · rhythmic",
+      "status": "masters_only",
+      "note": "Master WAV uniquement",
+      "master": "masters/Work! (One, two, three, four).wav"
     }
   ]
 }
