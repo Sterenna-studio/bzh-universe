@@ -251,24 +251,28 @@
     applyFilter();
   }
 
-  /**
-   * Injecte audio-player.js sur toutes les pages du wiki.
-   * - Si la page a deja un <script data-bzh-playlist> ou src*=audio-player,
-   *   on ne fait rien (elle gere son propre chargement, ex: musique-et-albums).
-   * - Sinon on charge le lecteur depuis assets/site/audio-player.js resolu
-   *   via wikiRootUrl(), avec la playlist globale media/audio/playlist.json.
-   */
   function injectAudioPlayer() {
     if (document.querySelector('script[data-bzh-playlist], script[src*="audio-player"]')) return;
 
-    const wikiRoot   = wikiRootUrl();
-    const playerSrc  = new URL('assets/site/audio-player.js', wikiRoot).href;
-    const playlistSrc = new URL('media/audio/playlist.json',  wikiRoot).href;
+    const wikiRoot = wikiRootUrl();
+    const playerSrc = new URL('assets/site/audio-player.js', wikiRoot).href;
+    const playlistSrc = new URL('media/audio/playlist.json', wikiRoot).href;
 
     const script = document.createElement('script');
     script.src = playerSrc;
     script.defer = true;
     script.dataset.bzhPlaylist = playlistSrc;
+    document.head.appendChild(script);
+  }
+
+  function injectWikiCollaboration() {
+    if (!document.querySelector('.wiki-page')) return;
+    if (document.querySelector('script[data-wiki-collaboration-loader]')) return;
+
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = new URL('assets/site/wiki-collaboration.js', wikiRootUrl()).href;
+    script.dataset.wikiCollaborationLoader = '';
     document.head.appendChild(script);
   }
 
@@ -279,5 +283,6 @@
     updateToc();
     bindMediaGallery();
     injectAudioPlayer();
+    injectWikiCollaboration();
   });
 })();
