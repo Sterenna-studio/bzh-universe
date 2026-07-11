@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "streaming_note": "Pour le player web : utiliser src depuis previews/ (mp3 ~30s, <500KB) pour lecture instantanee. Le src complet dans tracks/ est chargé uniquement au clic 'lecture complète'. Les masters WAV dans masters/ ne sont jamais streamés en web.",
+  "streaming_note": "Pour le player web : utiliser src depuis previews/ (mp3 ~30s, <500KB) pour lecture instantanee. Le src complet dans tracks/ est charge uniquement au clic 'lecture complete'. Les masters WAV dans masters/ ne sont jamais streames en web.",
   "tracks": [
     {
       "id": "bzh-c-001",
@@ -152,7 +152,7 @@
       "artist": "DrSpig ft LEME",
       "style": "rap · narrative",
       "status": "wip",
-      "note": "Version de travail v11 — collaboration DrSpig ft LEME, pas encore canonisée",
+      "note": "Version de travail v11 — collaboration DrSpig ft LEME, pas encore canonisee",
       "src": "tracks/dernier-souffle/dernier-souffle.mp3",
       "src_raw": "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME v11.mp3",
       "preview": "previews/dernier-souffle-preview.mp3",
@@ -161,7 +161,7 @@
         "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEGETON.mp3",
         "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME_1.mp3",
         "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1.mp3",
-        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1 x Fantôme de Chair Mashup.mp3"
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1 x Fantome de Chair Mashup.mp3"
       ]
     },
     {
@@ -187,9 +187,10 @@
       "artist": "BZH Chronicles",
       "style": "cinematic · vocal",
       "status": "archive",
-      "note": "Version chantée FR — variante de travail, pas encore canonisée",
-      "src": "tracks/Descent on the Moon - BZH CHRONICLES fr - Vocals.mp3",
-      "src_slug": "tracks/descent-on-the-moon-vocals-fr.mp3"
+      "note": "Version chantee FR — variante de travail, pas encore canonisee",
+      "src": "tracks/descent-on-the-moon-vocals-fr.mp3",
+      "src_raw": "tracks/Descent on the Moon - BZH CHRONICLES fr - Vocals.mp3",
+      "preview": "previews/descent-on-the-moon-vocals-fr-preview.mp3"
     },
     {
       "id": "bzh-o-002",
@@ -197,7 +198,7 @@
       "artist": "BZH Chronicles",
       "style": "cinematic · lips sync",
       "status": "masters_only",
-      "note": "Extrait lips sync — à déplacer dans masters/ ou previews/site-song/",
+      "note": "Extrait lips sync — a deplacer dans masters/",
       "src": "tracks/Descent on the Moon lips.mp3"
     },
     {
@@ -206,9 +207,10 @@
       "artist": "DrSpig / BZH Chronicles",
       "style": "ballad · narrative",
       "status": "archive",
-      "note": "Collaboration DrSpig — à garder en archive canon étendu",
-      "src": "tracks/DrSpig_La Ballade de MutenRock.mp3",
-      "src_slug": "tracks/drspig-la-ballade-de-mutenrock.mp3"
+      "note": "Collaboration DrSpig — archive canon etendu",
+      "src": "tracks/drspig-la-ballade-de-mutenrock.mp3",
+      "src_raw": "tracks/DrSpig_La Ballade de MutenRock.mp3",
+      "preview": "previews/drspig-la-ballade-de-mutenrock-preview.mp3"
     },
     {
       "id": "bzh-o-004",
@@ -216,9 +218,10 @@
       "artist": "BZH Chronicles",
       "style": "intro · jingle",
       "status": "archive",
-      "note": "Jingle d'intro site/vidéo — court, à garder en archive",
-      "src": "tracks/Intro.mp3",
-      "src_slug": "tracks/intro-bzh.mp3"
+      "note": "Jingle d'intro site/video — court, preview = track complete",
+      "src": "tracks/intro-bzh.mp3",
+      "src_raw": "tracks/Intro.mp3",
+      "preview": "previews/intro-bzh-preview.mp3"
     },
     {
       "id": "bzh-o-005",
@@ -226,9 +229,10 @@
       "artist": "BZH Chronicles",
       "style": "orchestral · credits",
       "status": "archive",
-      "note": "Générique de fin / cover — archive canon",
-      "src": "tracks/Credits Song To An End Of A World (Cover).mp3",
-      "src_slug": "tracks/credits-song-to-an-end-of-a-world.mp3"
+      "note": "Generique de fin / cover — archive canon",
+      "src": "tracks/credits-song-to-an-end-of-a-world.mp3",
+      "src_raw": "tracks/Credits Song To An End Of A World (Cover).mp3",
+      "preview": "previews/credits-song-to-an-end-of-a-world-preview.mp3"
     },
     {
       "id": "bzh-o-006",
@@ -236,9 +240,10 @@
       "artist": "BZH Chronicles",
       "style": "synthwave · drift",
       "status": "archive",
-      "note": "Version finale retenue — les variantes (1)(2)(3) sont à déplacer dans masters/",
-      "src": "tracks/Neo Breizh Drift.mp3",
-      "src_slug": "tracks/neo-breizh-drift.mp3",
+      "note": "Version finale retenue — variantes (1)(2)(3) a deplacer dans masters/",
+      "src": "tracks/neo-breizh-drift.mp3",
+      "src_raw": "tracks/Neo Breizh Drift.mp3",
+      "preview": "previews/neo-breizh-drift-preview.mp3",
       "duplicates_to_masters": [
         "tracks/Neo Breizh Drift (1).mp3",
         "tracks/Neo Breizh Drift (2).mp3",
@@ -250,18 +255,20 @@
       "title": "Untitled",
       "artist": "BZH Chronicles",
       "style": "unknown",
-      "status": "to_identify",
-      "note": "⚠️ Fichier non identifié — à écouter et renommer en priorité",
-      "src": "tracks/Untitled.mp3"
+      "status": "archive",
+      "note": "Fichier non identifie — a ecouter et renommer",
+      "src": "tracks/untitled.mp3",
+      "src_raw": "tracks/Untitled.mp3",
+      "preview": "previews/untitled-preview.mp3"
     },
     {
       "id": "bzh-m-001",
-      "title": "Les Ombres et la Lumière",
+      "title": "Les Ombres et la Lumiere",
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
       "status": "masters_only",
       "note": "Master WAV uniquement — pas de version MP3 web pour l'instant",
-      "master": "masters/Les Ombres et la Lumière.wav"
+      "master": "masters/Les Ombres et la Lumiere.wav"
     },
     {
       "id": "bzh-m-002",
