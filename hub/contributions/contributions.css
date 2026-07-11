@@ -1,0 +1,84 @@
+.wiki-contributions-body .wiki-admin-shell {
+  width: min(1040px, calc(100% - 2rem));
+}
+
+.wiki-contribution-card .wiki-admin-card-heading h3 {
+  overflow-wrap: anywhere;
+}
+
+.wiki-admin-badge-approved {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+}
+
+.wiki-admin-badge-rejected {
+  color: var(--accent-3);
+  border-color: color-mix(in srgb, var(--accent-3) 55%, var(--line));
+}
+
+.wiki-contribution-review {
+  margin: 0.8rem 0 0;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid var(--accent-2);
+  background: var(--surface-soft);
+}
+
+.wiki-contribution-review strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--accent-2);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.wiki-contribution-review p {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.wiki-contribution-details {
+  margin-top: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+}
+
+.wiki-contribution-details summary {
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.wiki-contribution-details[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.wiki-contribution-details pre {
+  max-height: 22rem;
+  margin: 0;
+  padding: 0.85rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  line-height: 1.5;
+}
+
+.wiki-contribution-current {
+  color: var(--muted);
+}
+
+.wiki-contribution-actions {
+  justify-content: flex-end;
+  margin-top: 0.8rem;
+}
+
+.wiki-contribution-help {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
