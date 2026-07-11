@@ -23,9 +23,10 @@ La session Supabase est partagee par origine avec Nitro. Le profil applicatif re
 |---|---|
 | `contributions` | Propositions d'edition (`pending`, `approved`, `rejected`) |
 | `comments` | Commentaires de page (`visible`, `hidden`, `flagged`) |
-| `admin_users` | Table historique conservee, mais non utilisee par le code |
+| `admin_users` | Table historique conservee, mais non utilisee et non exposee au public |
 
-La migration initiale est dans `migrations/20260711_wiki_contributions.sql` et a deja ete executee sur le projet. Le durcissement des privileges et de l'attribution est prepare dans `migrations/20260711_wiki_access_hardening.sql`.
+La migration initiale est dans `migrations/20260711_wiki_contributions.sql`.
+Le durcissement est dans `migrations/20260711_wiki_access_hardening.sql` et a ete applique au projet `gwen-ha-star`.
 
 ## Interface publique
 
@@ -36,29 +37,68 @@ Les pages wiki chargent automatiquement :
 - `assets/site/wiki-comments.js`
 - `assets/site/wiki-collaboration.js`
 
-Le client public utilise uniquement la cle publique configuree dans `/shared/supabase-client.js`. La `service_role` ou une cle secrete ne doit jamais etre exposee dans ce repo statique.
+Le client public utilise uniquement la cle publique configuree dans `/shared/supabase-client.js`. La `service_role` ou une cle secrete ne doit jamais etre exposee dans le site statique.
 
-## Moderation
+## Console de moderation
 
-Le role d'administration se verifie avec `profiles.role === 'superuser'`.
+La console est disponible dans :
 
-La future interface `/hub/admin/` pourra afficher les files de moderation cote client, mais les operations privilegiees (`approved`, `rejected`, `hidden`, suppression) devront appeler une Supabase Edge Function qui :
-
-1. valide le JWT de l'utilisateur ;
-2. relit `profiles.role` cote serveur ;
-3. refuse toute operation si le role n'est pas `superuser` ;
-4. utilise la cle secrete uniquement dans l'environnement de la fonction.
-
-## RLS et Data API
-
-RLS controle les lignes, mais les privileges Postgres controlent aussi l'acces aux tables. Verifier que les roles `anon` et `authenticated` disposent uniquement des droits necessaires :
-
-```sql
-grant select, insert on table public.contributions to anon, authenticated;
-grant select, insert on table public.comments to anon, authenticated;
+```txt
+/hub/admin/
 ```
 
-Les clients publics ne doivent pas recevoir de droit `update` ou `delete` sur ces tables.
+Fichiers :
+
+- `hub/admin/index.html`
+- `hub/admin/admin.js`
+- `hub/admin/admin.css`
+
+La page verifie la session Nitro puis masque le tableau de bord si `profiles.role !== 'superuser'`. Cette verification cote client sert uniquement a l'interface : elle ne constitue pas l'autorisation finale.
+
+## Edge Function `wiki-moderation`
+
+Le code source versionne se trouve dans :
+
+```txt
+supabase/functions/wiki-moderation/index.ts
+```
+
+La fonction est deployee sur `gwen-ha-star` avec la verification JWT activee. Pour chaque requete elle :
+
+1. valide le Bearer token avec Supabase Auth ;
+2. relit le profil depuis `profiles` ;
+3. exige `role = 'superuser'` ;
+4. utilise la cle `service_role` uniquement dans l'environnement Edge Function ;
+5. limite les origines navigateur a `https://nitro.sterenna.fr` et aux serveurs locaux de developpement.
+
+Actions disponibles :
+
+- `list`
+- `approve_contribution`
+- `reject_contribution`
+- `hide_comment`
+- `clear_comment_flag`
+
+L'approbation d'une contribution enregistre la decision en base. Elle ne modifie pas automatiquement les fichiers Markdown ou HTML du repo : l'integration editoriale reste une operation Git separee.
+
+## RLS et privileges Data API
+
+Etat public attendu :
+
+| Ressource | `anon` / `authenticated` |
+|---|---|
+| `contributions` | `INSERT` uniquement |
+| `comments` | `SELECT`, `INSERT` uniquement |
+| `admin_users` | aucun privilege |
+
+Les politiques d'insertion imposent :
+
+- en anonyme : aucun `author_nitro_id` ;
+- en session Nitro : `author_nitro_id = auth.uid()` ;
+- le pseudo connecte doit correspondre a `profiles.username` ;
+- les commentaires connectes ne peuvent pas injecter un `author_name` anonyme.
+
+Les clients publics n'ont aucun droit `UPDATE` ou `DELETE`. La lecture des propositions en attente est reservee a l'Edge Function de moderation.
 
 ## Purge des propositions refusees
 
