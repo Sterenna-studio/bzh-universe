@@ -18,8 +18,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic · ambient",
       "status": "canon",
-      "src": "tracks/aligax-digital-maiden.mp3",
-      "preview": "previews/aligax-digital-maiden-preview.mp3"
+      "note": "Fichier source absent du disque — preview non generee",
+      "src": "tracks/aligax-digital-maiden.mp3"
     },
     {
       "id": "bzh-c-003",
@@ -40,9 +40,9 @@
       "title": "BZH Power: United Legends",
       "artist": "BZH Chronicles",
       "style": "glitch · orchestral",
-      "status": "a confirmer",
-      "src": "tracks/bzh-power-united-legends.mp3",
-      "preview": "previews/bzh-power-united-legends-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/bzh-power-united-legends.mp3"
     },
     {
       "id": "bzh-c-005",
@@ -70,54 +70,54 @@
       "title": "Spirit's Rage",
       "artist": "Spirit / BZH Chronicles",
       "style": "glitch · ambient",
-      "status": "a confirmer",
-      "src": "tracks/spirits-rage.mp3",
-      "preview": "previews/spirits-rage-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/spirits-rage.mp3"
     },
     {
       "id": "bzh-c-008",
       "title": "Void Echoes",
       "artist": "BZH Chronicles",
       "style": "ambient · trip-hop",
-      "status": "a confirmer",
-      "src": "tracks/void-echoes.mp3",
-      "preview": "previews/void-echoes-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/void-echoes.mp3"
     },
     {
       "id": "bzh-c-009",
       "title": "Sniky the Killer",
       "artist": "BZH Chronicles",
       "style": "glitch-hop",
-      "status": "archive",
-      "src": "tracks/sniky-the-killer.mp3",
-      "preview": "previews/sniky-the-killer-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/sniky-the-killer.mp3"
     },
     {
       "id": "bzh-c-010",
       "title": "Aligax — Beautiful Warrior",
       "artist": "BZH Chronicles",
       "style": "orchestral · ambient",
-      "status": "archive",
-      "src": "tracks/aligax-beautiful-warrior.mp3",
-      "preview": "previews/aligax-beautiful-warrior-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/aligax-beautiful-warrior.mp3"
     },
     {
       "id": "bzh-c-011",
       "title": "Empire de l'Ombre",
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
-      "status": "archive",
-      "src": "tracks/empire-de-lombre.mp3",
-      "preview": "previews/empire-de-lombre-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/empire-de-lombre.mp3"
     },
     {
       "id": "bzh-c-012",
       "title": "Night of Power",
       "artist": "BZH Chronicles",
       "style": "glitch · dubstep",
-      "status": "archive",
-      "src": "tracks/night-of-power.mp3",
-      "preview": "previews/night-of-power-preview.mp3"
+      "status": "concept",
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/night-of-power.mp3"
     },
     {
       "id": "bzh-c-013",
@@ -125,8 +125,8 @@
       "artist": "BZH Chronicles",
       "style": "glitch",
       "status": "concept",
-      "src": "tracks/glitched-warcry.mp3",
-      "preview": "previews/glitched-warcry-preview.mp3"
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/glitched-warcry.mp3"
     },
     {
       "id": "bzh-c-014",
@@ -134,8 +134,8 @@
       "artist": "BZH Chronicles",
       "style": "orchestral cinematic",
       "status": "concept",
-      "src": "tracks/lheure-du-combat.mp3",
-      "preview": "previews/lheure-du-combat-preview.mp3"
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/lheure-du-combat.mp3"
     },
     {
       "id": "bzh-c-015",
@@ -143,8 +143,43 @@
       "artist": "BZH Chronicles",
       "style": "glitch-hop · anthem",
       "status": "concept",
-      "src": "tracks/bzh-power.mp3",
-      "preview": "previews/bzh-power-preview.mp3"
+      "note": "Fichier source absent — concept non produit",
+      "src": "tracks/bzh-power.mp3"
+    },
+    {
+      "id": "bzh-w-001",
+      "title": "Dernier Souffle",
+      "artist": "DrSpig ft LEME",
+      "style": "rap · narrative",
+      "status": "wip",
+      "note": "Version de travail v11 — collaboration DrSpig ft LEME, pas encore canonisée",
+      "src": "tracks/dernier-souffle/dernier-souffle.mp3",
+      "src_raw": "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME v11.mp3",
+      "preview": "previews/dernier-souffle-preview.mp3",
+      "variants": [
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME.mp3",
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEGETON.mp3",
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME_1.mp3",
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1.mp3",
+        "tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1 x Fantôme de Chair Mashup.mp3"
+      ]
+    },
+    {
+      "id": "bzh-w-002",
+      "title": "Sniky: The Frager — Mix v2",
+      "artist": "BZH Chronicles",
+      "style": "glitch-hop · remix",
+      "status": "wip",
+      "note": "Remix en cours — version de travail mmk sniky 2",
+      "src": "tracks/sniky-the-frager-mix/sniky-the-frager-mix.mp3",
+      "src_raw": "tracks/sniky-the-frager-mix/mmk sniky 2.mp3",
+      "preview": "previews/sniky-the-frager-mix-preview.mp3",
+      "variants": [
+        "tracks/sniky-the-frager-mix/mmk sniky 2_1.mp3",
+        "tracks/sniky-the-frager-mix/mmk sniky 2_2.mp3",
+        "tracks/sniky-the-frager-mix/mmk sniky 2_3.mp3",
+        "tracks/sniky-the-frager-mix/mmk sniky 2_4.mp3"
+      ]
     },
     {
       "id": "bzh-o-001",
