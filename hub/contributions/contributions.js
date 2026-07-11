@@ -209,7 +209,6 @@ async function loadContributions(userId) {
     const { data, error } = await supabase
       .from('contributions')
       .select('id, page_slug, field_key, current_value, proposed_value, status, reviewed_at, reviewer_note, created_at, updated_at')
-      .eq('author_nitro_id', userId)
       .order('created_at', { ascending: false });
 
     if (error) throw error;
