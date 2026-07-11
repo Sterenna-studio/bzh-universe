@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Moderation — BZH Universe</title>
+  <link rel="stylesheet" href="../../assets/site/wiki.css">
+  <link rel="stylesheet" href="../../assets/site/wiki-collaboration.css">
+  <link rel="stylesheet" href="admin.css">
+  <script type="module" src="admin.js"></script>
+</head>
+<body class="wiki-admin-body">
+  <a class="skip-link" href="#content">Aller au contenu</a>
+  <header class="wiki-topbar wiki-admin-topbar">
+    <a class="wiki-brand" href="../index.html">
+      <span class="wiki-brand-mark" aria-hidden="true"></span>
+      <span>
+        <span class="wiki-brand-kicker">Console restreinte</span>
+        <span class="wiki-brand-name">BZH Universe</span>
+      </span>
+    </a>
+    <nav class="wiki-toplinks" aria-label="Navigation administration">
+      <a class="wiki-pill" href="../index.html">Retour au hub</a>
+      <a class="wiki-pill" href="../../docs/00-index.html">Wiki</a>
+      <a class="wiki-pill" href="https://nitro.sterenna.fr/star/">Cockpit Nitro</a>
+    </nav>
+  </header>
+
+  <main class="wiki-admin-shell" id="content">
+    <section class="wiki-admin-hero">
+      <p class="eyebrow">BZH WIKI · MODERATION</p>
+      <h1>Console de moderation</h1>
+      <p>Validation des propositions et gestion des commentaires. Toutes les actions privilegiees sont revalidees cote serveur.</p>
+    </section>
+
+    <section class="wiki-admin-gate" data-admin-gate aria-live="polite">
+      <h2>Verification des acces…</h2>
+      <p>Lecture de la session Nitro et du role du profil.</p>
+    </section>
+
+    <section class="wiki-admin-dashboard" data-admin-dashboard hidden>
+      <header class="wiki-admin-dashboard-heading">
+        <div>
+          <p class="wiki-admin-kicker">Session autorisee</p>
+          <h2>Agent <span data-admin-moderator>Superuser</span></h2>
+        </div>
+        <button class="wiki-admin-button wiki-admin-button-secondary" type="button" data-admin-refresh>Actualiser</button>
+      </header>
+
+      <p class="wiki-admin-status" data-admin-status role="status" aria-live="polite" hidden></p>
+
+      <section class="wiki-admin-stats" aria-label="Compteurs de moderation">
+        <article><strong data-contribution-count>0</strong><span>contributions en attente</span></article>
+        <article><strong data-flagged-count>0</strong><span>commentaires signales</span></article>
+        <article><strong data-recent-count>0</strong><span>commentaires visibles recents</span></article>
+      </section>
+
+      <section class="wiki-admin-queue" aria-labelledby="pending-title">
+        <div class="wiki-admin-section-heading">
+          <div>
+            <p class="wiki-admin-kicker">File editoriale</p>
+            <h2 id="pending-title">Contributions en attente</h2>
+          </div>
+          <p>Approuver enregistre la decision dans Supabase. L’integration du texte dans les sources Markdown reste une operation Git distincte.</p>
+        </div>
+        <div class="wiki-admin-list" data-contribution-list></div>
+      </section>
+
+      <section class="wiki-admin-queue" aria-labelledby="flagged-title">
+        <div class="wiki-admin-section-heading">
+          <div>
+            <p class="wiki-admin-kicker">Priorite moderation</p>
+            <h2 id="flagged-title">Commentaires signales</h2>
+          </div>
+        </div>
+        <div class="wiki-admin-list" data-flagged-list></div>
+      </section>
+
+      <details class="wiki-admin-queue wiki-admin-recent">
+        <summary>Commentaires visibles recents</summary>
+        <p class="wiki-admin-help">Cette vue permet aussi de masquer rapidement un commentaire qui n’a pas encore ete signale.</p>
+        <div class="wiki-admin-list" data-recent-list></div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

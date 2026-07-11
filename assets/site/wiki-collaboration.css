@@ -1,0 +1,186 @@
+.wiki-collab {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.18);
+}
+
+.wiki-collab + .wiki-collab {
+  margin-top: 1rem;
+}
+
+.wiki-collab h2,
+.wiki-collab p {
+  margin-top: 0;
+}
+
+.wiki-collab-details > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.wiki-collab-details[open] > summary {
+  margin-bottom: 0.85rem;
+}
+
+.wiki-collab-intro,
+.wiki-collab-identity,
+.wiki-comments-empty {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.wiki-collab-identity {
+  margin-bottom: 0.8rem;
+  font-family: var(--font-mono);
+}
+
+.wiki-collab-identity[data-authenticated="true"] {
+  color: var(--accent-2);
+}
+
+.wiki-collab-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.wiki-collab-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.wiki-collab-field > span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.wiki-collab-field input,
+.wiki-collab-field select,
+.wiki-collab-field textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--bg-deep) 72%, var(--surface));
+  color: var(--ink);
+  padding: 0.65rem 0.75rem;
+}
+
+.wiki-collab-field textarea {
+  resize: vertical;
+  min-height: 7rem;
+  line-height: 1.5;
+}
+
+.wiki-collab-field input:focus,
+.wiki-collab-field select:focus,
+.wiki-collab-field textarea:focus {
+  border-color: var(--line-strong);
+  outline: 2px solid color-mix(in srgb, var(--accent) 34%, transparent);
+  outline-offset: 2px;
+}
+
+.wiki-collab-actions,
+.wiki-comments-heading,
+.wiki-comment-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wiki-collab-button {
+  min-height: 2.4rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface-strong));
+  color: var(--accent);
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+}
+
+.wiki-collab-button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--accent) 24%, var(--surface-strong));
+  color: var(--accent-2);
+}
+
+.wiki-collab-button-secondary {
+  background: var(--surface-soft);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.wiki-collab-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.wiki-collab-status {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.wiki-collab-status[data-kind="success"] {
+  color: var(--accent-2);
+}
+
+.wiki-collab-status[data-kind="error"] {
+  color: var(--accent-3);
+}
+
+.wiki-comments-heading h2 {
+  margin-bottom: 0;
+}
+
+.wiki-comments-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+
+.wiki-comment {
+  padding: 0.8rem;
+  border-left: 3px solid var(--line-strong);
+  background: var(--surface-soft);
+}
+
+.wiki-comment-header {
+  align-items: baseline;
+}
+
+.wiki-comment-header strong {
+  color: var(--accent);
+}
+
+.wiki-comment-header time {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.wiki-comment p {
+  margin: 0.45rem 0 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  .wiki-collab-actions,
+  .wiki-comments-heading,
+  .wiki-comment-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .wiki-collab-button {
+    width: 100%;
+  }
+}

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script defer src="../assets/site/wiki-search-index.js"></script>
   <script defer src="../assets/site/wiki.js"></script>
+  <script type="module" src="../assets/site/wiki-admin-link.js"></script>
   <!-- Audio Player -->
   <script defer src="../assets/site/audio-player.js" data-bzh-playlist="../media/audio/playlist.json"></script>
 </head>
@@ -26,6 +27,7 @@
       <a class="wiki-pill" href="../media/catalog/media-catalog.html">Medias</a>
       <a class="wiki-pill" href="../media/gallery/index.html">Galerie</a>
       <a class="wiki-pill" href="../docs/conversations/index.html">Sources</a>
+      <a class="wiki-pill" href="./admin/" data-wiki-admin-link hidden>Admin</a>
     </nav>
     <form class="wiki-search" data-wiki-search-form role="search" autocomplete="off">
       <label>
@@ -161,6 +163,13 @@
             <p>Point de suivi des 520 residuels traites : videos de reference, doublons indexes et archive LoL interne mise de cote.</p>
           </span>
           <span class="tag">IMPORT</span>
+        </a>
+        <a class="hub-card" href="./admin/" data-wiki-admin-link hidden>
+          <span>
+            <h3>Moderation du wiki</h3>
+            <p>Contributions en attente, commentaires signales et historique recent.</p>
+          </span>
+          <span class="tag">SUPERUSER</span>
         </a>
       </div>
     </section>
