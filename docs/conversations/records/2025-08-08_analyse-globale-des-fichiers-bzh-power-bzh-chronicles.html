@@ -36,7 +36,11 @@
     <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>
     <button class="reader-control" type="button" data-reader-action="font-up" title="Augmenter la taille du texte">A+<span class="reader-control-label">Augmenter la taille du texte</span></button>
     <button class="reader-control" type="button" data-reader-action="dyslexic" aria-pressed="false">Dys<span class="reader-control-label">Activer OpenDyslexic</span></button>
-    <button class="reader-control" type="button" data-reader-action="theme" aria-pressed="false">☼<span class="reader-control-label">Changer de theme</span></button>
+    <div class="theme-switch" role="group" aria-label="Choisir un theme">
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="dark" aria-pressed="false" title="Theme sombre lisible">☾<span class="reader-control-label">Theme sombre lisible</span></button>
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="light" aria-pressed="false" title="Theme clair lisible">☀<span class="reader-control-label">Theme clair lisible</span></button>
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="cyber" aria-pressed="false" title="Theme cyber fruite">⚡<span class="reader-control-label">Theme cyber fruite</span></button>
+    </div>
   </div>
   </header>
 <div class="wiki-layout">

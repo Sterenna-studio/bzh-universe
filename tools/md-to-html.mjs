@@ -7,13 +7,16 @@
 //   node tools/md-to-html.mjs
 //
 import { existsSync, readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
-import { join, relative, sep, dirname } from 'node:path';
+import { join, relative, resolve, sep, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IGNORE_DIRS = new Set(['.git', '.github', 'node_modules', 'tools']);
 const SEARCH_INDEX_JSON = join(ROOT, 'assets', 'site', 'wiki-search-index.json');
 const SEARCH_INDEX_JS = join(ROOT, 'assets', 'site', 'wiki-search-index.js');
+const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.avif']);
+const ASSET_ROOT_DIRS = ['assets', 'media', 'archives'];
+const dirImageCache = new Map();
 // Sentinelle ASCII pour proteger les spans `code` (jamais present dans les docs)
 const PH_OPEN = '@@CODE';
 const PH_CLOSE = 'CODE@@';
@@ -38,6 +41,107 @@ function rewriteHref(url) {
   return url.replace(/\.md(#.*)?$/i, '.html$1');
 }
 
+// Aperçus d'assets : detecte les chemins/liens vers assets/media/archives
+// (fichiers image ou dossiers qui en contiennent) et affiche des vignettes
+// directement dans la page, sans devoir reecrire les .md sources.
+
+function isImageFile(name) {
+  const ext = name.slice(name.lastIndexOf('.')).toLowerCase();
+  return IMAGE_EXT.has(ext);
+}
+
+function findImages(absDir, limit = 6) {
+  if (dirImageCache.has(absDir)) return dirImageCache.get(absDir);
+  const out = [];
+  let scanned = 0;
+  function walk(dir, depth) {
+    if (out.length >= limit || depth > 4 || scanned > 600) return;
+    let entries;
+    try {
+      entries = readdirSync(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+    entries.sort((a, b) => a.name.localeCompare(b.name));
+    for (const entry of entries) {
+      if (out.length >= limit || scanned > 600) return;
+      if (entry.name.startsWith('.')) continue;
+      scanned++;
+      const full = join(dir, entry.name);
+      if (entry.isDirectory()) walk(full, depth + 1);
+      else if (isImageFile(entry.name)) out.push(full);
+    }
+  }
+  walk(absDir, 0);
+  dirImageCache.set(absDir, out);
+  return out;
+}
+
+function relFromDoc(docDir, absTarget) {
+  return relative(docDir, absTarget).split(sep).map(encodeURIComponent).join('/');
+}
+
+function assetThumbs(docDir, files) {
+  return files
+    .map((absImg) => {
+      const url = relFromDoc(docDir, absImg);
+      return `<a class="wiki-asset-thumb" href="${url}" target="_blank" rel="noopener noreferrer"><img src="${url}" alt="" loading="lazy" decoding="async"></a>`;
+    })
+    .join('');
+}
+
+function resolveAssetCandidate(rawPath, docDir) {
+  if (!rawPath) return null;
+  const trimmed = rawPath.split('#')[0].split('?')[0].trim();
+  if (!trimmed || /^(https?:|mailto:|tel:|data:|\/\/)/i.test(trimmed)) return null;
+  let clean;
+  try {
+    clean = decodeURIComponent(trimmed);
+  } catch {
+    clean = trimmed;
+  }
+  let abs;
+  if (/^(assets|media|archives)\//i.test(clean)) abs = join(ROOT, clean);
+  else if (clean.startsWith('/')) abs = join(ROOT, clean.slice(1));
+  else abs = resolve(docDir, clean);
+  const relToRoot = relative(ROOT, abs).split(sep).join('/');
+  if (relToRoot.startsWith('..')) return null;
+  if (!ASSET_ROOT_DIRS.some((d) => relToRoot === d || relToRoot.startsWith(`${d}/`))) return null;
+  return abs;
+}
+
+function assetPreviewFor(abs, docDir) {
+  if (!existsSync(abs)) return null;
+  const st = statSync(abs);
+  if (st.isFile()) {
+    if (!isImageFile(abs)) return null;
+    return `<span class="wiki-asset-preview">${assetThumbs(docDir, [abs])}</span>`;
+  }
+  if (st.isDirectory()) {
+    const images = findImages(abs, 6);
+    if (!images.length) return null;
+    return `<span class="wiki-asset-preview">${assetThumbs(docDir, images)}</span>`;
+  }
+  return null;
+}
+
+function injectAssetPreviews(html, docDir) {
+  let out = html.replace(/<code>([^<]*)<\/code>/g, (match, raw) => {
+    const abs = resolveAssetCandidate(raw, docDir);
+    if (!abs) return match;
+    const preview = assetPreviewFor(abs, docDir);
+    return preview ? `${match}${preview}` : match;
+  });
+  out = out.replace(/<a href="([^"]+)"([^>]*)>([^<]*)<\/a>/g, (match, href) => {
+    if (/\.html?(#.*)?$/i.test(href)) return match;
+    const abs = resolveAssetCandidate(href, docDir);
+    if (!abs) return match;
+    const preview = assetPreviewFor(abs, docDir);
+    return preview ? `${match}${preview}` : match;
+  });
+  return out;
+}
+
 function inline(text) {
   const codes = [];
   let s = text.replace(/`([^`]+)`/g, (_, c) => {
@@ -45,10 +149,13 @@ function inline(text) {
     return `${PH_OPEN}${codes.length - 1}${PH_CLOSE}`;
   });
   s = escapeHtml(s);
-  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g, (_, label, url, title) => {
+  s = s.replace(/(!)?\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g, (_, bang, label, url, title) => {
     const href = rewriteHref(url.trim());
-    const ext = /^https?:/i.test(href);
     const t = title ? ` title="${escapeHtml(title)}"` : '';
+    if (bang) {
+      return `<figure class="wiki-embed"><img src="${href}" alt="${label}"${t} loading="lazy" decoding="async"></figure>`;
+    }
+    const ext = /^https?:/i.test(href);
     const attrs = ext ? ' target="_blank" rel="noopener noreferrer"' : '';
     return `<a href="${href}"${t}${attrs}>${label}</a>`;
   });
@@ -182,7 +289,11 @@ function readerControls() {
     <button class="reader-control" type="button" data-reader-action="font-reset" title="Reinitialiser la taille du texte">A<span class="reader-control-label">Reinitialiser la taille du texte</span></button>
     <button class="reader-control" type="button" data-reader-action="font-up" title="Augmenter la taille du texte">A+<span class="reader-control-label">Augmenter la taille du texte</span></button>
     <button class="reader-control" type="button" data-reader-action="dyslexic" aria-pressed="false">Dys<span class="reader-control-label">Activer OpenDyslexic</span></button>
-    <button class="reader-control" type="button" data-reader-action="theme" aria-pressed="false">☼<span class="reader-control-label">Changer de theme</span></button>
+    <div class="theme-switch" role="group" aria-label="Choisir un theme">
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="dark" aria-pressed="false" title="Theme sombre lisible">☾<span class="reader-control-label">Theme sombre lisible</span></button>
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="light" aria-pressed="false" title="Theme clair lisible">☀<span class="reader-control-label">Theme clair lisible</span></button>
+      <button class="reader-control" type="button" data-reader-action="theme" data-theme-value="cyber" aria-pressed="false" title="Theme cyber fruite">⚡<span class="reader-control-label">Theme cyber fruite</span></button>
+    </div>
   </div>`;
 }
 
@@ -387,6 +498,7 @@ for (const file of files) {
   const relPath = relative(ROOT, file).split(sep).join('/');
   const md = readFileSync(file, 'utf8');
   const { html, title } = mdToHtml(md);
+  const enrichedHtml = injectAssetPreviews(html, dirname(file));
   const depth = relPath.split('/').length - 1;
   const prefix = '../'.repeat(depth);
   const outPath = file.replace(/\.md$/i, '.html');
@@ -398,7 +510,7 @@ for (const file of files) {
     outPath,
     page({
       title: pageTitle,
-      body: html,
+      body: enrichedHtml,
       hubLink: prefix + 'hub/index.html',
       indexLink: prefix + 'docs/00-index.html',
       crumb: relPath,

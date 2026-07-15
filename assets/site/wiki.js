@@ -15,17 +15,29 @@
     localStorage.setItem(storageKey, JSON.stringify(prefs));
   }
 
+  const THEMES = ['dark', 'light', 'cyber'];
+
+  function ensureCyberFont() {
+    if (document.querySelector('link[data-cyber-font]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap';
+    link.dataset.cyberFont = '';
+    document.head.appendChild(link);
+  }
+
   function applyPrefs(prefs) {
-    const theme = prefs.theme === 'light' ? 'light' : 'dark';
+    const theme = THEMES.includes(prefs.theme) ? prefs.theme : 'dark';
     const scale = String(clamp(Number(prefs.fontScale ?? 0), -1, 2));
     const dyslexic = prefs.dyslexic === true;
     root.dataset.theme = theme;
     root.dataset.fontScale = scale;
     root.dataset.dyslexic = String(dyslexic);
 
+    if (theme === 'cyber') ensureCyberFont();
+
     document.querySelectorAll('[data-reader-action="theme"]').forEach((button) => {
-      button.setAttribute('aria-pressed', String(theme === 'light'));
-      button.title = theme === 'light' ? 'Passer au theme sombre' : 'Passer au theme clair';
+      button.setAttribute('aria-pressed', String(button.dataset.themeValue === theme));
     });
     document.querySelectorAll('[data-reader-action="dyslexic"]').forEach((button) => {
       button.setAttribute('aria-pressed', String(dyslexic));
@@ -196,7 +208,7 @@
       const action = button.dataset.readerAction;
       prefs = readPrefs();
       if (action === 'theme') {
-        prefs.theme = prefs.theme === 'light' ? 'dark' : 'light';
+        if (button.dataset.themeValue) prefs.theme = button.dataset.themeValue;
       } else if (action === 'font-up') {
         prefs.fontScale = clamp(Number(prefs.fontScale ?? 0) + 1, -1, 2);
       } else if (action === 'font-down') {
