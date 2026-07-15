@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lemegeton Animation Tuner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">CHRONICLES FM · LEMEGETON</p>
+      <h1>Animation Tuner</h1>
+      <p class="subtitle">Tester rapidement le nombre d’images, les FPS, la boucle et le rythme d’une sprite sheet.</p>
+    </div>
+    <div class="top-actions">
+      <button id="saveBtn">Sauvegarder</button>
+      <button id="exportBtn">Exporter JSON</button>
+      <label class="file-btn">Charger une image<input id="fileInput" type="file" accept="image/png,image/webp,image/jpeg"></label>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel controls">
+      <h2>Découpage</h2>
+      <div class="grid two">
+        <label>Colonnes<input id="cols" type="number" min="1" max="64" value="8"></label>
+        <label>Lignes<input id="rows" type="number" min="1" max="64" value="1"></label>
+        <label>Première frame<input id="startFrame" type="number" min="1" value="1"></label>
+        <label>Dernière frame<input id="endFrame" type="number" min="1" value="8"></label>
+      </div>
+
+      <h2>Lecture</h2>
+      <label class="range-label">
+        <span>FPS <strong id="fpsValue">8</strong></span>
+        <input id="fps" type="range" min="1" max="30" step="0.25" value="8">
+      </label>
+      <div class="grid two">
+        <label>FPS précis<input id="fpsNumber" type="number" min="0.25" max="60" step="0.25" value="8"></label>
+        <label>Vitesse globale
+          <select id="speed">
+            <option value="0.5">0,5×</option>
+            <option value="0.75">0,75×</option>
+            <option value="1" selected>1×</option>
+            <option value="1.25">1,25×</option>
+            <option value="1.5">1,5×</option>
+            <option value="2">2×</option>
+          </select>
+        </label>
+        <label>Mode de boucle
+          <select id="loopMode">
+            <option value="loop">Boucle</option>
+            <option value="pingpong">Ping-pong</option>
+            <option value="once">Une fois</option>
+          </select>
+        </label>
+        <label>Direction
+          <select id="direction">
+            <option value="forward">Normale</option>
+            <option value="reverse">Inversée</option>
+          </select>
+        </label>
+      </div>
+
+      <h2>Affichage</h2>
+      <div class="grid two">
+        <label>Échelle
+          <select id="scale">
+            <option value="1">1×</option>
+            <option value="1.5">1,5×</option>
+            <option value="2" selected>2×</option>
+            <option value="3">3×</option>
+            <option value="4">4×</option>
+          </select>
+        </label>
+        <label>Fond
+          <select id="background">
+            <option value="checker">Damier</option>
+            <option value="dark" selected>Sombre</option>
+            <option value="light">Clair</option>
+            <option value="red">Rouge chroma</option>
+            <option value="green">Vert chroma</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="transport">
+        <button id="prevBtn" title="Frame précédente">◀</button>
+        <button id="playBtn" class="primary">Pause</button>
+        <button id="nextBtn" title="Frame suivante">▶</button>
+        <button id="resetBtn">Revenir à F1</button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="preview-card">
+        <div class="preview-head">
+          <div>
+            <h2>Aperçu principal</h2>
+            <p id="statusText">Frame 1 / 8</p>
+          </div>
+          <div class="metrics">
+            <span><b id="cycleDuration">1,00 s</b> par cycle</span>
+            <span><b id="frameDuration">125 ms</b> par frame</span>
+          </div>
+        </div>
+        <div id="stage" class="stage dark">
+          <canvas id="previewCanvas"></canvas>
+          <div class="ground-line"></div>
+        </div>
+        <input id="scrubber" type="range" min="1" max="8" value="1">
+      </div>
+
+      <div class="compare-card">
+        <div class="preview-head">
+          <div>
+            <h2>Comparaison A/B</h2>
+            <p>Comparer le réglage courant à une autre cadence.</p>
+          </div>
+          <label>FPS B<input id="fpsB" type="number" min="1" max="30" step="0.25" value="10"></label>
+        </div>
+        <div class="compare-grid">
+          <div>
+            <strong>A · <span id="labelA">8 FPS</span></strong>
+            <div id="stageA" class="mini-stage dark"><canvas id="canvasA"></canvas></div>
+          </div>
+          <div>
+            <strong>B · <span id="labelB">10 FPS</span></strong>
+            <div id="stageB" class="mini-stage dark"><canvas id="canvasB"></canvas></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="presets-card">
+        <h2>Cadences recommandées</h2>
+        <div class="preset-grid">
+          <button data-fps="6"><b>6 FPS</b><span>Lourd / saccadé</span></button>
+          <button data-fps="8" class="recommended"><b>8 FPS</b><span>Robot rétro équilibré</span></button>
+          <button data-fps="10"><b>10 FPS</b><span>Marche plus vive</span></button>
+          <button data-fps="12"><b>12 FPS</b><span>Fluide sans être molle</span></button>
+        </div>
+        <p class="tip">Pour Lemegeton, commence à <strong>8 FPS</strong>. Passe à 10 FPS si les pieds semblent rester trop longtemps en l’air. Descends à 6 FPS si tu veux accentuer le poids mécanique.</p>
+      </div>
+    </section>
+
+    <aside class="panel inspector">
+      <h2>Diagnostic</h2>
+      <div id="diagnostic" class="diagnostic"></div>
+
+      <h2>Sprite sheet</h2>
+      <dl class="info-list">
+        <div><dt>Image</dt><dd id="imageSize">—</dd></div>
+        <div><dt>Frame</dt><dd id="frameSize">—</dd></div>
+        <div><dt>Frames jouées</dt><dd id="playedFrames">8</dd></div>
+      </dl>
+
+      <h2>Raccourcis</h2>
+      <dl class="shortcut-list">
+        <div><dt>Espace</dt><dd>Lecture / pause</dd></div>
+        <div><dt>← / →</dt><dd>Frame précédente / suivante</dd></div>
+        <div><dt>R</dt><dd>Revenir au début</dd></div>
+        <div><dt>+ / −</dt><dd>Modifier les FPS</dd></div>
+      </dl>
+
+      <h2>Configuration</h2>
+      <pre id="configPreview"></pre>
+    </aside>
+  </main>
+
+  <footer>
+    Fonctionne entièrement en local. Aucun fichier n’est envoyé sur Internet.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

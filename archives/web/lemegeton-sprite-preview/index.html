@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lemegeton - Sprite Pack Preview</title>
+  <style>
+    :root{color-scheme:dark}
+    *{box-sizing:border-box}
+    body{margin:0;background:#080d13;color:#eef7ff;font-family:system-ui,Segoe UI,sans-serif}
+    main{width:min(1400px,calc(100% - 30px));margin:26px auto 60px}
+    a{color:#44e7ff}
+    .hero{display:flex;gap:24px;align-items:center;justify-content:space-between}
+    .panel{background:#101923;border:1px solid #263847;border-radius:12px;padding:18px;margin:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .card{background:#0b121a;border:1px solid #243442;border-radius:10px;padding:12px;text-align:center}
+    .card img{max-width:100%;height:220px;object-fit:contain;image-rendering:pixelated;background:repeating-conic-gradient(#101820 0 25%,#17222d 0 50%) 50%/20px 20px}
+    .wide{width:100%;height:auto;display:block}
+    .muted{color:#95aabb}
+    code{background:#071019;padding:2px 6px;border-radius:5px}
+    pre{overflow:auto}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Lemegeton Sprite Pack v4</h1>
+        <p class="muted">Apercu archive des animations, expressions et assets nettoyes.</p>
+      </div>
+      <a href="../lemegeton-animation-tuner/index.html">Ouvrir l'Animation Tuner</a>
+    </div>
+
+    <section class="panel">
+      <h2>Animations disponibles</h2>
+      <div class="grid">
+        <div class="card"><img src="deplacement_front.gif" alt="deplacement front"><h3>deplacement front</h3></div>
+        <div class="card"><img src="deplacement_back.gif" alt="deplacement back"><h3>deplacement back</h3></div>
+        <div class="card"><img src="idle_front.gif" alt="idle front"><h3>idle front</h3></div>
+        <div class="card"><img src="idle_left.gif" alt="idle left"><h3>idle left</h3></div>
+        <div class="card"><img src="idle_right.gif" alt="idle right"><h3>idle right</h3></div>
+        <div class="card"><img src="idle_back.gif" alt="idle back"><h3>idle back</h3></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Cycle d'expressions</h2>
+      <div class="card">
+        <img src="expression_cycle.gif" alt="cycle expressions">
+        <p>Les expressions <code>sprites/expressions/screen</code> sont superposees sur la zone ecran.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Planche complete</h2>
+      <img class="wide" src="preview.png" alt="apercu complet">
+    </section>
+
+    <section class="panel">
+      <h2>Cycles fusionnes</h2>
+      <p class="muted">Le lot source ne contenait pas les GIF <code>merged_left.gif</code> et <code>merged_right.gif</code> references par l'ancien HTML. Le contact sheet conserve la synthese disponible.</p>
+      <div class="card">
+        <img src="06_merged_contact.png" alt="contact sheet merged">
+        <div><strong>merged contact sheet</strong></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Organisation recommandee</h2>
+      <pre><code>assets/characters/lemegeton/sprites/deplacement/        corps avec ecran transparent
+assets/characters/lemegeton/sprites/idle/               idle avec ecran transparent
+assets/characters/lemegeton/sprites/chroma/             versions conservant le vert
+assets/characters/lemegeton/sprites/expressions/screen/ couche ecran a superposer
+assets/characters/lemegeton/sprites/expressions/head/   tete complete alternative
+assets/characters/lemegeton/atlases/                    atlases nettoyes</code></pre>
+    </section>
+  </main>
+</body>
+</html>

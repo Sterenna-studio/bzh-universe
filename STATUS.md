@@ -222,3 +222,10 @@
 - Galerie media enrichie avec titres lisibles, collection et statut par fichier, sans renommer les sources.
 - Atlas rapide ajoute en haut de galerie pour parcourir les familles media par categorie et statut.
 - Recherche globale media enrichie avec collection et statut.
+
+## Ajouts V29
+- Lot `lemegeton_chronicles_fm_sprite_pack` classe hors `imports/`.
+- 202 sprites, masques, sheets et atlases Lemegeton classes dans `assets/characters/lemegeton/`.
+- Inspirations et concepts Lemegeton consultables dans `media/visual/references/`.
+- Preview et tuner Lemegeton conserves comme archives web locales.
+- Images racine du sas classees : reference TCG `The Mask of Sorn`, reference visuelle Sorn et doublons d'import.

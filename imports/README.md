@@ -128,3 +128,20 @@ Traitement final des 520 fichiers residuels :
 - `BZH_RESS/` : 19 videos `.mp4` promues dans `media/video/references/desktop-bzh/`, sans analyse de contenu ;
 - mapping videos conserve dans `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv` ;
 - synthese finale conservee dans `archives/import-reports/2026-07-06-desktop-bzh-sas-residuals.csv`.
+
+## Lot 2026-07-15 - Lemegeton sprite pack et images racine
+
+Source traitee : `imports/lemegeton_chronicles_fm_sprite_pack/`.
+
+Classement realise :
+- 202 assets personnage classes dans `assets/characters/lemegeton/` ;
+- 6 inspirations uniques classees dans `media/visual/references/lemegeton-inspiration/` ;
+- 4 concepts classes dans `media/visual/references/lemegeton-sprite-pack/concepts/` ;
+- 68 fichiers de preview conserves dans `archives/web/lemegeton-sprite-preview/` ;
+- 5 fichiers du tuner local conserves dans `archives/web/lemegeton-animation-tuner/` ;
+- 9 sources anciennes ou generatives conservees dans `archives/sources/lemegeton-sprite-pack/` ;
+- 4 doublons exacts LEME archives dans `archives/import-duplicates/2026-07-15-lemegeton-sprite-pack/` ;
+- 4 images racine du sas classees en reference TCG, reference Sorn ou doublon d'import.
+
+Rapport detaille : `archives/import-reports/2026-07-15-lemegeton-sprite-pack.md`.
+Index des doublons : `archives/import-reports/2026-07-15-import-duplicates.csv`.
