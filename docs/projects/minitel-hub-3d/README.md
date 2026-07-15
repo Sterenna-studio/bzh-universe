@@ -60,6 +60,17 @@ Fonctions :
 ## Outil complémentaire
 - `convert_img_to_vdt_tool.zip`
 
+## LEMEGETON - interface personnage
+LEMEGETON est rattache a cette piste comme personnage-interface Minitel : le lot classe contient des sprites, masques, expressions ecran et planches d'animation qui peuvent servir a une console vivante, a BZH Chronicles FM ou a MINI-STAR.
+
+Le statut reste `reference` tant que son role canon n'est pas tranche. Pour l'instant, il faut le traiter comme un candidat d'interface expressive, pas comme une obligation de gameplay.
+
+Liens directs :
+- [Dossier LEMEGETON](../../universe/personnages/lemegeton-dossier.md)
+- [Assets personnage](../../../assets/characters/lemegeton/)
+- [Lemegeton Animation Tuner](../../../archives/web/lemegeton-animation-tuner/index.html)
+- [Preview sprite pack](../../../archives/web/lemegeton-sprite-preview/index.html)
+
 ## Rattachements utiles
 
 | Axe | Lien | Statut |
@@ -67,6 +78,7 @@ Fonctions :
 | Archives | [Livrables historiques](../../archives/livrables-historiques.md) | `archive` |
 | Sources | [Citations projets techniques](../../sources/messages-originaux/06-projets-techniques.md) | provenance |
 | Interface actuelle | [Index documentaire](../../00-index.md), [Mini-site BZH POWER](../../web/mini-site-bzh-power.md) | contexte |
+| Personnage-interface | [Dossier LEMEGETON](../../universe/personnages/lemegeton-dossier.md) | `reference` |
 | Direction | [Direction artistique](../../identity/direction-artistique.md), [Symboles et motifs](../../identity/symboles-et-motifs.md) | `reference` |
 
 ## A lire ensuite

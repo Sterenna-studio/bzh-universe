@@ -229,3 +229,9 @@
 - Inspirations et concepts Lemegeton consultables dans `media/visual/references/`.
 - Preview et tuner Lemegeton conserves comme archives web locales.
 - Images racine du sas classees : reference TCG `The Mask of Sorn`, reference visuelle Sorn et doublons d'import.
+
+## Ajouts V30
+- Rubrique LEMEGETON ajoutee comme dossier personnage dedie.
+- Navigation wiki enrichie avec un acces direct LEMEGETON dans la sidebar.
+- Pivot personnages, index documentaire, Minitel HUB 3D et catalogue media relies aux assets LEMEGETON.
+- Statut clarifie : personnage-interface / robot Minitel en `reference`, canon narratif a confirmer.

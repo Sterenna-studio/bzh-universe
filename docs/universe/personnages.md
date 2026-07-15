@@ -12,6 +12,7 @@ Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les not
 | Spirit | Tacticien, meilleur tireur, support d'equipe | `canon` / details a completer | [Dossier Spirit](personnages/spirit-dossier.md) |
 | Spike | Compagnon canin de Spirit | `a confirmer` | [Dossier Spike](personnages/spike-dossier.md) |
 | Dr. Sorn | Figure technique / hasard / cyber-runes | `canon` / role exact a consolider | [Dossier Dr. Sorn](personnages/dr-sorn-dossier.md) |
+| LEMEGETON | Robot Minitel, personnage-interface, asset technique anime | `reference` / canon a confirmer | [Dossier LEMEGETON](personnages/lemegeton-dossier.md) |
 | Gabilone / Gabylon | Hacker, infiltrateur, profil MacGyver | `canon` / nom final a arbitrer | [Dossier Gabilone](personnages/gabilone-dossier.md) |
 | Titan | Gardien canin heroique | `a confirmer` | [Dossier Titan](personnages/titan-dossier.md) |
 
@@ -35,6 +36,7 @@ Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les not
 | Gabilone / Aligax | `canon` pour le lien fraternel cite, nom Gabilone/Gabylon a arbitrer | [Gabilone](personnages/gabilone-dossier.md), [Aligax](personnages/aligax-dossier.md) |
 | Aligax / Spirit | `canon` TCG, interaction narrative a decrire | [Aligax](personnages/aligax-dossier.md), [Spirit](personnages/spirit-dossier.md) |
 | MutenRock / Gabilone | `canon` TCG, cooperation techno-nature | [MutenRock](personnages/mutenrock-dossier.md), [Gabilone](personnages/gabilone-dossier.md) |
+| LEMEGETON / Minitel HUB | `reference` technique pour interface personnage, canon a arbitrer | [LEMEGETON](personnages/lemegeton-dossier.md), [Minitel HUB 3D](../projects/minitel-hub-3d/README.md) |
 
 ## A lire ensuite
 
@@ -79,6 +81,13 @@ Cette page sert de pivot pour le cast BZH. Les fiches detaillees gardent les not
 - Maître du hasard et des récits
 - Cyber-runes
 - Fiche dédiée : [Dr. Sorn — dossier personnage](personnages/dr-sorn-dossier.md)
+
+## LEMEGETON
+- Robot Minitel / personnage-interface
+- Sprites, masques, expressions et planches classes dans `assets/characters/lemegeton/`
+- Candidat naturel pour BZH Chronicles FM, MINI-STAR et les surfaces Minitel
+- Statut canonique a confirmer avant usage narratif central
+- Fiche dédiée : [LEMEGETON — dossier personnage](personnages/lemegeton-dossier.md)
 
 ## Gabilone / Gabylon
 - Hacker / infiltrateur

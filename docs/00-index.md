@@ -7,7 +7,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 | Besoin | Entree conseillee | Suite logique |
 | --- | --- | --- |
 | Comprendre l'univers | [Vision globale](universe/00-vision-globale.md) | [Personnages](universe/personnages.md), [Le Code](universe/le-code.md), [Scenes et micro-lore](universe/scenes-et-micro-lore.md) |
-| Retrouver un personnage | [Personnages](universe/personnages.md) | [MutenRock](universe/personnages/mutenrock-dossier.md), [Aligax](universe/personnages/aligax-dossier.md), [Sniky](universe/personnages/sniky-dossier.md) |
+| Retrouver un personnage | [Personnages](universe/personnages.md) | [MutenRock](universe/personnages/mutenrock-dossier.md), [Aligax](universe/personnages/aligax-dossier.md), [Sniky](universe/personnages/sniky-dossier.md), [LEMEGETON](universe/personnages/lemegeton-dossier.md) |
 | Naviguer les medias | [Catalogue medias](../media/catalog/media-catalog.md) | [Galerie media](../media/gallery/index.html), [Musique et albums](media/musique-et-albums.md), [Trailers et scripts](media/trailers-et-scripts.md) |
 | Suivre les projets | [Carte des projets](projects/00-carte-des-projets.md) | [BZH Card Game](projects/bzh-card-game/README.md), [Roguelite](projects/roguelite/README.md), [Minitel HUB 3D](projects/minitel-hub-3d/README.md) |
 | Verifier les sources | [Methode de tracabilite](sources/00-methodologie-citations.md) | [Conversations](conversations/index.md), [Couverture des citations](sources/01-couverture-des-citations.md) |
@@ -38,6 +38,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 - [Dossier Aligax](universe/personnages/aligax-dossier.md)
 - [Dossier Dr. Sorn](universe/personnages/dr-sorn-dossier.md)
 - [Dossier Gabilone / Gabylon](universe/personnages/gabilone-dossier.md)
+- [Dossier LEMEGETON](universe/personnages/lemegeton-dossier.md)
 - [Dossier MutenRock](universe/personnages/mutenrock-dossier.md)
 - [Dossier Sniky](universe/personnages/sniky-dossier.md)
 - [Dossier Spirit](universe/personnages/spirit-dossier.md)
@@ -83,6 +84,7 @@ Cette page sert de carte d'entree du wiki BZH Universe. Elle regroupe les pages 
 
 - [Livrables historiques connus](archives/livrables-historiques.md)
 - [Integration du lot Desktop BZH](archives/import-desktop-bzh.md)
+- [Integration du lot Lemegeton sprite pack](archives/import-lemegeton-sprite-pack.md)
 - [Rapports d'import](../archives/import-reports/README.md)
 - [Metadonnees d'import](../archives/import-metadata/README.md)
 - [Doublons d'import](../archives/import-duplicates/README.md)

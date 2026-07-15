@@ -213,6 +213,7 @@ function sidebar(prefix) {
       <a class="sidebar-link" href="${prefix}docs/identity/direction-artistique.html">Direction artistique</a>
       <a class="sidebar-link" href="${prefix}docs/identity/statuts-canon.html">Statuts canon</a>
       <a class="sidebar-link" href="${prefix}docs/universe/personnages.html">Personnages</a>
+      <a class="sidebar-link" href="${prefix}docs/universe/personnages/lemegeton-dossier.html">LEMEGETON</a>
       <a class="sidebar-link" href="${prefix}docs/universe/scenes-et-micro-lore.html">Scenes et micro-lore</a>
       <a class="sidebar-link" href="${prefix}docs/universe/lexique.html">Lexique</a>
       <a class="sidebar-link" href="${prefix}docs/universe/le-code.html">Le Code</a>

@@ -9,7 +9,7 @@
 | Famille | Nom lisible | Statut | Entrees utiles |
 | --- | --- | --- | --- |
 | Logos | Identites BZH PW / BZH POWER / BZH CHRONICLES | `canon` / variantes | `assets/logos/`, [Direction artistique](../../docs/identity/direction-artistique.md) |
-| Personnages | Portraits et recherches MutenRock, Aligax, Sniky, Spirit, Spike, Titan | `reference` a `canon` selon usage | `assets/characters/`, [Personnages](../../docs/universe/personnages.md) |
+| Personnages | Portraits et recherches MutenRock, Aligax, Sniky, Spirit, Spike, Titan, LEMEGETON | `reference` a `canon` selon usage | `assets/characters/`, [Personnages](../../docs/universe/personnages.md), [Dossier LEMEGETON](../../docs/universe/personnages/lemegeton-dossier.md) |
 | TCG | Sets BZH01 / BZH02 et assets communs | `canon` / `a confirmer` par carte | `assets/cards/`, [BZH Card Game](../../docs/projects/bzh-card-game/README.md) |
 | Audio | Pistes, previews et masters | `reference` / `master` | `media/audio/`, [Musique et albums](../../docs/media/musique-et-albums.md) |
 | Video | Lyric videos, motion tests et clips de reference | `reference` | `media/video/references/`, [Trailers et scripts](../../docs/media/trailers-et-scripts.md) |
@@ -148,6 +148,14 @@
 - 116 doublons `BZH_CHRONICLES` et 25 doublons non video `BZH_RESS` retires du sas apres couverture CSV.
 - 360 fichiers `LOL_TEAM_STATS` conserves comme archive interne mise de cote, sans lien direct depuis le hub public.
 - Mapping complet : `archives/import-reports/2026-07-06-desktop-bzh-video-promotions.csv`.
+
+### Import 2026-07-15 — LEMEGETON sprite pack
+- Rubrique personnage : [Dossier LEMEGETON](../../docs/universe/personnages/lemegeton-dossier.md).
+- 202 sprites, masques, sheets et atlases classes dans `assets/characters/lemegeton/`.
+- Inspirations et concepts consultables dans `media/visual/references/lemegeton-inspiration/` et `media/visual/references/lemegeton-sprite-pack/concepts/`.
+- Preview locale : `archives/web/lemegeton-sprite-preview/index.html`.
+- Animation tuner local : `archives/web/lemegeton-animation-tuner/index.html`.
+- Rapport d'import : `archives/import-reports/2026-07-15-lemegeton-sprite-pack.md`.
 
 ## Audio
 - Sniky: The Frager
