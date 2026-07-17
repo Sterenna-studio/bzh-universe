@@ -395,10 +395,12 @@ ${sidebar(grouped)}
 let cachedAssetVersion = null;
 function assetVersion() {
   if (!cachedAssetVersion) {
+    // Contenu normalise LF pour un hash stable entre systemes (CRLF vs LF).
+    const hashInput = (p) => readFileSync(p, 'utf8').replace(/\r\n?/g, '\n');
     cachedAssetVersion = createHash('md5')
-      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.css')))
-      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.js')))
-      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki-search-index.js')))
+      .update(hashInput(join(ROOT, 'assets', 'site', 'wiki.css')))
+      .update(hashInput(join(ROOT, 'assets', 'site', 'wiki.js')))
+      .update(hashInput(join(ROOT, 'assets', 'site', 'wiki-search-index.js')))
       .digest('hex')
       .slice(0, 10);
   }

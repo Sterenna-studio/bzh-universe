@@ -719,10 +719,13 @@ function sectionIndexPages() {
 const sectionPages = sectionIndexPages();
 const searchCount = writeSearchIndex(searchEntries);
 
+// Hash calcule sur le contenu normalise LF : la version des assets doit etre
+// identique quel que soit le systeme (CRLF Windows vs LF Linux/CI).
+const hashInput = (p) => readFileSync(p, 'utf8').replace(/\r\n?/g, '\n');
 const version = createHash('md5')
-  .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.css')))
-  .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.js')))
-  .update(readFileSync(SEARCH_INDEX_JS))
+  .update(hashInput(join(ROOT, 'assets', 'site', 'wiki.css')))
+  .update(hashInput(join(ROOT, 'assets', 'site', 'wiki.js')))
+  .update(hashInput(SEARCH_INDEX_JS))
   .digest('hex')
   .slice(0, 10);
 
