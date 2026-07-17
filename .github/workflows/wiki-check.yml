@@ -29,8 +29,6 @@ jobs:
           if ! git diff --quiet; then
             echo "::error::Les fichiers generes ne sont pas a jour. Lancez 'node tools/md-to-html.mjs' et 'node tools/media-gallery.mjs' puis committez le resultat."
             git diff --stat
-            echo "----- diff detaille -----"
-            git --no-pager diff
             exit 1
           fi
           echo "Fichiers generes a jour."

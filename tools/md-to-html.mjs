@@ -90,7 +90,9 @@ function findImages(absDir, limit = 6) {
     entries.sort((a, b) => naturalCompare(a.name, b.name));
     for (const entry of entries) {
       if (out.length >= limit || scanned > 600) return;
-      if (entry.name.startsWith('.')) continue;
+      // Ignore les points d'entree caches et le sas non versionne (media/staging) :
+      // ces fichiers existent en local mais pas sur la CI ni au deploiement.
+      if (entry.name.startsWith('.') || entry.name === 'staging') continue;
       scanned++;
       const full = join(dir, entry.name);
       if (entry.isDirectory()) walk(full, depth + 1);
