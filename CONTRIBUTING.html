@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contribution au BZH HUB - BZH Universe</title>
-<link rel="stylesheet" href="assets/site/wiki.css?v=3b918cb311">
-<script defer src="assets/site/wiki-search-index.js?v=3b918cb311"></script>
-<script defer src="assets/site/wiki.js?v=3b918cb311"></script>
+<link rel="stylesheet" href="assets/site/wiki.css?v=1c8e496a8d">
+<script defer src="assets/site/wiki-search-index.js?v=1c8e496a8d"></script>
+<script defer src="assets/site/wiki.js?v=1c8e496a8d"></script>
 </head>
 <body>
 <a class="skip-link" href="#content">Aller au contenu</a>
@@ -98,9 +98,11 @@
   </aside>
 <main class="wiki-page" id="content">
 <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="hub/index.html">Hub</a><span class="crumb-sep" aria-hidden="true">›</span><span class="crumb-current" aria-current="page">Contribution au BZH HUB</span></nav>
+<p class="page-meta"><span class="page-meta-time">⏱ 1 min de lecture</span></p>
 <h1 id="contribution-au-bzh-hub">Contribution au BZH HUB</h1><h2 id="principes">Principes</h2><ul><li>Ne pas inventer de faits de canon sans les marquer comme hypothèses.</li><li>Préférer les états :<ul><li>validé ;</li><li>à confirmer ;</li><li>piste.</li></ul></li><li>Documenter les choix importants dans les fichiers Markdown appropriés.</li></ul><h2 id="guideline-git">Guideline Git</h2><ul><li>Commencer une reprise ou une passe de modification par <code>git status --short --branch</code> et, si besoin, par la vérification du dernier commit local / distant.</li><li>Garder les commits ciblés : une passe wiki, un tri média ou une correction technique doivent rester lisibles dans l'historique.</li><li>Dans ce dépôt, quand une passe de travail modifie le repo et qu'aucune pause n'est demandée, finir par un commit puis un push sur <code>origin/main</code>.</li><li>Après un push, vérifier que <code>HEAD</code> et <code>origin/main</code> pointent sur le même commit.</li><li>Ne pas utiliser de reset, checkout destructif, force-push ou suppression large pour "nettoyer" sans demande explicite.</li><li>Ne pas revenir sur des changements déjà présents dans le worktree s'ils ne font pas partie de la tâche.</li><li>Pour les pages Markdown, régénérer les HTML avec <code>node tools/md-to-html.mjs</code> avant commit.</li><li>Pour les médias exposés, régénérer la galerie avec <code>node tools/media-gallery.mjs</code> et garder les fichiers visibles via le catalogue / la galerie.</li><li>Les rapports de fin doivent rester centrés sur ce qui a changé, les validations et le commit poussé. Ne pas répéter l'état du sas d'import sauf si un nouveau lot y a été ajouté ou si la demande porte dessus.</li></ul><h2 id="convention-assets">Convention assets</h2><pre><code class="lang-txt">[univers]_[categorie]_[sujet]_[variante]_[version].[ext]</code></pre><p>Exemples :</p><pre><code class="lang-txt">bzhchronicles_logo_main_v03.svg
 bzhpw_tshirt_front_black_v01.png
 bzhcard_bzh01_sniky_champion_v02.webp</code></pre>
+<nav class="page-nav" aria-label="Pages voisines"><span class="page-nav-spacer"></span><a class="page-nav-link page-nav-next" href="QUICKSTART.html"><span class="page-nav-dir">Suivant →</span><span class="page-nav-title">Quickstart</span></a></nav>
 </main>
 </div>
 <footer class="wiki-footer">BZH CHRONICLES - genere depuis Markdown - ne pas editer le .html, modifier le .md source</footer>

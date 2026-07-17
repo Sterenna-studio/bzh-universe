@@ -142,6 +142,116 @@
     update();
   }
 
+  function setupLightbox() {
+    const page = document.querySelector('.wiki-page');
+    if (!page) return;
+
+    let overlay = null;
+    function ensureOverlay() {
+      if (overlay) return overlay;
+      overlay = document.createElement('div');
+      overlay.className = 'wiki-lightbox';
+      overlay.hidden = true;
+      overlay.innerHTML =
+        '<button type="button" class="wiki-lightbox-close" aria-label="Fermer">✕</button>' +
+        '<figure class="wiki-lightbox-figure"><img alt=""><figcaption></figcaption></figure>' +
+        '<a class="wiki-lightbox-open" target="_blank" rel="noopener noreferrer">Ouvrir l\'original ↗</a>';
+      document.body.appendChild(overlay);
+      const close = () => {
+        overlay.hidden = true;
+        document.body.classList.remove('wiki-lightbox-open-body');
+      };
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay || event.target.closest('.wiki-lightbox-close')) close();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !overlay.hidden) close();
+      });
+      return overlay;
+    }
+
+    function open(src, caption) {
+      const box = ensureOverlay();
+      box.querySelector('img').src = src;
+      box.querySelector('figcaption').textContent = caption || '';
+      box.querySelector('.wiki-lightbox-open').href = src;
+      box.hidden = false;
+      document.body.classList.add('wiki-lightbox-open-body');
+    }
+
+    page.addEventListener('click', (event) => {
+      const img = event.target.closest('img');
+      if (!img || !page.contains(img)) return;
+      const anchor = img.closest('a');
+      // Ne pas intercepter les liens qui pointent ailleurs que vers l'image.
+      if (anchor) {
+        const href = anchor.getAttribute('href') || '';
+        const imgSrc = img.getAttribute('src') || '';
+        if (href && href !== imgSrc && !href.startsWith('#')) {
+          const sameFile = decodeURIComponent(href).split('/').pop() === decodeURIComponent(imgSrc).split('/').pop();
+          if (!sameFile) return;
+        }
+      }
+      event.preventDefault();
+      open(img.currentSrc || img.src, img.getAttribute('alt') || '');
+    });
+  }
+
+  function setupSidebarCollapse() {
+    const sidebar = document.querySelector('.wiki-sidebar');
+    if (!sidebar) return;
+    const currentLink = sidebar.querySelector('.sidebar-link[aria-current="page"]');
+
+    sidebar.querySelectorAll('.sidebar-section').forEach((section) => {
+      const title = section.querySelector('.sidebar-title');
+      if (!title || section.querySelector('[data-toc]')) return; // le sommaire reste ouvert
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'sidebar-toggle';
+      btn.innerHTML = `${title.textContent}<span class="sidebar-toggle-caret" aria-hidden="true">▾</span>`;
+      const hasCurrent = currentLink && section.contains(currentLink);
+      const collapsed = window.matchMedia('(max-width: 980px)').matches && !hasCurrent;
+      btn.setAttribute('aria-expanded', String(!collapsed));
+      section.classList.toggle('is-collapsed', collapsed);
+      title.replaceWith(btn);
+
+      btn.addEventListener('click', () => {
+        const nowCollapsed = section.classList.toggle('is-collapsed');
+        btn.setAttribute('aria-expanded', String(!nowCollapsed));
+      });
+    });
+  }
+
+  function setupFocusMode() {
+    if (!document.querySelector('.wiki-layout .wiki-sidebar')) return;
+    const controls = document.querySelector('.reader-controls');
+    if (!controls) return;
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'reader-control';
+    button.dataset.readerAction = 'focus';
+    button.setAttribute('aria-pressed', 'false');
+    button.title = 'Mode lecture (masquer la navigation)';
+    button.innerHTML = '⊟<span class="reader-control-label">Mode lecture</span>';
+    controls.appendChild(button);
+
+    const apply = (on) => {
+      document.body.classList.toggle('focus-reading', on);
+      button.setAttribute('aria-pressed', String(on));
+    };
+    apply(readPrefs().focus === true);
+
+    button.addEventListener('click', () => {
+      const prefs = readPrefs();
+      const next = prefs.focus !== true;
+      prefs.focus = next;
+      writePrefs(prefs);
+      apply(next);
+    });
+  }
+
   function normalizePath(pathname) {
     return decodeURIComponent(pathname)
       .replace(/\\/g, '/')
@@ -190,10 +300,22 @@
       if (keywords.includes(term)) score += 10;
       if (summary.includes(term)) score += 5;
     }
+    // Pondere par fraicheur/fiabilite (canon > reference) une fois qu'il y a match.
+    if (score > 0) score += Number(entry.boost) || 0;
     return score;
   }
 
-  function renderSearchResults(container, entries, rootUrl) {
+  function matchingAnchors(entry, terms) {
+    if (!Array.isArray(entry.anchors) || !entry.anchors.length) return [];
+    return entry.anchors
+      .filter((anchor) => {
+        const t = normalizeSearchText(anchor.t);
+        return terms.some((term) => t.includes(term));
+      })
+      .slice(0, 3);
+  }
+
+  function renderSearchResults(container, entries, rootUrl, terms) {
     if (!entries.length) {
       container.innerHTML = '<p class="wiki-search-empty">Aucun resultat.</p>';
       container.hidden = false;
@@ -214,6 +336,20 @@
       summary.textContent = entry.summary || entry.keywords || '';
       link.append(title, meta, summary);
       list.appendChild(link);
+
+      const anchors = matchingAnchors(entry, terms || []);
+      if (anchors.length) {
+        const anchorRow = document.createElement('div');
+        anchorRow.className = 'wiki-search-anchors';
+        anchors.forEach((anchor) => {
+          const chip = document.createElement('a');
+          chip.className = 'wiki-search-anchor';
+          chip.href = new URL(anchor.u, rootUrl).href;
+          chip.textContent = `# ${anchor.t}`;
+          anchorRow.appendChild(chip);
+        });
+        list.appendChild(anchorRow);
+      }
     });
     container.replaceChildren(list);
     container.hidden = false;
@@ -248,7 +384,7 @@
           .filter((item) => item.score > 0)
           .sort((a, b) => b.score - a.score || a.entry.title.localeCompare(b.entry.title, 'fr'))
           .map((item) => item.entry);
-        renderSearchResults(results, matches, rootUrl);
+        renderSearchResults(results, matches, rootUrl, terms);
       }
 
       input.addEventListener('input', updateResults);
@@ -403,6 +539,9 @@
     enhanceHeadings();
     setupBackToTop();
     setupProgressBar();
+    setupLightbox();
+    setupSidebarCollapse();
+    setupFocusMode();
     bindMediaGallery();
     injectAudioPlayer();
     injectWikiCollaboration();

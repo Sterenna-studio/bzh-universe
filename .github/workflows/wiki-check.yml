@@ -1,0 +1,37 @@
+name: Wiki checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-check:
+    name: Regenerate and validate wiki
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate HTML and media gallery
+        run: |
+          node tools/md-to-html.mjs
+          node tools/media-gallery.mjs
+
+      - name: Fail if generated files are out of date
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Les fichiers generes ne sont pas a jour. Lancez 'node tools/md-to-html.mjs' et 'node tools/media-gallery.mjs' puis committez le resultat."
+            git diff --stat
+            exit 1
+          fi
+          echo "Fichiers generes a jour."
+
+      - name: Check internal links
+        run: node tools/check-links.mjs

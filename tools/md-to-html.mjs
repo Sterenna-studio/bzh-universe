@@ -16,8 +16,11 @@ const IGNORE_DIRS = new Set(['.git', '.github', 'node_modules', 'tools']);
 const SEARCH_INDEX_JSON = join(ROOT, 'assets', 'site', 'wiki-search-index.json');
 const SEARCH_INDEX_JS = join(ROOT, 'assets', 'site', 'wiki-search-index.js');
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.avif']);
+const VIDEO_EXT = new Set(['.mp4', '.webm', '.mov', '.m4v']);
+const AUDIO_EXT = new Set(['.mp3', '.ogg', '.wav', '.m4a', '.flac']);
 const ASSET_ROOT_DIRS = ['assets', 'media', 'archives'];
 const dirImageCache = new Map();
+const extOf = (name) => name.slice(name.lastIndexOf('.')).toLowerCase();
 // Sentinelle ASCII pour proteger les spans `code` (jamais present dans les docs)
 const PH_OPEN = '@@CODE';
 const PH_CLOSE = 'CODE@@';
@@ -115,8 +118,18 @@ function assetPreviewFor(abs, docDir) {
   if (!existsSync(abs)) return null;
   const st = statSync(abs);
   if (st.isFile()) {
-    if (!isImageFile(abs)) return null;
-    return `<span class="wiki-asset-preview">${assetThumbs(docDir, [abs])}</span>`;
+    const ext = extOf(abs);
+    if (IMAGE_EXT.has(ext)) {
+      return `<span class="wiki-asset-preview">${assetThumbs(docDir, [abs])}</span>`;
+    }
+    const url = relFromDoc(docDir, abs);
+    if (VIDEO_EXT.has(ext)) {
+      return `<span class="wiki-asset-preview wiki-asset-preview-media"><video class="wiki-asset-media" controls preload="metadata" src="${url}"></video></span>`;
+    }
+    if (AUDIO_EXT.has(ext)) {
+      return `<span class="wiki-asset-preview wiki-asset-preview-media"><audio class="wiki-asset-media" controls preload="none" src="${url}"></audio></span>`;
+    }
+    return null;
   }
   if (st.isDirectory()) {
     const images = findImages(abs, 6);
@@ -296,35 +309,69 @@ function humanizeSegment(seg) {
     .replace(/^\w/, (c) => c.toUpperCase()) || seg;
 }
 
-function buildBreadcrumb(relPath, prefix, pageTitle) {
-  const parts = relPath.split('/');
+// Landing d'un dossier : index.md / README.md / premiere page 00-*.md /
+// page soeur du meme nom. `resolveSynthetic` ajoute les index de section
+// generes automatiquement (voir plus bas).
+function naturalLandingHtml(dirRel) {
+  if (!dirRel) return null;
+  const abs = join(ROOT, dirRel);
+  for (const cand of ['index.md', 'README.md']) {
+    if (existsSync(join(abs, cand))) return `${dirRel}/${cand.replace(/\.md$/i, '.html')}`;
+  }
+  try {
+    const zero = readdirSync(abs).filter((n) => /^00-.*\.md$/i.test(n)).sort()[0];
+    if (zero) return `${dirRel}/${zero.replace(/\.md$/i, '.html')}`;
+  } catch {
+    // dossier absent : ignore.
+  }
+  if (existsSync(join(ROOT, `${dirRel}.md`))) return `${dirRel}.html`;
+  return null;
+}
+
+let SYNTHETIC_DIRS = new Set();
+function landingHtml(dirRel) {
+  return naturalLandingHtml(dirRel) || (SYNTHETIC_DIRS.has(dirRel) ? `${dirRel}/index.html` : null);
+}
+
+function buildBreadcrumb(currentHtml, prefix, pageTitle) {
+  const parts = currentHtml.split('/');
   parts.pop();
-  const currentHtml = relPath.replace(/\.md$/i, '.html');
-  const items = [`<a href="${prefix}hub/index.html">Hub</a>`];
+  const folders = [];
   let acc = '';
   for (const seg of parts) {
     acc = acc ? `${acc}/${seg}` : seg;
-    const label = escapeHtml(humanizeSegment(seg));
-    let href = null;
-    // Cibles possibles pour un dossier : un index interne, ou la page
-    // soeur qui porte le meme nom (ex: docs/universe/personnages.md).
-    const candidates = [
-      `${acc}/index.md`,
-      `${acc}/README.md`,
-      `${acc}/00-index.md`,
-      `${acc}.md`,
-    ];
-    for (const cand of candidates) {
-      if (existsSync(join(ROOT, cand))) {
-        const target = cand.replace(/\.md$/i, '.html');
-        if (target !== currentHtml) href = prefix + target;
-        break;
-      }
-    }
-    items.push(href ? `<a href="${href}">${label}</a>` : `<span>${label}</span>`);
+    const target = landingHtml(acc);
+    const isCurrent = target === currentHtml;
+    folders.push({
+      label: humanizeSegment(seg),
+      href: target && !isCurrent ? prefix + target : null,
+      isCurrent,
+    });
   }
-  items.push(`<span class="crumb-current" aria-current="page">${escapeHtml(pageTitle)}</span>`);
+
+  // Sur une landing dont le dossier porte le meme nom que la page (index de
+  // section), on evite le doublon "Identity › Identity".
+  const last = folders[folders.length - 1];
+  const dupTitle = last && last.isCurrent && last.label.toLowerCase() === String(pageTitle).toLowerCase();
+
+  const items = [`<a href="${prefix}hub/index.html">Hub</a>`];
+  folders.forEach((f, idx) => {
+    const isLast = idx === folders.length - 1;
+    if (f.href) items.push(`<a href="${f.href}">${escapeHtml(f.label)}</a>`);
+    else if (dupTitle && isLast) items.push(`<span class="crumb-current" aria-current="page">${escapeHtml(f.label)}</span>`);
+    else items.push(`<span>${escapeHtml(f.label)}</span>`);
+  });
+  if (!dupTitle) items.push(`<span class="crumb-current" aria-current="page">${escapeHtml(pageTitle)}</span>`);
   return items.join('<span class="crumb-sep" aria-hidden="true">›</span>');
+}
+
+function pageNavHtml(prev, next, prefix) {
+  if (!prev && !next) return '';
+  const cell = (item, kind, label) =>
+    item
+      ? `<a class="page-nav-link page-nav-${kind}" href="${prefix}${item.outRel}"><span class="page-nav-dir">${label}</span><span class="page-nav-title">${escapeHtml(item.pageTitle)}</span></a>`
+      : '<span class="page-nav-spacer"></span>';
+  return `<nav class="page-nav" aria-label="Pages voisines">${cell(prev, 'prev', '← Précédent')}${cell(next, 'next', 'Suivant →')}</nav>`;
 }
 
 function readerControls() {
@@ -426,7 +473,10 @@ function topbar({ prefix, hubLink, indexLink }) {
   </header>`;
 }
 
-function page({ title, body, hubLink, indexLink, crumb, prefix, version }) {
+function page({ title, body, hubLink, indexLink, crumb, prefix, version, readingMin, pageNav }) {
+  const meta = readingMin
+    ? `<p class="page-meta"><span class="page-meta-time">⏱ ${readingMin} min de lecture</span></p>`
+    : '';
   return `<!doctype html>
 <html lang="fr" data-theme="cyber">
 <head>
@@ -444,7 +494,9 @@ ${topbar({ prefix, hubLink, indexLink })}
 ${sidebar(prefix)}
 <main class="wiki-page" id="content">
 <nav class="breadcrumb" aria-label="Fil d'Ariane">${crumb}</nav>
+${meta}
 ${body}
+${pageNav || ''}
 </main>
 </div>
 <footer class="wiki-footer">BZH CHRONICLES - genere depuis Markdown - ne pas editer le .html, modifier le .md source</footer>
@@ -473,6 +525,29 @@ function headings(md) {
     .filter(Boolean);
 }
 
+// Meme algorithme d'id que le rendu des titres (mdToHtml).
+const slugifyHeading = (txt) =>
+  txt.toLowerCase().replace(/[^\wÀ-ſ]+/g, '-').replace(/^-+|-+$/g, '');
+
+function headingAnchors(md, url) {
+  return [...md.matchAll(/^(#{2,3})\s+(.*?)\s*#*\s*$/gm)]
+    .map((m) => ({ t: m[2].trim(), u: `${url}#${slugifyHeading(m[2].trim())}` }))
+    .filter((h) => h.t)
+    .slice(0, 14);
+}
+
+function readingMinutes(md) {
+  const words = plainText(md).split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+function pageBoost(relPath) {
+  const file = relPath.replace(/.*\//, '');
+  if (/^00-/.test(file) || /^(index|readme)\.md$/i.test(file)) return 6;
+  if (relPath.startsWith('docs/universe/') || relPath.startsWith('docs/projects/')) return 3;
+  return 0;
+}
+
 function sectionForPath(relPath) {
   if (relPath.startsWith('docs/universe/')) return 'Univers';
   if (relPath.startsWith('docs/identity/')) return 'Identite';
@@ -490,14 +565,17 @@ function sectionForPath(relPath) {
 function searchEntryForMarkdown(relPath, title, md) {
   const text = plainText(md);
   const h = headings(md).slice(0, 8);
+  const url = relPath.replace(/\.md$/i, '.html');
   return {
     type: 'page',
     title: title || relPath.replace(/.*\//, '').replace(/\.md$/i, ''),
-    url: relPath.replace(/\.md$/i, '.html'),
+    url,
     path: relPath,
     section: sectionForPath(relPath),
     summary: text.slice(0, 220),
     keywords: [...new Set([...relPath.split(/[\/._-]+/), ...h])].join(' '),
+    anchors: headingAnchors(md, url),
+    boost: pageBoost(relPath),
   };
 }
 
@@ -511,24 +589,33 @@ function mediaSearchEntries() {
   try {
     const items = JSON.parse(readFileSync(inventoryPath, 'utf8'));
     if (!Array.isArray(items)) return [];
-    return items.map((item) => ({
-      type: 'media',
-      title: item.title || item.path,
-      url: item.path,
-      path: item.path,
-      section: `Media / ${item.category || 'Sans categorie'}`,
-      summary: `${item.category || 'Media'} - ${item.collection || 'Sans collection'} - ${item.status || 'reference'} - ${item.type || 'fichier'} - ${item.sizeLabel || ''}`.trim(),
-      keywords: `${item.path || ''} ${item.title || ''} ${item.collection || ''} ${item.category || ''} ${item.status || ''} ${item.type || ''}`,
-    }));
+    return items.map((item) => {
+      const status = item.status || 'reference';
+      // Pondere la fraicheur/fiabilite : canon remonte, "a confirmer" descend.
+      const boost = /canon/i.test(status) ? 4 : /confirmer/i.test(status) ? -3 : -1;
+      return {
+        type: 'media',
+        title: item.title || item.path,
+        url: item.path,
+        path: item.path,
+        section: `Media / ${item.category || 'Sans categorie'}`,
+        summary: `${item.category || 'Media'} - ${item.collection || 'Sans collection'} - ${status} - ${item.type || 'fichier'} - ${item.sizeLabel || ''}`.trim(),
+        keywords: `${item.path || ''} ${item.title || ''} ${item.collection || ''} ${item.category || ''} ${status} ${item.type || ''}`,
+        anchors: [],
+        boost,
+      };
+    });
   } catch {
     return [];
   }
 }
 
 function writeSearchIndex(entries) {
+  // Tri total (titre puis url) AVANT l'attribution des id : l'ordre du
+  // systeme de fichiers ne doit pas influencer la sortie (build reproductible).
   const full = [...entries, ...mediaSearchEntries()]
-    .map((entry, index) => ({ id: index + 1, ...entry }))
-    .sort((a, b) => a.title.localeCompare(b.title, 'fr'));
+    .sort((a, b) => a.title.localeCompare(b.title, 'fr') || String(a.url).localeCompare(String(b.url)))
+    .map((entry, index) => ({ id: index + 1, ...entry }));
   const json = `${JSON.stringify(full, null, 2)}\n`;
   writeFileSync(SEARCH_INDEX_JSON, json, 'utf8');
   writeFileSync(SEARCH_INDEX_JS, `window.BZH_WIKI_SEARCH_INDEX = ${json};\n`, 'utf8');
@@ -549,12 +636,87 @@ for (const file of files) {
   const depth = relPath.split('/').length - 1;
   const prefix = '../'.repeat(depth);
   const outPath = file.replace(/\.md$/i, '.html');
+  const outRel = relPath.replace(/\.md$/i, '.html');
   const pageTitle = title || relPath.replace(/.*\//, '').replace(/\.md$/i, '');
   if (!isSearchExcluded(relPath)) {
     searchEntries.push(searchEntryForMarkdown(relPath, pageTitle, md));
   }
-  rendered.push({ relPath, outPath, pageTitle, enrichedHtml, prefix });
+  const dir = relPath.includes('/') ? relPath.replace(/\/[^/]*$/, '') : '';
+  rendered.push({ relPath, outPath, outRel, pageTitle, enrichedHtml, prefix, dir, readingMin: readingMinutes(md) });
 }
+
+// Regroupe les pages par dossier (tri naturel) pour prev/next et index de section.
+const pagesByDir = new Map();
+for (const r of rendered) {
+  if (!pagesByDir.has(r.dir)) pagesByDir.set(r.dir, []);
+  pagesByDir.get(r.dir).push(r);
+}
+for (const list of pagesByDir.values()) {
+  list.sort((a, b) => a.outRel.localeCompare(b.outRel, 'fr', { numeric: true }));
+}
+
+// Dossiers sous docs/ ou media/ sans landing naturelle -> index de section genere.
+SYNTHETIC_DIRS = new Set();
+for (const [dir, list] of pagesByDir) {
+  if (!dir || !/^(docs|media)(\/|$)/.test(dir)) continue;
+  if (list.length && !naturalLandingHtml(dir)) SYNTHETIC_DIRS.add(dir);
+}
+
+function childDirsOf(dirRel) {
+  const prefixDir = dirRel ? `${dirRel}/` : '';
+  const names = new Set();
+  for (const d of pagesByDir.keys()) {
+    if (!d.startsWith(prefixDir) || d === dirRel) continue;
+    const rest = d.slice(prefixDir.length).split('/')[0];
+    if (rest) names.add(rest);
+  }
+  return [...names].sort((a, b) => a.localeCompare(b, 'fr', { numeric: true }));
+}
+
+function sectionIndexPages() {
+  const pages = [];
+  for (const dir of SYNTHETIC_DIRS) {
+    const outRel = `${dir}/index.html`;
+    const depth = outRel.split('/').length - 1;
+    const prefix = '../'.repeat(depth);
+    const title = humanizeSegment(dir.split('/').pop());
+    const children = pagesByDir.get(dir) || [];
+    const subdirs = childDirsOf(dir);
+    let body = `<h1 id="${slugifyHeading(title)}">${escapeHtml(title)}</h1>`;
+    body += `<p class="section-index-lead">Index de section — ${children.length} page${children.length > 1 ? 's' : ''}${subdirs.length ? ` et ${subdirs.length} sous-section${subdirs.length > 1 ? 's' : ''}` : ''}.</p>`;
+    if (subdirs.length) {
+      body += '<h2 id="sous-sections">Sous-sections</h2><ul class="section-index-list">';
+      for (const sub of subdirs) {
+        const target = landingHtml(`${dir}/${sub}`);
+        const href = target ? target.slice(dir.length + 1) : `${sub}/`;
+        body += `<li><a href="${href}">${escapeHtml(humanizeSegment(sub))}</a></li>`;
+      }
+      body += '</ul>';
+    }
+    if (children.length) {
+      body += '<h2 id="pages">Pages</h2><ul class="section-index-list">';
+      for (const c of children) {
+        body += `<li><a href="${c.outRel.slice(dir.length + 1)}">${escapeHtml(c.pageTitle)}</a></li>`;
+      }
+      body += '</ul>';
+    }
+    pages.push({ dir, outRel, outPath: join(ROOT, ...outRel.split('/')), prefix, title, body });
+    searchEntries.push({
+      type: 'page',
+      title,
+      url: outRel,
+      path: outRel,
+      section: sectionForPath(outRel),
+      summary: `Index de section : ${children.length} pages.`,
+      keywords: `${dir} index section ${title}`,
+      anchors: [],
+      boost: 4,
+    });
+  }
+  return pages;
+}
+
+const sectionPages = sectionIndexPages();
 const searchCount = writeSearchIndex(searchEntries);
 
 const version = createHash('md5')
@@ -565,6 +727,10 @@ const version = createHash('md5')
   .slice(0, 10);
 
 for (const r of rendered) {
+  const siblings = pagesByDir.get(r.dir) || [];
+  const idx = siblings.indexOf(r);
+  const prev = idx > 0 ? siblings[idx - 1] : null;
+  const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
   writeFileSync(
     r.outPath,
     page({
@@ -572,8 +738,27 @@ for (const r of rendered) {
       body: r.enrichedHtml,
       hubLink: r.prefix + 'hub/index.html',
       indexLink: r.prefix + 'docs/00-index.html',
-      crumb: buildBreadcrumb(r.relPath, r.prefix, r.pageTitle),
+      crumb: buildBreadcrumb(r.outRel, r.prefix, r.pageTitle),
       prefix: r.prefix,
+      version,
+      readingMin: r.readingMin,
+      pageNav: pageNavHtml(prev, next, r.prefix),
+    }),
+    'utf8',
+  );
+}
+
+// Index de section generes (dossiers sans landing naturelle).
+for (const s of sectionPages) {
+  writeFileSync(
+    s.outPath,
+    page({
+      title: s.title,
+      body: s.body,
+      hubLink: s.prefix + 'hub/index.html',
+      indexLink: s.prefix + 'docs/00-index.html',
+      crumb: buildBreadcrumb(s.outRel, s.prefix, s.title),
+      prefix: s.prefix,
       version,
     }),
     'utf8',
@@ -597,5 +782,6 @@ for (const relFile of HAND_AUTHORED) {
 }
 
 console.log(`OK ${rendered.length} fichiers Markdown convertis en HTML (assets v=${version}).`);
+if (sectionPages.length) console.log(`OK ${sectionPages.length} index de section generes.`);
 console.log(`OK ${searchCount} entrees ecrites dans assets/site/wiki-search-index.json.`);
 if (patched) console.log(`OK ${patched} pages manuelles synchronisees sur v=${version}.`);
