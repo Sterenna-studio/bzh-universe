@@ -9,6 +9,7 @@
 import { existsSync, readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, resolve, sep, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IGNORE_DIRS = new Set(['.git', '.github', 'node_modules', 'tools']);
@@ -283,6 +284,49 @@ function mdToHtml(md) {
   return { html: out, title: firstH1 };
 }
 
+// Fil d'Ariane cliquable : chaque segment de dossier pointe vers son
+// index.md / README.md s'il existe, sinon reste en texte simple.
+
+function humanizeSegment(seg) {
+  return seg
+    .replace(/^\d+[-_]?/, '')
+    .replace(/[-_]+/g, ' ')
+    .trim()
+    .replace(/\b(bzh|tcg|pw|vdt|ep|3d)\b/gi, (m) => m.toUpperCase())
+    .replace(/^\w/, (c) => c.toUpperCase()) || seg;
+}
+
+function buildBreadcrumb(relPath, prefix, pageTitle) {
+  const parts = relPath.split('/');
+  parts.pop();
+  const currentHtml = relPath.replace(/\.md$/i, '.html');
+  const items = [`<a href="${prefix}hub/index.html">Hub</a>`];
+  let acc = '';
+  for (const seg of parts) {
+    acc = acc ? `${acc}/${seg}` : seg;
+    const label = escapeHtml(humanizeSegment(seg));
+    let href = null;
+    // Cibles possibles pour un dossier : un index interne, ou la page
+    // soeur qui porte le meme nom (ex: docs/universe/personnages.md).
+    const candidates = [
+      `${acc}/index.md`,
+      `${acc}/README.md`,
+      `${acc}/00-index.md`,
+      `${acc}.md`,
+    ];
+    for (const cand of candidates) {
+      if (existsSync(join(ROOT, cand))) {
+        const target = cand.replace(/\.md$/i, '.html');
+        if (target !== currentHtml) href = prefix + target;
+        break;
+      }
+    }
+    items.push(href ? `<a href="${href}">${label}</a>` : `<span>${label}</span>`);
+  }
+  items.push(`<span class="crumb-current" aria-current="page">${escapeHtml(pageTitle)}</span>`);
+  return items.join('<span class="crumb-sep" aria-hidden="true">›</span>');
+}
+
 function readerControls() {
   return `<div class="reader-controls" aria-label="Options de lecture">
     <button class="reader-control" type="button" data-reader-action="font-down" title="Reduire la taille du texte">A-<span class="reader-control-label">Reduire la taille du texte</span></button>
@@ -382,16 +426,16 @@ function topbar({ prefix, hubLink, indexLink }) {
   </header>`;
 }
 
-function page({ title, body, hubLink, indexLink, crumb, prefix }) {
+function page({ title, body, hubLink, indexLink, crumb, prefix, version }) {
   return `<!doctype html>
 <html lang="fr" data-theme="cyber">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)} - BZH Universe</title>
-<link rel="stylesheet" href="${prefix}assets/site/wiki.css">
-<script defer src="${prefix}assets/site/wiki-search-index.js"></script>
-<script defer src="${prefix}assets/site/wiki.js"></script>
+<link rel="stylesheet" href="${prefix}assets/site/wiki.css?v=${version}">
+<script defer src="${prefix}assets/site/wiki-search-index.js?v=${version}"></script>
+<script defer src="${prefix}assets/site/wiki.js?v=${version}"></script>
 </head>
 <body>
 <a class="skip-link" href="#content">Aller au contenu</a>
@@ -399,7 +443,7 @@ ${topbar({ prefix, hubLink, indexLink })}
 <div class="wiki-layout">
 ${sidebar(prefix)}
 <main class="wiki-page" id="content">
-<div class="breadcrumb">${escapeHtml(crumb)}</div>
+<nav class="breadcrumb" aria-label="Fil d'Ariane">${crumb}</nav>
 ${body}
 </main>
 </div>
@@ -491,8 +535,11 @@ function writeSearchIndex(entries) {
   return full.length;
 }
 
+// Passe 1 : rendu en memoire + index de recherche.
+// Passe 2 : ecriture des pages avec un ?v= derive du contenu des assets
+// (cache-busting : les visiteurs recuperent le bon CSS/JS apres deploiement).
 const files = walk(ROOT);
-let count = 0;
+const rendered = [];
 const searchEntries = [];
 for (const file of files) {
   const relPath = relative(ROOT, file).split(sep).join('/');
@@ -506,20 +553,49 @@ for (const file of files) {
   if (!isSearchExcluded(relPath)) {
     searchEntries.push(searchEntryForMarkdown(relPath, pageTitle, md));
   }
+  rendered.push({ relPath, outPath, pageTitle, enrichedHtml, prefix });
+}
+const searchCount = writeSearchIndex(searchEntries);
+
+const version = createHash('md5')
+  .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.css')))
+  .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.js')))
+  .update(readFileSync(SEARCH_INDEX_JS))
+  .digest('hex')
+  .slice(0, 10);
+
+for (const r of rendered) {
   writeFileSync(
-    outPath,
+    r.outPath,
     page({
-      title: pageTitle,
-      body: enrichedHtml,
-      hubLink: prefix + 'hub/index.html',
-      indexLink: prefix + 'docs/00-index.html',
-      crumb: relPath,
-      prefix,
+      title: r.pageTitle,
+      body: r.enrichedHtml,
+      hubLink: r.prefix + 'hub/index.html',
+      indexLink: r.prefix + 'docs/00-index.html',
+      crumb: buildBreadcrumb(r.relPath, r.prefix, r.pageTitle),
+      prefix: r.prefix,
+      version,
     }),
     'utf8',
   );
-  count++;
 }
-const searchCount = writeSearchIndex(searchEntries);
-console.log(`OK ${count} fichiers Markdown convertis en HTML.`);
+// Pages ecrites a la main : on synchronise juste leur ?v= d'assets.
+const HAND_AUTHORED = ['hub/index.html', 'hub/admin/index.html', 'docs/media/fil-audio.html', 'index.html'];
+let patched = 0;
+for (const relFile of HAND_AUTHORED) {
+  const full = join(ROOT, relFile);
+  if (!existsSync(full)) continue;
+  const src = readFileSync(full, 'utf8');
+  const out = src.replace(
+    /(assets\/site\/(?:wiki\.css|wiki\.js|wiki-search-index\.js))(?:\?v=[a-z0-9]+)?/g,
+    `$1?v=${version}`,
+  );
+  if (out !== src) {
+    writeFileSync(full, out, 'utf8');
+    patched++;
+  }
+}
+
+console.log(`OK ${rendered.length} fichiers Markdown convertis en HTML (assets v=${version}).`);
 console.log(`OK ${searchCount} entrees ecrites dans assets/site/wiki-search-index.json.`);
+if (patched) console.log(`OK ${patched} pages manuelles synchronisees sur v=${version}.`);

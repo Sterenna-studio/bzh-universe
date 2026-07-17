@@ -3,6 +3,7 @@
 import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUTPUT_DIR = join(ROOT, 'media', 'gallery');
@@ -332,9 +333,9 @@ function page(items, grouped) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galerie media - BZH Universe</title>
-<link rel="stylesheet" href="../../assets/site/wiki.css">
-<script defer src="../../assets/site/wiki-search-index.js"></script>
-<script defer src="../../assets/site/wiki.js"></script>
+<link rel="stylesheet" href="../../assets/site/wiki.css?v=${assetVersion()}">
+<script defer src="../../assets/site/wiki-search-index.js?v=${assetVersion()}"></script>
+<script defer src="../../assets/site/wiki.js?v=${assetVersion()}"></script>
 </head>
 <body>
 <a class="skip-link" href="#content">Aller au contenu</a>
@@ -358,7 +359,7 @@ function page(items, grouped) {
 <div class="wiki-layout">
 ${sidebar(grouped)}
 <main class="wiki-page gallery-page" id="content">
-  <div class="breadcrumb">media/gallery/index.html</div>
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="../../hub/index.html">Hub</a><span class="crumb-sep" aria-hidden="true">›</span><a href="../README.html">Media</a><span class="crumb-sep" aria-hidden="true">›</span><span class="crumb-current" aria-current="page">Galerie media</span></nav>
   <h1>Galerie media</h1>
   <p>Vue consultable des logos, personnages, covers, webtoon, merch, social, wallpapers et references. Chaque carte ouvre le fichier original.</p>
   <div class="media-gallery-summary" aria-label="Resume de la galerie">
@@ -389,6 +390,19 @@ ${sidebar(grouped)}
 </body>
 </html>
 `;
+}
+
+let cachedAssetVersion = null;
+function assetVersion() {
+  if (!cachedAssetVersion) {
+    cachedAssetVersion = createHash('md5')
+      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.css')))
+      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki.js')))
+      .update(readFileSync(join(ROOT, 'assets', 'site', 'wiki-search-index.js')))
+      .digest('hex')
+      .slice(0, 10);
+  }
+  return cachedAssetVersion;
 }
 
 function formatSize(bytes) {

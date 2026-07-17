@@ -70,6 +70,78 @@
     toc.replaceChildren(list);
   }
 
+  function setupScrollSpy() {
+    const tocLinks = [...document.querySelectorAll('.toc-list a')];
+    if (!tocLinks.length) return;
+    const targets = tocLinks
+      .map((link) => ({ link, el: document.getElementById(decodeURIComponent(link.hash.slice(1))) }))
+      .filter((t) => t.el);
+    if (!targets.length) return;
+
+    let ticking = false;
+    function highlight() {
+      ticking = false;
+      const y = window.scrollY + 130;
+      let active = targets[0];
+      for (const t of targets) {
+        if (t.el.getBoundingClientRect().top + window.scrollY <= y) active = t;
+        else break;
+      }
+      tocLinks.forEach((l) => l.removeAttribute('aria-current'));
+      active.link.setAttribute('aria-current', 'true');
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(highlight); }
+    }, { passive: true });
+    highlight();
+  }
+
+  function enhanceHeadings() {
+    const page = document.querySelector('.wiki-page');
+    if (!page) return;
+    page.querySelectorAll('h2[id], h3[id], h4[id]').forEach((heading) => {
+      if (heading.querySelector('.heading-anchor')) return;
+      const anchor = document.createElement('a');
+      anchor.className = 'heading-anchor';
+      anchor.href = `#${heading.id}`;
+      anchor.setAttribute('aria-label', 'Lien direct vers cette section');
+      anchor.textContent = '#';
+      heading.appendChild(anchor);
+    });
+  }
+
+  function setupBackToTop() {
+    if (!document.querySelector('.wiki-page')) return;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'back-to-top';
+    button.setAttribute('aria-label', 'Remonter en haut de page');
+    button.textContent = '↑';
+    button.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    document.body.appendChild(button);
+    const onScroll = () => button.classList.toggle('is-visible', window.scrollY > 600);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  function setupProgressBar() {
+    if (!document.querySelector('.wiki-page')) return;
+    const bar = document.createElement('div');
+    bar.className = 'reading-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    const fill = document.createElement('span');
+    bar.appendChild(fill);
+    document.body.appendChild(bar);
+    const update = () => {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      fill.style.width = max > 0 ? `${(doc.scrollTop / max) * 100}%` : '0';
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   function normalizePath(pathname) {
     return decodeURIComponent(pathname)
       .replace(/\\/g, '/')
@@ -186,6 +258,25 @@
         const first = results.querySelector('a[href]');
         if (first) window.location.href = first.href;
       });
+
+      input.addEventListener('keydown', (event) => {
+        if (event.key !== 'ArrowDown') return;
+        const first = results.querySelector('a[href]');
+        if (first) { event.preventDefault(); first.focus(); }
+      });
+      results.addEventListener('keydown', (event) => {
+        const links = [...results.querySelectorAll('a[href]')];
+        const index = links.indexOf(document.activeElement);
+        if (index === -1) return;
+        if (event.key === 'ArrowDown') {
+          event.preventDefault();
+          (links[index + 1] || links[0]).focus();
+        } else if (event.key === 'ArrowUp') {
+          event.preventDefault();
+          if (index === 0) input.focus();
+          else links[index - 1].focus();
+        }
+      });
     });
 
     document.addEventListener('click', (event) => {
@@ -194,6 +285,21 @@
         const results = form.querySelector('[data-wiki-search-results]');
         if (results) results.hidden = true;
       });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      const tag = document.activeElement?.tagName || '';
+      const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(tag) || document.activeElement?.isContentEditable;
+      if (event.key === '/' && !typing && !event.ctrlKey && !event.metaKey && !event.altKey) {
+        const input = document.querySelector('[data-wiki-search-input]');
+        if (input) { event.preventDefault(); input.focus(); input.select(); }
+      } else if (event.key === 'Escape') {
+        const open = document.querySelector('[data-wiki-search-results]:not([hidden])');
+        if (open) {
+          open.hidden = true;
+          if (tag === 'INPUT' || open.contains(document.activeElement)) document.activeElement.blur();
+        }
+      }
     });
   }
 
@@ -293,6 +399,10 @@
     markCurrentNavigation();
     bindWikiSearch();
     updateToc();
+    setupScrollSpy();
+    enhanceHeadings();
+    setupBackToTop();
+    setupProgressBar();
     bindMediaGallery();
     injectAudioPlayer();
     injectWikiCollaboration();
