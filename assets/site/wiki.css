@@ -1,3 +1,35 @@
+/* Chakra Petch (theme cyber uniquement) : auto-hebergee, sous-ensemble latin.
+   Aucun appel reseau externe pour les visiteurs qui restent en dark/light -
+   un @font-face ne declenche un telechargement que si son font-family est
+   effectivement applique a du texte rendu, ce qui n'arrive que sous
+   [data-theme="cyber"] (voir plus bas). */
+@font-face {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/chakra-petch/chakra-petch-500.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/chakra-petch/chakra-petch-600.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Chakra Petch";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/chakra-petch/chakra-petch-700.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   color-scheme: dark;
   --bg: #07100f;

@@ -17,15 +17,6 @@
 
   const THEMES = ['dark', 'light', 'cyber'];
 
-  function ensureCyberFont() {
-    if (document.querySelector('link[data-cyber-font]')) return;
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap';
-    link.dataset.cyberFont = '';
-    document.head.appendChild(link);
-  }
-
   function applyPrefs(prefs) {
     const theme = THEMES.includes(prefs.theme) ? prefs.theme : 'cyber';
     const scale = String(clamp(Number(prefs.fontScale ?? 0), -1, 2));
@@ -33,8 +24,6 @@
     root.dataset.theme = theme;
     root.dataset.fontScale = scale;
     root.dataset.dyslexic = String(dyslexic);
-
-    if (theme === 'cyber') ensureCyberFont();
 
     document.querySelectorAll('[data-reader-action="theme"]').forEach((button) => {
       button.setAttribute('aria-pressed', String(button.dataset.themeValue === theme));
