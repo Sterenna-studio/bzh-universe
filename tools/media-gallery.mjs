@@ -327,7 +327,7 @@ function page(items, grouped) {
     .join('\n');
 
   return `<!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="cyber">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

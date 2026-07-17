@@ -27,7 +27,7 @@
   }
 
   function applyPrefs(prefs) {
-    const theme = THEMES.includes(prefs.theme) ? prefs.theme : 'dark';
+    const theme = THEMES.includes(prefs.theme) ? prefs.theme : 'cyber';
     const scale = String(clamp(Number(prefs.fontScale ?? 0), -1, 2));
     const dyslexic = prefs.dyslexic === true;
     root.dataset.theme = theme;
