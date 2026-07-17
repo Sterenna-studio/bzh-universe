@@ -9,6 +9,7 @@ exports/
 dist/
 build/
 media/staging/
+node_modules/
 
 # Les imports bruts doivent rester visibles pour inventaire, meme les metadonnees OS.
 !imports/

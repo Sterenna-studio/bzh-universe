@@ -183,6 +183,15 @@
       const img = event.target.closest('img');
       if (!img || !page.contains(img)) return;
       const anchor = img.closest('a');
+      // Vignette d'apercu (assetThumbs) : l'<img> pointe vers une miniature
+      // generee (assets/site/thumbs/...webp) mais le lien href garde la
+      // pleine resolution expres, pour l'ouverture directe. La lightbox doit
+      // afficher cette pleine resolution, pas la vignette.
+      if (anchor && anchor.classList.contains('wiki-asset-thumb')) {
+        event.preventDefault();
+        open(anchor.href, img.getAttribute('alt') || '');
+        return;
+      }
       // Ne pas intercepter les liens qui pointent ailleurs que vers l'image.
       if (anchor) {
         const href = anchor.getAttribute('href') || '';

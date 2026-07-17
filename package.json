@@ -1,0 +1,14 @@
+{
+  "name": "bzh-universe",
+  "private": true,
+  "type": "module",
+  "description": "Outils de generation du wiki statique BZH Universe. Le site lui-meme reste zero-dependance (node: builtins uniquement) ; sharp n'est utilise que par tools/gen-thumbs.mjs, un script de maintenance execute localement, jamais par la CI ni au deploiement.",
+  "scripts": {
+    "build": "node tools/md-to-html.mjs && node tools/media-gallery.mjs",
+    "check-links": "node tools/check-links.mjs",
+    "gen-thumbs": "node tools/gen-thumbs.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Generate a browsable media gallery from repository assets.
-import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -222,7 +222,10 @@ function mediaMarkup(item) {
   if (item.type === 'video') {
     return `<video controls preload="metadata" src="${src}"></video>`;
   }
-  return `<img src="${src}" alt="${title}" loading="lazy" decoding="async">`;
+  // Vignette generee (tools/gen-thumbs.mjs) si disponible ; l'image source
+  // complete reste ouverte au clic via le lien .media-thumb qui entoure ce tag.
+  const thumbSrc = escapeHtml(item.thumbUrl || item.url);
+  return `<img src="${thumbSrc}" alt="${title}" loading="lazy" decoding="async">`;
 }
 
 function card(item) {
@@ -451,9 +454,11 @@ const items = files
     const collection = collectionFor(rel, category);
     const status = statusFor(rel, category, type);
     const size = statSync(full).size;
+    const thumbAbs = join(ROOT, 'assets', 'site', 'thumbs', `${rel}.webp`);
     return {
       path: rel,
       url: relativeUrl('media/gallery', rel),
+      thumbUrl: type === 'image' && existsSync(thumbAbs) ? relativeUrl('media/gallery', `assets/site/thumbs/${rel}.webp`) : null,
       title: titleFor(rel),
       collection,
       category,

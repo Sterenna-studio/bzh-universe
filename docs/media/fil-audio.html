@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fil audio - BZH Universe</title>
-<link rel="stylesheet" href="../../assets/site/wiki.css?v=b1a89b8643">
-<script defer src="../../assets/site/wiki-search-index.js?v=b1a89b8643"></script>
-<script defer src="../../assets/site/wiki.js?v=b1a89b8643"></script>
+<link rel="stylesheet" href="../../assets/site/wiki.css?v=eaff942372">
+<script defer src="../../assets/site/wiki-search-index.js?v=eaff942372"></script>
+<script defer src="../../assets/site/wiki.js?v=eaff942372"></script>
 <script defer src="../../assets/site/audio-player.js" data-bzh-playlist="../../media/audio/playlist.json"></script>
 <style>
   /* ── Stats bar ── */
@@ -112,6 +112,13 @@
     transition: background .15s, border-color .15s;
   }
   .track-btns a:hover { background: rgba(123,47,255,.2); border-color: var(--c-accent, #7b2fff); }
+  .track-unavailable {
+    font-size: .72rem; padding: .15rem .55rem;
+    border-radius: 4px; border: 1px dashed var(--c-border, rgba(255,255,255,.18));
+    color: var(--c-text-muted, #888);
+    cursor: help;
+  }
+  .track-item[data-no-source] { opacity: .72; }
 
   .empty-filter {
     padding: 1.5rem; text-align: center;
@@ -243,7 +250,7 @@
     </div>
   </li>
 
-  <li class="track-item" data-status="canon" data-track-src="../../media/audio/tracks/aligax-digital-maiden.mp3">
+  <li class="track-item" data-status="canon" data-no-source="true">
     <span class="track-num">02</span>
     <div class="track-meta">
       <div class="track-title">Aligax: Digital Maiden</div>
@@ -251,8 +258,7 @@
     </div>
     <span class="track-status canon">canon</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/aligax-digital-maiden.mp3" data-bzh-play data-bzh-title="Aligax: Digital Maiden" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/aligax-digital-maiden.mp3" data-bzh-queue data-bzh-title="Aligax: Digital Maiden" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent du disque — preview non generee">Source indisponible</span>
     </div>
   </li>
 
@@ -269,7 +275,7 @@
     </div>
   </li>
 
-  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/bzh-power-united-legends.mp3">
+  <li class="track-item" data-status="a confirmer" data-no-source="true">
     <span class="track-num">04</span>
     <div class="track-meta">
       <div class="track-title">BZH Power: United Legends</div>
@@ -277,8 +283,7 @@
     </div>
     <span class="track-status">a confirmer</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/bzh-power-united-legends.mp3" data-bzh-play data-bzh-title="BZH Power: United Legends" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/bzh-power-united-legends.mp3" data-bzh-queue data-bzh-title="BZH Power: United Legends" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
@@ -308,7 +313,7 @@
     </div>
   </li>
 
-  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/spirits-rage.mp3">
+  <li class="track-item" data-status="a confirmer" data-no-source="true">
     <span class="track-num">07</span>
     <div class="track-meta">
       <div class="track-title">Spirit's Rage</div>
@@ -316,12 +321,11 @@
     </div>
     <span class="track-status">a confirmer</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/spirits-rage.mp3" data-bzh-play data-bzh-title="Spirit's Rage" data-bzh-artist="Spirit / BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/spirits-rage.mp3" data-bzh-queue data-bzh-title="Spirit's Rage" data-bzh-artist="Spirit / BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="a confirmer" data-track-src="../../media/audio/tracks/void-echoes.mp3">
+  <li class="track-item" data-status="a confirmer" data-no-source="true">
     <span class="track-num">08</span>
     <div class="track-meta">
       <div class="track-title">Void Echoes</div>
@@ -329,12 +333,11 @@
     </div>
     <span class="track-status">a confirmer</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/void-echoes.mp3" data-bzh-play data-bzh-title="Void Echoes" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/void-echoes.mp3" data-bzh-queue data-bzh-title="Void Echoes" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/sniky-the-killer.mp3">
+  <li class="track-item" data-status="archive" data-no-source="true">
     <span class="track-num">09</span>
     <div class="track-meta">
       <div class="track-title">Sniky the Killer</div>
@@ -342,12 +345,11 @@
     </div>
     <span class="track-status archive">archive</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/sniky-the-killer.mp3" data-bzh-play data-bzh-title="Sniky the Killer" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/sniky-the-killer.mp3" data-bzh-queue data-bzh-title="Sniky the Killer" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/aligax-beautiful-warrior.mp3">
+  <li class="track-item" data-status="archive" data-no-source="true">
     <span class="track-num">10</span>
     <div class="track-meta">
       <div class="track-title">Aligax &ndash; Beautiful Warrior</div>
@@ -355,12 +357,11 @@
     </div>
     <span class="track-status archive">archive</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/aligax-beautiful-warrior.mp3" data-bzh-play data-bzh-title="Aligax: Beautiful Warrior" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/aligax-beautiful-warrior.mp3" data-bzh-queue data-bzh-title="Aligax: Beautiful Warrior" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/empire-de-lombre.mp3">
+  <li class="track-item" data-status="archive" data-no-source="true">
     <span class="track-num">11</span>
     <div class="track-meta">
       <div class="track-title">Empire de l'Ombre</div>
@@ -368,12 +369,11 @@
     </div>
     <span class="track-status archive">archive</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/empire-de-lombre.mp3" data-bzh-play data-bzh-title="Empire de l'Ombre" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/empire-de-lombre.mp3" data-bzh-queue data-bzh-title="Empire de l'Ombre" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="archive" data-track-src="../../media/audio/tracks/night-of-power.mp3">
+  <li class="track-item" data-status="archive" data-no-source="true">
     <span class="track-num">12</span>
     <div class="track-meta">
       <div class="track-title">Night of Power</div>
@@ -381,12 +381,11 @@
     </div>
     <span class="track-status archive">archive</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/night-of-power.mp3" data-bzh-play data-bzh-title="Night of Power" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/night-of-power.mp3" data-bzh-queue data-bzh-title="Night of Power" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/glitched-warcry.mp3">
+  <li class="track-item" data-status="concept" data-no-source="true">
     <span class="track-num">13</span>
     <div class="track-meta">
       <div class="track-title">Glitched Warcry</div>
@@ -394,12 +393,11 @@
     </div>
     <span class="track-status concept">concept</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/glitched-warcry.mp3" data-bzh-play data-bzh-title="Glitched Warcry" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/glitched-warcry.mp3" data-bzh-queue data-bzh-title="Glitched Warcry" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/lheure-du-combat.mp3">
+  <li class="track-item" data-status="concept" data-no-source="true">
     <span class="track-num">14</span>
     <div class="track-meta">
       <div class="track-title">L'Heure du Combat</div>
@@ -407,12 +405,11 @@
     </div>
     <span class="track-status concept">concept</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/lheure-du-combat.mp3" data-bzh-play data-bzh-title="L'Heure du Combat" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/lheure-du-combat.mp3" data-bzh-queue data-bzh-title="L'Heure du Combat" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 
-  <li class="track-item" data-status="concept" data-track-src="../../media/audio/tracks/bzh-power.mp3">
+  <li class="track-item" data-status="concept" data-no-source="true">
     <span class="track-num">15</span>
     <div class="track-meta">
       <div class="track-title">BZH POWER</div>
@@ -420,8 +417,7 @@
     </div>
     <span class="track-status concept">concept</span>
     <div class="track-btns">
-      <a href="../../media/audio/tracks/bzh-power.mp3" data-bzh-play data-bzh-title="BZH POWER" data-bzh-artist="BZH Chronicles">&#9654; Ecouter</a>
-      <a href="../../media/audio/tracks/bzh-power.mp3" data-bzh-queue data-bzh-title="BZH POWER" data-bzh-artist="BZH Chronicles">&#xFF0B; Ajouter</a>
+      <span class="track-unavailable" title="Fichier source absent — concept non produit">Source indisponible</span>
     </div>
   </li>
 

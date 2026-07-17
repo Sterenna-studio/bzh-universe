@@ -108,11 +108,25 @@ function relFromDoc(docDir, absTarget) {
   return relative(docDir, absTarget).split(sep).map(encodeURIComponent).join('/');
 }
 
+// Miniatures optionnelles : voir tools/gen-thumbs.mjs. Ce generateur ne les
+// cree jamais lui-meme (aucune dependance a sharp ici) ; il se contente de
+// verifier si le fichier existe deja et l'utilise, sinon retombe sur
+// l'image source complete. Le meme mapping de chemin est duplique dans
+// gen-thumbs.mjs (assets/site/thumbs/<chemin-source>.webp) : garder les
+// deux en phase si l'un des deux change.
+const THUMBS_DIR = join(ROOT, 'assets', 'site', 'thumbs');
+function thumbSourceFor(absImg) {
+  const rel = relative(ROOT, absImg).split(sep).join('/');
+  const abs = join(THUMBS_DIR, `${rel}.webp`);
+  return existsSync(abs) ? abs : absImg;
+}
+
 function assetThumbs(docDir, files) {
   return files
     .map((absImg) => {
-      const url = relFromDoc(docDir, absImg);
-      return `<a class="wiki-asset-thumb" href="${url}" target="_blank" rel="noopener noreferrer"><img src="${url}" alt="" loading="lazy" decoding="async"></a>`;
+      const fullUrl = relFromDoc(docDir, absImg);
+      const thumbUrl = relFromDoc(docDir, thumbSourceFor(absImg));
+      return `<a class="wiki-asset-thumb" href="${fullUrl}" target="_blank" rel="noopener noreferrer"><img src="${thumbUrl}" alt="" loading="lazy" decoding="async"></a>`;
     })
     .join('');
 }
