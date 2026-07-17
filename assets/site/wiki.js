@@ -267,8 +267,12 @@
     });
   }
 
+  function wikiScriptTag() {
+    return document.querySelector('script[src*="assets/site/wiki.js"]');
+  }
+
   function wikiRootUrl() {
-    const script = document.querySelector('script[src$="assets/site/wiki.js"], script[src$="wiki.js"]');
+    const script = wikiScriptTag();
     if (!script) return new URL('./', window.location.href);
     return new URL('../../', script.src);
   }
@@ -282,6 +286,33 @@
 
   function searchIndex() {
     return Array.isArray(window.BZH_WIKI_SEARCH_INDEX) ? window.BZH_WIKI_SEARCH_INDEX : [];
+  }
+
+  // L'index de recherche (souvent >900Ko, un des plus gros assets du site)
+  // n'est plus charge sur chaque page : on l'injecte a la demande, des que
+  // le champ de recherche recoit le focus, et on reutilise la meme promesse
+  // pour les appels suivants.
+  let searchIndexPromise = null;
+  function ensureSearchIndex() {
+    if (Array.isArray(window.BZH_WIKI_SEARCH_INDEX)) return Promise.resolve(window.BZH_WIKI_SEARCH_INDEX);
+    if (searchIndexPromise) return searchIndexPromise;
+    searchIndexPromise = new Promise((resolve, reject) => {
+      const wikiScript = wikiScriptTag();
+      let version = null;
+      try {
+        version = wikiScript ? new URL(wikiScript.src).searchParams.get('v') : null;
+      } catch {
+        version = null;
+      }
+      const url = new URL('assets/site/wiki-search-index.js', wikiRootUrl());
+      if (version) url.searchParams.set('v', version);
+      const script = document.createElement('script');
+      script.src = url.href;
+      script.onload = () => resolve(searchIndex());
+      script.onerror = () => reject(new Error('search index unavailable'));
+      document.head.appendChild(script);
+    });
+    return searchIndexPromise;
   }
 
   function scoreSearchEntry(entry, terms) {
@@ -358,7 +389,6 @@
     if (!forms.length) return;
 
     const rootUrl = wikiRootUrl();
-    const entries = searchIndex();
 
     forms.forEach((form) => {
       const input = form.querySelector('[data-wiki-search-input]');
@@ -372,9 +402,16 @@
           results.replaceChildren();
           return;
         }
+        const entries = searchIndex();
         if (!entries.length) {
-          results.innerHTML = '<p class="wiki-search-empty">Index de recherche indisponible.</p>';
+          results.innerHTML = '<p class="wiki-search-empty">Chargement de l’index...</p>';
           results.hidden = false;
+          ensureSearchIndex()
+            .then(() => updateResults())
+            .catch(() => {
+              results.innerHTML = '<p class="wiki-search-empty">Index de recherche indisponible.</p>';
+              results.hidden = false;
+            });
           return;
         }
         const matches = entries
@@ -385,6 +422,9 @@
         renderSearchResults(results, matches, rootUrl, terms);
       }
 
+      // Precharge l'index des le focus, avant meme la frappe : le temps que
+      // l'utilisateur tape 2 caracteres, l'index est generalement deja pret.
+      input.addEventListener('focus', () => ensureSearchIndex().catch(() => {}), { once: true });
       input.addEventListener('input', updateResults);
       input.addEventListener('focus', updateResults);
       form.addEventListener('submit', (event) => {

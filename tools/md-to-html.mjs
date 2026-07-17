@@ -15,6 +15,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const IGNORE_DIRS = new Set(['.git', '.github', 'node_modules', 'tools']);
 const SEARCH_INDEX_JSON = join(ROOT, 'assets', 'site', 'wiki-search-index.json');
 const SEARCH_INDEX_JS = join(ROOT, 'assets', 'site', 'wiki-search-index.js');
+const BASE_URL = 'https://nitro.sterenna.fr/bzh-universe/';
+const SITE_NAME = 'BZH Universe';
+const DEFAULT_DESCRIPTION =
+  "Archive numerique biopunk BZH Universe : lore, personnages, projets, medias et traces historiques du corpus BZH.";
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.avif']);
 const VIDEO_EXT = new Set(['.mp4', '.webm', '.mov', '.m4v']);
 const AUDIO_EXT = new Set(['.mp3', '.ogg', '.wav', '.m4a', '.flac']);
@@ -510,7 +514,32 @@ function topbar({ prefix, hubLink, indexLink }) {
   </header>`;
 }
 
-function page({ title, body, hubLink, indexLink, crumb, prefix, version, readingMin, pageNav }) {
+// Bloc SEO / partage social partage par toutes les pages generees (voir
+// aussi tools/media-gallery.mjs et les pages ecrites a la main, qui portent
+// une copie adaptee du meme bloc).
+function seoHead({ title, description, urlPath, prefix }) {
+  const fullTitle = `${escapeHtml(title)} - ${SITE_NAME}`;
+  const desc = escapeHtml(description || DEFAULT_DESCRIPTION);
+  const canonical = BASE_URL + urlPath;
+  const ogImage = `${BASE_URL}assets/site/og-image.jpg`;
+  return `<meta name="description" content="${desc}">
+<link rel="canonical" href="${canonical}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:title" content="${fullTitle}">
+<meta property="og:description" content="${desc}">
+<meta property="og:url" content="${canonical}">
+<meta property="og:image" content="${ogImage}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${fullTitle}">
+<meta name="twitter:description" content="${desc}">
+<meta name="twitter:image" content="${ogImage}">
+<link rel="icon" type="image/png" sizes="32x32" href="${prefix}assets/site/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="${prefix}assets/site/favicon-16.png">
+<link rel="apple-touch-icon" href="${prefix}assets/site/apple-touch-icon.png">`;
+}
+
+function page({ title, body, hubLink, indexLink, crumb, prefix, version, readingMin, pageNav, description, urlPath }) {
   const meta = readingMin
     ? `<p class="page-meta"><span class="page-meta-time">⏱ ${readingMin} min de lecture</span></p>`
     : '';
@@ -520,8 +549,8 @@ function page({ title, body, hubLink, indexLink, crumb, prefix, version, reading
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(title)} - BZH Universe</title>
+${seoHead({ title, description, urlPath, prefix })}
 <link rel="stylesheet" href="${prefix}assets/site/wiki.css?v=${version}">
-<script defer src="${prefix}assets/site/wiki-search-index.js?v=${version}"></script>
 <script defer src="${prefix}assets/site/wiki.js?v=${version}"></script>
 </head>
 <body>
@@ -554,6 +583,16 @@ function plainText(md) {
     .replace(/[|*_>#]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// Meta description / og:description : ~160 caracteres, coupee sur un mot entier.
+function descriptionFor(md) {
+  const text = plainText(md);
+  if (!text) return DEFAULT_DESCRIPTION;
+  if (text.length <= 160) return text;
+  const cut = text.slice(0, 160);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${cut.slice(0, lastSpace > 100 ? lastSpace : 160)}…`;
 }
 
 function headings(md) {
@@ -679,7 +718,17 @@ for (const file of files) {
     searchEntries.push(searchEntryForMarkdown(relPath, pageTitle, md));
   }
   const dir = relPath.includes('/') ? relPath.replace(/\/[^/]*$/, '') : '';
-  rendered.push({ relPath, outPath, outRel, pageTitle, enrichedHtml, prefix, dir, readingMin: readingMinutes(md) });
+  rendered.push({
+    relPath,
+    outPath,
+    outRel,
+    pageTitle,
+    enrichedHtml,
+    prefix,
+    dir,
+    readingMin: readingMinutes(md),
+    description: descriptionFor(md),
+  });
 }
 
 // Regroupe les pages par dossier (tri naturel) pour prev/next et index de section.
@@ -783,6 +832,8 @@ for (const r of rendered) {
       version,
       readingMin: r.readingMin,
       pageNav: pageNavHtml(prev, next, r.prefix),
+      description: r.description,
+      urlPath: r.outRel,
     }),
     'utf8',
   );
@@ -800,6 +851,8 @@ for (const s of sectionPages) {
       crumb: buildBreadcrumb(s.outRel, s.prefix, s.title),
       prefix: s.prefix,
       version,
+      description: `Index de section ${s.title} - ${SITE_NAME}.`,
+      urlPath: s.outRel,
     }),
     'utf8',
   );
@@ -821,7 +874,29 @@ for (const relFile of HAND_AUTHORED) {
   }
 }
 
+// sitemap.xml : uniquement le contenu public du wiki (docs/, le catalogue et
+// la galerie media, le hub). Le reste (archives/, imports/, assets/*README,
+// templates/, l'admin) reste navigable mais hors indexation.
+function isSitemapIncluded(relPath) {
+  return relPath.startsWith('docs/') || relPath === 'media/catalog/media-catalog.html';
+}
+
+const sitemapUrls = [
+  'hub/index.html',
+  'media/gallery/index.html',
+  ...rendered.filter((r) => isSitemapIncluded(r.outRel)).map((r) => r.outRel),
+  ...sectionPages.filter((s) => isSitemapIncluded(s.outRel)).map((s) => s.outRel),
+].sort(naturalCompare);
+
+const sitemapXml =
+  '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  sitemapUrls.map((u) => `  <url><loc>${escapeHtml(BASE_URL + u)}</loc></url>`).join('\n') +
+  '\n</urlset>\n';
+writeFileSync(join(ROOT, 'sitemap.xml'), sitemapXml, 'utf8');
+
 console.log(`OK ${rendered.length} fichiers Markdown convertis en HTML (assets v=${version}).`);
 if (sectionPages.length) console.log(`OK ${sectionPages.length} index de section generes.`);
 console.log(`OK ${searchCount} entrees ecrites dans assets/site/wiki-search-index.json.`);
+console.log(`OK sitemap.xml genere (${sitemapUrls.length} URLs publiques).`);
 if (patched) console.log(`OK ${patched} pages manuelles synchronisees sur v=${version}.`);

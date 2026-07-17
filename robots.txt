@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /hub/admin/
+Disallow: /archives/
+Disallow: /imports/
+Disallow: /assets/
+Disallow: /templates/
+Disallow: /media/audio/
+Disallow: /media/video/
+Disallow: /media/visual/
+Allow: /media/catalog/
+Allow: /media/gallery/
+
+Sitemap: https://nitro.sterenna.fr/bzh-universe/sitemap.xml

@@ -195,6 +195,14 @@ textarea {
   backdrop-filter: blur(16px);
 }
 
+/* Les enfants directs d'une grille ont un min-width:auto implicite, qui les
+   empeche de se retrecir sous leur contenu minimal. Sur mobile, le pavage
+   d'une seule colonne doit pouvoir comprimer chaque bloc (recherche,
+   controles de lecture) sans forcer un depassement horizontal de page. */
+.wiki-topbar > * {
+  min-width: 0;
+}
+
 .wiki-brand {
   display: inline-flex;
   align-items: center;
@@ -268,9 +276,11 @@ textarea {
 
 .reader-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.35rem;
   align-items: center;
   justify-content: flex-end;
+  min-width: 0;
 }
 
 .theme-switch {
@@ -401,6 +411,13 @@ textarea {
   padding: 1.25rem;
 }
 
+/* Meme raison que .wiki-topbar > * : sans ca, la sidebar ou le contenu
+   principal peuvent forcer la grille (et donc la page) plus large que le
+   viewport des qu'un lien ou un bloc de contenu ne veut pas se retrecir. */
+.wiki-layout > * {
+  min-width: 0;
+}
+
 .wiki-sidebar {
   position: sticky;
   top: 5rem;
@@ -484,6 +501,11 @@ textarea {
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: var(--shadow);
+  /* Herite par tout le contenu (p, li, td, blockquote...) : une URL ou un
+     chemin long dans du texte brut ne doit jamais forcer un depassement
+     horizontal de page. .wiki-page pre code (bloc de code) reprend son
+     propre defilement horizontal, volontairement exclu de cette regle. */
+  overflow-wrap: anywhere;
 }
 
 .breadcrumb {
@@ -648,6 +670,10 @@ textarea {
   font-family: var(--font-mono);
   font-size: 0.9em;
   padding: 0.08em 0.38em;
+  /* Un chemin/URL long en code inline ne doit pas forcer un depassement
+     horizontal de page ; le code en bloc (.wiki-page pre code, ci-dessous)
+     garde son propre defilement et n'est pas concerne. */
+  overflow-wrap: anywhere;
 }
 
 .wiki-page pre {
@@ -663,6 +689,7 @@ textarea {
   border: 0;
   background: transparent;
   color: var(--ink);
+  overflow-wrap: normal;
 }
 
 .wiki-page blockquote {

@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const BASE_URL = 'https://nitro.sterenna.fr/bzh-universe/';
+const SITE_NAME = 'BZH Universe';
 const OUTPUT_DIR = join(ROOT, 'media', 'gallery');
 const OUTPUT_HTML = join(OUTPUT_DIR, 'index.html');
 const OUTPUT_JSON = join(OUTPUT_DIR, 'inventory.json');
@@ -349,14 +351,33 @@ function page(items, grouped) {
     .map((name) => section(name, grouped.get(name)))
     .join('\n');
 
+  const description = `Galerie media BZH Universe : ${items.length} fichiers consultables (logos, personnages, TCG, covers, merch, references, audio, video).`;
+  const canonical = `${BASE_URL}media/gallery/index.html`;
+  const ogImage = `${BASE_URL}assets/site/og-image.jpg`;
+  const fullTitle = `Galerie media - ${SITE_NAME}`;
+
   return `<!doctype html>
 <html lang="fr" data-theme="cyber">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galerie media - BZH Universe</title>
+<meta name="description" content="${escapeHtml(description)}">
+<link rel="canonical" href="${canonical}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${SITE_NAME}">
+<meta property="og:title" content="${escapeHtml(fullTitle)}">
+<meta property="og:description" content="${escapeHtml(description)}">
+<meta property="og:url" content="${canonical}">
+<meta property="og:image" content="${ogImage}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escapeHtml(fullTitle)}">
+<meta name="twitter:description" content="${escapeHtml(description)}">
+<meta name="twitter:image" content="${ogImage}">
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/site/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../assets/site/favicon-16.png">
+<link rel="apple-touch-icon" href="../../assets/site/apple-touch-icon.png">
 <link rel="stylesheet" href="../../assets/site/wiki.css?v=${assetVersion()}">
-<script defer src="../../assets/site/wiki-search-index.js?v=${assetVersion()}"></script>
 <script defer src="../../assets/site/wiki.js?v=${assetVersion()}"></script>
 </head>
 <body>
