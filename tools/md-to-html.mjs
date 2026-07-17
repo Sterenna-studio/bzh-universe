@@ -21,6 +21,27 @@ const AUDIO_EXT = new Set(['.mp3', '.ogg', '.wav', '.m4a', '.flac']);
 const ASSET_ROOT_DIRS = ['assets', 'media', 'archives'];
 const dirImageCache = new Map();
 const extOf = (name) => name.slice(name.lastIndexOf('.')).toLowerCase();
+
+// Tri naturel deterministe (independant de l'ICU/Node) : les chunks non
+// numeriques sont compares par point de code, les chunks numeriques par valeur.
+// Evite que localeCompare, dont le resultat varie selon la version de Node,
+// change l'ordre des images/pages entre une machine locale et la CI.
+function naturalCompare(a, b) {
+  const ax = String(a).match(/\d+|\D+/g) || [];
+  const bx = String(b).match(/\d+|\D+/g) || [];
+  const n = Math.min(ax.length, bx.length);
+  for (let i = 0; i < n; i++) {
+    if (ax[i] === bx[i]) continue;
+    const aNum = /^\d/.test(ax[i]);
+    const bNum = /^\d/.test(bx[i]);
+    if (aNum && bNum) {
+      const diff = Number(ax[i]) - Number(bx[i]);
+      if (diff) return diff;
+    }
+    return ax[i] < bx[i] ? -1 : 1;
+  }
+  return ax.length - bx.length;
+}
 // Sentinelle ASCII pour proteger les spans `code` (jamais present dans les docs)
 const PH_OPEN = '@@CODE';
 const PH_CLOSE = 'CODE@@';
@@ -66,7 +87,7 @@ function findImages(absDir, limit = 6) {
     } catch {
       return;
     }
-    entries.sort((a, b) => a.name.localeCompare(b.name));
+    entries.sort((a, b) => naturalCompare(a.name, b.name));
     for (const entry of entries) {
       if (out.length >= limit || scanned > 600) return;
       if (entry.name.startsWith('.')) continue;
@@ -614,7 +635,7 @@ function writeSearchIndex(entries) {
   // Tri total (titre puis url) AVANT l'attribution des id : l'ordre du
   // systeme de fichiers ne doit pas influencer la sortie (build reproductible).
   const full = [...entries, ...mediaSearchEntries()]
-    .sort((a, b) => a.title.localeCompare(b.title, 'fr') || String(a.url).localeCompare(String(b.url)))
+    .sort((a, b) => naturalCompare(a.title, b.title) || naturalCompare(String(a.url), String(b.url)))
     .map((entry, index) => ({ id: index + 1, ...entry }));
   const json = `${JSON.stringify(full, null, 2)}\n`;
   writeFileSync(SEARCH_INDEX_JSON, json, 'utf8');
@@ -652,7 +673,7 @@ for (const r of rendered) {
   pagesByDir.get(r.dir).push(r);
 }
 for (const list of pagesByDir.values()) {
-  list.sort((a, b) => a.outRel.localeCompare(b.outRel, 'fr', { numeric: true }));
+  list.sort((a, b) => naturalCompare(a.outRel, b.outRel));
 }
 
 // Dossiers sous docs/ ou media/ sans landing naturelle -> index de section genere.
@@ -670,7 +691,7 @@ function childDirsOf(dirRel) {
     const rest = d.slice(prefixDir.length).split('/')[0];
     if (rest) names.add(rest);
   }
-  return [...names].sort((a, b) => a.localeCompare(b, 'fr', { numeric: true }));
+  return [...names].sort(naturalCompare);
 }
 
 function sectionIndexPages() {

@@ -100,6 +100,25 @@ function walk(dir, out = []) {
   return out;
 }
 
+// Tri naturel deterministe (voir tools/md-to-html.mjs) : evite que la version
+// d'ICU/Node ne change l'ordre des medias entre une machine locale et la CI.
+function naturalCompare(a, b) {
+  const ax = String(a).match(/\d+|\D+/g) || [];
+  const bx = String(b).match(/\d+|\D+/g) || [];
+  const n = Math.min(ax.length, bx.length);
+  for (let i = 0; i < n; i++) {
+    if (ax[i] === bx[i]) continue;
+    const aNum = /^\d/.test(ax[i]);
+    const bNum = /^\d/.test(bx[i]);
+    if (aNum && bNum) {
+      const diff = Number(ax[i]) - Number(bx[i]);
+      if (diff) return diff;
+    }
+    return ax[i] < bx[i] ? -1 : 1;
+  }
+  return ax.length - bx.length;
+}
+
 function slug(value) {
   return value
     .toLowerCase()
@@ -444,7 +463,7 @@ const items = files
       sizeLabel: formatSize(size),
     };
   })
-  .sort((a, b) => CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category) || a.path.localeCompare(b.path, 'en'));
+  .sort((a, b) => CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category) || naturalCompare(a.path, b.path));
 
 const grouped = new Map();
 for (const item of items) {
