@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Mes contributions — BZH Universe</title>
+  <link rel="stylesheet" href="../../assets/site/wiki.css">
+  <link rel="stylesheet" href="../../assets/site/wiki-collaboration.css">
+  <link rel="stylesheet" href="../admin/admin.css">
+  <link rel="stylesheet" href="contributions.css">
+  <script type="module" src="contributions.js"></script>
+</head>
+<body class="wiki-admin-body wiki-contributions-body">
+  <a class="skip-link" href="#content">Aller au contenu</a>
+  <header class="wiki-topbar wiki-admin-topbar">
+    <a class="wiki-brand" href="../index.html">
+      <span class="wiki-brand-mark" aria-hidden="true"></span>
+      <span>
+        <span class="wiki-brand-kicker">Espace contributeur</span>
+        <span class="wiki-brand-name">BZH Universe</span>
+      </span>
+    </a>
+    <nav class="wiki-toplinks" aria-label="Navigation contributeur">
+      <a class="wiki-pill" href="../index.html">Retour au hub</a>
+      <a class="wiki-pill" href="../../docs/00-index.html">Wiki</a>
+      <a class="wiki-pill" href="https://nitro.sterenna.fr/star/">Cockpit Nitro</a>
+    </nav>
+  </header>
+
+  <main class="wiki-admin-shell" id="content">
+    <section class="wiki-admin-hero">
+      <p class="eyebrow">BZH WIKI · CONTRIBUTIONS</p>
+      <h1>Mes contributions</h1>
+      <p>Retrouvez les propositions envoyees avec votre session Nitro, leur statut et les notes laissees par la moderation.</p>
+    </section>
+
+    <section class="wiki-admin-gate" data-contribution-gate aria-live="polite">
+      <h2>Verification de la session…</h2>
+      <p>Lecture de votre compte Nitro.</p>
+    </section>
+
+    <section class="wiki-admin-dashboard" data-contribution-dashboard hidden>
+      <header class="wiki-admin-dashboard-heading">
+        <div>
+          <p class="wiki-admin-kicker">Session Nitro</p>
+          <h2>Agent <span data-contributor-name>connecte</span></h2>
+        </div>
+        <button class="wiki-admin-button wiki-admin-button-secondary" type="button" data-contribution-refresh>Actualiser</button>
+      </header>
+
+      <p class="wiki-admin-status" data-contribution-status role="status" aria-live="polite" hidden></p>
+
+      <section class="wiki-admin-stats" aria-label="Compteurs des contributions">
+        <article><strong data-pending-count>0</strong><span>en attente</span></article>
+        <article><strong data-approved-count>0</strong><span>approuvees</span></article>
+        <article><strong data-rejected-count>0</strong><span>rejetees</span></article>
+      </section>
+
+      <section class="wiki-admin-queue" aria-labelledby="contribution-list-title">
+        <div class="wiki-admin-section-heading">
+          <div>
+            <p class="wiki-admin-kicker">Historique personnel</p>
+            <h2 id="contribution-list-title">Propositions envoyees</h2>
+          </div>
+          <p>Une proposition en attente peut etre retiree. Une proposition deja traitee reste conservee dans votre historique.</p>
+        </div>
+        <div class="wiki-admin-list" data-contribution-list></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
