@@ -8,6 +8,7 @@ import {
 
 const MAX_PROPOSAL_LENGTH = 12000;
 const MAX_CURRENT_LENGTH = 12000;
+const CONTRIBUTION_TRACKING_URL = new URL('../../hub/contributions/', import.meta.url).href;
 
 function element(tag, options = {}) {
   const node = document.createElement(tag);
@@ -70,6 +71,7 @@ function applyIdentity(identity, ui) {
   ui.identity.dataset.authenticated = String(Boolean(identity.isAuthenticated));
   ui.aliasRow.hidden = Boolean(identity.isAuthenticated);
   ui.alias.required = !identity.isAuthenticated;
+  ui.trackingLink.hidden = !identity.isAuthenticated;
 
   if (!identity.available) {
     setStatus(ui.status, 'Connexion Nitro indisponible. La contribution ne peut pas etre envoyee.', 'error');
@@ -97,6 +99,15 @@ export async function initWikiContributions() {
   });
 
   const identity = element('p', { className: 'wiki-collab-identity', text: 'Verification Nitro…' });
+  const trackingLink = element('a', {
+    className: 'wiki-collab-button wiki-collab-button-secondary',
+    text: 'Mes contributions',
+  });
+  trackingLink.href = CONTRIBUTION_TRACKING_URL;
+  trackingLink.hidden = true;
+  const identityRow = element('div', { className: 'wiki-collab-actions' });
+  identityRow.append(identity, trackingLink);
+
   const form = element('form', { className: 'wiki-collab-form' });
   form.noValidate = true;
 
@@ -139,11 +150,11 @@ export async function initWikiContributions() {
   actions.append(submit);
 
   form.append(targetLabel, proposalLabel, aliasRow, actions, status);
-  details.append(summary, intro, identity, form);
+  details.append(summary, intro, identityRow, form);
   section.append(details);
   page.append(section);
 
-  const ui = { identity, aliasRow, alias, submit, status };
+  const ui = { identity, aliasRow, alias, submit, status, trackingLink };
   let currentIdentity = await getWikiIdentity();
   applyIdentity(currentIdentity, ui);
   onWikiIdentityChange((nextIdentity) => {
@@ -189,7 +200,10 @@ export async function initWikiContributions() {
       if (error) throw error;
 
       proposal.value = '';
-      setStatus(status, `Proposition envoyee pour « ${getWikiPageTitle()} ». Merci.`, 'success');
+      const followUp = currentIdentity.isAuthenticated
+        ? ' Vous pouvez suivre son etat dans « Mes contributions ».'
+        : '';
+      setStatus(status, `Proposition envoyee pour « ${getWikiPageTitle()} ». Merci.${followUp}`, 'success');
     } catch (error) {
       console.error('[bzh-wiki] contribution insert failed:', error);
       setStatus(status, `Envoi impossible : ${error?.message || 'erreur inconnue'}`, 'error');

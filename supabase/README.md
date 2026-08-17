@@ -27,6 +27,7 @@ La session Supabase est partagee par origine avec Nitro. Le profil applicatif re
 
 La migration initiale est dans `migrations/20260711_wiki_contributions.sql`.
 Le durcissement est dans `migrations/20260711_wiki_access_hardening.sql` et a ete applique au projet `gwen-ha-star`.
+Le suivi personnel est defini dans `migrations/20260711_contribution_tracking.sql`.
 
 ## Interface publique
 
@@ -38,6 +39,25 @@ Les pages wiki chargent automatiquement :
 - `assets/site/wiki-collaboration.js`
 
 Le client public utilise uniquement la cle publique configuree dans `/shared/supabase-client.js`. La `service_role` ou une cle secrete ne doit jamais etre exposee dans le site statique.
+
+## Suivi des contributions
+
+La page personnelle est disponible dans :
+
+```txt
+/hub/contributions/
+```
+
+Elle est reservee aux sessions Nitro et affiche uniquement les lignes dont `author_nitro_id = auth.uid()` :
+
+- statut `pending`, `approved` ou `rejected` ;
+- date d'envoi et date de traitement ;
+- texte propose et capture de la zone d'origine ;
+- note du moderateur ;
+- lien vers la page concernee ;
+- retrait definitif d'une proposition encore `pending`.
+
+Les propositions anonymes restent sans suivi personnel. Elles ne peuvent pas etre reliees de maniere fiable a un visiteur apres l'envoi.
 
 ## Console de moderation
 
@@ -83,13 +103,15 @@ L'approbation d'une contribution enregistre la decision en base. Elle ne modifie
 
 ## RLS et privileges Data API
 
-Etat public attendu :
+Etat attendu :
 
-| Ressource | `anon` / `authenticated` |
-|---|---|
-| `contributions` | `INSERT` uniquement |
-| `comments` | `SELECT`, `INSERT` uniquement |
-| `admin_users` | aucun privilege |
+| Ressource | `anon` | `authenticated` |
+|---|---|---|
+| `contributions` | `INSERT` | `INSERT`, lecture de ses propres lignes, suppression de ses propres lignes `pending` |
+| `comments` | `SELECT`, `INSERT` | `SELECT`, `INSERT` |
+| `admin_users` | aucun privilege | aucun privilege |
+
+Pour `contributions`, la lecture authentifiee utilise des privileges de colonnes et n'expose pas `author_ip_hash` ni `reviewed_by`.
 
 Les politiques d'insertion imposent :
 
@@ -98,7 +120,7 @@ Les politiques d'insertion imposent :
 - le pseudo connecte doit correspondre a `profiles.username` ;
 - les commentaires connectes ne peuvent pas injecter un `author_name` anonyme.
 
-Les clients publics n'ont aucun droit `UPDATE` ou `DELETE`. La lecture des propositions en attente est reservee a l'Edge Function de moderation.
+La politique de lecture exige `author_nitro_id = auth.uid()`. La politique de suppression ajoute `status = 'pending'`. Les utilisateurs ne disposent d'aucun droit public `UPDATE`.
 
 ## Purge des propositions refusees
 
