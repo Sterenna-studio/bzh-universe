@@ -19687,7 +19687,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "path": "supabase/README.md",
     "section": "Wiki",
     "summary": "Supabase — BZH Universe Wiki Architecture active Le wiki est deploye sous https://nitro.sterenna.fr/bzh-universe/ et utilise le meme projet Supabase que Nitro (gwen-ha-star). Les modules partages sont importes depuis : L",
-    "keywords": "supabase README md Supabase — BZH Universe Wiki Architecture active Tables wiki Interface publique Console de moderation Edge Function `wiki-moderation` RLS et privileges Data API Purge des propositions refusees",
+    "keywords": "supabase README md Supabase — BZH Universe Wiki Architecture active Tables wiki Interface publique Suivi des contributions Console de moderation Edge Function `wiki-moderation` RLS et privileges Data API",
     "anchors": [
       {
         "t": "Architecture active",
@@ -19700,6 +19700,10 @@ window.BZH_WIKI_SEARCH_INDEX = [
       {
         "t": "Interface publique",
         "u": "supabase/README.html#interface-publique"
+      },
+      {
+        "t": "Suivi des contributions",
+        "u": "supabase/README.html#suivi-des-contributions"
       },
       {
         "t": "Console de moderation",
