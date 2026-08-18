@@ -10680,18 +10680,6 @@
     "sizeLabel": "3.3 Mo"
   },
   {
-    "path": "media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
-    "url": "../../media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp.webp",
-    "title": "Aligax Lol Morgana Portrait Reference v01",
-    "collection": "References",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 442992,
-    "sizeLabel": "433 Ko"
-  },
-  {
     "path": "media/visual/references/apex-legends_group-poster_reference_v01.png",
     "url": "../../media/visual/references/apex-legends_group-poster_reference_v01.png",
     "thumbUrl": "../../assets/site/thumbs/media/visual/references/apex-legends_group-poster_reference_v01.png.webp",
@@ -10834,6 +10822,18 @@
     "type": "image",
     "size": 141462,
     "sizeLabel": "138 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-dancers/waluigi-cosplay_reference_v01.webp",
+    "url": "../../media/visual/references/bzh-dancers/waluigi-cosplay_reference_v01.webp",
+    "thumbUrl": null,
+    "title": "Waluigi Cosplay Reference v01",
+    "collection": "References / BZH Dancers",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 34636,
+    "sizeLabel": "34 Ko"
   },
   {
     "path": "media/visual/references/bzh-dancers/waluigi/bzh_dancer_waluigi_v001.jpg",
@@ -11832,6 +11832,18 @@
     "sizeLabel": "2.0 Mo"
   },
   {
+    "path": "media/visual/references/bzh-pw-lol-chronicles/aligax_lol-morgana_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/bzh-pw-lol-chronicles/aligax_lol-morgana_portrait_reference_v01.webp",
+    "thumbUrl": null,
+    "title": "Aligax Lol Morgana Portrait Reference v01",
+    "collection": "References / BZH PW Lol Chronicles",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 442992,
+    "sizeLabel": "433 Ko"
+  },
+  {
     "path": "media/visual/references/bzh-pw-lol-chronicles/bzhpw_lol_chronicles_v001.webp",
     "url": "../../media/visual/references/bzh-pw-lol-chronicles/bzhpw_lol_chronicles_v001.webp",
     "thumbUrl": "../../assets/site/thumbs/media/visual/references/bzh-pw-lol-chronicles/bzhpw_lol_chronicles_v001.webp.webp",
@@ -12322,6 +12334,30 @@
     "type": "image",
     "size": 463564,
     "sizeLabel": "453 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-lol-chronicles/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/bzh-pw-lol-chronicles/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "thumbUrl": null,
+    "title": "MutenRock Lol Zyra Portrait Reference v01",
+    "collection": "References / BZH PW Lol Chronicles",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 542464,
+    "sizeLabel": "530 Ko"
+  },
+  {
+    "path": "media/visual/references/bzh-pw-lol-chronicles/sniky_lol-vayne_portrait_reference_v01.webp",
+    "url": "../../media/visual/references/bzh-pw-lol-chronicles/sniky_lol-vayne_portrait_reference_v01.webp",
+    "thumbUrl": null,
+    "title": "Sniky Lol Vayne Portrait Reference v01",
+    "collection": "References / BZH PW Lol Chronicles",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 376714,
+    "sizeLabel": "368 Ko"
   },
   {
     "path": "media/visual/references/bzh-pw-rd-art/split/bzhpw_rd_style-split_v001.webp",
@@ -13752,6 +13788,18 @@
     "sizeLabel": "656 Ko"
   },
   {
+    "path": "media/visual/references/gartic-monster/requin-collaris_infographie_gartic_v01.png",
+    "url": "../../media/visual/references/gartic-monster/requin-collaris_infographie_gartic_v01.png",
+    "thumbUrl": null,
+    "title": "Requin Collaris Infographie Gartic v01",
+    "collection": "References / Gartic Monster",
+    "category": "References",
+    "status": "reference",
+    "type": "image",
+    "size": 2609258,
+    "sizeLabel": "2.5 Mo"
+  },
+  {
     "path": "media/visual/references/gartic-monster/shrekacules/3a8bdec60a71415eb5c5fb37ed246192.jpg",
     "url": "../../media/visual/references/gartic-monster/shrekacules/3a8bdec60a71415eb5c5fb37ed246192.jpg",
     "thumbUrl": "../../assets/site/thumbs/media/visual/references/gartic-monster/shrekacules/3a8bdec60a71415eb5c5fb37ed246192.jpg.webp",
@@ -14736,47 +14784,11 @@
     "sizeLabel": "1.6 Mo"
   },
   {
-    "path": "media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
-    "url": "../../media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp.webp",
-    "title": "MutenRock Lol Zyra Portrait Reference v01",
-    "collection": "References",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 542464,
-    "sizeLabel": "530 Ko"
-  },
-  {
-    "path": "media/visual/references/requin-collaris_infographie_gartic_v01.png",
-    "url": "../../media/visual/references/requin-collaris_infographie_gartic_v01.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/requin-collaris_infographie_gartic_v01.png.webp",
-    "title": "Requin Collaris Infographie Gartic v01",
-    "collection": "References",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 2609258,
-    "sizeLabel": "2.5 Mo"
-  },
-  {
-    "path": "media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
-    "url": "../../media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp.webp",
-    "title": "Sniky Lol Vayne Portrait Reference v01",
-    "collection": "References",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 376714,
-    "sizeLabel": "368 Ko"
-  },
-  {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png.webp",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v001.png",
+    "url": "../../media/visual/references/setup/bzhress_soiree-trio_v001.png",
+    "thumbUrl": null,
     "title": "Bzhress Soiree Trio v001",
-    "collection": "References / Soiree Trio",
+    "collection": "References / Setup",
     "category": "References",
     "status": "reference",
     "type": "image",
@@ -14784,11 +14796,11 @@
     "sizeLabel": "2.5 Mo"
   },
   {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png.webp",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v002.png",
+    "url": "../../media/visual/references/setup/bzhress_soiree-trio_v002.png",
+    "thumbUrl": null,
     "title": "Bzhress Soiree Trio v002",
-    "collection": "References / Soiree Trio",
+    "collection": "References / Setup",
     "category": "References",
     "status": "reference",
     "type": "image",
@@ -14796,11 +14808,11 @@
     "sizeLabel": "3.2 Mo"
   },
   {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png.webp",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v003.png",
+    "url": "../../media/visual/references/setup/bzhress_soiree-trio_v003.png",
+    "thumbUrl": null,
     "title": "Bzhress Soiree Trio v003",
-    "collection": "References / Soiree Trio",
+    "collection": "References / Setup",
     "category": "References",
     "status": "reference",
     "type": "image",
@@ -14808,47 +14820,11 @@
     "sizeLabel": "2.6 Mo"
   },
   {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png.webp",
-    "title": "Bzhress Soiree Trio v004",
-    "collection": "References / Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 1502442,
-    "sizeLabel": "1.4 Mo"
-  },
-  {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png.webp",
-    "title": "Bzhress Soiree Trio v005",
-    "collection": "References / Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 1494657,
-    "sizeLabel": "1.4 Mo"
-  },
-  {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png.webp",
-    "title": "Bzhress Soiree Trio v006",
-    "collection": "References / Soiree Trio",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 3068112,
-    "sizeLabel": "2.9 Mo"
-  },
-  {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png.webp",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v007.png",
+    "url": "../../media/visual/references/setup/bzhress_soiree-trio_v007.png",
+    "thumbUrl": null,
     "title": "Bzhress Soiree Trio v007",
-    "collection": "References / Soiree Trio",
+    "collection": "References / Setup",
     "category": "References",
     "status": "reference",
     "type": "image",
@@ -14856,11 +14832,11 @@
     "sizeLabel": "2.2 Mo"
   },
   {
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
-    "url": "../../media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png.webp",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v008.png",
+    "url": "../../media/visual/references/setup/bzhress_soiree-trio_v008.png",
+    "thumbUrl": null,
     "title": "Bzhress Soiree Trio v008",
-    "collection": "References / Soiree Trio",
+    "collection": "References / Setup",
     "category": "References",
     "status": "reference",
     "type": "image",
@@ -14878,42 +14854,6 @@
     "type": "image",
     "size": 3183161,
     "sizeLabel": "3.0 Mo"
-  },
-  {
-    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
-    "url": "../../media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg.webp",
-    "title": "Bzhress Steam Escape Photo v001",
-    "collection": "References / Steam Escape Game",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 275371,
-    "sizeLabel": "269 Ko"
-  },
-  {
-    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
-    "url": "../../media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
-    "thumbUrl": "../../assets/site/thumbs/media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg.webp",
-    "title": "Bzhress Steam Escape Photo v002",
-    "collection": "References / Steam Escape Game",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 583001,
-    "sizeLabel": "569 Ko"
-  },
-  {
-    "path": "media/visual/references/waluigi-cosplay_reference_v01.webp",
-    "url": "../../media/visual/references/waluigi-cosplay_reference_v01.webp",
-    "thumbUrl": null,
-    "title": "Waluigi Cosplay Reference v01",
-    "collection": "References",
-    "category": "References",
-    "status": "reference",
-    "type": "image",
-    "size": 34636,
-    "sizeLabel": "34 Ko"
   },
   {
     "path": "media/audio/masters/Les Ombres et la Lumière.wav",

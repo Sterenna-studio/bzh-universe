@@ -1011,11 +1011,11 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "id": 85,
     "type": "media",
     "title": "Aligax Lol Morgana Portrait Reference v01",
-    "url": "media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
-    "path": "media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp",
+    "url": "media/visual/references/bzh-pw-lol-chronicles/aligax_lol-morgana_portrait_reference_v01.webp",
+    "path": "media/visual/references/bzh-pw-lol-chronicles/aligax_lol-morgana_portrait_reference_v01.webp",
     "section": "Media / References",
-    "summary": "References - References - reference - image - 433 Ko",
-    "keywords": "media/visual/references/aligax_lol-morgana_portrait_reference_v01.webp Aligax Lol Morgana Portrait Reference v01 References References reference image",
+    "summary": "References - References / BZH PW Lol Chronicles - reference - image - 433 Ko",
+    "keywords": "media/visual/references/bzh-pw-lol-chronicles/aligax_lol-morgana_portrait_reference_v01.webp Aligax Lol Morgana Portrait Reference v01 References / BZH PW Lol Chronicles References reference image",
     "anchors": [],
     "boost": -1
   },
@@ -10761,11 +10761,11 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "id": 861,
     "type": "media",
     "title": "Bzhress Soiree Trio v001",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png",
+    "url": "media/visual/references/setup/bzhress_soiree-trio_v001.png",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v001.png",
     "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 2.5 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v001.png Bzhress Soiree Trio v001 References / Soiree Trio References reference image",
+    "summary": "References - References / Setup - reference - image - 2.5 Mo",
+    "keywords": "media/visual/references/setup/bzhress_soiree-trio_v001.png Bzhress Soiree Trio v001 References / Setup References reference image",
     "anchors": [],
     "boost": -1
   },
@@ -10773,11 +10773,11 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "id": 862,
     "type": "media",
     "title": "Bzhress Soiree Trio v002",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png",
+    "url": "media/visual/references/setup/bzhress_soiree-trio_v002.png",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v002.png",
     "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 3.2 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v002.png Bzhress Soiree Trio v002 References / Soiree Trio References reference image",
+    "summary": "References - References / Setup - reference - image - 3.2 Mo",
+    "keywords": "media/visual/references/setup/bzhress_soiree-trio_v002.png Bzhress Soiree Trio v002 References / Setup References reference image",
     "anchors": [],
     "boost": -1
   },
@@ -10785,100 +10785,40 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "id": 863,
     "type": "media",
     "title": "Bzhress Soiree Trio v003",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png",
+    "url": "media/visual/references/setup/bzhress_soiree-trio_v003.png",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v003.png",
     "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 2.6 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v003.png Bzhress Soiree Trio v003 References / Soiree Trio References reference image",
+    "summary": "References - References / Setup - reference - image - 2.6 Mo",
+    "keywords": "media/visual/references/setup/bzhress_soiree-trio_v003.png Bzhress Soiree Trio v003 References / Setup References reference image",
     "anchors": [],
     "boost": -1
   },
   {
     "id": 864,
     "type": "media",
-    "title": "Bzhress Soiree Trio v004",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png",
+    "title": "Bzhress Soiree Trio v007",
+    "url": "media/visual/references/setup/bzhress_soiree-trio_v007.png",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v007.png",
     "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 1.4 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v004.png Bzhress Soiree Trio v004 References / Soiree Trio References reference image",
+    "summary": "References - References / Setup - reference - image - 2.2 Mo",
+    "keywords": "media/visual/references/setup/bzhress_soiree-trio_v007.png Bzhress Soiree Trio v007 References / Setup References reference image",
     "anchors": [],
     "boost": -1
   },
   {
     "id": 865,
     "type": "media",
-    "title": "Bzhress Soiree Trio v005",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png",
+    "title": "Bzhress Soiree Trio v008",
+    "url": "media/visual/references/setup/bzhress_soiree-trio_v008.png",
+    "path": "media/visual/references/setup/bzhress_soiree-trio_v008.png",
     "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 1.4 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v005.png Bzhress Soiree Trio v005 References / Soiree Trio References reference image",
+    "summary": "References - References / Setup - reference - image - 4.2 Mo",
+    "keywords": "media/visual/references/setup/bzhress_soiree-trio_v008.png Bzhress Soiree Trio v008 References / Setup References reference image",
     "anchors": [],
     "boost": -1
   },
   {
     "id": 866,
-    "type": "media",
-    "title": "Bzhress Soiree Trio v006",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png",
-    "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 2.9 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v006.png Bzhress Soiree Trio v006 References / Soiree Trio References reference image",
-    "anchors": [],
-    "boost": -1
-  },
-  {
-    "id": 867,
-    "type": "media",
-    "title": "Bzhress Soiree Trio v007",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png",
-    "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 2.2 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v007.png Bzhress Soiree Trio v007 References / Soiree Trio References reference image",
-    "anchors": [],
-    "boost": -1
-  },
-  {
-    "id": 868,
-    "type": "media",
-    "title": "Bzhress Soiree Trio v008",
-    "url": "media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
-    "path": "media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png",
-    "section": "Media / References",
-    "summary": "References - References / Soiree Trio - reference - image - 4.2 Mo",
-    "keywords": "media/visual/references/soiree-trio/bzhress_soiree-trio_v008.png Bzhress Soiree Trio v008 References / Soiree Trio References reference image",
-    "anchors": [],
-    "boost": -1
-  },
-  {
-    "id": 869,
-    "type": "media",
-    "title": "Bzhress Steam Escape Photo v001",
-    "url": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
-    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg",
-    "section": "Media / References",
-    "summary": "References - References / Steam Escape Game - reference - image - 269 Ko",
-    "keywords": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v001.jpg Bzhress Steam Escape Photo v001 References / Steam Escape Game References reference image",
-    "anchors": [],
-    "boost": -1
-  },
-  {
-    "id": 870,
-    "type": "media",
-    "title": "Bzhress Steam Escape Photo v002",
-    "url": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
-    "path": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg",
-    "section": "Media / References",
-    "summary": "References - References / Steam Escape Game - reference - image - 569 Ko",
-    "keywords": "media/visual/references/steam-escape-game/bzhress_steam_escape_photo_v002.jpg Bzhress Steam Escape Photo v002 References / Steam Escape Game References reference image",
-    "anchors": [],
-    "boost": -1
-  },
-  {
-    "id": 871,
     "type": "media",
     "title": "Bzhress Sticker v001",
     "url": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v001.png",
@@ -10890,7 +10830,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 872,
+    "id": 867,
     "type": "media",
     "title": "Bzhress Sticker v002",
     "url": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v002.png",
@@ -10902,7 +10842,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 873,
+    "id": 868,
     "type": "media",
     "title": "Bzhress Sticker v003",
     "url": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v003.png",
@@ -10914,7 +10854,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 874,
+    "id": 869,
     "type": "media",
     "title": "Bzhress Sticker v004",
     "url": "media/visual/social/stickers/bzh-ress/bzhress_sticker_v004.png",
@@ -10926,7 +10866,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 875,
+    "id": 870,
     "type": "media",
     "title": "Bzhress Tapestry v001",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v001.webp",
@@ -10938,7 +10878,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 876,
+    "id": 871,
     "type": "media",
     "title": "Bzhress Tapestry v002",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v002.webp",
@@ -10950,7 +10890,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 877,
+    "id": 872,
     "type": "media",
     "title": "Bzhress Tapestry v003",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v003.webp",
@@ -10962,7 +10902,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 878,
+    "id": 873,
     "type": "media",
     "title": "Bzhress Tapestry v004",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v004.webp",
@@ -10974,7 +10914,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 879,
+    "id": 874,
     "type": "media",
     "title": "Bzhress Tapestry v005",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v005.webp",
@@ -10986,7 +10926,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 880,
+    "id": 875,
     "type": "media",
     "title": "Bzhress Tapestry v006",
     "url": "media/visual/merch/tapestries/bzh-ress/bzhress_tapestry_v006.webp",
@@ -10998,7 +10938,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 881,
+    "id": 876,
     "type": "media",
     "title": "Bzhress Wallpaper v001",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v001.png",
@@ -11010,7 +10950,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 882,
+    "id": 877,
     "type": "media",
     "title": "Bzhress Wallpaper v002",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v002.webp",
@@ -11022,7 +10962,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 883,
+    "id": 878,
     "type": "media",
     "title": "Bzhress Wallpaper v003",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v003.webp",
@@ -11034,7 +10974,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 884,
+    "id": 879,
     "type": "media",
     "title": "Bzhress Wallpaper v004",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v004.webp",
@@ -11046,7 +10986,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 885,
+    "id": 880,
     "type": "media",
     "title": "Bzhress Wallpaper v005",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v005.webp",
@@ -11058,7 +10998,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 886,
+    "id": 881,
     "type": "media",
     "title": "Bzhress Wallpaper v006",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v006.webp",
@@ -11070,7 +11010,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 887,
+    "id": 882,
     "type": "media",
     "title": "Bzhress Wallpaper v007",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v007.webp",
@@ -11082,7 +11022,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 888,
+    "id": 883,
     "type": "media",
     "title": "Bzhress Wallpaper v008",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v008.webp",
@@ -11094,7 +11034,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 889,
+    "id": 884,
     "type": "media",
     "title": "Bzhress Wallpaper v009",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v009.webp",
@@ -11106,7 +11046,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 890,
+    "id": 885,
     "type": "media",
     "title": "Bzhress Wallpaper v010",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v010.webp",
@@ -11118,7 +11058,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 891,
+    "id": 886,
     "type": "media",
     "title": "Bzhress Wallpaper v011",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v011.webp",
@@ -11130,7 +11070,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 892,
+    "id": 887,
     "type": "media",
     "title": "Bzhress Wallpaper v012",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v012.webp",
@@ -11142,7 +11082,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 893,
+    "id": 888,
     "type": "media",
     "title": "Bzhress Wallpaper v013",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v013.webp",
@@ -11154,7 +11094,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 894,
+    "id": 889,
     "type": "media",
     "title": "Bzhress Wallpaper v014",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v014.webp",
@@ -11166,7 +11106,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 895,
+    "id": 890,
     "type": "media",
     "title": "Bzhress Wallpaper v015",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v015.webp",
@@ -11178,7 +11118,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 896,
+    "id": 891,
     "type": "media",
     "title": "Bzhress Wallpaper v016",
     "url": "media/visual/wallpapers/bzh-ress/bzhress_wallpaper_v016.jpg",
@@ -11190,7 +11130,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 897,
+    "id": 892,
     "type": "media",
     "title": "Bzhress Wolf Character Reference v001",
     "url": "media/visual/references/bzh-ress/bzhress_wolf-character_reference_v001.png",
@@ -11202,7 +11142,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 898,
+    "id": 893,
     "type": "media",
     "title": "Bzhshadows Boxart Duplicate v01",
     "url": "media/visual/references/duplicates/bzhshadows_boxart_duplicate_v01.png",
@@ -11214,7 +11154,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 899,
+    "id": 894,
     "type": "media",
     "title": "Bzhshadows Boxart v01",
     "url": "media/visual/covers/bzhshadows_boxart_v01.png",
@@ -11226,7 +11166,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 900,
+    "id": 895,
     "type": "media",
     "title": "Bzhshadows Cover Duplicate v01",
     "url": "media/visual/references/duplicates/bzhshadows_cover_duplicate_v01.png",
@@ -11238,7 +11178,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 901,
+    "id": 896,
     "type": "media",
     "title": "Bzhshadows Cover v01",
     "url": "media/visual/covers/bzhshadows_cover_v01.png",
@@ -11250,7 +11190,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 902,
+    "id": 897,
     "type": "media",
     "title": "Bzhshadows PC Mockup v01",
     "url": "media/visual/covers/bzhshadows_pc-mockup_v01.png",
@@ -11262,7 +11202,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 903,
+    "id": 898,
     "type": "media",
     "title": "Bzhshadows Poster v01",
     "url": "media/visual/covers/bzhshadows_poster_v01.png",
@@ -11274,7 +11214,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 904,
+    "id": 899,
     "type": "media",
     "title": "C0eee0e915f22b54040a48315b59a4258be63e9135f985840b76290ggh1",
     "url": "media/visual/references/gartic-monster/neokarceris/c0eee0e915f22b54040a48315b59a4258be63e9135f985840b76290ggh1.png",
@@ -11286,7 +11226,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 905,
+    "id": 900,
     "type": "media",
     "title": "C0eee0e915f22b54040a48315b59a4258be63e9135f985840b762901",
     "url": "media/visual/references/gartic-monster/neokarceris/c0eee0e915f22b54040a48315b59a4258be63e9135f985840b762901.png",
@@ -11298,7 +11238,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 906,
+    "id": 901,
     "type": "media",
     "title": "C3a223cc97694b66911981cd6b69cc92",
     "url": "media/visual/references/gartic-monster/neokarceris/c3a223cc97694b66911981cd6b69cc92.jpg",
@@ -11310,7 +11250,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 907,
+    "id": 902,
     "type": "media",
     "title": "C294794da40f444696b90ce4e72d34cc",
     "url": "media/visual/references/gartic-monster/c294794da40f444696b90ce4e72d34cc.jpg",
@@ -11322,7 +11262,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 908,
+    "id": 903,
     "type": "page",
     "title": "CHECK-LIST SNIKY / ALIGAX — BZH PW TRIP",
     "url": "docs/conversations/records/2025-06-27_check-list-sniky-aligax-bzh-pw-trip.html",
@@ -11351,7 +11291,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 909,
+    "id": 904,
     "type": "media",
     "title": "Camera2 Shortcut Icon v01",
     "url": "media/visual/social/icons/camera2-shortcut-icon_v01.ico",
@@ -11363,7 +11303,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 910,
+    "id": 905,
     "type": "media",
     "title": "Camera3 Shortcut Icon v01",
     "url": "media/visual/social/icons/camera3-shortcut-icon_v01.ico",
@@ -11375,7 +11315,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 911,
+    "id": 906,
     "type": "media",
     "title": "Camera4 Shortcut Icon v01",
     "url": "media/visual/social/icons/camera4-shortcut-icon_v01.ico",
@@ -11387,7 +11327,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 912,
+    "id": 907,
     "type": "media",
     "title": "Camera Shortcut Icon v01",
     "url": "media/visual/social/icons/camera-shortcut-icon_v01.ico",
@@ -11399,7 +11339,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 913,
+    "id": 908,
     "type": "media",
     "title": "Card Back",
     "url": "assets/cards/legacy/old-card/card_back.png",
@@ -11411,7 +11351,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 914,
+    "id": 909,
     "type": "media",
     "title": "Card Back",
     "url": "assets/cards/shared/card_back.png",
@@ -11423,7 +11363,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 915,
+    "id": 910,
     "type": "media",
     "title": "Card Back2",
     "url": "assets/cards/shared/card_back2.png",
@@ -11435,7 +11375,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 916,
+    "id": 911,
     "type": "page",
     "title": "CardExtractorApp — traitement rapide des artworks de cartes",
     "url": "docs/conversations/records/2025-04-30_cardextractorapp-traitement-rapide-des-artworks-de-cartes.html",
@@ -11464,7 +11404,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 917,
+    "id": 912,
     "type": "page",
     "title": "Carte des projets",
     "url": "docs/projects/00-carte-des-projets.html",
@@ -11485,7 +11425,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 918,
+    "id": 913,
     "type": "page",
     "title": "Catalog",
     "url": "media/catalog/index.html",
@@ -11497,7 +11437,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 919,
+    "id": 914,
     "type": "page",
     "title": "Catalogue compact des conversations BZH",
     "url": "docs/conversations/catalogue-compact.html",
@@ -11509,7 +11449,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 920,
+    "id": 915,
     "type": "page",
     "title": "Catalogue médias à rattacher",
     "url": "media/catalog/media-catalog.html",
@@ -11578,7 +11518,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 921,
+    "id": 916,
     "type": "page",
     "title": "Certificates",
     "url": "docs/certificates/index.html",
@@ -11590,7 +11530,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 922,
+    "id": 917,
     "type": "media",
     "title": "Chroniques De La Vallée",
     "url": "media/visual/references/gartic-monster/dream-world/Chroniques de la Vallée.png",
@@ -11602,7 +11542,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 923,
+    "id": 918,
     "type": "media",
     "title": "Chroniques De La Vallée Ensoleillée",
     "url": "media/visual/references/gartic-monster/dream-world/Chroniques de la Vallée Ensoleillée.png",
@@ -11614,7 +11554,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 924,
+    "id": 919,
     "type": "media",
     "title": "Chroniques De La Vallée Tropicale",
     "url": "media/visual/references/gartic-monster/dream-world/Chroniques de la Vallée Tropicale.png",
@@ -11626,7 +11566,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 925,
+    "id": 920,
     "type": "page",
     "title": "Chronologie de consolidation",
     "url": "docs/chronology/chronologie.html",
@@ -11651,7 +11591,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 926,
+    "id": 921,
     "type": "page",
     "title": "Chronologie détaillée des conversations BZH",
     "url": "docs/conversations/chronologie-conversations-bzh.html",
@@ -11720,7 +11660,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 927,
+    "id": 922,
     "type": "page",
     "title": "Chronology",
     "url": "docs/chronology/index.html",
@@ -11732,7 +11672,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 928,
+    "id": 923,
     "type": "page",
     "title": "Citations originales — BZH CARD GAME: Power Your Hand",
     "url": "docs/sources/messages-originaux/02-card-game.html",
@@ -11769,7 +11709,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 929,
+    "id": 924,
     "type": "page",
     "title": "Citations originales — centralisation du repo / HUB",
     "url": "docs/sources/messages-originaux/01-centralisation-repo.html",
@@ -11806,7 +11746,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 930,
+    "id": 925,
     "type": "page",
     "title": "Citations originales — lore et personnages",
     "url": "docs/sources/messages-originaux/08-lore-personnages.html",
@@ -11839,7 +11779,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 931,
+    "id": 926,
     "type": "page",
     "title": "Citations originales — musique, EP et sorties",
     "url": "docs/sources/messages-originaux/03-musique-ep.html",
@@ -11884,7 +11824,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 932,
+    "id": 927,
     "type": "page",
     "title": "Citations originales — projets techniques, Minitel, hubs",
     "url": "docs/sources/messages-originaux/06-projets-techniques.html",
@@ -11913,7 +11853,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 933,
+    "id": 928,
     "type": "page",
     "title": "Citations originales — visuels, motifs, merch",
     "url": "docs/sources/messages-originaux/07-visuels-merch.html",
@@ -11942,7 +11882,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 934,
+    "id": 929,
     "type": "page",
     "title": "Citations originales — web, page album et mini-site",
     "url": "docs/sources/messages-originaux/04-web-mini-site.html",
@@ -11979,7 +11919,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 935,
+    "id": 930,
     "type": "page",
     "title": "Citations originales — événement BZH PW / Heures Steam",
     "url": "docs/sources/messages-originaux/05-evenements-steam.html",
@@ -12000,7 +11940,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 936,
+    "id": 931,
     "type": "page",
     "title": "Classement BZH PW — Heures Steam et illustration podium",
     "url": "docs/conversations/records/2026-02-13_2026-02-15_classement-bzh-pw-heures-steam-et-illustration-podium.html",
@@ -12029,7 +11969,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 937,
+    "id": 932,
     "type": "media",
     "title": "Clean Walk Source",
     "url": "assets/characters/lemegeton/sheets/clean-walk-source.png",
@@ -12041,7 +11981,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 938,
+    "id": 933,
     "type": "media",
     "title": "Colored Monster Fish",
     "url": "media/visual/references/gartic-monster/gartic-draws/colored_monster_fish.png",
@@ -12053,7 +11993,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 939,
+    "id": 934,
     "type": "page",
     "title": "Consolidation mémoire BZH Card Game et DA BZH Chronicles",
     "url": "docs/conversations/records/2025-12-31_consolidation-memoire-bzh-card-game-et-da-bzh-chronicles.html",
@@ -12082,7 +12022,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 940,
+    "id": 935,
     "type": "page",
     "title": "Contribution au BZH HUB",
     "url": "CONTRIBUTING.html",
@@ -12107,7 +12047,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 941,
+    "id": 936,
     "type": "media",
     "title": "Conv AI Shortcut Icon v01",
     "url": "media/visual/social/icons/conv-ai-shortcut-icon_v01.ico",
@@ -12119,7 +12059,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 942,
+    "id": 937,
     "type": "media",
     "title": "Conv Ai2 Shortcut Icon v01",
     "url": "media/visual/social/icons/conv-ai2-shortcut-icon_v01.ico",
@@ -12131,7 +12071,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 943,
+    "id": 938,
     "type": "page",
     "title": "Couverture de l’archive de conversations",
     "url": "docs/conversations/coverage.html",
@@ -12156,7 +12096,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 944,
+    "id": 939,
     "type": "page",
     "title": "Couverture des citations originales",
     "url": "docs/sources/01-couverture-des-citations.html",
@@ -12185,7 +12125,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 945,
+    "id": 940,
     "type": "media",
     "title": "Credits Song To An End Of A World",
     "url": "media/audio/tracks/credits-song-to-an-end-of-a-world.mp3",
@@ -12197,7 +12137,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 946,
+    "id": 941,
     "type": "media",
     "title": "Credits Song To An End Of A World (cover)",
     "url": "media/audio/tracks/Credits Song To An End Of A World (Cover).mp3",
@@ -12209,7 +12149,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 947,
+    "id": 942,
     "type": "media",
     "title": "Credits Song To An End Of A World Preview",
     "url": "media/audio/previews/credits-song-to-an-end-of-a-world-preview.mp3",
@@ -12221,7 +12161,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 948,
+    "id": 943,
     "type": "page",
     "title": "Création du HUB Git / ZIP de centralisation BZH",
     "url": "docs/conversations/records/2026-05-20_creation-du-hub-git-zip-de-centralisation-bzh.html",
@@ -12250,7 +12190,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 949,
+    "id": 944,
     "type": "media",
     "title": "Créatures Monstrueuses En Néon Surréalistes",
     "url": "media/visual/references/gartic-monster/dream-world/Créatures monstrueuses en néon surréalistes.png",
@@ -12262,7 +12202,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 950,
+    "id": 945,
     "type": "media",
     "title": "Cyber City Unclean Promeai v01",
     "url": "media/visual/references/cyber-city_unclean_promeai_v01.png",
@@ -12274,7 +12214,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 951,
+    "id": 946,
     "type": "media",
     "title": "Cyber Riddim (remastered)",
     "url": "media/audio/tracks/CYBER RIDDIM (Remastered).mp3",
@@ -12286,7 +12226,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 952,
+    "id": 947,
     "type": "media",
     "title": "Cyber Riddim (remastered) (1)",
     "url": "media/audio/tracks/CYBER RIDDIM (Remastered) (1).mp3",
@@ -12298,7 +12238,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 953,
+    "id": 948,
     "type": "media",
     "title": "Cyber Riddim (remastered) (2)",
     "url": "media/audio/tracks/CYBER RIDDIM (Remastered) (2).mp3",
@@ -12310,7 +12250,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 954,
+    "id": 949,
     "type": "media",
     "title": "D7d8dc49300d461e84635687ae7fb0b5",
     "url": "media/visual/references/gartic-monster/shrekacules/d7d8dc49300d461e84635687ae7fb0b5.jpg",
@@ -12322,7 +12262,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 955,
+    "id": 950,
     "type": "media",
     "title": "D414538926d64baca271e98627fc0635",
     "url": "media/visual/references/gartic-monster/luna-head/d414538926d64baca271e98627fc0635.jpg",
@@ -12334,7 +12274,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 956,
+    "id": 951,
     "type": "page",
     "title": "DA BZH Chronicles complète + organigramme avec logos",
     "url": "docs/conversations/records/2025-04-04_da-bzh-chronicles-complete-organigramme-avec-logos.html",
@@ -12363,7 +12303,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 957,
+    "id": 952,
     "type": "media",
     "title": "Db7896be35844f9a872c94395892dd1b",
     "url": "media/visual/references/gartic-monster/shrekacules/db7896be35844f9a872c94395892dd1b.jpg",
@@ -12375,7 +12315,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 958,
+    "id": 953,
     "type": "media",
     "title": "De8dfb2d478c4f04a7d00b476375b3d4",
     "url": "media/visual/references/gartic-monster/neokarceris/de8dfb2d478c4f04a7d00b476375b3d4.jpg",
@@ -12387,7 +12327,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 959,
+    "id": 954,
     "type": "media",
     "title": "Deplacement Back 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/back/deplacement_back_01.png",
@@ -12399,7 +12339,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 960,
+    "id": 955,
     "type": "media",
     "title": "Deplacement Back 01",
     "url": "assets/characters/lemegeton/sprites/deplacement/back/deplacement_back_01.png",
@@ -12411,7 +12351,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 961,
+    "id": 956,
     "type": "media",
     "title": "Deplacement Back 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/back/deplacement_back_01_mask.png",
@@ -12423,7 +12363,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 962,
+    "id": 957,
     "type": "media",
     "title": "Deplacement Back 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/back/deplacement_back_02.png",
@@ -12435,7 +12375,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 963,
+    "id": 958,
     "type": "media",
     "title": "Deplacement Back 02",
     "url": "assets/characters/lemegeton/sprites/deplacement/back/deplacement_back_02.png",
@@ -12447,7 +12387,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 964,
+    "id": 959,
     "type": "media",
     "title": "Deplacement Back 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/back/deplacement_back_02_mask.png",
@@ -12459,7 +12399,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 965,
+    "id": 960,
     "type": "media",
     "title": "Deplacement Back 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/back/deplacement_back_03.png",
@@ -12471,7 +12411,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 966,
+    "id": 961,
     "type": "media",
     "title": "Deplacement Back 03",
     "url": "assets/characters/lemegeton/sprites/deplacement/back/deplacement_back_03.png",
@@ -12483,7 +12423,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 967,
+    "id": 962,
     "type": "media",
     "title": "Deplacement Back 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/back/deplacement_back_03_mask.png",
@@ -12495,7 +12435,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 968,
+    "id": 963,
     "type": "media",
     "title": "Deplacement Back 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/back/deplacement_back_04.png",
@@ -12507,7 +12447,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 969,
+    "id": 964,
     "type": "media",
     "title": "Deplacement Back 04",
     "url": "assets/characters/lemegeton/sprites/deplacement/back/deplacement_back_04.png",
@@ -12519,7 +12459,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 970,
+    "id": 965,
     "type": "media",
     "title": "Deplacement Back 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/back/deplacement_back_04_mask.png",
@@ -12531,7 +12471,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 971,
+    "id": 966,
     "type": "media",
     "title": "Deplacement Chroma Atlas",
     "url": "assets/characters/lemegeton/atlases/deplacement_chroma_atlas.png",
@@ -12543,7 +12483,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 972,
+    "id": 967,
     "type": "media",
     "title": "Deplacement Front 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/front/deplacement_front_01.png",
@@ -12555,7 +12495,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 973,
+    "id": 968,
     "type": "media",
     "title": "Deplacement Front 01",
     "url": "assets/characters/lemegeton/sprites/deplacement/front/deplacement_front_01.png",
@@ -12567,7 +12507,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 974,
+    "id": 969,
     "type": "media",
     "title": "Deplacement Front 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/front/deplacement_front_01_mask.png",
@@ -12579,7 +12519,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 975,
+    "id": 970,
     "type": "media",
     "title": "Deplacement Front 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/front/deplacement_front_02.png",
@@ -12591,7 +12531,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 976,
+    "id": 971,
     "type": "media",
     "title": "Deplacement Front 02",
     "url": "assets/characters/lemegeton/sprites/deplacement/front/deplacement_front_02.png",
@@ -12603,7 +12543,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 977,
+    "id": 972,
     "type": "media",
     "title": "Deplacement Front 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/front/deplacement_front_02_mask.png",
@@ -12615,7 +12555,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 978,
+    "id": 973,
     "type": "media",
     "title": "Deplacement Front 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/front/deplacement_front_03.png",
@@ -12627,7 +12567,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 979,
+    "id": 974,
     "type": "media",
     "title": "Deplacement Front 03",
     "url": "assets/characters/lemegeton/sprites/deplacement/front/deplacement_front_03.png",
@@ -12639,7 +12579,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 980,
+    "id": 975,
     "type": "media",
     "title": "Deplacement Front 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/front/deplacement_front_03_mask.png",
@@ -12651,7 +12591,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 981,
+    "id": 976,
     "type": "media",
     "title": "Deplacement Front 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/front/deplacement_front_04.png",
@@ -12663,7 +12603,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 982,
+    "id": 977,
     "type": "media",
     "title": "Deplacement Front 04",
     "url": "assets/characters/lemegeton/sprites/deplacement/front/deplacement_front_04.png",
@@ -12675,7 +12615,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 983,
+    "id": 978,
     "type": "media",
     "title": "Deplacement Front 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/front/deplacement_front_04_mask.png",
@@ -12687,7 +12627,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 984,
+    "id": 979,
     "type": "media",
     "title": "Deplacement Left 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/left/deplacement_left_01.png",
@@ -12699,7 +12639,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 985,
+    "id": 980,
     "type": "media",
     "title": "Deplacement Left 01",
     "url": "assets/characters/lemegeton/sprites/deplacement/left/deplacement_left_01.png",
@@ -12711,7 +12651,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 986,
+    "id": 981,
     "type": "media",
     "title": "Deplacement Left 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/left/deplacement_left_01_mask.png",
@@ -12723,7 +12663,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 987,
+    "id": 982,
     "type": "media",
     "title": "Deplacement Left 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/left/deplacement_left_02.png",
@@ -12735,7 +12675,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 988,
+    "id": 983,
     "type": "media",
     "title": "Deplacement Left 02",
     "url": "assets/characters/lemegeton/sprites/deplacement/left/deplacement_left_02.png",
@@ -12747,7 +12687,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 989,
+    "id": 984,
     "type": "media",
     "title": "Deplacement Left 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/left/deplacement_left_02_mask.png",
@@ -12759,7 +12699,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 990,
+    "id": 985,
     "type": "media",
     "title": "Deplacement Left 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/left/deplacement_left_03.png",
@@ -12771,7 +12711,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 991,
+    "id": 986,
     "type": "media",
     "title": "Deplacement Left 03",
     "url": "assets/characters/lemegeton/sprites/deplacement/left/deplacement_left_03.png",
@@ -12783,7 +12723,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 992,
+    "id": 987,
     "type": "media",
     "title": "Deplacement Left 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/left/deplacement_left_03_mask.png",
@@ -12795,7 +12735,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 993,
+    "id": 988,
     "type": "media",
     "title": "Deplacement Left 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/left/deplacement_left_04.png",
@@ -12807,7 +12747,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 994,
+    "id": 989,
     "type": "media",
     "title": "Deplacement Left 04",
     "url": "assets/characters/lemegeton/sprites/deplacement/left/deplacement_left_04.png",
@@ -12819,7 +12759,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 995,
+    "id": 990,
     "type": "media",
     "title": "Deplacement Left 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/left/deplacement_left_04_mask.png",
@@ -12831,7 +12771,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 996,
+    "id": 991,
     "type": "media",
     "title": "Deplacement Right 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/right/deplacement_right_01.png",
@@ -12843,7 +12783,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 997,
+    "id": 992,
     "type": "media",
     "title": "Deplacement Right 01",
     "url": "assets/characters/lemegeton/sprites/deplacement/right/deplacement_right_01.png",
@@ -12855,7 +12795,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 998,
+    "id": 993,
     "type": "media",
     "title": "Deplacement Right 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/right/deplacement_right_01_mask.png",
@@ -12867,7 +12807,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 999,
+    "id": 994,
     "type": "media",
     "title": "Deplacement Right 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/right/deplacement_right_02.png",
@@ -12879,7 +12819,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1000,
+    "id": 995,
     "type": "media",
     "title": "Deplacement Right 02",
     "url": "assets/characters/lemegeton/sprites/deplacement/right/deplacement_right_02.png",
@@ -12891,7 +12831,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1001,
+    "id": 996,
     "type": "media",
     "title": "Deplacement Right 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/right/deplacement_right_02_mask.png",
@@ -12903,7 +12843,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1002,
+    "id": 997,
     "type": "media",
     "title": "Deplacement Right 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/right/deplacement_right_03.png",
@@ -12915,7 +12855,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1003,
+    "id": 998,
     "type": "media",
     "title": "Deplacement Right 03",
     "url": "assets/characters/lemegeton/sprites/deplacement/right/deplacement_right_03.png",
@@ -12927,7 +12867,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1004,
+    "id": 999,
     "type": "media",
     "title": "Deplacement Right 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/right/deplacement_right_03_mask.png",
@@ -12939,7 +12879,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1005,
+    "id": 1000,
     "type": "media",
     "title": "Deplacement Right 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement/right/deplacement_right_04.png",
@@ -12951,7 +12891,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1006,
+    "id": 1001,
     "type": "media",
     "title": "Deplacement Right 04",
     "url": "assets/characters/lemegeton/sprites/deplacement/right/deplacement_right_04.png",
@@ -12963,7 +12903,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1007,
+    "id": 1002,
     "type": "media",
     "title": "Deplacement Right 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement/right/deplacement_right_04_mask.png",
@@ -12975,7 +12915,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1008,
+    "id": 1003,
     "type": "media",
     "title": "Deplacement Screen Hole Atlas",
     "url": "assets/characters/lemegeton/atlases/deplacement_screen_hole_atlas.png",
@@ -12987,7 +12927,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1009,
+    "id": 1004,
     "type": "media",
     "title": "Dernier Souffle",
     "url": "media/audio/tracks/dernier-souffle/dernier-souffle.mp3",
@@ -12999,7 +12939,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1010,
+    "id": 1005,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft LEME",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME.mp3",
@@ -13011,7 +12951,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1011,
+    "id": 1006,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft LEME 1",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME_1.mp3",
@@ -13023,7 +12963,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1012,
+    "id": 1007,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft LEME v11",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEME v11.mp3",
@@ -13035,7 +12975,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1013,
+    "id": 1008,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft LEMEGETON",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEGETON.mp3",
@@ -13047,7 +12987,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1014,
+    "id": 1009,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft Lemev1",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1.mp3",
@@ -13059,7 +12999,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1015,
+    "id": 1010,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft Lemev1 1",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1_1.mp3",
@@ -13071,7 +13011,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1016,
+    "id": 1011,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft Lemev1 2",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1_2.mp3",
@@ -13083,7 +13023,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1017,
+    "id": 1012,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft Lemev1 3",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1_3.mp3",
@@ -13095,7 +13035,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1018,
+    "id": 1013,
     "type": "media",
     "title": "Dernier Souffle DrSpig Ft Lemev1 X Fantôme De Chair Mashup",
     "url": "media/audio/tracks/dernier-souffle/Dernier souffle - DrSpig ft LEMEv1 x Fantôme de Chair Mashup.mp3",
@@ -13107,7 +13047,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1019,
+    "id": 1014,
     "type": "media",
     "title": "Dernier Souffle Preview",
     "url": "media/audio/previews/dernier-souffle-preview.mp3",
@@ -13119,7 +13059,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1020,
+    "id": 1015,
     "type": "media",
     "title": "Descent On The Moon BZH Chronicles Fr Vocals",
     "url": "media/audio/tracks/Descent on the Moon - BZH CHRONICLES fr - Vocals.mp3",
@@ -13131,7 +13071,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1021,
+    "id": 1016,
     "type": "media",
     "title": "Descent On The Moon Lips",
     "url": "media/audio/tracks/Descent on the Moon lips.mp3",
@@ -13143,7 +13083,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1022,
+    "id": 1017,
     "type": "media",
     "title": "Descent On The Moon Vocals Fr",
     "url": "media/audio/tracks/descent-on-the-moon-vocals-fr.mp3",
@@ -13155,7 +13095,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1023,
+    "id": 1018,
     "type": "media",
     "title": "Descent On The Moon Vocals Fr Preview",
     "url": "media/audio/previews/descent-on-the-moon-vocals-fr-preview.mp3",
@@ -13167,7 +13107,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1024,
+    "id": 1019,
     "type": "media",
     "title": "Desktop BZH BZH PW Wallpaper Aligax v001",
     "url": "media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v001.mp4",
@@ -13179,7 +13119,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1025,
+    "id": 1020,
     "type": "media",
     "title": "Desktop BZH BZH PW Wallpaper Aligax v002",
     "url": "media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v002.mp4",
@@ -13191,7 +13131,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1026,
+    "id": 1021,
     "type": "media",
     "title": "Desktop BZH BZH PW Wallpaper Aligax v003",
     "url": "media/video/references/desktop-bzh/bzh-pw-wallpaper-aligax/desktop-bzh-bzh-pw-wallpaper-aligax-v003.mp4",
@@ -13203,7 +13143,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1027,
+    "id": 1022,
     "type": "media",
     "title": "Desktop BZH BZH Pwimage Reference v001",
     "url": "media/video/references/desktop-bzh/bzhpwimage/desktop-bzh-bzhpwimage-reference-v001.mp4",
@@ -13215,7 +13155,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1028,
+    "id": 1023,
     "type": "media",
     "title": "Desktop BZH BZH Pwimage Reference v002",
     "url": "media/video/references/desktop-bzh/bzhpwimage/desktop-bzh-bzhpwimage-reference-v002.mp4",
@@ -13227,7 +13167,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1029,
+    "id": 1024,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v001",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v001.mp4",
@@ -13239,7 +13179,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1030,
+    "id": 1025,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v002",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v002.mp4",
@@ -13251,7 +13191,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1031,
+    "id": 1026,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v003",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v003.mp4",
@@ -13263,7 +13203,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1032,
+    "id": 1027,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v004",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v004.mp4",
@@ -13275,7 +13215,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1033,
+    "id": 1028,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v005",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v005.mp4",
@@ -13287,7 +13227,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1034,
+    "id": 1029,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v006",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v006.mp4",
@@ -13299,7 +13239,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1035,
+    "id": 1030,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v007",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v007.mp4",
@@ -13311,7 +13251,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1036,
+    "id": 1031,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v008",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v008.mp4",
@@ -13323,7 +13263,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1037,
+    "id": 1032,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v009",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v009.mp4",
@@ -13335,7 +13275,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1038,
+    "id": 1033,
     "type": "media",
     "title": "Desktop BZH Chibi BZH Power Decembre 2024 v010",
     "url": "media/video/references/desktop-bzh/chibi-bzh-power-decembre-2024/desktop-bzh-chibi-bzh-power-decembre-2024-v010.mp4",
@@ -13347,7 +13287,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1039,
+    "id": 1034,
     "type": "media",
     "title": "Desktop BZH Son Les Ombres Et La Lumiere v001",
     "url": "media/video/references/desktop-bzh/son/desktop-bzh-son-les-ombres-et-la-lumiere-v001.mp4",
@@ -13359,7 +13299,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1040,
+    "id": 1035,
     "type": "media",
     "title": "Desktop BZH Son Les Ombres Et La Lumiere v002",
     "url": "media/video/references/desktop-bzh/son/desktop-bzh-son-les-ombres-et-la-lumiere-v002.mp4",
@@ -13371,7 +13311,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1041,
+    "id": 1036,
     "type": "media",
     "title": "Desktop BZH Son MutenRock v002",
     "url": "media/video/references/desktop-bzh/son/desktop-bzh-son-mutenrock-v002.mp4",
@@ -13383,7 +13323,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1042,
+    "id": 1037,
     "type": "media",
     "title": "Desktop BZH Wallpaper v001",
     "url": "media/video/references/desktop-bzh/wallpaper/desktop-bzh-wallpaper-v001.mp4",
@@ -13395,7 +13335,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1043,
+    "id": 1038,
     "type": "media",
     "title": "Dessinnnn",
     "url": "media/visual/references/gartic-monster/gartic-draws/dessinnnn.png",
@@ -13407,7 +13347,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1044,
+    "id": 1039,
     "type": "media",
     "title": "Dev Fil Shortcut Icon v01",
     "url": "media/visual/social/icons/dev-fil-shortcut-icon_v01.ico",
@@ -13419,7 +13359,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1045,
+    "id": 1040,
     "type": "page",
     "title": "Direction artistique",
     "url": "docs/identity/direction-artistique.html",
@@ -13456,7 +13396,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1046,
+    "id": 1041,
     "type": "media",
     "title": "Discord Shortcut Icon v01",
     "url": "media/visual/social/icons/discord-shortcut-icon_v01.ico",
@@ -13468,7 +13408,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1047,
+    "id": 1042,
     "type": "page",
     "title": "Dos de carte, box art et règles visuelles BZH CARD GAME",
     "url": "docs/conversations/records/2025-04-28_dos-de-carte-box-art-et-regles-visuelles-bzh-card-game.html",
@@ -13497,7 +13437,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1048,
+    "id": 1043,
     "type": "page",
     "title": "Doublons d'import",
     "url": "archives/import-duplicates/README.html",
@@ -13514,7 +13454,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1049,
+    "id": 1044,
     "type": "page",
     "title": "Dr. Sorn — dossier personnage",
     "url": "docs/universe/personnages/dr-sorn-dossier.html",
@@ -13547,7 +13487,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1050,
+    "id": 1045,
     "type": "media",
     "title": "DrSpig La Ballade De MutenRock",
     "url": "media/audio/tracks/DrSpig_La Ballade de MutenRock.mp3",
@@ -13559,7 +13499,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1051,
+    "id": 1046,
     "type": "media",
     "title": "DrSpig La Ballade De MutenRock",
     "url": "media/audio/tracks/drspig-la-ballade-de-mutenrock.mp3",
@@ -13571,7 +13511,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1052,
+    "id": 1047,
     "type": "media",
     "title": "DrSpig La Ballade De MutenRock Preview",
     "url": "media/audio/previews/drspig-la-ballade-de-mutenrock-preview.mp3",
@@ -13583,7 +13523,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1053,
+    "id": 1048,
     "type": "media",
     "title": "Dream World Reference v001",
     "url": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v001.png",
@@ -13595,7 +13535,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1054,
+    "id": 1049,
     "type": "media",
     "title": "Dream World Reference v002",
     "url": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v002.png",
@@ -13607,7 +13547,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1055,
+    "id": 1050,
     "type": "media",
     "title": "Dream World Reference v003",
     "url": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v003.png",
@@ -13619,7 +13559,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1056,
+    "id": 1051,
     "type": "media",
     "title": "Dream World Reference v004",
     "url": "media/visual/references/gartic-monster/dream-world/dream-world-reference-v004.png",
@@ -13631,7 +13571,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1057,
+    "id": 1052,
     "type": "page",
     "title": "Droits, usages et prudence",
     "url": "RIGHTS.html",
@@ -13643,7 +13583,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1058,
+    "id": 1053,
     "type": "page",
     "title": "Décisions connues — BZH CARD GAME",
     "url": "docs/projects/bzh-card-game/known-design-decisions.html",
@@ -13668,7 +13608,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1059,
+    "id": 1054,
     "type": "page",
     "title": "Décisions de design",
     "url": "docs/projects/bzh-card-game/design-decisions.html",
@@ -13680,7 +13620,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1060,
+    "id": 1055,
     "type": "media",
     "title": "Dîner Intime Au Restaurant Avec Musique",
     "url": "media/visual/references/gartic-monster/dream-world/Dîner intime au restaurant avec musique.png",
@@ -13692,7 +13632,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1061,
+    "id": 1056,
     "type": "media",
     "title": "E0713cc7d4374688b607d67d30a48f6b",
     "url": "media/visual/references/gartic-monster/neokarceris/e0713cc7d4374688b607d67d30a48f6b.jpg",
@@ -13704,7 +13644,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1062,
+    "id": 1057,
     "type": "media",
     "title": "Eab865f0c58d48a592ebfb319864186d",
     "url": "media/visual/references/gartic-monster/neokarceris/eab865f0c58d48a592ebfb319864186d.jpg",
@@ -13716,7 +13656,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1063,
+    "id": 1058,
     "type": "media",
     "title": "Eea70797c9b84bd8821b0221f9193c66",
     "url": "media/visual/references/gartic-monster/neokarceris/eea70797c9b84bd8821b0221f9193c66.jpg",
@@ -13728,7 +13668,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1064,
+    "id": 1059,
     "type": "media",
     "title": "En Maintenance",
     "url": "media/audio/tracks/dernier-souffle/en maintenance.mp3",
@@ -13740,7 +13680,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1065,
+    "id": 1060,
     "type": "page",
     "title": "Events",
     "url": "docs/events/index.html",
@@ -13752,7 +13692,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1066,
+    "id": 1061,
     "type": "page",
     "title": "Export localStorage du TCG BZH",
     "url": "docs/conversations/records/2025-11-12_export-localstorage-du-tcg-bzh.html",
@@ -13781,7 +13721,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1067,
+    "id": 1062,
     "type": "page",
     "title": "Export mémoire et consolidation du corpus BZH",
     "url": "docs/conversations/records/2026-04-28_export-memoire-et-consolidation-du-corpus-bzh.html",
@@ -13810,7 +13750,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1068,
+    "id": 1063,
     "type": "media",
     "title": "Expression Angry",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_angry.png",
@@ -13822,7 +13762,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1069,
+    "id": 1064,
     "type": "media",
     "title": "Expression Blush",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_blush.png",
@@ -13834,7 +13774,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1070,
+    "id": 1065,
     "type": "media",
     "title": "Expression Confused",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_confused.png",
@@ -13846,7 +13786,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1071,
+    "id": 1066,
     "type": "media",
     "title": "Expression Cool",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_cool.png",
@@ -13858,7 +13798,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1072,
+    "id": 1067,
     "type": "media",
     "title": "Expression Dizzy",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_dizzy.png",
@@ -13870,7 +13810,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1073,
+    "id": 1068,
     "type": "media",
     "title": "Expression Glitch",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_glitch.png",
@@ -13882,7 +13822,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1074,
+    "id": 1069,
     "type": "media",
     "title": "Expression Happy",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_happy.png",
@@ -13894,7 +13834,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1075,
+    "id": 1070,
     "type": "media",
     "title": "Expression Head Angry",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_angry.png",
@@ -13906,7 +13846,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1076,
+    "id": 1071,
     "type": "media",
     "title": "Expression Head Blush",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_blush.png",
@@ -13918,7 +13858,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1077,
+    "id": 1072,
     "type": "media",
     "title": "Expression Head Confused",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_confused.png",
@@ -13930,7 +13870,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1078,
+    "id": 1073,
     "type": "media",
     "title": "Expression Head Cool",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_cool.png",
@@ -13942,7 +13882,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1079,
+    "id": 1074,
     "type": "media",
     "title": "Expression Head Dizzy",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_dizzy.png",
@@ -13954,7 +13894,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1080,
+    "id": 1075,
     "type": "media",
     "title": "Expression Head Glitch",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_glitch.png",
@@ -13966,7 +13906,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1081,
+    "id": 1076,
     "type": "media",
     "title": "Expression Head Happy",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_happy.png",
@@ -13978,7 +13918,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1082,
+    "id": 1077,
     "type": "media",
     "title": "Expression Head Joy",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_joy.png",
@@ -13990,7 +13930,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1083,
+    "id": 1078,
     "type": "media",
     "title": "Expression Head Laughing",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_laughing.png",
@@ -14002,7 +13942,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1084,
+    "id": 1079,
     "type": "media",
     "title": "Expression Head Love",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_love.png",
@@ -14014,7 +13954,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1085,
+    "id": 1080,
     "type": "media",
     "title": "Expression Head Neutral",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_neutral.png",
@@ -14026,7 +13966,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1086,
+    "id": 1081,
     "type": "media",
     "title": "Expression Head Sad",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_sad.png",
@@ -14038,7 +13978,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1087,
+    "id": 1082,
     "type": "media",
     "title": "Expression Head Serious",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_serious.png",
@@ -14050,7 +13990,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1088,
+    "id": 1083,
     "type": "media",
     "title": "Expression Head Sleepy",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_sleepy.png",
@@ -14062,7 +14002,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1089,
+    "id": 1084,
     "type": "media",
     "title": "Expression Head Surprised",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_surprised.png",
@@ -14074,7 +14014,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1090,
+    "id": 1085,
     "type": "media",
     "title": "Expression Head Wink",
     "url": "assets/characters/lemegeton/sprites/expressions/head/expression_head_wink.png",
@@ -14086,7 +14026,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1091,
+    "id": 1086,
     "type": "media",
     "title": "Expression Joy",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_joy.png",
@@ -14098,7 +14038,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1092,
+    "id": 1087,
     "type": "media",
     "title": "Expression Laughing",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_laughing.png",
@@ -14110,7 +14050,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1093,
+    "id": 1088,
     "type": "media",
     "title": "Expression Love",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_love.png",
@@ -14122,7 +14062,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1094,
+    "id": 1089,
     "type": "media",
     "title": "Expression Neutral",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_neutral.png",
@@ -14134,7 +14074,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1095,
+    "id": 1090,
     "type": "media",
     "title": "Expression Sad",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_sad.png",
@@ -14146,7 +14086,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1096,
+    "id": 1091,
     "type": "media",
     "title": "Expression Serious",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_serious.png",
@@ -14158,7 +14098,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1097,
+    "id": 1092,
     "type": "media",
     "title": "Expression Sleepy",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_sleepy.png",
@@ -14170,7 +14110,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1098,
+    "id": 1093,
     "type": "media",
     "title": "Expression Surprised",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_surprised.png",
@@ -14182,7 +14122,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1099,
+    "id": 1094,
     "type": "media",
     "title": "Expression Wink",
     "url": "assets/characters/lemegeton/sprites/expressions/screen/expression_wink.png",
@@ -14194,7 +14134,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1100,
+    "id": 1095,
     "type": "media",
     "title": "Expressions Head Atlas",
     "url": "assets/characters/lemegeton/atlases/expressions_head_atlas.png",
@@ -14206,7 +14146,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1101,
+    "id": 1096,
     "type": "media",
     "title": "Expressions Screen Atlas",
     "url": "assets/characters/lemegeton/atlases/expressions_screen_atlas.png",
@@ -14218,7 +14158,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1102,
+    "id": 1097,
     "type": "page",
     "title": "Extraction BZH d’un texte + fiches Sniky et MutenRock",
     "url": "docs/conversations/records/2025-01-07_extraction-bzh-d-un-texte-fiches-sniky-et-mutenrock.html",
@@ -14247,7 +14187,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1103,
+    "id": 1098,
     "type": "media",
     "title": "Fallout Style Poster Reference v01",
     "url": "media/visual/references/fallout-style_poster_reference_v01.png",
@@ -14259,7 +14199,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1104,
+    "id": 1099,
     "type": "media",
     "title": "Fantôme De Chair",
     "url": "media/audio/tracks/dernier-souffle/Fantôme de Chair.mp3",
@@ -14271,7 +14211,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1105,
+    "id": 1100,
     "type": "media",
     "title": "Fantôme De Chair 1",
     "url": "media/audio/tracks/dernier-souffle/Fantôme de Chair_1.mp3",
@@ -14283,7 +14223,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1106,
+    "id": 1101,
     "type": "media",
     "title": "Fantôme Detrnasi",
     "url": "media/audio/tracks/dernier-souffle/Fantôme detrnasi.mp3",
@@ -14295,7 +14235,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1107,
+    "id": 1102,
     "type": "media",
     "title": "Fc1aeaf9f4e54a07aa19a3616560e0cc",
     "url": "media/visual/references/gartic-monster/neokarceris/fc1aeaf9f4e54a07aa19a3616560e0cc.jpg",
@@ -14307,7 +14247,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1108,
+    "id": 1103,
     "type": "page",
     "title": "Fiche asset — {{NOM}}",
     "url": "templates/asset-sheet.html",
@@ -14340,7 +14280,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1109,
+    "id": 1104,
     "type": "page",
     "title": "Fiche morceau — {{TITRE}}",
     "url": "templates/track-sheet.html",
@@ -14369,7 +14309,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1110,
+    "id": 1105,
     "type": "page",
     "title": "Fiche personnage — {{NOM}}",
     "url": "templates/character-sheet.html",
@@ -14402,7 +14342,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1111,
+    "id": 1106,
     "type": "page",
     "title": "Fiche projet — {{NOM}}",
     "url": "templates/project-sheet.html",
@@ -14435,7 +14375,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1112,
+    "id": 1107,
     "type": "media",
     "title": "Floating Monastery",
     "url": "assets/cards/legacy/old-card/Floating Monastery.png",
@@ -14447,7 +14387,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1113,
+    "id": 1108,
     "type": "media",
     "title": "Frame",
     "url": "assets/cards/shared/frame.png",
@@ -14459,7 +14399,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1114,
+    "id": 1109,
     "type": "media",
     "title": "Ftp2 Shortcut Icon v01",
     "url": "media/visual/social/icons/ftp2-shortcut-icon_v01.ico",
@@ -14471,7 +14411,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1115,
+    "id": 1110,
     "type": "media",
     "title": "Ftp Shortcut Icon v01",
     "url": "media/visual/social/icons/ftp-shortcut-icon_v01.ico",
@@ -14483,7 +14423,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1116,
+    "id": 1111,
     "type": "page",
     "title": "Gabilone / Gabylon — dossier personnage",
     "url": "docs/universe/personnages/gabilone-dossier.html",
@@ -14516,7 +14456,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1117,
+    "id": 1112,
     "type": "media",
     "title": "Gartic Monster Reference v001",
     "url": "media/visual/references/gartic-monster/gartic-monster-reference-v001.png",
@@ -14528,7 +14468,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1118,
+    "id": 1113,
     "type": "media",
     "title": "Gen 3 Alpha Turbo 238690093, A Mysterious Metalli, Cropped 9ea39c9a80",
     "url": "media/video/references/gartic-monster/neokarceris/Gen-3 Alpha Turbo 238690093, a mysterious metalli, Cropped - 9ea39c9a80.mp4",
@@ -14540,7 +14480,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1119,
+    "id": 1114,
     "type": "media",
     "title": "Github Shortcut Icon v01",
     "url": "media/visual/social/icons/github-shortcut-icon_v01.ico",
@@ -14552,7 +14492,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1120,
+    "id": 1115,
     "type": "page",
     "title": "Glossaire",
     "url": "docs/01-glossaire.html",
@@ -14564,7 +14504,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1121,
+    "id": 1116,
     "type": "page",
     "title": "Groupes et concepts",
     "url": "docs/universe/groupes-et-concepts.html",
@@ -14589,7 +14529,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1122,
+    "id": 1117,
     "type": "media",
     "title": "Hermine Logo Reference v001",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v001.png",
@@ -14601,7 +14541,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1123,
+    "id": 1118,
     "type": "media",
     "title": "Hermine Logo Reference v002",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v002.png",
@@ -14613,7 +14553,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1124,
+    "id": 1119,
     "type": "media",
     "title": "Hermine Logo Reference v003",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v003.png",
@@ -14625,7 +14565,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1125,
+    "id": 1120,
     "type": "media",
     "title": "Hermine Logo Reference v004",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v004.png",
@@ -14637,7 +14577,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1126,
+    "id": 1121,
     "type": "media",
     "title": "Hermine Logo Reference v005",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v005.png",
@@ -14649,7 +14589,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1127,
+    "id": 1122,
     "type": "media",
     "title": "Hermine Logo Reference v006",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v006.png",
@@ -14661,7 +14601,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1128,
+    "id": 1123,
     "type": "media",
     "title": "Hermine Logo Reference v007",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v007.png",
@@ -14673,7 +14613,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1129,
+    "id": 1124,
     "type": "media",
     "title": "Hermine Logo Reference v008",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v008.png",
@@ -14685,7 +14625,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1130,
+    "id": 1125,
     "type": "media",
     "title": "Hermine Logo Reference v009",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v009.png",
@@ -14697,7 +14637,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1131,
+    "id": 1126,
     "type": "media",
     "title": "Hermine Logo Reference v010",
     "url": "media/visual/references/hermine-logos/hermine-logo-reference-v010.webp",
@@ -14709,7 +14649,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1132,
+    "id": 1127,
     "type": "page",
     "title": "Historique des conversations annotées [SORN] / [ALIGAX]",
     "url": "docs/conversations/records/2024-12-02_historique-des-conversations-annotees-sorn-aligax.html",
@@ -14738,7 +14678,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1133,
+    "id": 1128,
     "type": "media",
     "title": "Html2 Shortcut Icon v01",
     "url": "media/visual/social/icons/html2-shortcut-icon_v01.ico",
@@ -14750,7 +14690,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1134,
+    "id": 1129,
     "type": "media",
     "title": "Html Shortcut Icon v01",
     "url": "media/visual/social/icons/html-shortcut-icon_v01.ico",
@@ -14762,7 +14702,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1135,
+    "id": 1130,
     "type": "page",
     "title": "Identity",
     "url": "docs/identity/index.html",
@@ -14774,7 +14714,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1136,
+    "id": 1131,
     "type": "media",
     "title": "Idle Back 01",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/back/idle_back_01.png",
@@ -14786,7 +14726,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1137,
+    "id": 1132,
     "type": "media",
     "title": "Idle Back 01",
     "url": "assets/characters/lemegeton/sprites/idle/back/idle_back_01.png",
@@ -14798,7 +14738,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1138,
+    "id": 1133,
     "type": "media",
     "title": "Idle Back 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/back/idle_back_01_mask.png",
@@ -14810,7 +14750,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1139,
+    "id": 1134,
     "type": "media",
     "title": "Idle Back 02",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/back/idle_back_02.png",
@@ -14822,7 +14762,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1140,
+    "id": 1135,
     "type": "media",
     "title": "Idle Back 02",
     "url": "assets/characters/lemegeton/sprites/idle/back/idle_back_02.png",
@@ -14834,7 +14774,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1141,
+    "id": 1136,
     "type": "media",
     "title": "Idle Back 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/back/idle_back_02_mask.png",
@@ -14846,7 +14786,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1142,
+    "id": 1137,
     "type": "media",
     "title": "Idle Back 03",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/back/idle_back_03.png",
@@ -14858,7 +14798,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1143,
+    "id": 1138,
     "type": "media",
     "title": "Idle Back 03",
     "url": "assets/characters/lemegeton/sprites/idle/back/idle_back_03.png",
@@ -14870,7 +14810,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1144,
+    "id": 1139,
     "type": "media",
     "title": "Idle Back 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/back/idle_back_03_mask.png",
@@ -14882,7 +14822,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1145,
+    "id": 1140,
     "type": "media",
     "title": "Idle Back 04",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/back/idle_back_04.png",
@@ -14894,7 +14834,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1146,
+    "id": 1141,
     "type": "media",
     "title": "Idle Back 04",
     "url": "assets/characters/lemegeton/sprites/idle/back/idle_back_04.png",
@@ -14906,7 +14846,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1147,
+    "id": 1142,
     "type": "media",
     "title": "Idle Back 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/back/idle_back_04_mask.png",
@@ -14918,7 +14858,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1148,
+    "id": 1143,
     "type": "media",
     "title": "Idle Chroma Atlas",
     "url": "assets/characters/lemegeton/atlases/idle_chroma_atlas.png",
@@ -14930,7 +14870,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1149,
+    "id": 1144,
     "type": "media",
     "title": "Idle Front 01",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/front/idle_front_01.png",
@@ -14942,7 +14882,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1150,
+    "id": 1145,
     "type": "media",
     "title": "Idle Front 01",
     "url": "assets/characters/lemegeton/sprites/idle/front/idle_front_01.png",
@@ -14954,7 +14894,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1151,
+    "id": 1146,
     "type": "media",
     "title": "Idle Front 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/front/idle_front_01_mask.png",
@@ -14966,7 +14906,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1152,
+    "id": 1147,
     "type": "media",
     "title": "Idle Front 02",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/front/idle_front_02.png",
@@ -14978,7 +14918,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1153,
+    "id": 1148,
     "type": "media",
     "title": "Idle Front 02",
     "url": "assets/characters/lemegeton/sprites/idle/front/idle_front_02.png",
@@ -14990,7 +14930,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1154,
+    "id": 1149,
     "type": "media",
     "title": "Idle Front 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/front/idle_front_02_mask.png",
@@ -15002,7 +14942,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1155,
+    "id": 1150,
     "type": "media",
     "title": "Idle Front 03",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/front/idle_front_03.png",
@@ -15014,7 +14954,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1156,
+    "id": 1151,
     "type": "media",
     "title": "Idle Front 03",
     "url": "assets/characters/lemegeton/sprites/idle/front/idle_front_03.png",
@@ -15026,7 +14966,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1157,
+    "id": 1152,
     "type": "media",
     "title": "Idle Front 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/front/idle_front_03_mask.png",
@@ -15038,7 +14978,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1158,
+    "id": 1153,
     "type": "media",
     "title": "Idle Front 04",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/front/idle_front_04.png",
@@ -15050,7 +14990,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1159,
+    "id": 1154,
     "type": "media",
     "title": "Idle Front 04",
     "url": "assets/characters/lemegeton/sprites/idle/front/idle_front_04.png",
@@ -15062,7 +15002,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1160,
+    "id": 1155,
     "type": "media",
     "title": "Idle Front 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/front/idle_front_04_mask.png",
@@ -15074,7 +15014,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1161,
+    "id": 1156,
     "type": "media",
     "title": "Idle Left 01",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/left/idle_left_01.png",
@@ -15086,7 +15026,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1162,
+    "id": 1157,
     "type": "media",
     "title": "Idle Left 01",
     "url": "assets/characters/lemegeton/sprites/idle/left/idle_left_01.png",
@@ -15098,7 +15038,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1163,
+    "id": 1158,
     "type": "media",
     "title": "Idle Left 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/left/idle_left_01_mask.png",
@@ -15110,7 +15050,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1164,
+    "id": 1159,
     "type": "media",
     "title": "Idle Left 02",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/left/idle_left_02.png",
@@ -15122,7 +15062,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1165,
+    "id": 1160,
     "type": "media",
     "title": "Idle Left 02",
     "url": "assets/characters/lemegeton/sprites/idle/left/idle_left_02.png",
@@ -15134,7 +15074,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1166,
+    "id": 1161,
     "type": "media",
     "title": "Idle Left 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/left/idle_left_02_mask.png",
@@ -15146,7 +15086,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1167,
+    "id": 1162,
     "type": "media",
     "title": "Idle Left 03",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/left/idle_left_03.png",
@@ -15158,7 +15098,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1168,
+    "id": 1163,
     "type": "media",
     "title": "Idle Left 03",
     "url": "assets/characters/lemegeton/sprites/idle/left/idle_left_03.png",
@@ -15170,7 +15110,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1169,
+    "id": 1164,
     "type": "media",
     "title": "Idle Left 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/left/idle_left_03_mask.png",
@@ -15182,7 +15122,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1170,
+    "id": 1165,
     "type": "media",
     "title": "Idle Left 04",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/left/idle_left_04.png",
@@ -15194,7 +15134,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1171,
+    "id": 1166,
     "type": "media",
     "title": "Idle Left 04",
     "url": "assets/characters/lemegeton/sprites/idle/left/idle_left_04.png",
@@ -15206,7 +15146,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1172,
+    "id": 1167,
     "type": "media",
     "title": "Idle Left 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/left/idle_left_04_mask.png",
@@ -15218,7 +15158,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1173,
+    "id": 1168,
     "type": "media",
     "title": "Idle Right 01",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/right/idle_right_01.png",
@@ -15230,7 +15170,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1174,
+    "id": 1169,
     "type": "media",
     "title": "Idle Right 01",
     "url": "assets/characters/lemegeton/sprites/idle/right/idle_right_01.png",
@@ -15242,7 +15182,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1175,
+    "id": 1170,
     "type": "media",
     "title": "Idle Right 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/right/idle_right_01_mask.png",
@@ -15254,7 +15194,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1176,
+    "id": 1171,
     "type": "media",
     "title": "Idle Right 02",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/right/idle_right_02.png",
@@ -15266,7 +15206,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1177,
+    "id": 1172,
     "type": "media",
     "title": "Idle Right 02",
     "url": "assets/characters/lemegeton/sprites/idle/right/idle_right_02.png",
@@ -15278,7 +15218,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1178,
+    "id": 1173,
     "type": "media",
     "title": "Idle Right 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/right/idle_right_02_mask.png",
@@ -15290,7 +15230,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1179,
+    "id": 1174,
     "type": "media",
     "title": "Idle Right 03",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/right/idle_right_03.png",
@@ -15302,7 +15242,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1180,
+    "id": 1175,
     "type": "media",
     "title": "Idle Right 03",
     "url": "assets/characters/lemegeton/sprites/idle/right/idle_right_03.png",
@@ -15314,7 +15254,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1181,
+    "id": 1176,
     "type": "media",
     "title": "Idle Right 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/right/idle_right_03_mask.png",
@@ -15326,7 +15266,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1182,
+    "id": 1177,
     "type": "media",
     "title": "Idle Right 04",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/right/idle_right_04.png",
@@ -15338,7 +15278,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1183,
+    "id": 1178,
     "type": "media",
     "title": "Idle Right 04",
     "url": "assets/characters/lemegeton/sprites/idle/right/idle_right_04.png",
@@ -15350,7 +15290,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1184,
+    "id": 1179,
     "type": "media",
     "title": "Idle Right 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/right/idle_right_04_mask.png",
@@ -15362,7 +15302,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1185,
+    "id": 1180,
     "type": "media",
     "title": "Idle Screen Hole Atlas",
     "url": "assets/characters/lemegeton/atlases/idle_screen_hole_atlas.png",
@@ -15374,7 +15314,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1186,
+    "id": 1181,
     "type": "media",
     "title": "Idle Turnaround Back",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/turnaround/idle_turnaround_back.png",
@@ -15386,7 +15326,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1187,
+    "id": 1182,
     "type": "media",
     "title": "Idle Turnaround Back",
     "url": "assets/characters/lemegeton/sprites/idle/turnaround/idle_turnaround_back.png",
@@ -15398,7 +15338,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1188,
+    "id": 1183,
     "type": "media",
     "title": "Idle Turnaround Back Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/turnaround/idle_turnaround_back_mask.png",
@@ -15410,7 +15350,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1189,
+    "id": 1184,
     "type": "media",
     "title": "Idle Turnaround Front",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/turnaround/idle_turnaround_front.png",
@@ -15422,7 +15362,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1190,
+    "id": 1185,
     "type": "media",
     "title": "Idle Turnaround Front",
     "url": "assets/characters/lemegeton/sprites/idle/turnaround/idle_turnaround_front.png",
@@ -15434,7 +15374,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1191,
+    "id": 1186,
     "type": "media",
     "title": "Idle Turnaround Front Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/turnaround/idle_turnaround_front_mask.png",
@@ -15446,7 +15386,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1192,
+    "id": 1187,
     "type": "media",
     "title": "Idle Turnaround Left",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/turnaround/idle_turnaround_left.png",
@@ -15458,7 +15398,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1193,
+    "id": 1188,
     "type": "media",
     "title": "Idle Turnaround Left",
     "url": "assets/characters/lemegeton/sprites/idle/turnaround/idle_turnaround_left.png",
@@ -15470,7 +15410,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1194,
+    "id": 1189,
     "type": "media",
     "title": "Idle Turnaround Left Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/turnaround/idle_turnaround_left_mask.png",
@@ -15482,7 +15422,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1195,
+    "id": 1190,
     "type": "media",
     "title": "Idle Turnaround Right",
     "url": "assets/characters/lemegeton/sprites/chroma/idle/turnaround/idle_turnaround_right.png",
@@ -15494,7 +15434,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1196,
+    "id": 1191,
     "type": "media",
     "title": "Idle Turnaround Right",
     "url": "assets/characters/lemegeton/sprites/idle/turnaround/idle_turnaround_right.png",
@@ -15506,7 +15446,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1197,
+    "id": 1192,
     "type": "media",
     "title": "Idle Turnaround Right Mask",
     "url": "assets/characters/lemegeton/sprites/masks/idle/turnaround/idle_turnaround_right_mask.png",
@@ -15518,7 +15458,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1198,
+    "id": 1193,
     "type": "media",
     "title": "Image Removebg2w",
     "url": "media/visual/references/hermine-logos/image-removebg2w.png",
@@ -15530,7 +15470,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1199,
+    "id": 1194,
     "type": "media",
     "title": "Import Wave2 Unidentified Sticker v01",
     "url": "media/visual/references/import-wave2_unidentified-sticker_v01.png",
@@ -15542,7 +15482,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1200,
+    "id": 1195,
     "type": "page",
     "title": "Imports",
     "url": "imports/README.html",
@@ -15563,7 +15503,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1201,
+    "id": 1196,
     "type": "page",
     "title": "Index des conversations BZH",
     "url": "docs/conversations/index.html",
@@ -15575,7 +15515,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1202,
+    "id": 1197,
     "type": "page",
     "title": "Index documentaire",
     "url": "docs/00-index.html",
@@ -15628,7 +15568,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1203,
+    "id": 1198,
     "type": "page",
     "title": "Integration du lot Desktop BZH",
     "url": "docs/archives/import-desktop-bzh.html",
@@ -15665,7 +15605,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1204,
+    "id": 1199,
     "type": "page",
     "title": "Integration du lot Lemegeton sprite pack",
     "url": "docs/archives/import-lemegeton-sprite-pack.html",
@@ -15690,7 +15630,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1205,
+    "id": 1200,
     "type": "media",
     "title": "Intro",
     "url": "media/audio/tracks/Intro.mp3",
@@ -15702,7 +15642,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1206,
+    "id": 1201,
     "type": "media",
     "title": "Intro BZH",
     "url": "media/audio/tracks/intro-bzh.mp3",
@@ -15714,7 +15654,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1207,
+    "id": 1202,
     "type": "media",
     "title": "Intro BZH Preview",
     "url": "media/audio/previews/intro-bzh-preview.mp3",
@@ -15726,7 +15666,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1208,
+    "id": 1203,
     "type": "page",
     "title": "Inventaire gr4ve — place du BZH Card Game dans les objets physiques",
     "url": "docs/conversations/records/2025-09-17_inventaire-gr4ve-place-du-bzh-card-game-dans-les-objets-physiques.html",
@@ -15755,7 +15695,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1209,
+    "id": 1204,
     "type": "page",
     "title": "Inventaire source complet — BZH PW / BZH POWER / BZH CHRONICLES",
     "url": "docs/01-inventaire-source.html",
@@ -15824,7 +15764,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1210,
+    "id": 1205,
     "type": "media",
     "title": "Jv Shortcut Icon v01",
     "url": "media/visual/social/icons/jv-shortcut-icon_v01.ico",
@@ -15836,7 +15776,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1211,
+    "id": 1206,
     "type": "media",
     "title": "King Of Bicycles Emote v01",
     "url": "media/visual/social/emotes/king-of-bicycles_emote_v01.png",
@@ -15848,7 +15788,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1212,
+    "id": 1207,
     "type": "media",
     "title": "King Of Bicycles Poster v01",
     "url": "media/visual/webtoon/king-of-bicycles_poster_v01.png",
@@ -15860,7 +15800,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1213,
+    "id": 1208,
     "type": "media",
     "title": "King Of Bicycles Poster v02",
     "url": "media/visual/webtoon/king-of-bicycles_poster_v02.png",
@@ -15872,7 +15812,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1214,
+    "id": 1209,
     "type": "page",
     "title": "Kit de presse BZH Chronicles",
     "url": "docs/conversations/records/2024-05-24_kit-de-presse-bzh-chronicles.html",
@@ -15901,7 +15841,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1215,
+    "id": 1210,
     "type": "media",
     "title": "LEME Reference v001",
     "url": "media/visual/references/leme/leme-reference-v001.png",
@@ -15913,7 +15853,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1216,
+    "id": 1211,
     "type": "media",
     "title": "LEME Reference v002",
     "url": "media/visual/references/leme/leme-reference-v002.png",
@@ -15925,7 +15865,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1217,
+    "id": 1212,
     "type": "media",
     "title": "LEME Reference v003",
     "url": "media/visual/references/leme/leme-reference-v003.png",
@@ -15937,7 +15877,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1218,
+    "id": 1213,
     "type": "media",
     "title": "LEME Reference v004",
     "url": "media/visual/references/leme/leme-reference-v004.png",
@@ -15949,7 +15889,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1219,
+    "id": 1214,
     "type": "page",
     "title": "LEMEGETON - dossier personnage",
     "url": "docs/universe/personnages/lemegeton-dossier.html",
@@ -15986,7 +15926,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1220,
+    "id": 1215,
     "type": "media",
     "title": "LEMEGETON Concept Sheet",
     "url": "assets/characters/lemegeton/sheets/lemegeton-concept-sheet.png",
@@ -15998,7 +15938,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1221,
+    "id": 1216,
     "type": "media",
     "title": "LEMEGETON Concept v001",
     "url": "media/visual/references/lemegeton-sprite-pack/concepts/lemegeton-concept-v001.png",
@@ -16010,7 +15950,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1222,
+    "id": 1217,
     "type": "media",
     "title": "LEMEGETON Concept v002",
     "url": "media/visual/references/lemegeton-sprite-pack/concepts/lemegeton-concept-v002.png",
@@ -16022,7 +15962,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1223,
+    "id": 1218,
     "type": "media",
     "title": "LEMEGETON Concept v003",
     "url": "media/visual/references/lemegeton-sprite-pack/concepts/lemegeton-concept-v003.png",
@@ -16034,7 +15974,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1224,
+    "id": 1219,
     "type": "media",
     "title": "LEMEGETON Emotion Head Sheet",
     "url": "assets/characters/lemegeton/sheets/lemegeton-emotion-head-sheet.png",
@@ -16046,7 +15986,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1225,
+    "id": 1220,
     "type": "media",
     "title": "LEMEGETON Emotion Screen Sheet",
     "url": "assets/characters/lemegeton/sheets/lemegeton-emotion-screen-sheet.png",
@@ -16058,7 +15998,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1226,
+    "id": 1221,
     "type": "media",
     "title": "LEMEGETON Idle Sheet",
     "url": "assets/characters/lemegeton/sheets/lemegeton-idle-sheet.png",
@@ -16070,7 +16010,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1227,
+    "id": 1222,
     "type": "media",
     "title": "LEMEGETON Walk Sheet",
     "url": "assets/characters/lemegeton/sheets/lemegeton-walk-sheet.png",
@@ -16082,7 +16022,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1228,
+    "id": 1223,
     "type": "media",
     "title": "LEMEGETON Walk Wide Source v001",
     "url": "media/visual/references/lemegeton-sprite-pack/concepts/lemegeton-walk-wide-source-v001.png",
@@ -16094,7 +16034,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1229,
+    "id": 1224,
     "type": "page",
     "title": "Lampe relief puis modèle BZH Chronicles / BZH PW",
     "url": "docs/conversations/records/2025-08-31_2025-09-16_lampe-relief-puis-modele-bzh-chronicles-bzh-pw.html",
@@ -16123,7 +16063,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1230,
+    "id": 1225,
     "type": "page",
     "title": "Le Code",
     "url": "docs/universe/le-code.html",
@@ -16148,7 +16088,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1231,
+    "id": 1226,
     "type": "media",
     "title": "Legacy Card Reference v001",
     "url": "assets/cards/legacy/old-card/legacy-card-reference-v001.png",
@@ -16160,7 +16100,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1232,
+    "id": 1227,
     "type": "page",
     "title": "Lemegeton",
     "url": "assets/characters/lemegeton/README.html",
@@ -16185,7 +16125,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1233,
+    "id": 1228,
     "type": "page",
     "title": "Lemegeton Animation Tuner",
     "url": "archives/web/lemegeton-animation-tuner/README.html",
@@ -16206,7 +16146,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1234,
+    "id": 1229,
     "type": "page",
     "title": "Lemegeton inspiration",
     "url": "media/visual/references/lemegeton-inspiration/README.html",
@@ -16218,7 +16158,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1235,
+    "id": 1230,
     "type": "page",
     "title": "Lemegeton sprite pack concepts",
     "url": "media/visual/references/lemegeton-sprite-pack/README.html",
@@ -16230,7 +16170,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1236,
+    "id": 1231,
     "type": "page",
     "title": "Lemegeton sprite preview",
     "url": "archives/web/lemegeton-sprite-preview/README.html",
@@ -16242,7 +16182,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1237,
+    "id": 1232,
     "type": "page",
     "title": "Les Dieux Debout — structure [ ] en anglais",
     "url": "docs/conversations/records/2025-04-21_les-dieux-debout-structure-en-anglais.html",
@@ -16271,7 +16211,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1238,
+    "id": 1233,
     "type": "media",
     "title": "Les Ombres Et La Lumière",
     "url": "media/audio/masters/Les Ombres et la Lumière.wav",
@@ -16283,7 +16223,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1239,
+    "id": 1234,
     "type": "page",
     "title": "Lexique",
     "url": "docs/universe/lexique.html",
@@ -16295,7 +16235,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1240,
+    "id": 1235,
     "type": "page",
     "title": "Liste simple des morceaux BZH déjà créés",
     "url": "docs/conversations/records/2025-04-08_liste-simple-des-morceaux-bzh-deja-crees.html",
@@ -16324,7 +16264,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1241,
+    "id": 1236,
     "type": "page",
     "title": "Livrables historiques connus à rattacher au HUB",
     "url": "docs/archives/livrables-historiques.html",
@@ -16393,7 +16333,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1242,
+    "id": 1237,
     "type": "media",
     "title": "Lure Of The Archive",
     "url": "assets/cards/legacy/old-card/Lure of the Archive.png",
@@ -16405,7 +16345,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1243,
+    "id": 1238,
     "type": "media",
     "title": "Lécho Du Vide",
     "url": "media/audio/tracks/dernier-souffle/LÉcho du Vide.mp3",
@@ -16417,7 +16357,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1244,
+    "id": 1239,
     "type": "media",
     "title": "Lécho Du Vide 1",
     "url": "media/audio/tracks/dernier-souffle/LÉcho du Vide_1.mp3",
@@ -16429,7 +16369,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1245,
+    "id": 1240,
     "type": "page",
     "title": "L’Heure du Combat et Glitched Warcry",
     "url": "docs/conversations/records/2025-02-05_l-heure-du-combat-et-glitched-warcry.html",
@@ -16458,7 +16398,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1246,
+    "id": 1241,
     "type": "page",
     "title": "MINI-STAR, Minitel Hub et PC HUB 3D BZH PW",
     "url": "docs/conversations/records/2025-12-12_mini-star-minitel-hub-et-pc-hub-3d-bzh-pw.html",
@@ -16487,7 +16427,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1247,
+    "id": 1242,
     "type": "page",
     "title": "Media",
     "url": "docs/media/index.html",
@@ -16499,7 +16439,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1248,
+    "id": 1243,
     "type": "page",
     "title": "Media",
     "url": "media/README.html",
@@ -16524,7 +16464,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1249,
+    "id": 1244,
     "type": "page",
     "title": "Merch",
     "url": "docs/merch/index.html",
@@ -16536,7 +16476,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1250,
+    "id": 1245,
     "type": "page",
     "title": "Merch BZH POWER / logo BZH CHRONICLES / tenture",
     "url": "docs/conversations/records/2026-05-15_merch-bzh-power-logo-bzh-chronicles-tenture.html",
@@ -16565,7 +16505,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1251,
+    "id": 1246,
     "type": "page",
     "title": "Merchandising",
     "url": "docs/merch/merchandising.html",
@@ -16590,7 +16530,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1252,
+    "id": 1247,
     "type": "media",
     "title": "Merged Left 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_01.png",
@@ -16602,7 +16542,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1253,
+    "id": 1248,
     "type": "media",
     "title": "Merged Left 01",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_01.png",
@@ -16614,7 +16554,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1254,
+    "id": 1249,
     "type": "media",
     "title": "Merged Left 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_01_mask.png",
@@ -16626,7 +16566,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1255,
+    "id": 1250,
     "type": "media",
     "title": "Merged Left 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_02.png",
@@ -16638,7 +16578,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1256,
+    "id": 1251,
     "type": "media",
     "title": "Merged Left 02",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_02.png",
@@ -16650,7 +16590,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1257,
+    "id": 1252,
     "type": "media",
     "title": "Merged Left 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_02_mask.png",
@@ -16662,7 +16602,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1258,
+    "id": 1253,
     "type": "media",
     "title": "Merged Left 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_03.png",
@@ -16674,7 +16614,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1259,
+    "id": 1254,
     "type": "media",
     "title": "Merged Left 03",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_03.png",
@@ -16686,7 +16626,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1260,
+    "id": 1255,
     "type": "media",
     "title": "Merged Left 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_03_mask.png",
@@ -16698,7 +16638,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1261,
+    "id": 1256,
     "type": "media",
     "title": "Merged Left 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_04.png",
@@ -16710,7 +16650,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1262,
+    "id": 1257,
     "type": "media",
     "title": "Merged Left 04",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_04.png",
@@ -16722,7 +16662,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1263,
+    "id": 1258,
     "type": "media",
     "title": "Merged Left 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_04_mask.png",
@@ -16734,7 +16674,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1264,
+    "id": 1259,
     "type": "media",
     "title": "Merged Left 05",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_05.png",
@@ -16746,7 +16686,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1265,
+    "id": 1260,
     "type": "media",
     "title": "Merged Left 05",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_05.png",
@@ -16758,7 +16698,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1266,
+    "id": 1261,
     "type": "media",
     "title": "Merged Left 05 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_05_mask.png",
@@ -16770,7 +16710,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1267,
+    "id": 1262,
     "type": "media",
     "title": "Merged Left 06",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_06.png",
@@ -16782,7 +16722,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1268,
+    "id": 1263,
     "type": "media",
     "title": "Merged Left 06",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_06.png",
@@ -16794,7 +16734,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1269,
+    "id": 1264,
     "type": "media",
     "title": "Merged Left 06 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_06_mask.png",
@@ -16806,7 +16746,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1270,
+    "id": 1265,
     "type": "media",
     "title": "Merged Left 07",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_07.png",
@@ -16818,7 +16758,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1271,
+    "id": 1266,
     "type": "media",
     "title": "Merged Left 07",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_07.png",
@@ -16830,7 +16770,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1272,
+    "id": 1267,
     "type": "media",
     "title": "Merged Left 07 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_07_mask.png",
@@ -16842,7 +16782,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1273,
+    "id": 1268,
     "type": "media",
     "title": "Merged Left 08",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/left/merged_left_08.png",
@@ -16854,7 +16794,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1274,
+    "id": 1269,
     "type": "media",
     "title": "Merged Left 08",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/left/merged_left_08.png",
@@ -16866,7 +16806,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1275,
+    "id": 1270,
     "type": "media",
     "title": "Merged Left 08 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/left/merged_left_08_mask.png",
@@ -16878,7 +16818,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1276,
+    "id": 1271,
     "type": "media",
     "title": "Merged Right 01",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_01.png",
@@ -16890,7 +16830,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1277,
+    "id": 1272,
     "type": "media",
     "title": "Merged Right 01",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_01.png",
@@ -16902,7 +16842,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1278,
+    "id": 1273,
     "type": "media",
     "title": "Merged Right 01 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_01_mask.png",
@@ -16914,7 +16854,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1279,
+    "id": 1274,
     "type": "media",
     "title": "Merged Right 02",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_02.png",
@@ -16926,7 +16866,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1280,
+    "id": 1275,
     "type": "media",
     "title": "Merged Right 02",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_02.png",
@@ -16938,7 +16878,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1281,
+    "id": 1276,
     "type": "media",
     "title": "Merged Right 02 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_02_mask.png",
@@ -16950,7 +16890,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1282,
+    "id": 1277,
     "type": "media",
     "title": "Merged Right 03",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_03.png",
@@ -16962,7 +16902,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1283,
+    "id": 1278,
     "type": "media",
     "title": "Merged Right 03",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_03.png",
@@ -16974,7 +16914,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1284,
+    "id": 1279,
     "type": "media",
     "title": "Merged Right 03 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_03_mask.png",
@@ -16986,7 +16926,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1285,
+    "id": 1280,
     "type": "media",
     "title": "Merged Right 04",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_04.png",
@@ -16998,7 +16938,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1286,
+    "id": 1281,
     "type": "media",
     "title": "Merged Right 04",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_04.png",
@@ -17010,7 +16950,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1287,
+    "id": 1282,
     "type": "media",
     "title": "Merged Right 04 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_04_mask.png",
@@ -17022,7 +16962,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1288,
+    "id": 1283,
     "type": "media",
     "title": "Merged Right 05",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_05.png",
@@ -17034,7 +16974,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1289,
+    "id": 1284,
     "type": "media",
     "title": "Merged Right 05",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_05.png",
@@ -17046,7 +16986,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1290,
+    "id": 1285,
     "type": "media",
     "title": "Merged Right 05 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_05_mask.png",
@@ -17058,7 +16998,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1291,
+    "id": 1286,
     "type": "media",
     "title": "Merged Right 06",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_06.png",
@@ -17070,7 +17010,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1292,
+    "id": 1287,
     "type": "media",
     "title": "Merged Right 06",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_06.png",
@@ -17082,7 +17022,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1293,
+    "id": 1288,
     "type": "media",
     "title": "Merged Right 06 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_06_mask.png",
@@ -17094,7 +17034,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1294,
+    "id": 1289,
     "type": "media",
     "title": "Merged Right 07",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_07.png",
@@ -17106,7 +17046,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1295,
+    "id": 1290,
     "type": "media",
     "title": "Merged Right 07",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_07.png",
@@ -17118,7 +17058,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1296,
+    "id": 1291,
     "type": "media",
     "title": "Merged Right 07 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_07_mask.png",
@@ -17130,7 +17070,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1297,
+    "id": 1292,
     "type": "media",
     "title": "Merged Right 08",
     "url": "assets/characters/lemegeton/sprites/chroma/deplacement_merged/right/merged_right_08.png",
@@ -17142,7 +17082,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1298,
+    "id": 1293,
     "type": "media",
     "title": "Merged Right 08",
     "url": "assets/characters/lemegeton/sprites/deplacement_merged/right/merged_right_08.png",
@@ -17154,7 +17094,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1299,
+    "id": 1294,
     "type": "media",
     "title": "Merged Right 08 Mask",
     "url": "assets/characters/lemegeton/sprites/masks/deplacement_merged/right/merged_right_08_mask.png",
@@ -17166,7 +17106,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1300,
+    "id": 1295,
     "type": "page",
     "title": "Messages originaux",
     "url": "docs/sources/messages-originaux/index.html",
@@ -17178,7 +17118,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1301,
+    "id": 1296,
     "type": "page",
     "title": "Metadonnees d'import",
     "url": "archives/import-metadata/README.html",
@@ -17195,7 +17135,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1302,
+    "id": 1297,
     "type": "page",
     "title": "Mini-jeu navigateur BZH Chronicles — roguelite",
     "url": "docs/conversations/records/2025-08-08_mini-jeu-navigateur-bzh-chronicles-roguelite.html",
@@ -17224,7 +17164,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1303,
+    "id": 1298,
     "type": "page",
     "title": "Mini-site BZH POWER / BZH Chronicles — fragments historiques documentés",
     "url": "docs/web/mini-site-bzh-power.html",
@@ -17285,7 +17225,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1304,
+    "id": 1299,
     "type": "page",
     "title": "Minitel / VDT : analyse du hub et problème de mode Vidéotex",
     "url": "docs/conversations/records/2026-02-09_minitel-vdt-analyse-du-hub-et-probleme-de-mode-videotex.html",
@@ -17314,7 +17254,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1305,
+    "id": 1300,
     "type": "media",
     "title": "Minitel Marbre Reference",
     "url": "media/visual/references/lemegeton-inspiration/minitel-marbre-reference.jpg",
@@ -17326,7 +17266,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1306,
+    "id": 1301,
     "type": "media",
     "title": "Miro Shortcut Icon v01",
     "url": "media/visual/social/icons/miro-shortcut-icon_v01.ico",
@@ -17338,7 +17278,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1307,
+    "id": 1302,
     "type": "media",
     "title": "Mmk Sniky 2",
     "url": "media/audio/tracks/sniky-the-frager-mix/mmk sniky 2.mp3",
@@ -17350,7 +17290,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1308,
+    "id": 1303,
     "type": "media",
     "title": "Mmk Sniky 2 1",
     "url": "media/audio/tracks/sniky-the-frager-mix/mmk sniky 2_1.mp3",
@@ -17362,7 +17302,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1309,
+    "id": 1304,
     "type": "media",
     "title": "Mmk Sniky 2 2",
     "url": "media/audio/tracks/sniky-the-frager-mix/mmk sniky 2_2.mp3",
@@ -17374,7 +17314,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1310,
+    "id": 1305,
     "type": "media",
     "title": "Mmk Sniky 2 3",
     "url": "media/audio/tracks/sniky-the-frager-mix/mmk sniky 2_3.mp3",
@@ -17386,7 +17326,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1311,
+    "id": 1306,
     "type": "media",
     "title": "Mmk Sniky 2 4",
     "url": "media/audio/tracks/sniky-the-frager-mix/mmk sniky 2_4.mp3",
@@ -17398,7 +17338,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1312,
+    "id": 1307,
     "type": "media",
     "title": "Monster Shortcut Icon v01",
     "url": "media/visual/social/icons/monster-shortcut-icon_v01.ico",
@@ -17410,7 +17350,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1313,
+    "id": 1308,
     "type": "media",
     "title": "Montage Shortcut Icon v01",
     "url": "media/visual/social/icons/montage-shortcut-icon_v01.ico",
@@ -17422,7 +17362,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1314,
+    "id": 1309,
     "type": "media",
     "title": "Music (1)",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (1).jpg",
@@ -17434,7 +17374,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1315,
+    "id": 1310,
     "type": "media",
     "title": "Music (2)",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (2).png",
@@ -17446,7 +17386,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1316,
+    "id": 1311,
     "type": "media",
     "title": "Music (3)",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (3).jpg",
@@ -17458,7 +17398,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1317,
+    "id": 1312,
     "type": "media",
     "title": "Music (3)",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (3).png",
@@ -17470,7 +17410,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1318,
+    "id": 1313,
     "type": "media",
     "title": "Music (4)",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (4).webp",
@@ -17482,7 +17422,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1319,
+    "id": 1314,
     "type": "media",
     "title": "Music (5 )",
     "url": "media/visual/covers/bzh-chronicles-album-wip/music (5 ).jpg",
@@ -17494,7 +17434,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1320,
+    "id": 1315,
     "type": "media",
     "title": "Music Cao Shortcut Icon v01",
     "url": "media/visual/social/icons/music-cao-shortcut-icon_v01.ico",
@@ -17506,7 +17446,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1321,
+    "id": 1316,
     "type": "page",
     "title": "Musique et albums",
     "url": "docs/media/musique-et-albums.html",
@@ -17559,7 +17499,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1322,
+    "id": 1317,
     "type": "media",
     "title": "Muten Mote v001",
     "url": "media/visual/social/emotes/bzh-ress/muten_mote_v001.png",
@@ -17571,7 +17511,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1323,
+    "id": 1318,
     "type": "media",
     "title": "Muten Mote v002",
     "url": "media/visual/social/emotes/bzh-ress/muten_mote_v002.png",
@@ -17583,7 +17523,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1324,
+    "id": 1319,
     "type": "media",
     "title": "Muten Mote v003",
     "url": "media/visual/social/emotes/bzh-ress/muten_mote_v003.png",
@@ -17595,7 +17535,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1325,
+    "id": 1320,
     "type": "media",
     "title": "Muten Mote v004",
     "url": "media/visual/social/emotes/bzh-ress/muten_mote_v004.png",
@@ -17607,7 +17547,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1326,
+    "id": 1321,
     "type": "media",
     "title": "Muten Shortcut Icon v01",
     "url": "media/visual/social/icons/muten-shortcut-icon_v01.ico",
@@ -17619,7 +17559,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1327,
+    "id": 1322,
     "type": "media",
     "title": "MutenRock",
     "url": "media/audio/masters/MutenRock.wav",
@@ -17631,7 +17571,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1328,
+    "id": 1323,
     "type": "media",
     "title": "MutenRock",
     "url": "media/audio/tracks/MutenRock.mp3",
@@ -17643,7 +17583,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1329,
+    "id": 1324,
     "type": "media",
     "title": "MutenRock Coloring Page v001",
     "url": "media/visual/references/coloring-pages/mutenrock_coloring_page_v001.png",
@@ -17655,7 +17595,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1330,
+    "id": 1325,
     "type": "media",
     "title": "MutenRock Gabilone Natural Harmony",
     "url": "assets/cards/legacy/old-card/MutenRock _ Gabilone _ Natural Harmony.png",
@@ -17667,7 +17607,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1331,
+    "id": 1326,
     "type": "media",
     "title": "MutenRock Ha Tom Tom Title v01",
     "url": "media/visual/webtoon/mutenrock_ha-tom-tom_title_v01.png",
@@ -17679,19 +17619,19 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1332,
+    "id": 1327,
     "type": "media",
     "title": "MutenRock Lol Zyra Portrait Reference v01",
-    "url": "media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
-    "path": "media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "url": "media/visual/references/bzh-pw-lol-chronicles/mutenrock_lol-zyra_portrait_reference_v01.webp",
+    "path": "media/visual/references/bzh-pw-lol-chronicles/mutenrock_lol-zyra_portrait_reference_v01.webp",
     "section": "Media / References",
-    "summary": "References - References - reference - image - 530 Ko",
-    "keywords": "media/visual/references/mutenrock_lol-zyra_portrait_reference_v01.webp MutenRock Lol Zyra Portrait Reference v01 References References reference image",
+    "summary": "References - References / BZH PW Lol Chronicles - reference - image - 530 Ko",
+    "keywords": "media/visual/references/bzh-pw-lol-chronicles/mutenrock_lol-zyra_portrait_reference_v01.webp MutenRock Lol Zyra Portrait Reference v01 References / BZH PW Lol Chronicles References reference image",
     "anchors": [],
     "boost": -1
   },
   {
-    "id": 1333,
+    "id": 1328,
     "type": "media",
     "title": "MutenRock Manga Science v01",
     "url": "assets/characters/mutenrock/mutenrock_manga_science_v01.webp",
@@ -17703,7 +17643,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1334,
+    "id": 1329,
     "type": "media",
     "title": "MutenRock Neotrad Hq v01",
     "url": "assets/characters/mutenrock/mutenrock_neotrad_hq_v01.webp",
@@ -17715,7 +17655,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1335,
+    "id": 1330,
     "type": "media",
     "title": "MutenRock The Digital Commander",
     "url": "media/audio/tracks/mutenrock-the-digital-commander.mp3",
@@ -17727,7 +17667,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1336,
+    "id": 1331,
     "type": "media",
     "title": "MutenRock The Digital Commander Preview",
     "url": "media/audio/previews/mutenrock-the-digital-commander-preview.mp3",
@@ -17739,7 +17679,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1337,
+    "id": 1332,
     "type": "media",
     "title": "MutenRock Webtoon Pet v01",
     "url": "assets/characters/mutenrock/mutenrock_webtoon_pet_v01.png",
@@ -17751,7 +17691,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1338,
+    "id": 1333,
     "type": "page",
     "title": "MutenRock — dossier détaillé",
     "url": "docs/universe/personnages/mutenrock-dossier.html",
@@ -17792,7 +17732,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1339,
+    "id": 1334,
     "type": "media",
     "title": "Mutentom Print v01",
     "url": "media/visual/webtoon/mutentom_print_v01.png",
@@ -17804,7 +17744,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1340,
+    "id": 1335,
     "type": "media",
     "title": "Mutentom Print v02",
     "url": "media/visual/webtoon/mutentom_print_v02.png",
@@ -17816,7 +17756,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1341,
+    "id": 1336,
     "type": "page",
     "title": "Méthodologie de citations",
     "url": "docs/sources/00-methodologie-citations.html",
@@ -17857,7 +17797,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1342,
+    "id": 1337,
     "type": "media",
     "title": "Neo Breizh Drift",
     "url": "media/audio/tracks/Neo Breizh Drift.mp3",
@@ -17869,7 +17809,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1343,
+    "id": 1338,
     "type": "media",
     "title": "Neo Breizh Drift",
     "url": "media/audio/tracks/neo-breizh-drift.mp3",
@@ -17881,7 +17821,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1344,
+    "id": 1339,
     "type": "media",
     "title": "Neo Breizh Drift (1)",
     "url": "media/audio/tracks/Neo Breizh Drift (1).mp3",
@@ -17893,7 +17833,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1345,
+    "id": 1340,
     "type": "media",
     "title": "Neo Breizh Drift (2)",
     "url": "media/audio/tracks/Neo Breizh Drift (2).mp3",
@@ -17905,7 +17845,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1346,
+    "id": 1341,
     "type": "media",
     "title": "Neo Breizh Drift (3)",
     "url": "media/audio/tracks/Neo Breizh Drift (3).mp3",
@@ -17917,7 +17857,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1347,
+    "id": 1342,
     "type": "media",
     "title": "Neo Breizh Drift Preview",
     "url": "media/audio/previews/neo-breizh-drift-preview.mp3",
@@ -17929,7 +17869,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1348,
+    "id": 1343,
     "type": "media",
     "title": "Neokarceris Live",
     "url": "media/video/references/gartic-monster/neokarceris/neokarceris_live.mp4",
@@ -17941,7 +17881,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1349,
+    "id": 1344,
     "type": "media",
     "title": "Neokarceris Location1",
     "url": "media/visual/references/gartic-monster/neokarceris/neokarceris_location1.webp",
@@ -17953,7 +17893,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1350,
+    "id": 1345,
     "type": "media",
     "title": "Neokarceris Location2",
     "url": "media/visual/references/gartic-monster/neokarceris/neokarceris_location2.webp",
@@ -17965,7 +17905,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1351,
+    "id": 1346,
     "type": "media",
     "title": "Neokarceris Origin World Reference v001",
     "url": "media/visual/references/gartic-monster/neokarceris/neokarceris-origin-world-reference-v001.webp",
@@ -17977,7 +17917,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1352,
+    "id": 1347,
     "type": "media",
     "title": "Neon Forest",
     "url": "assets/cards/legacy/old-card/Neon Forest.png",
@@ -17989,7 +17929,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1353,
+    "id": 1348,
     "type": "page",
     "title": "Nouveau mini-jeu web : adaptation 2D de HASTE dans BZH Chronicles",
     "url": "docs/conversations/records/2026-01-16_nouveau-mini-jeu-web-adaptation-2d-de-haste-dans-bzh-chronicles.html",
@@ -18018,7 +17958,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1354,
+    "id": 1349,
     "type": "page",
     "title": "Nouvelles cartes dans le même style + consolidation du set",
     "url": "docs/conversations/records/2025-04-30_nouvelles-cartes-dans-le-meme-style-consolidation-du-set.html",
@@ -18047,7 +17987,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1355,
+    "id": 1350,
     "type": "media",
     "title": "Nuit Pluvieuse Au Port",
     "url": "media/visual/covers/bzh-jazzy/Nuit pluvieuse au port.png",
@@ -18059,7 +17999,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1356,
+    "id": 1351,
     "type": "page",
     "title": "Objets et formats",
     "url": "docs/merch/objets-et-formats.html",
@@ -18080,7 +18020,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1357,
+    "id": 1352,
     "type": "media",
     "title": "Ombres Sur La 9e Avenue",
     "url": "media/visual/covers/bzh-jazzy/Ombres sur la 9e Avenue.png",
@@ -18092,7 +18032,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1358,
+    "id": 1353,
     "type": "page",
     "title": "Organigramme / logigramme cyberpunk BZH",
     "url": "docs/conversations/records/2025-02-27_organigramme-logigramme-cyberpunk-bzh.html",
@@ -18121,7 +18061,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1359,
+    "id": 1354,
     "type": "page",
     "title": "Organisation des assets",
     "url": "assets/README/asset-organization.html",
@@ -18146,7 +18086,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1360,
+    "id": 1355,
     "type": "page",
     "title": "Organisation du projet musical : publication plutôt que création infinie",
     "url": "docs/conversations/records/2025-04-07_organisation-du-projet-musical-publication-plutot-que-creation-infinie.html",
@@ -18175,7 +18115,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1361,
+    "id": 1356,
     "type": "page",
     "title": "Pack opening BZH POWER — règles de booster et prototype web",
     "url": "docs/conversations/records/2025-04-25_pack-opening-bzh-power-regles-de-booster-et-prototype-web.html",
@@ -18204,7 +18144,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1362,
+    "id": 1357,
     "type": "page",
     "title": "Page web BZH Chronicles — album, musique et présentation",
     "url": "docs/conversations/records/2024-07-12_page-web-bzh-chronicles-album-musique-et-presentation.html",
@@ -18233,7 +18173,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1363,
+    "id": 1358,
     "type": "media",
     "title": "Papillomonstre",
     "url": "media/visual/references/gartic-monster/Papillomonstre.PNG",
@@ -18245,7 +18185,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1364,
+    "id": 1359,
     "type": "page",
     "title": "Paroles, scripts et chansons — état récupéré",
     "url": "docs/media/paroles-scripts-et-chansons.html",
@@ -18314,7 +18254,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1365,
+    "id": 1360,
     "type": "page",
     "title": "Personnages",
     "url": "docs/universe/personnages.html",
@@ -18383,7 +18323,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1366,
+    "id": 1361,
     "type": "media",
     "title": "Pierre Yanis Shortcut Icon v01",
     "url": "media/visual/social/icons/pierre-yanis-shortcut-icon_v01.ico",
@@ -18395,7 +18335,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1367,
+    "id": 1362,
     "type": "media",
     "title": "Player Avatar v01",
     "url": "media/visual/social/emotes/player_avatar_v01.png",
@@ -18407,7 +18347,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1368,
+    "id": 1363,
     "type": "media",
     "title": "Poignée De Main Énergétique Futuriste",
     "url": "assets/cards/bzh02/reference/Poignée de main énergétique futuriste.png",
@@ -18419,7 +18359,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1369,
+    "id": 1364,
     "type": "page",
     "title": "Premières reviews fictives / analyses de BZH Chronicles",
     "url": "docs/conversations/records/2024-06-10_premieres-reviews-fictives-analyses-de-bzh-chronicles.html",
@@ -18448,7 +18388,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1370,
+    "id": 1365,
     "type": "page",
     "title": "Principes de cohérence",
     "url": "docs/identity/principes-de-coherence.html",
@@ -18473,7 +18413,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1371,
+    "id": 1366,
     "type": "page",
     "title": "Prompts",
     "url": "docs/prompts/index.html",
@@ -18485,7 +18425,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1372,
+    "id": 1367,
     "type": "page",
     "title": "Prompts logos et merch",
     "url": "docs/prompts/prompts-logos-merch.html",
@@ -18506,7 +18446,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1373,
+    "id": 1368,
     "type": "page",
     "title": "Prompts visuels",
     "url": "docs/prompts/prompts-visuels.html",
@@ -18527,7 +18467,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1374,
+    "id": 1369,
     "type": "page",
     "title": "Prototype / animation — BZH POWER & Pirate Chronicles",
     "url": "docs/projects/bateau-bzh-power/README.html",
@@ -18560,7 +18500,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1375,
+    "id": 1370,
     "type": "page",
     "title": "Prototype runner BZH / adaptation Haste",
     "url": "docs/projects/runner-haste/README.html",
@@ -18601,7 +18541,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1376,
+    "id": 1371,
     "type": "page",
     "title": "Provenance des grands blocs du HUB",
     "url": "docs/sources/02-provenance-des-blocs.html",
@@ -18618,7 +18558,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1377,
+    "id": 1372,
     "type": "media",
     "title": "Pulse Rifle",
     "url": "assets/cards/legacy/old-card/Pulse Rifle.png",
@@ -18630,7 +18570,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1378,
+    "id": 1373,
     "type": "media",
     "title": "Pythax Shortcut Icon v01",
     "url": "media/visual/social/icons/pythax-shortcut-icon_v01.ico",
@@ -18642,7 +18582,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1379,
+    "id": 1374,
     "type": "media",
     "title": "Pêche Tranquille Au Bord De La Rivière",
     "url": "media/visual/references/gartic-monster/dream-world/Pêche tranquille au bord de la rivière.png",
@@ -18654,7 +18594,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1380,
+    "id": 1375,
     "type": "page",
     "title": "Questions ouvertes",
     "url": "docs/02-questions-ouvertes.html",
@@ -18666,7 +18606,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1381,
+    "id": 1376,
     "type": "page",
     "title": "Quickstart",
     "url": "QUICKSTART.html",
@@ -18691,7 +18631,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1382,
+    "id": 1377,
     "type": "page",
     "title": "README",
     "url": "assets/README.html",
@@ -18716,7 +18656,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1383,
+    "id": 1378,
     "type": "media",
     "title": "RTT Gta Play Pontivy Zbeul v01",
     "url": "media/visual/covers/rtt/rtt_gta-play_pontivy-zbeul_v01.png",
@@ -18728,7 +18668,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1384,
+    "id": 1379,
     "type": "media",
     "title": "RTT Gta Play Pontivy Zbeul v02",
     "url": "media/visual/covers/rtt/rtt_gta-play_pontivy-zbeul_v02.png",
@@ -18740,7 +18680,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1385,
+    "id": 1380,
     "type": "media",
     "title": "RTT Gta Play Pontivy Zbeul v03",
     "url": "media/visual/covers/rtt/rtt_gta-play_pontivy-zbeul_v03.jpg",
@@ -18752,7 +18692,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1386,
+    "id": 1381,
     "type": "media",
     "title": "RTT Gta Play Pontivy Zbeul v04",
     "url": "media/visual/covers/rtt/rtt_gta-play_pontivy-zbeul_v04.png",
@@ -18764,7 +18704,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1387,
+    "id": 1382,
     "type": "media",
     "title": "RTT Gta Play Pontivy Zbeul v05",
     "url": "media/visual/covers/rtt/rtt_gta-play_pontivy-zbeul_v05.png",
@@ -18776,7 +18716,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1388,
+    "id": 1383,
     "type": "media",
     "title": "Radio Bot Banner v001",
     "url": "media/visual/references/lemegeton-inspiration/radio-bot-banner-v001.png",
@@ -18788,7 +18728,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1389,
+    "id": 1384,
     "type": "media",
     "title": "Radio Bot v001",
     "url": "media/visual/references/lemegeton-inspiration/radio-bot-v001.png",
@@ -18800,7 +18740,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1390,
+    "id": 1385,
     "type": "media",
     "title": "Radio Bot v002",
     "url": "media/visual/references/lemegeton-inspiration/radio-bot-v002.png",
@@ -18812,7 +18752,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1391,
+    "id": 1386,
     "type": "media",
     "title": "Radio Bot v003",
     "url": "media/visual/references/lemegeton-inspiration/radio-bot-v003.png",
@@ -18824,7 +18764,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1392,
+    "id": 1387,
     "type": "media",
     "title": "Radio Bot v004",
     "url": "media/visual/references/lemegeton-inspiration/radio-bot-v004.png",
@@ -18836,7 +18776,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1393,
+    "id": 1388,
     "type": "page",
     "title": "Rapport d'import - Desktop BZH - 2026-07-06",
     "url": "archives/import-reports/2026-07-06-desktop-bzh.html",
@@ -18905,7 +18845,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1394,
+    "id": 1389,
     "type": "page",
     "title": "Rapport d'import - Lemegeton sprite pack - 2026-07-15",
     "url": "archives/import-reports/2026-07-15-lemegeton-sprite-pack.html",
@@ -18938,7 +18878,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1395,
+    "id": 1390,
     "type": "page",
     "title": "Rapports d'import",
     "url": "archives/import-reports/README.html",
@@ -18950,7 +18890,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1396,
+    "id": 1391,
     "type": "page",
     "title": "Records",
     "url": "docs/conversations/records/index.html",
@@ -18962,19 +18902,19 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1397,
+    "id": 1392,
     "type": "media",
     "title": "Requin Collaris Infographie Gartic v01",
-    "url": "media/visual/references/requin-collaris_infographie_gartic_v01.png",
-    "path": "media/visual/references/requin-collaris_infographie_gartic_v01.png",
+    "url": "media/visual/references/gartic-monster/requin-collaris_infographie_gartic_v01.png",
+    "path": "media/visual/references/gartic-monster/requin-collaris_infographie_gartic_v01.png",
     "section": "Media / References",
-    "summary": "References - References - reference - image - 2.5 Mo",
-    "keywords": "media/visual/references/requin-collaris_infographie_gartic_v01.png Requin Collaris Infographie Gartic v01 References References reference image",
+    "summary": "References - References / Gartic Monster - reference - image - 2.5 Mo",
+    "keywords": "media/visual/references/gartic-monster/requin-collaris_infographie_gartic_v01.png Requin Collaris Infographie Gartic v01 References / Gartic Monster References reference image",
     "anchors": [],
     "boost": -1
   },
   {
-    "id": 1398,
+    "id": 1393,
     "type": "media",
     "title": "Robot Mini Titan En Action",
     "url": "assets/cards/bzh02/reference/Robot Mini-Titan en action.png",
@@ -18986,7 +18926,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1399,
+    "id": 1394,
     "type": "page",
     "title": "STATUS",
     "url": "STATUS.html",
@@ -19055,7 +18995,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1400,
+    "id": 1395,
     "type": "media",
     "title": "Samurai Shortcut Icon v01",
     "url": "media/visual/social/icons/samurai-shortcut-icon_v01.ico",
@@ -19067,7 +19007,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1401,
+    "id": 1396,
     "type": "page",
     "title": "Scènes, temple et micro-lore",
     "url": "docs/universe/scenes-et-micro-lore.html",
@@ -19096,7 +19036,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1402,
+    "id": 1397,
     "type": "media",
     "title": "Secret Of The Maelstrom",
     "url": "assets/cards/legacy/old-card/Secret of the Maelstrom.png",
@@ -19108,7 +19048,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1403,
+    "id": 1398,
     "type": "media",
     "title": "Set01",
     "url": "assets/cards/shared/set01.png",
@@ -19120,7 +19060,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1404,
+    "id": 1399,
     "type": "media",
     "title": "Set01 Champ",
     "url": "assets/cards/shared/set01_champ.png",
@@ -19132,7 +19072,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1405,
+    "id": 1400,
     "type": "media",
     "title": "Set01 Composite",
     "url": "assets/cards/shared/set01_composite.png",
@@ -19144,7 +19084,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1406,
+    "id": 1401,
     "type": "media",
     "title": "Set02",
     "url": "assets/cards/shared/set02.png",
@@ -19156,7 +19096,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1407,
+    "id": 1402,
     "type": "media",
     "title": "Set02 Champ",
     "url": "assets/cards/shared/Set02_champ.png",
@@ -19168,7 +19108,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1408,
+    "id": 1403,
     "type": "media",
     "title": "Seul Dans Le Vide",
     "url": "media/audio/tracks/dernier-souffle/Seul dans le vide.mp3",
@@ -19180,7 +19120,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1409,
+    "id": 1404,
     "type": "page",
     "title": "Slideshow web BZH Chronicles + musique de fond",
     "url": "docs/conversations/records/2025-04-08_slideshow-web-bzh-chronicles-musique-de-fond.html",
@@ -19209,7 +19149,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1410,
+    "id": 1405,
     "type": "media",
     "title": "Sniky Ink Parchment v01",
     "url": "assets/characters/sniky/sniky_ink_parchment_v01.webp",
@@ -19221,19 +19161,19 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1411,
+    "id": 1406,
     "type": "media",
     "title": "Sniky Lol Vayne Portrait Reference v01",
-    "url": "media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
-    "path": "media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp",
+    "url": "media/visual/references/bzh-pw-lol-chronicles/sniky_lol-vayne_portrait_reference_v01.webp",
+    "path": "media/visual/references/bzh-pw-lol-chronicles/sniky_lol-vayne_portrait_reference_v01.webp",
     "section": "Media / References",
-    "summary": "References - References - reference - image - 368 Ko",
-    "keywords": "media/visual/references/sniky_lol-vayne_portrait_reference_v01.webp Sniky Lol Vayne Portrait Reference v01 References References reference image",
+    "summary": "References - References / BZH PW Lol Chronicles - reference - image - 368 Ko",
+    "keywords": "media/visual/references/bzh-pw-lol-chronicles/sniky_lol-vayne_portrait_reference_v01.webp Sniky Lol Vayne Portrait Reference v01 References / BZH PW Lol Chronicles References reference image",
     "anchors": [],
     "boost": -1
   },
   {
-    "id": 1412,
+    "id": 1407,
     "type": "media",
     "title": "Sniky Manga Shadow v01",
     "url": "assets/characters/sniky/sniky_manga_shadow_v01.webp",
@@ -19245,7 +19185,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1413,
+    "id": 1408,
     "type": "media",
     "title": "Sniky Neotrad Woodblock v01",
     "url": "assets/characters/sniky/sniky_neotrad_woodblock_v01.webp",
@@ -19257,7 +19197,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1414,
+    "id": 1409,
     "type": "media",
     "title": "Sniky The Frager",
     "url": "media/audio/tracks/Sniky The Frager.mp3",
@@ -19269,7 +19209,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1415,
+    "id": 1410,
     "type": "media",
     "title": "Sniky The Frager",
     "url": "media/audio/tracks/sniky-the-frager.mp3",
@@ -19281,7 +19221,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1416,
+    "id": 1411,
     "type": "media",
     "title": "Sniky The Frager Mix",
     "url": "media/audio/tracks/sniky-the-frager-mix/sniky-the-frager-mix.mp3",
@@ -19293,7 +19233,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1417,
+    "id": 1412,
     "type": "media",
     "title": "Sniky The Frager Mix Preview",
     "url": "media/audio/previews/sniky-the-frager-mix-preview.mp3",
@@ -19305,7 +19245,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1418,
+    "id": 1413,
     "type": "media",
     "title": "Sniky The Frager Preview",
     "url": "media/audio/previews/sniky-the-frager-preview.mp3",
@@ -19317,7 +19257,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1419,
+    "id": 1414,
     "type": "media",
     "title": "Sniky Titan Ds Mockup v01",
     "url": "media/visual/covers/sniky-titan_ds-mockup_v01.png",
@@ -19329,7 +19269,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1420,
+    "id": 1415,
     "type": "media",
     "title": "Sniky Titan Silent Strike",
     "url": "assets/cards/legacy/old-card/Sniky _ Titan _ Silent Strike.png",
@@ -19341,7 +19281,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1421,
+    "id": 1416,
     "type": "page",
     "title": "Sniky — dossier détaillé",
     "url": "docs/universe/personnages/sniky-dossier.html",
@@ -19390,7 +19330,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1422,
+    "id": 1417,
     "type": "media",
     "title": "Software1 Shortcut Icon v01",
     "url": "media/visual/social/icons/software1-shortcut-icon_v01.ico",
@@ -19402,7 +19342,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1423,
+    "id": 1418,
     "type": "media",
     "title": "Software2 Shortcut Icon v01",
     "url": "media/visual/social/icons/software2-shortcut-icon_v01.ico",
@@ -19414,7 +19354,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1424,
+    "id": 1419,
     "type": "media",
     "title": "Soirée Pluvieuse Au Breizh Détective",
     "url": "media/visual/covers/bzh-jazzy/Soirée pluvieuse au Breizh Détective.png",
@@ -19426,7 +19366,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1425,
+    "id": 1420,
     "type": "media",
     "title": "Sorn Red Sigil Reference",
     "url": "media/visual/references/sorn/sorn-red-sigil-reference.png",
@@ -19438,7 +19378,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1426,
+    "id": 1421,
     "type": "page",
     "title": "Sorn references",
     "url": "media/visual/references/sorn/README.html",
@@ -19450,7 +19390,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1427,
+    "id": 1422,
     "type": "media",
     "title": "Soundclash Bpm Frenzy (suno Contest)",
     "url": "media/audio/masters/Soundclash_ BPM Frenzy (Suno contest).wav",
@@ -19462,7 +19402,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1428,
+    "id": 1423,
     "type": "page",
     "title": "Sources Lemegeton sprite pack",
     "url": "archives/sources/lemegeton-sprite-pack/README.html",
@@ -19483,7 +19423,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1429,
+    "id": 1424,
     "type": "media",
     "title": "Spike Loyal Hunter",
     "url": "assets/cards/legacy/old-card/Spike _ Loyal Hunter.png",
@@ -19495,7 +19435,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1430,
+    "id": 1425,
     "type": "page",
     "title": "Spike — dossier personnage",
     "url": "docs/universe/personnages/spike-dossier.html",
@@ -19528,7 +19468,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1431,
+    "id": 1426,
     "type": "media",
     "title": "Spirit Manga Hound v01",
     "url": "assets/characters/spirit/spirit_manga_hound_v01.webp",
@@ -19540,7 +19480,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1432,
+    "id": 1427,
     "type": "page",
     "title": "Spirit — dossier personnage",
     "url": "docs/universe/personnages/spirit-dossier.html",
@@ -19573,7 +19513,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1433,
+    "id": 1428,
     "type": "page",
     "title": "Spot publicitaire BZH CARD GAME",
     "url": "docs/conversations/records/2025-04-28_spot-publicitaire-bzh-card-game.html",
@@ -19602,7 +19542,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1434,
+    "id": 1429,
     "type": "page",
     "title": "Statuts canon et usage",
     "url": "docs/identity/statuts-canon.html",
@@ -19627,7 +19567,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1435,
+    "id": 1430,
     "type": "media",
     "title": "Steam Shortcut Icon v01",
     "url": "media/visual/social/icons/steam-shortcut-icon_v01.ico",
@@ -19639,7 +19579,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1436,
+    "id": 1431,
     "type": "media",
     "title": "Sterenna Shortcut Icon v01",
     "url": "media/visual/social/icons/sterenna-shortcut-icon_v01.ico",
@@ -19651,7 +19591,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1437,
+    "id": 1432,
     "type": "page",
     "title": "Suno 3.5, structure des prompts et tableau d’avancement",
     "url": "docs/conversations/records/2024-06-03_suno-3-5-structure-des-prompts-et-tableau-d-avancement.html",
@@ -19680,7 +19620,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1438,
+    "id": 1433,
     "type": "page",
     "title": "Supabase — BZH Universe Wiki",
     "url": "supabase/README.html",
@@ -19725,7 +19665,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1439,
+    "id": 1434,
     "type": "page",
     "title": "Symboles et motifs",
     "url": "docs/identity/symboles-et-motifs.html",
@@ -19750,7 +19690,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1440,
+    "id": 1435,
     "type": "media",
     "title": "Temporal Rift",
     "url": "assets/cards/legacy/old-card/Temporal Rift.png",
@@ -19762,7 +19702,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1441,
+    "id": 1436,
     "type": "page",
     "title": "Textes promo et communication",
     "url": "docs/media/communication-et-annonces.html",
@@ -19823,7 +19763,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1442,
+    "id": 1437,
     "type": "media",
     "title": "The Core Of The Code",
     "url": "assets/cards/legacy/old-card/The Core of the Code.png",
@@ -19835,7 +19775,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1443,
+    "id": 1438,
     "type": "media",
     "title": "The Mask Of Sorn Ultra Rare Reference",
     "url": "assets/cards/reference/the-mask-of-sorn-ultra-rare-reference.png",
@@ -19847,7 +19787,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1444,
+    "id": 1439,
     "type": "media",
     "title": "Titan Guardian Beast",
     "url": "assets/cards/legacy/old-card/Titan _ Guardian Beast.png",
@@ -19859,7 +19799,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1445,
+    "id": 1440,
     "type": "media",
     "title": "Titan Hound",
     "url": "media/audio/tracks/Titan  hound.mp3",
@@ -19871,7 +19811,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1446,
+    "id": 1441,
     "type": "media",
     "title": "Titan MutenRock Duel Banner v01",
     "url": "media/visual/webtoon/titan-mutenrock_duel_banner_v01.png",
@@ -19883,7 +19823,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1447,
+    "id": 1442,
     "type": "media",
     "title": "Titan MutenRock Duel Poster v01",
     "url": "media/visual/webtoon/titan-mutenrock_duel_poster_v01.png",
@@ -19895,7 +19835,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1448,
+    "id": 1443,
     "type": "media",
     "title": "Titan Shortcut Icon v01",
     "url": "media/visual/social/icons/titan-shortcut-icon_v01.ico",
@@ -19907,7 +19847,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1449,
+    "id": 1444,
     "type": "media",
     "title": "Titan The Guardian Hound",
     "url": "media/audio/tracks/titan-the-guardian-hound.mp3",
@@ -19919,7 +19859,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1450,
+    "id": 1445,
     "type": "media",
     "title": "Titan The Guardian Hound Preview",
     "url": "media/audio/previews/titan-the-guardian-hound-preview.mp3",
@@ -19931,7 +19871,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1451,
+    "id": 1446,
     "type": "media",
     "title": "Titan Yanis Poster v01",
     "url": "media/visual/webtoon/titan-yanis_poster_v01.png",
@@ -19943,7 +19883,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1452,
+    "id": 1447,
     "type": "media",
     "title": "Titan Yanis Poster v02",
     "url": "media/visual/webtoon/titan-yanis_poster_v02.png",
@@ -19955,7 +19895,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1453,
+    "id": 1448,
     "type": "page",
     "title": "Titan — dossier personnage",
     "url": "docs/universe/personnages/titan-dossier.html",
@@ -19988,7 +19928,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1454,
+    "id": 1449,
     "type": "page",
     "title": "Titan — opening d’anime BZH Power",
     "url": "docs/conversations/records/2024-04-02_titan-opening-d-anime-bzh-power.html",
@@ -20017,7 +19957,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1455,
+    "id": 1450,
     "type": "media",
     "title": "Tom Pierre Print v01",
     "url": "media/visual/webtoon/tom-pierre_print_v01.png",
@@ -20029,7 +19969,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1456,
+    "id": 1451,
     "type": "media",
     "title": "Track (1)",
     "url": "media/audio/previews/site-song/track (1).mp3",
@@ -20041,7 +19981,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1457,
+    "id": 1452,
     "type": "media",
     "title": "Track (2)",
     "url": "media/audio/previews/site-song/track (2).mp3",
@@ -20053,7 +19993,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1458,
+    "id": 1453,
     "type": "media",
     "title": "Track (3)",
     "url": "media/audio/previews/site-song/track (3).mp3",
@@ -20065,7 +20005,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1459,
+    "id": 1454,
     "type": "media",
     "title": "Track (4)",
     "url": "media/audio/previews/site-song/track (4).mp3",
@@ -20077,7 +20017,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1460,
+    "id": 1455,
     "type": "page",
     "title": "Tracklist provisoire",
     "url": "docs/media/tracklist-provisoire.html",
@@ -20102,7 +20042,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1461,
+    "id": 1456,
     "type": "page",
     "title": "Trailer BZH CARD GAME",
     "url": "docs/projects/bzh-card-game/trailer.html",
@@ -20131,7 +20071,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1462,
+    "id": 1457,
     "type": "page",
     "title": "Trailers et scripts",
     "url": "docs/media/trailers-et-scripts.html",
@@ -20156,7 +20096,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1463,
+    "id": 1458,
     "type": "media",
     "title": "Twitch2 Shortcut Icon v01",
     "url": "media/visual/social/icons/twitch2-shortcut-icon_v01.ico",
@@ -20168,7 +20108,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1464,
+    "id": 1459,
     "type": "media",
     "title": "Twitch Shortcut Icon v01",
     "url": "media/visual/social/icons/twitch-shortcut-icon_v01.ico",
@@ -20180,7 +20120,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1465,
+    "id": 1460,
     "type": "media",
     "title": "Twmvrvjcjf",
     "url": "media/visual/references/gartic-monster/tWMvRVjcjF.jpg",
@@ -20192,7 +20132,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1466,
+    "id": 1461,
     "type": "media",
     "title": "Téléchargé",
     "url": "media/visual/references/gartic-monster/gartic-draws/téléchargé.png",
@@ -20204,7 +20144,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1467,
+    "id": 1462,
     "type": "media",
     "title": "Téléchargé (1)",
     "url": "media/visual/references/gartic-monster/gartic-draws/téléchargé (1).png",
@@ -20216,7 +20156,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1468,
+    "id": 1463,
     "type": "media",
     "title": "Untitled",
     "url": "media/audio/tracks/Untitled.mp3",
@@ -20228,7 +20168,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1469,
+    "id": 1464,
     "type": "media",
     "title": "Untitled Preview",
     "url": "media/audio/previews/untitled-preview.mp3",
@@ -20240,7 +20180,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1470,
+    "id": 1465,
     "type": "media",
     "title": "Uplink Overload",
     "url": "assets/cards/legacy/old-card/Uplink Overload.png",
@@ -20252,7 +20192,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1471,
+    "id": 1466,
     "type": "page",
     "title": "Vaisseau BZH PW en LEGO",
     "url": "docs/conversations/records/2025-05-15_vaisseau-bzh-pw-en-lego.html",
@@ -20281,7 +20221,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1472,
+    "id": 1467,
     "type": "media",
     "title": "Verdant Nexus",
     "url": "assets/cards/legacy/old-card/Verdant Nexus.png",
@@ -20293,7 +20233,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1473,
+    "id": 1468,
     "type": "page",
     "title": "Vidéos YouTube Lethal Company avec BZH_PW",
     "url": "docs/conversations/records/2024-09-11_videos-youtube-lethal-company-avec-bzh-pw.html",
@@ -20322,7 +20262,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1474,
+    "id": 1469,
     "type": "page",
     "title": "Vision globale",
     "url": "docs/00-vision-globale.html",
@@ -20359,7 +20299,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1475,
+    "id": 1470,
     "type": "page",
     "title": "Vision globale",
     "url": "docs/universe/00-vision-globale.html",
@@ -20371,7 +20311,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1476,
+    "id": 1471,
     "type": "page",
     "title": "Vérification du lore, bible BZH Chronicles et extraction personnages",
     "url": "docs/conversations/records/2025-04-22_verification-du-lore-bible-bzh-chronicles-et-extraction-personnages.html",
@@ -20400,7 +20340,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1477,
+    "id": 1472,
     "type": "media",
     "title": "Walk LEME v001",
     "url": "assets/characters/lemegeton/sheets/walk-leme-v001.png",
@@ -20412,7 +20352,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1478,
+    "id": 1473,
     "type": "media",
     "title": "Walk LEME v002",
     "url": "assets/characters/lemegeton/sheets/walk-leme-v002.png",
@@ -20424,19 +20364,19 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1479,
+    "id": 1474,
     "type": "media",
     "title": "Waluigi Cosplay Reference v01",
-    "url": "media/visual/references/waluigi-cosplay_reference_v01.webp",
-    "path": "media/visual/references/waluigi-cosplay_reference_v01.webp",
+    "url": "media/visual/references/bzh-dancers/waluigi-cosplay_reference_v01.webp",
+    "path": "media/visual/references/bzh-dancers/waluigi-cosplay_reference_v01.webp",
     "section": "Media / References",
-    "summary": "References - References - reference - image - 34 Ko",
-    "keywords": "media/visual/references/waluigi-cosplay_reference_v01.webp Waluigi Cosplay Reference v01 References References reference image",
+    "summary": "References - References / BZH Dancers - reference - image - 34 Ko",
+    "keywords": "media/visual/references/bzh-dancers/waluigi-cosplay_reference_v01.webp Waluigi Cosplay Reference v01 References / BZH Dancers References reference image",
     "anchors": [],
     "boost": -1
   },
   {
-    "id": 1480,
+    "id": 1475,
     "type": "page",
     "title": "Web",
     "url": "docs/web/index.html",
@@ -20448,7 +20388,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1481,
+    "id": 1476,
     "type": "media",
     "title": "Work! (one, Two, Three, Four)",
     "url": "media/audio/masters/Work! (One, two, three, four).wav",
@@ -20460,7 +20400,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1482,
+    "id": 1477,
     "type": "media",
     "title": "Wyrm Of Plelan",
     "url": "assets/cards/legacy/old-card/Wyrm Of Plelan.png",
@@ -20472,7 +20412,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 4
   },
   {
-    "id": 1483,
+    "id": 1478,
     "type": "page",
     "title": "YouTube — Credits Song to BZH Empire Rising.Ɛqm",
     "url": "docs/conversations/records/2025-11-19_youtube-credits-song-to-bzh-empire-rising-qm.html",
@@ -20501,7 +20441,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1484,
+    "id": 1479,
     "type": "page",
     "title": "album_wip",
     "url": "media/visual/covers/bzh-chronicles-album-wip/album_wip/README.html",
@@ -20518,7 +20458,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1485,
+    "id": 1480,
     "type": "page",
     "title": "bzh-chronicles-roguelite",
     "url": "docs/projects/roguelite/README.html",
@@ -20567,7 +20507,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1486,
+    "id": 1481,
     "type": "page",
     "title": "bzh_jazzy",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/bzh_chr_album_wip/bzh_jazzy/README.html",
@@ -20584,7 +20524,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1487,
+    "id": 1482,
     "type": "page",
     "title": "bzh_pw_chibi_LoL",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/bzh_pw_LoL_Chronicles/bzh_pw_chibi_LoL/README.html",
@@ -20601,7 +20541,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1488,
+    "id": 1483,
     "type": "page",
     "title": "bzh_pw_webtoon",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/bzhpwimage/bzh_pw_artwork/bzh_pw_webtoon/README.html",
@@ -20618,7 +20558,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1489,
+    "id": 1484,
     "type": "page",
     "title": "chibiii plush",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/chibiii plush/README.html",
@@ -20635,7 +20575,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1490,
+    "id": 1485,
     "type": "page",
     "title": "convert_img_to_vdt et Clavicula Salomonis — branche technique adjacente",
     "url": "docs/conversations/records/2025-12-17_convert-img-to-vdt-et-clavicula-salomonis-branche-technique-adjacente.html",
@@ -20664,7 +20604,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 0
   },
   {
-    "id": 1491,
+    "id": 1486,
     "type": "page",
     "title": "dream-world",
     "url": "media/visual/references/gartic-monster/dream-world/README.html",
@@ -20681,7 +20621,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1492,
+    "id": 1487,
     "type": "page",
     "title": "gartic-monster",
     "url": "media/visual/references/gartic-monster/README.html",
@@ -20698,7 +20638,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1493,
+    "id": 1488,
     "type": "page",
     "title": "hermine-logos",
     "url": "media/visual/references/hermine-logos/README.html",
@@ -20715,7 +20655,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1494,
+    "id": 1489,
     "type": "page",
     "title": "leme",
     "url": "media/visual/references/leme/README.html",
@@ -20732,7 +20672,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1495,
+    "id": 1490,
     "type": "page",
     "title": "neokarceris",
     "url": "media/visual/references/gartic-monster/neokarceris/README.html",
@@ -20749,7 +20689,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1496,
+    "id": 1491,
     "type": "page",
     "title": "old-card",
     "url": "assets/cards/legacy/old-card/README.html",
@@ -20766,7 +20706,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1497,
+    "id": 1492,
     "type": "page",
     "title": "reference",
     "url": "assets/cards/bzh02/reference/README.html",
@@ -20783,7 +20723,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1498,
+    "id": 1493,
     "type": "page",
     "title": "reference",
     "url": "assets/cards/reference/README.html",
@@ -20800,24 +20740,24 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1499,
+    "id": 1494,
     "type": "page",
     "title": "soiree-trio",
-    "url": "media/visual/references/soiree-trio/README.html",
-    "path": "media/visual/references/soiree-trio/README.md",
+    "url": "media/visual/references/setup/README.html",
+    "path": "media/visual/references/setup/README.md",
     "section": "Media",
     "summary": "soiree-trio Provenance des noms generatifs Ce dossier contient des fichiers renommes pour retirer les titres generatifs bruts des chemins. Les anciens noms sont conserves ici comme titre ou prompt source. Fichier actuel ",
-    "keywords": "media visual references soiree trio README md soiree-trio Provenance des noms generatifs",
+    "keywords": "media visual references setup README md soiree-trio Provenance des noms generatifs",
     "anchors": [
       {
         "t": "Provenance des noms generatifs",
-        "u": "media/visual/references/soiree-trio/README.html#provenance-des-noms-generatifs"
+        "u": "media/visual/references/setup/README.html#provenance-des-noms-generatifs"
       }
     ],
     "boost": 6
   },
   {
-    "id": 1500,
+    "id": 1495,
     "type": "page",
     "title": "tenture",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/wallpaper/tenture/README.html",
@@ -20834,7 +20774,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1501,
+    "id": 1496,
     "type": "page",
     "title": "wallpaper",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/wallpaper/README.html",
@@ -20851,7 +20791,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1502,
+    "id": 1497,
     "type": "page",
     "title": "wario_rework",
     "url": "archives/import-duplicates/2026-07-06-desktop-bzh/BZH_RESS/Montage/bzh_dancers/wario_rework/README.html",
@@ -20868,7 +20808,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 6
   },
   {
-    "id": 1503,
+    "id": 1498,
     "type": "media",
     "title": "Écho Vide",
     "url": "media/audio/tracks/dernier-souffle/Écho Vide.mp3",
@@ -20880,7 +20820,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": -1
   },
   {
-    "id": 1504,
+    "id": 1499,
     "type": "page",
     "title": "Équipe et dynamiques",
     "url": "docs/universe/equipe-et-dynamiques.html",
@@ -20901,7 +20841,7 @@ window.BZH_WIKI_SEARCH_INDEX = [
     "boost": 3
   },
   {
-    "id": 1505,
+    "id": 1500,
     "type": "media",
     "title": "Île Tropicale Animée Et Fantaisiste",
     "url": "media/visual/references/gartic-monster/dream-world/Île tropicale animée et fantaisiste.png",
